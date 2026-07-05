@@ -1,4 +1,4 @@
-import secrets
+﻿import secrets
 from urllib.parse import urlencode
 
 import requests
@@ -61,7 +61,16 @@ def google_login(request):
         'access_type': 'online',
         'prompt': 'select_account',
     }
-    return redirect(f'{GOOGLE_AUTH_URL}?{urlencode(params)}')
+    response = redirect(f'{GOOGLE_AUTH_URL}?{urlencode(params)}')
+    response.set_signed_cookie(
+        'google_oauth_state',
+        state,
+        max_age=600,
+        httponly=True,
+        secure=not settings.DEBUG,
+        samesite='Lax',
+    )
+    return response
 
 
 def google_callback(request):
@@ -133,3 +142,4 @@ def google_callback(request):
     login(request, user)
     messages.success(request, f'Bienvenido {user.nombre}.')
     return redirect(settings.LOGIN_REDIRECT_URL)
+
