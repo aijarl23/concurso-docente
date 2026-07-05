@@ -75,14 +75,23 @@ def google_login(request):
 
 def google_callback(request):
     expected_state = request.session.pop('google_oauth_state', None)
+    if not expected_state:
+        try:
+            expected_state = request.get_signed_cookie('google_oauth_state', max_age=600)
+        except Exception:
+            expected_state = None
     if not expected_state or request.GET.get('state') != expected_state:
         messages.error(request, 'No se pudo validar la respuesta de Google. Intenta nuevamente.')
-        return redirect('login')
+        response = redirect('login')
+        response.delete_cookie('google_oauth_state')
+        return response
 
     code = request.GET.get('code')
     if not code:
         messages.error(request, 'Google no devolvio un codigo de autorizacion valido.')
-        return redirect('login')
+        response = redirect('login')
+        response.delete_cookie('google_oauth_state')
+        return response
 
     redirect_uri = settings.GOOGLE_OAUTH_REDIRECT_URI or request.build_absolute_uri(reverse('google_callback'))
     token_response = requests.post(
@@ -98,7 +107,9 @@ def google_callback(request):
     )
     if token_response.status_code != 200:
         messages.error(request, 'Google rechazo el intercambio de credenciales. Revisa client_id, secret y redirect_uri.')
-        return redirect('login')
+        response = redirect('login')
+        response.delete_cookie('google_oauth_state')
+        return response
 
     access_token = token_response.json().get('access_token')
     user_response = requests.get(
@@ -108,14 +119,18 @@ def google_callback(request):
     )
     if user_response.status_code != 200:
         messages.error(request, 'No fue posible obtener el perfil de Google.')
-        return redirect('login')
+        response = redirect('login')
+        response.delete_cookie('google_oauth_state')
+        return response
 
     profile = user_response.json()
     email = (profile.get('email') or '').strip().lower()
     uid = (profile.get('sub') or '').strip()
     if not email or not uid:
         messages.error(request, 'El perfil de Google no entrego correo o uid.')
-        return redirect('login')
+        response = redirect('login')
+        response.delete_cookie('google_oauth_state')
+        return response
 
     user = Usuario.objects.filter(uid=uid).order_by('id').first()
     if user is None:
@@ -141,5 +156,6 @@ def google_callback(request):
     user.save()
     login(request, user)
     messages.success(request, f'Bienvenido {user.nombre}.')
-    return redirect(settings.LOGIN_REDIRECT_URL)
-
+    response = redirect(settings.LOGIN_REDIRECT_URL)
+    response.delete_cookie('google_oauth_state')
+    return response
