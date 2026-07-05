@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Iniciar sesion{% endblock %}
+{% block content %}
+
+<div class="login-container">
+    <div class="login-card">
+        <h2><i class="bi bi-mortarboard-fill"></i><br>ConcursoDocente</h2>
+        <p class="text-center text-muted mb-4">Inicia sesion para continuar</p>
+
+        <a href="{% url 'google_login' %}" class="btn btn-light border w-100 mb-3">
+            <i class="bi bi-google"></i> Continuar con Google
+        </a>
+
+        <div class="text-center text-muted small mb-3">Acceso alternativo local</div>
+        <form method="post">
+            {% csrf_token %}
+            {% if form.non_field_errors %}<div class="alert alert-danger">{{ form.non_field_errors }}</div>{% endif %}
+            <div class="mb-3">
+                <label class="form-label">Usuario</label>
+                <input type="text" name="username" class="form-control form-control-custom" required autofocus>
+            </div>
+            <div class="mb-4">
+                <label class="form-label">Contrasena</label>
+                <input type="password" name="password" class="form-control form-control-custom" required>
+            </div>
+            <button type="submit" class="btn btn-primary-concurso w-100">
+                <i class="bi bi-box-arrow-in-right"></i> Iniciar sesion
+            </button>
+        </form>
+        <hr class="my-4">
+        <p class="text-center text-muted small">No tienes cuenta? <a href="{% url 'registro' %}">Registrate aqui</a></p>
+    </div>
+</div>
+
+{% endblock %}

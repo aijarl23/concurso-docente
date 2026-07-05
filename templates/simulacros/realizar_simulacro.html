@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h2 class="mb-1">Simulacro en curso</h2>
+            <p class="text-muted mb-0">{{ intento.simulacro.nombre }}</p>
+        </div>
+        <span class="badge text-bg-primary">{{ intento.simulacro.tiempo_por_pregunta_segundos }} segundos por pregunta</span>
+    </div>
+
+    <form method="post" id="simulacro-form">
+        {% csrf_token %}
+        {% for pregunta in preguntas %}
+        <div class="card mb-4 shadow-sm question-card" data-limit="{{ pregunta.tiempo_limite_segundos|default:intento.simulacro.tiempo_por_pregunta_segundos }}">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="mb-0">Pregunta {{ forloop.counter }}</h5>
+                    <span class="timer badge text-bg-light border">Tiempo: <strong></strong></span>
+                </div>
+
+                {% if pregunta.contexto %}
+                <div class="alert alert-light border lh-lg">{{ pregunta.contexto|linebreaksbr }}</div>
+                {% endif %}
+
+                <p><strong>{{ pregunta.enunciado }}</strong></p>
+                <input type="hidden" name="tiempo_{{ pregunta.id }}" value="0" class="time-used">
+
+                <div class="vstack gap-2 options">
+                    <label class="border rounded p-2"><input type="radio" name="pregunta_{{ pregunta.id }}" value="A"> A. {{ pregunta.opcion_a }}</label>
+                    <label class="border rounded p-2"><input type="radio" name="pregunta_{{ pregunta.id }}" value="B"> B. {{ pregunta.opcion_b }}</label>
+                    <label class="border rounded p-2"><input type="radio" name="pregunta_{{ pregunta.id }}" value="C"> C. {{ pregunta.opcion_c }}</label>
+                    <label class="border rounded p-2"><input type="radio" name="pregunta_{{ pregunta.id }}" value="D"> D. {{ pregunta.opcion_d }}</label>
+                </div>
+                <div class="timeout-alert alert alert-warning mt-3 d-none">Tiempo agotado para esta pregunta. Las opciones quedaron bloqueadas.</div>
+            </div>
+        </div>
+        {% endfor %}
+        <button class="btn btn-success btn-lg w-100">Finalizar simulacro</button>
+    </form>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+(function () {
+    const cards = document.querySelectorAll('.question-card');
+    cards.forEach((card) => {
+        const limit = Number(card.dataset.limit || 120);
+        let elapsed = 0;
+        const timerText = card.querySelector('.timer strong');
+        const hidden = card.querySelector('.time-used');
+        const inputs = card.querySelectorAll('input[type="radio"]');
+        const alertBox = card.querySelector('.timeout-alert');
+
+        function render() {
+            const remaining = Math.max(limit - elapsed, 0);
+            timerText.textContent = remaining + ' s';
+            hidden.value = elapsed;
+            if (remaining <= 0) {
+                inputs.forEach((input) => input.disabled = true);
+                alertBox.classList.remove('d-none');
+                clearInterval(intervalId);
+            }
+        }
+
+        const intervalId = setInterval(() => {
+            elapsed += 1;
+            render();
+        }, 1000);
+        render();
+    });
+})();
+</script>
+{% endblock %}

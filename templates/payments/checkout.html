@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-7">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <h1 class="h3">Checkout Wompi</h1>
+                <p class="text-muted">Orden {{ order.reference }}</p>
+                <ul>
+                    {% for item in order.items.all %}
+                    <li>{{ item.module.title }} - COP {{ item.price }}</li>
+                    {% endfor %}
+                </ul>
+                <h4>Total: COP {{ order.total }}</h4>
+
+                {% if payment_config_errors %}
+                <div class="alert alert-warning mt-3">
+                    <strong>Pago real no habilitado todavia.</strong>
+                    <ul class="mb-0 mt-2">
+                        {% for error in payment_config_errors %}
+                        <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <p class="text-muted mb-0">
+                    Completa esos valores en <code>C:\ConcursoDocente\.env</code>, reinicia el servidor y vuelve a entrar al checkout.
+                </p>
+                {% elif wompi_error %}
+                <div class="alert alert-warning mt-3">
+                    <strong>Wompi no respondio.</strong><br>
+                    {{ wompi_error }}
+                </div>
+                {% elif acceptance_token and signature %}
+                <div class="alert alert-info mt-3" id="wompi-loading-message">
+                    Cargando boton seguro de Wompi...
+                </div>
+                <form id="wompi-checkout-form">
+                    <script
+                        src="https://checkout.wompi.co/widget.js"
+                        data-render="button"
+                        data-public-key="{{ public_key }}"
+                        data-currency="{{ currency }}"
+                        data-amount-in-cents="{{ amount_in_cents }}"
+                        data-reference="{{ reference }}"
+                        data-customer-data:email="{{ email }}"
+                        data-customer-data:full-name="{{ customer_full_name }}"
+                        data-payment-description="{{ order.reference }} - ConcursoDocente"
+                        data-signature:integrity="{{ signature }}"
+                        data-redirect-url="{{ redirect_url }}">
+                    </script>
+                </form>
+                <div class="alert alert-warning mt-3 d-none" id="wompi-widget-error">
+                    No se pudo mostrar el boton de Wompi. Revisa conexion a internet, bloqueadores del navegador y que las llaves Wompi correspondan al mismo entorno sandbox/produccion.
+                </div>
+                <script>
+                    window.setTimeout(function () {
+                        var loading = document.getElementById('wompi-loading-message');
+                        var error = document.getElementById('wompi-widget-error');
+                        var form = document.getElementById('wompi-checkout-form');
+                        var hasButton = form && form.querySelector('button, iframe, input[type="submit"]');
+                        if (hasButton && loading) {
+                            loading.classList.add('d-none');
+                        }
+                        if (!hasButton && error) {
+                            if (loading) loading.classList.add('d-none');
+                            error.classList.remove('d-none');
+                        }
+                    }, 3500);
+                </script>
+                {% else %}
+                <div class="alert alert-warning mt-3">
+                    No fue posible preparar el checkout de Wompi. Revisa las llaves en <code>.env</code>.
+                </div>
+                {% endif %}
+
+                {% if enable_local_payment_approval %}
+                <div class="alert alert-secondary mt-3 mb-0">
+                    Modo desarrollo activo: este boton simula un pago aprobado sin contactar a Wompi.
+                </div>
+                <a class="btn btn-outline-success mt-2" href="{% url 'payments:approve_order_dev' order.id %}">Aprobar pago de prueba local</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Simulacros{% endblock %}
+{% block content %}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2><i class="bi bi-clipboard-check"></i> Simulacros disponibles</h2>
+        <p class="text-muted mb-0">Preguntas tipo CNSC — nivel docente</p>
+    </div>
+</div>
+
+<div class="row">
+    {% for simulacro in simulacros %}
+    <div class="col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="mb-0">{{ simulacro.nombre }}</h5>
+                    {% if simulacro.mejor_puntaje %}
+                        <span class="badge {% if simulacro.mejor_puntaje >= 70 %}bg-success{% elif simulacro.mejor_puntaje >= 60 %}bg-warning text-dark{% else %}bg-danger{% endif %}">
+                            Mejor: {{ simulacro.mejor_puntaje }}
+                        </span>
+                    {% endif %}
+                </div>
+                <p class="text-muted small">{{ simulacro.descripcion|default:"Simulacro de preparación para el concurso docente CNSC" }}</p>
+
+                <div class="row text-center my-3">
+                    <div class="col-4">
+                        <div class="text-muted small">Preguntas</div>
+                        <div class="h4 mb-0 fw-bold">{{ simulacro.total_preguntas }}</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-muted small">Tiempo</div>
+                        <div class="h4 mb-0 fw-bold">{{ simulacro.tiempo_limite_minutos }}m</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-muted small">Mín. aprobación</div>
+                        <div class="h4 mb-0 fw-bold">{{ simulacro.puntaje_minimo_aprobacion }}</div>
+                    </div>
+                </div>
+
+                {% if simulacro.mis_intentos > 0 %}
+                <div class="alert alert-light py-2 px-3 mb-3 small">
+                    <i class="bi bi-info-circle"></i>
+                    Has realizado este simulacro <strong>{{ simulacro.mis_intentos }}</strong> veces.
+                    {% if simulacro.mejor_puntaje %}
+                        Mejor puntaje: <strong>{{ simulacro.mejor_puntaje }}/100</strong>
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                <a href="{% url 'iniciar_simulacro' simulacro.id %}" class="btn btn-primary-concurso w-100">
+                    {% if simulacro.mis_intentos > 0 %}
+                        <i class="bi bi-arrow-repeat"></i> Repetir simulacro
+                    {% else %}
+                        <i class="bi bi-play-fill"></i> Iniciar simulacro
+                    {% endif %}
+                </a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="col-12">
+        <div class="alert alert-info">
+            <i class="bi bi-info-circle"></i>
+            Aún no hay simulacros disponibles. El administrador debe crearlos desde el panel.
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

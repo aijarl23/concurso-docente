@@ -1,0 +1,289 @@
+:root {
+    --color-primario: #1e3a8a;
+    --color-primario-hover: #1e40af;
+    --color-secundario: #3b82f6;
+    --color-acento: #10b981;
+    --color-alerta: #f59e0b;
+    --color-peligro: #ef4444;
+    --color-fondo: #f8fafc;
+    --color-texto: #1e293b;
+    --color-texto-muted: #64748b;
+    --color-borde: #e2e8f0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.navbar-concurso {
+    background-color: var(--color-primario) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-concurso .navbar-brand,
+.navbar-concurso .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.navbar-concurso .nav-link:hover {
+    color: #dbeafe !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-sesion {
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+    background: white;
+}
+
+.card-sesion:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(30, 58, 138, 0.15);
+    border-color: var(--color-primario);
+}
+
+.card-sesion .card-numero {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-primario);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.card-sesion.completada .card-numero {
+    background: var(--color-acento);
+}
+
+.badge-prioridad-alta {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.badge-prioridad-media {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.badge-prioridad-baja {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.progress-custom {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e2e8f0;
+}
+
+.progress-custom .progress-bar {
+    background-color: var(--color-acento);
+    border-radius: 4px;
+}
+
+.btn-primary-concurso {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-primary-concurso:hover {
+    background-color: var(--color-primario-hover);
+    color: white;
+}
+
+.btn-acento {
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-acento:hover {
+    background-color: #059669;
+    color: white;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--color-borde);
+    text-align: center;
+}
+
+.stat-card .stat-numero {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    line-height: 1;
+}
+
+.stat-card .stat-label {
+    color: var(--color-texto-muted);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.5rem;
+}
+
+.pregunta-card {
+    background: white;
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.opcion-respuesta {
+    display: block;
+    padding: 1rem;
+    border: 2px solid var(--color-borde);
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.opcion-respuesta:hover {
+    border-color: var(--color-secundario);
+    background-color: #eff6ff;
+}
+
+.opcion-respuesta input[type="radio"] {
+    margin-right: 0.75rem;
+}
+
+.opcion-respuesta.seleccionada {
+    border-color: var(--color-primario);
+    background-color: #dbeafe;
+}
+
+.temporizador {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: white;
+    border: 2px solid var(--color-primario);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.temporizador.peligro {
+    border-color: var(--color-peligro);
+    color: var(--color-peligro);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.resultado-correcto {
+    border-left: 4px solid var(--color-acento);
+    background-color: #ecfdf5;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.resultado-incorrecto {
+    border-left: 4px solid var(--color-peligro);
+    background-color: #fef2f2;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.footer-concurso {
+    background-color: white;
+    border-top: 1px solid var(--color-borde);
+    padding: 2rem 0;
+    margin-top: 4rem;
+    color: var(--color-texto-muted);
+    text-align: center;
+}
+
+.login-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.login-card h2 {
+    color: var(--color-primario);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-control-custom {
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.2s;
+    width: 100%;
+}
+
+.form-control-custom:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+    outline: none;
+}
+
+.contenido-markdown {
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.contenido-markdown h2 {
+    color: var(--color-primario);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contenido-markdown h3 {
+    color: var(--color-secundario);
+    margin-top: 1.5rem;
+}

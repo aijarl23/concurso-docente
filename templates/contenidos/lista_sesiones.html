@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Sesiones de estudio{% endblock %}
+{% block content %}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="mb-1"><i class="bi bi-journal-bookmark"></i> Sesiones de estudio</h2>
+        <p class="text-muted mb-0">Plan estructurado de 12 sesiones para dominar el concurso</p>
+    </div>
+</div>
+
+<div class="row">
+    {% for sesion in sesiones %}
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card-sesion p-4 {% if sesion.completada %}completada{% endif %}">
+            <div class="d-flex align-items-start mb-3">
+                <div class="card-numero me-3">{{ sesion.numero }}</div>
+                <div class="flex-grow-1">
+                    <h5 class="mb-2">{{ sesion.titulo }}</h5>
+                    <div>
+                        <span class="badge badge-prioridad-{{ sesion.prioridad }}">{{ sesion.get_prioridad_display }}</span>
+                        {% if sesion.completada %}
+                        <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i> Completada</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted">{{ sesion.descripcion }}</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="text-muted small">
+                    <i class="bi bi-clock"></i> {{ sesion.tiempo_estimado_minutos }} minutos
+                </span>
+                <a href="{% url 'detalle_sesion' sesion.numero %}" class="btn btn-primary-concurso btn-sm">
+                    Estudiar <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

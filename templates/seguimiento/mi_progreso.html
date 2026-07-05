@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+    <div class="d-flex align-items-start justify-content-between gap-3 mb-4 flex-wrap">
+        <div>
+            <h1 class="fw-bold mb-2">Mi progreso</h1>
+            <p class="text-muted mb-0">Seguimiento del avance por modulos y actividades completadas.</p>
+        </div>
+        <a href="/simulacros/" class="btn btn-primary">Continuar simulacros</a>
+    </div>
+
+    {% if progresos %}
+        <div class="row g-3">
+            {% for progreso in progresos %}
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="fw-bold">{{ progreso.modulo.titulo }}</h5>
+                        <p class="text-muted mb-2">Avance registrado</p>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: {{ progreso.porcentaje }}%;" aria-valuenow="{{ progreso.porcentaje }}" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="fw-bold mt-2 mb-0">{{ progreso.porcentaje }}%</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-info">
+            Aun no tienes progreso registrado. Presenta un simulacro para empezar a medir tu avance.
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    .module-detail {
+        max-width: 1040px;
+        margin: 30px auto 56px;
+        padding: 0 16px;
+    }
+
+    .module-header-panel,
+    .topic-card,
+    .module-actions {
+        background: #fff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        box-shadow: 0 8px 22px rgba(15, 23, 42, .06);
+    }
+
+    .module-header-panel {
+        padding: 26px;
+        margin-bottom: 18px;
+    }
+
+    .module-header-panel h1 {
+        margin: 0;
+        color: #172554;
+        font-weight: 800;
+        font-size: 1.85rem;
+    }
+
+    .module-header-panel p {
+        margin: 10px 0 0;
+        color: #64748b;
+        max-width: 780px;
+    }
+
+    .topic-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin-bottom: 18px;
+    }
+
+    .topic-card {
+        padding: 18px;
+    }
+
+    .topic-order {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 999px;
+        background: #dbeafe;
+        color: #1d4ed8;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .topic-card h2 {
+        margin: 0 0 8px;
+        color: #0f172a;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    .topic-card p {
+        margin: 0;
+        color: #64748b;
+        font-size: .94rem;
+    }
+
+    .module-actions {
+        padding: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 720px) {
+        .topic-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .module-header-panel h1 {
+            font-size: 1.45rem;
+        }
+    }
+</style>
+
+<div class="module-detail">
+    <section class="module-header-panel">
+        <h1>{{ modulo.titulo }}</h1>
+        <p>{{ modulo.descripcion }}</p>
+    </section>
+
+    <section class="topic-grid" aria-label="Ruta tematica">
+        {% for tema in modulo.temas.all %}
+        {% if tema.activo %}
+        <article class="topic-card">
+            <span class="topic-order">{{ tema.orden }}</span>
+            <h2>{{ tema.titulo }}</h2>
+            <p>{{ tema.descripcion }}</p>
+        </article>
+        {% endif %}
+        {% endfor %}
+    </section>
+
+    <section class="module-actions">
+        <a href="/" class="btn btn-outline-secondary">Volver al panel</a>
+        <div>
+            <a href="/simulacros/areas/" class="btn btn-outline-primary">Simulacro por area</a>
+            <a href="/simulacros/" class="btn btn-primary">Presentar simulacro</a>
+        </div>
+    </section>
+</div>
+{% endblock %}

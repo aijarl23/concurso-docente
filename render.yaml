@@ -1,0 +1,70 @@
+﻿services:
+  - type: web
+    name: concurso-docente
+    runtime: python
+    plan: starter
+    buildCommand: bash build.sh
+    startCommand: gunicorn concurso_web.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: concurso-docente-db
+          property: connectionString
+      - key: ALLOWED_HOSTS
+        sync: false
+      - key: CSRF_TRUSTED_ORIGINS
+        sync: false
+      - key: SITE_PUBLIC_URL
+        sync: false
+      - key: GOOGLE_OAUTH_CLIENT_ID
+        sync: false
+      - key: GOOGLE_OAUTH_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_OAUTH_REDIRECT_URI
+        sync: false
+      - key: WOMPI_BASE_URL
+        value: https://production.wompi.co/v1
+      - key: WOMPI_PUBLIC_KEY
+        sync: false
+      - key: WOMPI_PRIVATE_KEY
+        sync: false
+      - key: WOMPI_EVENTS_SECRET
+        sync: false
+      - key: WOMPI_INTEGRITY_SECRET
+        sync: false
+      - key: ENABLE_LOCAL_PAYMENT_APPROVAL
+        value: "False"
+      - key: DEFAULT_FROM_EMAIL
+        sync: false
+      - key: EMAIL_BACKEND
+        sync: false
+      - key: EMAIL_HOST
+        sync: false
+      - key: EMAIL_PORT
+        value: "587"
+      - key: EMAIL_HOST_USER
+        sync: false
+      - key: EMAIL_HOST_PASSWORD
+        sync: false
+      - key: EMAIL_USE_TLS
+        value: "True"
+      - key: CSRF_COOKIE_SECURE
+        value: "True"
+      - key: SESSION_COOKIE_SECURE
+        value: "True"
+      - key: CSRF_COOKIE_SAMESITE
+        value: "None"
+      - key: SESSION_COOKIE_SAMESITE
+        value: "None"
+
+databases:
+  - name: concurso-docente-db
+    plan: starter
+
+

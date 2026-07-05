@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Mi perfil{% endblock %}
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="d-flex align-items-center justify-content-between gap-3 mb-4 flex-wrap">
+            <h2 class="mb-0"><i class="bi bi-person-circle"></i> Mi perfil</h2>
+            <a href="/simulacros/" class="btn btn-primary">Ir a simulacros</a>
+        </div>
+
+        <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+                <div class="row g-4">
+                    <div class="col-md-4 text-center">
+                        <div style="width: 120px; height: 120px; border-radius: 50%; background: var(--color-primario); color: white; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: 700; margin: 0 auto;">
+                            {{ usuario.first_name|first|default:usuario.username|first|upper }}
+                        </div>
+                        <h4 class="mt-3">{{ usuario.get_full_name|default:usuario.username }}</h4>
+                        <p class="text-muted mb-0">@{{ usuario.username }}</p>
+                    </div>
+                    <div class="col-md-8">
+                        <h5 class="mb-3">Informacion del concurso</h5>
+                        <table class="table align-middle">
+                            <tr>
+                                <td class="text-muted" style="width: 40%;">Email</td>
+                                <td>{{ usuario.email }}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">Area del concurso</td>
+                                <td><strong>{{ usuario.get_area_concurso_display }}</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">Entidad territorial</td>
+                                <td>{{ usuario.entidad_territorial|default:"No especificada" }}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">Meta de puntaje</td>
+                                <td><span class="badge bg-primary">{{ usuario.meta_puntaje }} / 100</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">Estado de pago</td>
+                                <td><span class="badge bg-secondary">{{ usuario.estado_pago|default:"pendiente" }}</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">Fecha de registro</td>
+                                <td>{{ usuario.fecha_registro|date:"d/m/Y" }}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

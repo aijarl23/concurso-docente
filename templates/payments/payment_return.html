@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-7">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <h1 class="h3">Resultado del pago</h1>
+                <p class="text-muted">Orden {{ order.reference }}</p>
+
+                {% if verify_error %}
+                <div class="alert alert-warning">
+                    No fue posible verificar automaticamente el pago: {{ verify_error }}
+                </div>
+                {% endif %}
+
+                {% if order.status == 'paid' %}
+                <div class="alert alert-success">
+                    Pago aprobado. Tu acceso premium ya esta habilitado.
+                </div>
+                <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-primary">Ir a simulacros</a>
+                {% elif order.status == 'failed' %}
+                <div class="alert alert-danger">
+                    El pago fue rechazado o fallido. Puedes intentar nuevamente desde el checkout.
+                </div>
+                <a href="{% url 'payments:checkout_order' order.id %}" class="btn btn-primary">Volver al checkout</a>
+                {% else %}
+                <div class="alert alert-info">
+                    El pago esta pendiente de confirmacion. Si ya pagaste, espera unos segundos y actualiza esta pagina.
+                </div>
+                <a href="{% url 'payments:checkout_order' order.id %}" class="btn btn-outline-primary">Volver al checkout</a>
+                {% endif %}
+
+                {% if transaction_id %}
+                <p class="text-muted small mt-3 mb-0">Transaccion: {{ transaction_id }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

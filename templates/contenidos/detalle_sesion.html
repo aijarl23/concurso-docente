@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}Sesión {{ sesion.numero }}: {{ sesion.titulo }}{% endblock %}
+{% block content %}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'lista_sesiones' %}">Sesiones</a></li>
+        <li class="breadcrumb-item active">Sesión {{ sesion.numero }}</li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="card-numero me-3" style="width: 56px; height: 56px; font-size: 1.5rem;">{{ sesion.numero }}</div>
+                    <div>
+                        <h2 class="mb-1">{{ sesion.titulo }}</h2>
+                        <span class="badge badge-prioridad-{{ sesion.prioridad }}">Prioridad {{ sesion.get_prioridad_display }}</span>
+                        <span class="text-muted ms-2"><i class="bi bi-clock"></i> {{ sesion.tiempo_estimado_minutos }} min</span>
+                    </div>
+                </div>
+                
+                <p class="lead text-muted">{{ sesion.descripcion }}</p>
+                
+                <hr>
+                
+                {% if sesion.contenido %}
+                <div class="contenido-markdown">
+                    {{ sesion.contenido|linebreaks }}
+                </div>
+                {% else %}
+                <div class="alert alert-info">
+                    <i class="bi bi-info-circle"></i> <strong>El contenido teórico se cargará pronto.</strong>
+                    <br>
+                    <small>Mientras tanto, puedes practicar con los simulacros disponibles para esta sesión.</small>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        
+        {% if progreso.completada %}
+        <div class="alert alert-success">
+            <i class="bi bi-check-circle-fill"></i> <strong>Sesión completada</strong> el {{ progreso.fecha_completada|date:"d/m/Y" }}
+        </div>
+        {% else %}
+        <form method="post" action="{% url 'completar_sesion' sesion.numero %}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-acento w-100">
+                <i class="bi bi-check-circle"></i> Marcar como completada
+            </button>
+        </form>
+        {% endif %}
+    </div>
+    
+    <div class="col-lg-4">
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body">
+                <h5><i class="bi bi-clipboard-check"></i> Simulacros disponibles</h5>
+                <hr>
+                {% if simulacros %}
+                    {% for simulacro in simulacros %}
+                    <div class="mb-3 pb-3 border-bottom">
+                        <h6>{{ simulacro.nombre }}</h6>
+                        <p class="small text-muted mb-2">{{ simulacro.total_preguntas }} preguntas — {{ simulacro.tiempo_limite_minutos }} min</p>
+                        <a href="{% url 'iniciar_simulacro' simulacro.id %}" class="btn btn-sm btn-primary-concurso">
+                            <i class="bi bi-play-fill"></i> Iniciar
+                        </a>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="text-muted small">No hay simulacros específicos para esta sesión aún.</p>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <h6><i class="bi bi-info-circle"></i> Datos de la sesión</h6>
+                <hr>
+                <p class="small mb-1"><strong>Preguntas totales:</strong> {{ total_preguntas }}</p>
+                <p class="small mb-0"><strong>Tiempo estimado:</strong> {{ sesion.tiempo_estimado_minutos }} min</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1>Simulacro por competencias/areas</h1>
+        <p class="text-muted mb-0">Selecciona el area especifica de tu concurso real.</p>
+    </div>
+    <a class="btn btn-outline-secondary" href="{% url 'simulacros:lista_simulacros' %}">Volver</a>
+</div>
+
+<form method="get" class="row g-2 mb-4">
+    <div class="col-md-8">
+        <select name="area" class="form-select">
+            {% for value,label in areas %}
+            <option value="{{ value }}" {% if value == area_actual %}selected{% endif %}>{{ label }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="col-md-4">
+        <button class="btn btn-primary w-100">Cargar banco del area</button>
+    </div>
+</form>
+
+<div class="row">
+    {% for simulacro in simulacros %}
+    <div class="col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <h4>{{ simulacro.nombre }}</h4>
+                <p>{{ simulacro.descripcion }}</p>
+                <p class="text-muted">{{ simulacro.total_preguntas }} preguntas · {{ simulacro.tiempo_por_pregunta_segundos }} segundos por pregunta</p>
+                <a class="btn btn-primary w-100" href="{% url 'simulacros:iniciar_simulacro' simulacro.id %}">Iniciar</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="col-12">
+        <div class="alert alert-warning">Aun no hay banco activo para esta area. Ejecuta el comando de carga premium para poblarlo.</div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

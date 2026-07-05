@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Carrito de compras</h1>
+<div class="card border-0 shadow-sm">
+    <div class="card-body">
+        {% if items %}
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead><tr><th>Producto</th><th>Cantidad</th><th>Subtotal</th><th></th></tr></thead>
+                <tbody>
+                {% for item in items %}
+                <tr>
+                    <td>{{ item.product.module.title }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td>COP {{ item.subtotal }}</td>
+                    <td><a class="btn btn-sm btn-outline-danger" href="{% url 'commerce:remove_from_cart' item.id %}">Retirar</a></td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <strong>Total: COP {{ total }}</strong>
+            <a class="btn btn-primary" href="{% url 'commerce:checkout_cart' %}">Ir a pagar</a>
+        </div>
+        {% else %}
+        <p>Tu carrito esta vacio.</p>
+        <a class="btn btn-primary" href="{% url 'commerce:product_list' %}">Ver planes</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

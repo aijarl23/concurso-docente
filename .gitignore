@@ -1,0 +1,29 @@
+# Entorno local y secretos
+.env
+*.env.local
+*.env.production
+
+# Base de datos local
+*.sqlite3
+*.sqlite3-journal
+
+# Python / Django
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+staticfiles/
+media/uploads/tmp/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Respaldos locales
+_backups/
+.env2.txt
+.env*.txt
+*.secret
+*.secrets
