@@ -1,4 +1,4 @@
-﻿import secrets
+import secrets
 from urllib.parse import urlencode
 
 import requests
@@ -15,6 +15,11 @@ from .models import Usuario
 GOOGLE_AUTH_URL = 'https://accounts.google.com/o/oauth2/v2/auth'
 GOOGLE_TOKEN_URL = 'https://oauth2.googleapis.com/token'
 GOOGLE_USERINFO_URL = 'https://www.googleapis.com/oauth2/v3/userinfo'
+
+def google_redirect_uri(request):
+    if settings.SITE_PUBLIC_URL:
+        return settings.SITE_PUBLIC_URL.rstrip('/') + reverse('google_callback')
+    return settings.GOOGLE_OAUTH_REDIRECT_URI or request.build_absolute_uri(reverse('google_callback'))
 
 
 def registro(request):
@@ -38,7 +43,7 @@ def mi_perfil(request):
 def google_login(request):
     client_id = settings.GOOGLE_OAUTH_CLIENT_ID
     client_secret = settings.GOOGLE_OAUTH_CLIENT_SECRET
-    redirect_uri = settings.GOOGLE_OAUTH_REDIRECT_URI or request.build_absolute_uri(reverse('google_callback'))
+    redirect_uri = google_redirect_uri(request)
     missing = []
     if not client_id:
         missing.append('GOOGLE_OAUTH_CLIENT_ID')
@@ -93,7 +98,7 @@ def google_callback(request):
         response.delete_cookie('google_oauth_state')
         return response
 
-    redirect_uri = settings.GOOGLE_OAUTH_REDIRECT_URI or request.build_absolute_uri(reverse('google_callback'))
+    redirect_uri = google_redirect_uri(request)
     token_response = requests.post(
         GOOGLE_TOKEN_URL,
         data={
