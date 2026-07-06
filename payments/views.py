@@ -57,6 +57,17 @@ def _mark_order_failed(order, transaction_id, status, raw_response):
     order.user.save(update_fields=['estado_pago'])
 
 
+def _wompi_attempt_reference(order):
+    return f"{order.reference}-{uuid.uuid4().hex[:8].upper()}"
+
+
+def _order_reference_from_wompi(reference):
+    parts = (reference or '').split('-')
+    if len(parts) >= 3 and parts[0] == 'CNSC' and len(parts[1]) == 12:
+        return f'{parts[0]}-{parts[1]}'
+    return reference
+
+
 def _build_order_from_products(user, products):
     reference = f"CNSC-{uuid.uuid4().hex[:12].upper()}"
     total = sum(Decimal(product.final_price) for product in products)
@@ -118,18 +129,21 @@ def checkout_order(request, order_id):
 
     signature = ''
     if not payment_config_errors:
-        signature = WompiService.transaction_signature(order.reference, amount_in_cents, order.currency)
+        wompi_reference = _wompi_attempt_reference(order)
+        signature = WompiService.transaction_signature(wompi_reference, amount_in_cents, order.currency)
         try:
             acceptance_token = WompiService.get_acceptance_token()
         except Exception as exc:
             wompi_error = str(exc)
+    else:
+        wompi_reference = order.reference
 
     context = {
         'order': order,
         'public_key': settings.WOMPI_PUBLIC_KEY,
         'acceptance_token': acceptance_token,
         'amount_in_cents': amount_in_cents,
-        'reference': order.reference,
+        'reference': wompi_reference,
         'email': request.user.email,
         'customer_full_name': request.user.get_full_name() or request.user.username or request.user.email,
         'currency': order.currency,
@@ -170,7 +184,7 @@ def wompi_webhook(request):
         if not reference or not transaction_id:
             return JsonResponse({'error': 'Payload invalido'}, status=400)
 
-        order = Order.objects.get(reference=reference)
+        order = Order.objects.get(reference=_order_reference_from_wompi(reference))
         if status == 'approved':
             _mark_order_approved(order, transaction_id, payload, 'Webhook Wompi aprobado')
         elif status in {'declined', 'voided', 'error'}:
@@ -208,7 +222,7 @@ def payment_return(request, order_id):
             transaction = WompiService.get_transaction(transaction_id)
             reference = transaction.get('reference')
             transaction_status = (transaction.get('status') or status).lower()
-            if reference and reference != order.reference:
+            if reference and _order_reference_from_wompi(reference) != order.reference:
                 verify_error = 'La referencia de Wompi no coincide con la orden.'
             elif transaction_status == 'approved':
                 _mark_order_approved(order, transaction_id, transaction, 'Retorno Wompi verificado')
