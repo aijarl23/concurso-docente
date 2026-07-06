@@ -93,20 +93,26 @@ class Command(BaseCommand):
         area_simulacros = Simulacro.objects.filter(activo=True, tipo='area').count()
         products = Product.objects.filter(active=True).count()
 
-        if questions >= 240:
+        if questions >= 360:
             ok(f'Banco premium cargado: {questions} preguntas')
         else:
             fail(f'Banco premium insuficiente: {questions} preguntas')
 
-        if simulacros >= 8:
+        if simulacros >= 12:
             ok(f'Simulacros activos: {simulacros}')
         else:
             fail(f'Simulacros activos insuficientes: {simulacros}')
 
-        if area_simulacros >= 1:
+        expected_areas = {'ingles', 'tecnologia', 'matematicas', 'ciencias_naturales', 'ciencias_sociales'}
+        loaded_areas = set(
+            Simulacro.objects.filter(activo=True, tipo='area').values_list('area', flat=True)
+        )
+        missing_areas = sorted(expected_areas - loaded_areas)
+
+        if area_simulacros >= 5 and not missing_areas:
             ok(f'Simulacros por área: {area_simulacros}')
         else:
-            fail(f'Simulacros por área insuficientes: {area_simulacros}')
+            fail(f'Simulacros por área insuficientes: {area_simulacros}. Faltan: {", ".join(missing_areas)}')
 
         if products >= 9:
             ok(f'Productos activos: {products}')

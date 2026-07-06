@@ -62,6 +62,46 @@ MODULES = [
     },
 ]
 
+AREA_MODULE_SLUG = 'simulacros-por-area'
+
+AREA_SIMULACROS = [
+    {
+        'area': 'ingles',
+        'label': 'Inglés',
+        'competencia': 'Comprensión lectora funcional en inglés',
+        'description': 'Simulacro disciplinar con lectura inferencial, propósito comunicativo, vocabulario contextual y análisis de información en inglés.',
+        'topics': ['Comprensión lectora', 'Propósito comunicativo', 'Inferencia contextual', 'Uso funcional del idioma'],
+    },
+    {
+        'area': 'tecnologia',
+        'label': 'Tecnología e Informática',
+        'competencia': 'Tecnología educativa e informática aplicada',
+        'description': 'Simulacro disciplinar sobre solución de problemas, ciudadanía digital, análisis de sistemas y uso pedagógico de tecnología.',
+        'topics': ['Pensamiento computacional', 'Ciudadanía digital', 'Sistemas de información', 'Tecnología educativa'],
+    },
+    {
+        'area': 'matematicas',
+        'label': 'Matemáticas',
+        'competencia': 'Razonamiento cuantitativo aplicado',
+        'description': 'Simulacro disciplinar con interpretación de datos, proporcionalidad, modelación y resolución de problemas contextualizados.',
+        'topics': ['Razonamiento cuantitativo', 'Proporcionalidad', 'Interpretación de datos', 'Modelación'],
+    },
+    {
+        'area': 'ciencias_naturales',
+        'label': 'Ciencias Naturales',
+        'competencia': 'Pensamiento científico aplicado',
+        'description': 'Simulacro disciplinar con análisis de evidencias, explicación de fenómenos, variables, hipótesis y argumentación científica escolar.',
+        'topics': ['Explicación de fenómenos', 'Indagación', 'Uso de evidencias', 'Argumentación científica'],
+    },
+    {
+        'area': 'ciencias_sociales',
+        'label': 'Ciencias Sociales',
+        'competencia': 'Pensamiento social y ciudadano',
+        'description': 'Simulacro disciplinar con análisis histórico, espacial, ciudadano, convivencia democrática y lectura de fuentes sociales.',
+        'topics': ['Pensamiento histórico', 'Ciudadanía', 'Análisis de fuentes', 'Contexto territorial'],
+    },
+]
+
 SCENARIOS = [
     'Un colegio oficial observa bajo desempeno en lectura y debate si intensificar talleres mecanicos o revisar evidencias por curso.',
     'El consejo academico analiza resultados con brechas entre sedes rurales y urbanas sin reducir el problema a falta de esfuerzo estudiantil.',
@@ -444,6 +484,7 @@ class Command(BaseCommand):
         )
         banco_cat, _ = Categoria.objects.get_or_create(nombre='Banco Premium CNSC 2026 V3')
 
+        BancoPregunta.objects.filter(categoria=banco_cat).update(activa=False)
         BancoPregunta.objects.exclude(categoria=banco_cat).update(activa=False)
         BancoPregunta.objects.filter(categoria__nombre='Banco Premium CNSC 2026 V2').update(activa=False)
 
@@ -488,6 +529,10 @@ class Command(BaseCommand):
                 module=module,
                 defaults={'price': Decimal('15000'), 'sale_price': Decimal('15000'), 'active': True}
             )
+
+            if data['slug'] == AREA_MODULE_SLUG:
+                continue
+
             subcat, _ = Subcategoria.objects.get_or_create(categoria=banco_cat, nombre=data['title'])
             questions = []
             for i in range(1, 31):
@@ -536,6 +581,70 @@ class Command(BaseCommand):
             )
             simulacro.preguntas.set(questions)
 
+        area_module_data = next(module for module in MODULES if module['slug'] == AREA_MODULE_SLUG)
+        area_module = Module.objects.get(slug=AREA_MODULE_SLUG)
+        for area_data in AREA_SIMULACROS:
+            subcat, _ = Subcategoria.objects.get_or_create(
+                categoria=banco_cat,
+                nombre=f'Simulacro por área - {area_data["label"]}'
+            )
+            module_data = {
+                **area_module_data,
+                'title': f'Simulacro por área - {area_data["label"]}',
+                'area': area_data['area'],
+                'competencia': area_data['competencia'],
+                'description': area_data['description'],
+                'topics': area_data['topics'],
+            }
+            questions = []
+            for i in range(1, 31):
+                item = build_item(module_data, i)
+                a, b, c, d = item['opciones']
+                fingerprint = hashlib.sha1(
+                    f"{area_data['area']}|v3|{i}|{item['contexto']}|{item['enunciado']}".encode('utf-8')
+                ).hexdigest()[:10]
+                pregunta, was_created = BancoPregunta.objects.update_or_create(
+                    titulo=f'Simulacro por área - {area_data["label"]} V3 {i:02d} {fingerprint}',
+                    defaults={
+                        'categoria': banco_cat,
+                        'subcategoria': subcat,
+                        'contexto': item['contexto'],
+                        'enunciado': item['enunciado'],
+                        'opcion_a': a,
+                        'opcion_b': b,
+                        'opcion_c': c,
+                        'opcion_d': d,
+                        'respuesta_correcta': item['respuesta'],
+                        'justificacion': item['justificacion'],
+                        'fuente_normativa': 'CNSC/ICFES: razonamiento crítico, competencia disciplinar docente y análisis de situaciones educativas contextualizadas.',
+                        'dificultad': 'elite',
+                        'area': area_data['area'],
+                        'competencia': area_data['competencia'],
+                        'tiempo_limite_segundos': 180,
+                        'es_premium': True,
+                        'activa': True,
+                    }
+                )
+                created_questions += int(was_created)
+                questions.append(pregunta)
+
+            simulacro, _ = Simulacro.objects.update_or_create(
+                nombre=f'Simulacro por área - {area_data["label"]}',
+                defaults={
+                    'descripcion': area_data['description'],
+                    'tipo': 'area',
+                    'module': area_module,
+                    'area': area_data['area'],
+                    'tiempo_limite_minutos': 90,
+                    'tiempo_por_pregunta_segundos': 180,
+                    'puntaje_minimo_aprobacion': 70,
+                    'es_premium': True,
+                    'paquete_codigo': 'elite-cnsc-2026',
+                    'activo': True,
+                }
+            )
+            simulacro.preguntas.set(questions)
+
         elite, _ = Module.objects.update_or_create(
             slug='elite-cnsc-2026',
             defaults={
@@ -554,7 +663,11 @@ class Command(BaseCommand):
             defaults={'price': Decimal('35000'), 'sale_price': Decimal('25000'), 'active': True}
         )
 
-        valid_simulacro_names = [f'{module["title"]} - Simulacro premium' for module in MODULES]
+        valid_simulacro_names = [
+            f'{module["title"]} - Simulacro premium'
+            for module in MODULES
+            if module['slug'] != AREA_MODULE_SLUG
+        ] + [f'Simulacro por área - {area["label"]}' for area in AREA_SIMULACROS]
         Simulacro.objects.exclude(nombre__in=valid_simulacro_names).update(activo=False)
 
         # Precios definitivos: paquete completo 35k/25k; módulos individuales vigentes 15k.
