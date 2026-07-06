@@ -100,7 +100,17 @@ def iniciar_simulacro(request, simulacro_id):
         messages.warning(request, 'Este simulacro es premium. Debes comprar el modulo o paquete Elite para ingresar.')
         return redirect(_checkout_for_simulacro(simulacro))
 
+    if request.method != 'POST':
+        return render(request, 'simulacros/configurar_simulacro.html', {'simulacro': simulacro})
+
+    try:
+        seconds_per_question = int(request.POST.get('seconds_per_question') or simulacro.tiempo_por_pregunta_segundos or 180)
+    except (TypeError, ValueError):
+        seconds_per_question = 180
+    seconds_per_question = min(max(seconds_per_question, 60), 600)
+
     intento = Intento.objects.create(usuario=request.user, simulacro=simulacro)
+    request.session[f'simulacro_seconds_per_question_{intento.id}'] = seconds_per_question
     return redirect('simulacros:realizar_simulacro', intento_id=intento.id)
 
 
@@ -112,19 +122,25 @@ def realizar_simulacro(request, intento_id):
 
     preguntas = list(intento.simulacro.preguntas.filter(activa=True).order_by('id'))
     random.Random(intento.id).shuffle(preguntas)
+    seconds_per_question = int(
+        request.session.get(
+            f'simulacro_seconds_per_question_{intento.id}',
+            intento.simulacro.tiempo_por_pregunta_segundos or 180,
+        )
+    )
+    seconds_per_question = min(max(seconds_per_question, 60), 600)
+    total_time_limit = seconds_per_question * max(len(preguntas), 1)
 
     if request.method == 'POST':
         with transaction.atomic():
             intento.respuestas.all().delete()
             correctas = 0
             sin_responder = 0
-            tiempo_total = 0
+            tiempo_total = int(request.POST.get('tiempo_total_prueba') or 0)
+            respondida_en_tiempo = tiempo_total <= total_time_limit
 
             for pregunta in preguntas:
                 respuesta = request.POST.get(f'pregunta_{pregunta.id}')
-                tiempo_usado = int(request.POST.get(f'tiempo_{pregunta.id}') or 0)
-                limite = pregunta.tiempo_limite_segundos or intento.simulacro.tiempo_por_pregunta_segundos
-                respondida_en_tiempo = tiempo_usado <= limite
                 es_correcta = respuesta == pregunta.respuesta_correcta and respondida_en_tiempo
 
                 if not respuesta:
@@ -132,14 +148,13 @@ def realizar_simulacro(request, intento_id):
                 elif es_correcta:
                     correctas += 1
 
-                tiempo_total += max(tiempo_usado, 0)
                 RespuestaIntento.objects.create(
                     intento=intento,
                     pregunta=pregunta,
                     respuesta_seleccionada=respuesta,
                     es_correcta=es_correcta,
                     respondida_en_tiempo=respondida_en_tiempo,
-                    tiempo_usado_segundos=tiempo_usado,
+                    tiempo_usado_segundos=0,
                 )
 
             total = len(preguntas) or 1
@@ -155,7 +170,12 @@ def realizar_simulacro(request, intento_id):
 
         return redirect('simulacros:resultado_simulacro', intento_id=intento.id)
 
-    return render(request, 'simulacros/realizar_simulacro.html', {'intento': intento, 'preguntas': preguntas})
+    return render(request, 'simulacros/realizar_simulacro.html', {
+        'intento': intento,
+        'preguntas': preguntas,
+        'seconds_per_question': seconds_per_question,
+        'total_time_limit': total_time_limit,
+    })
 
 
 @login_required

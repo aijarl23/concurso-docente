@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <p class="commerce-kicker mb-2">Configuración de prueba</p>
+                    <h1 class="h3">{{ simulacro.nombre }}</h1>
+                    <p class="text-muted">{{ simulacro.descripcion }}</p>
+
+                    <div class="alert alert-info">
+                        En pruebas tipo CNSC conviene entrenar con presión, pero no al punto de impedir la lectura.
+                        Para preguntas con texto largo, la recomendación inicial es entre <strong>180 y 240 segundos por pregunta</strong>.
+                        Cuando mejores velocidad y precisión, puedes bajar el tiempo.
+                    </div>
+
+                    <form method="post">
+                        {% csrf_token %}
+                        <label class="form-label fw-bold" for="seconds_per_question">Tiempo por pregunta</label>
+                        <select class="form-select mb-3" id="seconds_per_question" name="seconds_per_question">
+                            <option value="120">2 minutos por pregunta - entrenamiento rápido</option>
+                            <option value="180" selected>3 minutos por pregunta - recomendado</option>
+                            <option value="240">4 minutos por pregunta - lectura profunda</option>
+                            <option value="300">5 minutos por pregunta - práctica diagnóstica</option>
+                        </select>
+
+                        <p class="text-muted">
+                            La plataforma calculará el tiempo total de la prueba según el número de preguntas.
+                            El temporizador será global, para que puedas administrar tu ritmo como en una prueba real.
+                        </p>
+
+                        <button class="btn btn-primary btn-lg w-100">Iniciar con este tiempo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

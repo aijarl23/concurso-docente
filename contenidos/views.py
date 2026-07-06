@@ -5,98 +5,98 @@ from .models import Modulo, Tema
 
 MODULE_DESCRIPTION = (
     'Entrenamiento por competencias para Concurso Docente CNSC, con enfoque '
-    'en lectura critica, juicio situacional y resolucion de casos aplicados.'
+    'en lectura crítica, juicio situacional y resolución de casos aplicados.'
 )
 
 
 def seed_modulos():
     modulos_data = [
         {
-            'titulo': 'Diagnostico inicial',
+            'titulo': 'Diagnóstico inicial',
             'tipo': 'diagnostico_inicial',
-            'descripcion': 'Mapa de entrada para identificar brechas reales antes de iniciar la preparacion.',
+            'descripcion': 'Mapa de entrada para identificar brechas reales antes de iniciar la preparación.',
             'temas': [
                 ('Mapa de fortalezas y brechas', 'Lectura inicial del nivel por competencia.'),
-                ('Lectura de consignas', 'Identificacion precisa de lo que pregunta cada item.'),
-                ('Toma de decisiones inicial', 'Priorizacion de acciones segun evidencia.'),
-                ('Plan de entrada', 'Ruta de estudio sugerida a partir del desempeno.'),
+                ('Lectura de consignas', 'Identificación precisa de lo que pregunta cada ítem.'),
+                ('Toma de decisiones inicial', 'Priorización de acciones según evidencia.'),
+                ('Plan de entrada', 'Ruta de estudio sugerida a partir del desempeño.'),
             ],
         },
         {
-            'titulo': 'Lectura critica aplicada',
+            'titulo': 'Lectura crítica aplicada',
             'tipo': 'lectura_critica_aplicada',
-            'descripcion': 'Inferencia, tesis, intencion comunicativa y evaluacion de argumentos en textos complejos.',
+            'descripcion': 'Inferencia, tesis, intención comunicativa y evaluación de argumentos en textos complejos.',
             'temas': [
-                ('Inferencia y supuestos', 'Reconocimiento de informacion implicita sustentada.'),
-                ('Tesis y argumentos', 'Analisis de estructura argumentativa y evidencias.'),
-                ('Intencion del autor', 'Interpretacion del proposito comunicativo.'),
-                ('Evaluacion de evidencia', 'Valoracion de suficiencia, pertinencia y coherencia.'),
+                ('Inferencia y supuestos', 'Reconocimiento de información implícita sustentada.'),
+                ('Tesis y argumentos', 'Análisis de estructura argumentativa y evidencias.'),
+                ('Intención del autor', 'Interpretación del propósito comunicativo.'),
+                ('Evaluación de evidencia', 'Valoración de suficiencia, pertinencia y coherencia.'),
             ],
         },
         {
-            'titulo': 'Competencias pedagogicas',
+            'titulo': 'Competencias pedagógicas',
             'tipo': 'competencias_pedagogicas',
-            'descripcion': 'Casos de planeacion, evaluacion formativa, inclusion, didactica y gestion del aula.',
+            'descripcion': 'Casos de planeación, evaluación formativa, inclusión, didáctica y gestión del aula.',
             'temas': [
-                ('Planeacion curricular', 'Coherencia entre objetivos, desempenos, actividades y evaluacion.'),
-                ('Evaluacion formativa', 'Uso de evidencias y retroalimentacion para mejorar aprendizajes.'),
-                ('Inclusion y DUA', 'Barreras, ajustes razonables y participacion efectiva.'),
-                ('Didactica situada', 'Estrategias pertinentes segun contexto y necesidad.'),
+                ('Planeación curricular', 'Coherencia entre objetivos, desempeños, actividades y evaluación.'),
+                ('Evaluación formativa', 'Uso de evidencias y retroalimentación para mejorar aprendizajes.'),
+                ('Inclusión y DUA', 'Barreras, ajustes razonables y participación efectiva.'),
+                ('Didáctica situada', 'Estrategias pertinentes según contexto y necesidad.'),
             ],
         },
         {
             'titulo': 'Competencias comportamentales / TJS',
             'tipo': 'competencias_tjs',
-            'descripcion': 'Juicio situacional docente para convivencia, liderazgo, comunicacion y trabajo colaborativo.',
+            'descripcion': 'Juicio situacional docente para convivencia, liderazgo, comunicación y trabajo colaborativo.',
             'temas': [
-                ('Comunicacion asertiva', 'Respuesta profesional ante tension y desacuerdo.'),
-                ('Liderazgo', 'Actuacion orientada a acuerdos, cuidado y mejora institucional.'),
-                ('Trabajo en equipo', 'Coordinacion con pares, familias y directivos.'),
-                ('Orientacion al logro', 'Decisiones con seguimiento y evidencia.'),
+                ('Comunicación asertiva', 'Respuesta profesional ante tensión y desacuerdo.'),
+                ('Liderazgo', 'Actuación orientada a acuerdos, cuidado y mejora institucional.'),
+                ('Trabajo en equipo', 'Coordinación con pares, familias y directivos.'),
+                ('Orientación al logro', 'Decisiones con seguimiento y evidencia.'),
             ],
         },
         {
             'titulo': 'Normativa y contexto docente',
             'tipo': 'normativa_contexto',
-            'descripcion': 'Aplicacion contextual de normativa educativa, inclusion, convivencia y funciones docentes.',
+            'descripcion': 'Aplicación contextual de normativa educativa, inclusión, convivencia y funciones docentes.',
             'temas': [
-                ('Estatuto docente', 'Uso aplicado del marco de profesionalizacion docente.'),
-                ('Ley General de Educacion', 'Fines, responsabilidades y sentido pedagogico.'),
-                ('Convivencia escolar', 'Prevencion, corresponsabilidad y rutas de actuacion.'),
-                ('Inclusion y ajustes razonables', 'Garantia del derecho a aprender con trazabilidad.'),
+                ('Estatuto docente', 'Uso aplicado del marco de profesionalización docente.'),
+                ('Ley General de Educación', 'Fines, responsabilidades y sentido pedagógico.'),
+                ('Convivencia escolar', 'Prevención, corresponsabilidad y rutas de actuación.'),
+                ('Inclusión y ajustes razonables', 'Garantía del derecho a aprender con trazabilidad.'),
             ],
         },
         {
-            'titulo': 'Simulacros por area',
+            'titulo': 'Simulacros por área',
             'tipo': 'simulacros_area',
             'descripcion': 'Entrenamiento por disciplina con razonamiento cuantitativo, datos y situaciones contextualizadas.',
             'temas': [
-                ('Razonamiento cuantitativo', 'Interpretacion de datos, proporciones y tendencias.'),
-                ('Matematicas aplicadas', 'Resolucion de problemas en contexto escolar.'),
-                ('Interpretacion de datos', 'Lectura de tablas, graficas e indicadores.'),
+                ('Razonamiento cuantitativo', 'Interpretación de datos, proporciones y tendencias.'),
+                ('Matemáticas aplicadas', 'Resolución de problemas en contexto escolar.'),
+                ('Interpretación de datos', 'Lectura de tablas, gráficas e indicadores.'),
                 ('Problemas contextualizados', 'Transferencia de procedimientos a situaciones nuevas.'),
             ],
         },
         {
             'titulo': 'Simulacro final tipo concurso',
             'tipo': 'simulacro_final',
-            'descripcion': 'Prueba integral con mezcla de lectura critica, pedagogia, normativa, TJS y razonamiento aplicado.',
+            'descripcion': 'Prueba integral con mezcla de lectura crítica, pedagogía, normativa, TJS y razonamiento aplicado.',
             'temas': [
-                ('Gestion del tiempo', 'Estrategia para responder bajo limite real.'),
-                ('Integracion de competencias', 'Cruce de lectura, criterio pedagogico y juicio situacional.'),
-                ('Analisis de resultados', 'Lectura tecnica de aciertos, errores y tendencias.'),
-                ('Estrategia de cierre', 'Plan final de preparacion antes de la prueba.'),
+                ('Gestión del tiempo', 'Estrategia para responder bajo límite real.'),
+                ('Integración de competencias', 'Cruce de lectura, criterio pedagógico y juicio situacional.'),
+                ('Análisis de resultados', 'Lectura técnica de aciertos, errores y tendencias.'),
+                ('Estrategia de cierre', 'Plan final de preparación antes de la prueba.'),
             ],
         },
         {
             'titulo': 'Reporte de progreso y plan de mejora',
             'tipo': 'reporte_mejora',
-            'descripcion': 'Conversion de resultados en una ruta concreta de refuerzo, seguimiento y mejora.',
+            'descripcion': 'Conversión de resultados en una ruta concreta de refuerzo, seguimiento y mejora.',
             'temas': [
-                ('Lectura de resultados', 'Interpretacion de desempeno por competencia.'),
-                ('Priorizacion de brechas', 'Seleccion de focos segun impacto y urgencia.'),
-                ('Plan semanal', 'Organizacion de sesiones de estudio por evidencia.'),
-                ('Seguimiento de mejora', 'Revision de avances y ajuste de estrategia.'),
+                ('Lectura de resultados', 'Interpretación de desempeño por competencia.'),
+                ('Priorización de brechas', 'Selección de focos según impacto y urgencia.'),
+                ('Plan semanal', 'Organización de sesiones de estudio por evidencia.'),
+                ('Seguimiento de mejora', 'Revisión de avances y ajuste de estrategia.'),
             ],
         },
     ]
