@@ -81,8 +81,10 @@ class Command(BaseCommand):
             fail('Wompi incompleto para producción. Faltan: ' + ', '.join(missing_wompi))
 
         email_backend = getattr(settings, 'EMAIL_BACKEND', '')
-        if 'console' in email_backend:
+        if 'console' in email_backend and settings.DEBUG:
             warn('EMAIL_BACKEND usa consola. Correcto local; no envía correos reales.')
+        elif 'console' in email_backend:
+            fail('EMAIL_BACKEND usa consola. En producción no enviará correos reales.')
         elif getattr(settings, 'EMAIL_HOST', '') or 'sendgrid' in email_backend.lower() or 'resend' in email_backend.lower():
             ok('Email transaccional configurado')
         else:

@@ -39,6 +39,8 @@ def _send_result_email(intento):
     user = intento.usuario
     if not user.email:
         return False
+    if 'console' in getattr(settings, 'EMAIL_BACKEND', '').lower():
+        return False
 
     por_competencia = defaultdict(lambda: {'total': 0, 'correctas': 0})
     for respuesta in intento.respuestas.select_related('pregunta__subcategoria'):
@@ -53,6 +55,17 @@ def _send_result_email(intento):
         for nombre, datos in sorted(por_competencia.items())
     )
     subject = f'Resultado de simulacro - {intento.simulacro.nombre}'
+    detalle_preguntas = []
+    for idx, respuesta in enumerate(intento.respuestas.select_related('pregunta').order_by('id'), 1):
+        pregunta = respuesta.pregunta
+        seleccion = respuesta.respuesta_seleccionada or 'Sin responder'
+        detalle_preguntas.append(
+            f'{idx}. {pregunta.enunciado}\n'
+            f'   Tu respuesta: {seleccion}\n'
+            f'   Respuesta correcta: {pregunta.respuesta_correcta}\n'
+            f'   Justificación: {pregunta.justificacion or "No disponible."}'
+        )
+
     body = (
         f'Hola {user.nombre},\n\n'
         f'Finalizaste el simulacro: {intento.simulacro.nombre}.\n'
@@ -62,10 +75,19 @@ def _send_result_email(intento):
         f'Sin responder: {intento.total_sin_responder}\n'
         f'Tiempo usado: {intento.tiempo_usado_segundos} segundos\n\n'
         f'Desempeño por competencia:\n{detalle}\n\n'
-        'Revisa las justificaciones en la plataforma para orientar tu plan de mejora.'
+        f'Retroalimentación por pregunta:\n' + '\n\n'.join(detalle_preguntas)
     )
     sent = send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [user.email], fail_silently=True)
     return bool(sent)
+
+
+def _option_text(pregunta, option):
+    return {
+        'A': pregunta.opcion_a,
+        'B': pregunta.opcion_b,
+        'C': pregunta.opcion_c,
+        'D': pregunta.opcion_d,
+    }.get(option or '', '')
 
 
 @login_required
@@ -181,16 +203,31 @@ def realizar_simulacro(request, intento_id):
 @login_required
 def resultado_simulacro(request, intento_id):
     intento = get_object_or_404(Intento, id=intento_id, usuario=request.user)
-    respuestas = intento.respuestas.select_related('pregunta', 'pregunta__subcategoria')
+    respuestas = intento.respuestas.select_related('pregunta', 'pregunta__subcategoria').order_by('id')
     resumen = defaultdict(lambda: {'total': 0, 'correctas': 0})
+    revision = []
     for respuesta in respuestas:
         pregunta = respuesta.pregunta
         competencia = pregunta.competencia or (pregunta.subcategoria.nombre if pregunta.subcategoria else pregunta.area)
         resumen[competencia]['total'] += 1
         if respuesta.es_correcta:
             resumen[competencia]['correctas'] += 1
+
+        revision.append({
+            'respuesta': respuesta,
+            'pregunta': pregunta,
+            'seleccion': respuesta.respuesta_seleccionada or 'Sin responder',
+            'seleccion_texto': _option_text(pregunta, respuesta.respuesta_seleccionada),
+            'correcta': pregunta.respuesta_correcta,
+            'correcta_texto': _option_text(pregunta, pregunta.respuesta_correcta),
+        })
+
+    email_backend = getattr(settings, 'EMAIL_BACKEND', '')
+    email_console_mode = 'console' in email_backend.lower()
     return render(request, 'simulacros/resultado_simulacro.html', {
         'intento': intento,
         'respuestas': respuestas,
+        'revision_preguntas': revision,
         'resumen_competencias': dict(resumen),
+        'email_console_mode': email_console_mode,
     })
