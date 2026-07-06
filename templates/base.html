@@ -8,6 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <script>
+        (function () {
+            var savedTheme = localStorage.getItem('concurso-theme') || 'dark';
+            document.documentElement.dataset.theme = savedTheme;
+        })();
+    </script>
     {% block extra_css %}{% endblock %}
 </head>
 <body>
@@ -19,7 +25,7 @@
             <ul class="navbar-nav me-auto">
                 {% if user.is_authenticated %}
                 <li class="nav-item"><a class="nav-link" href="{% url 'dashboard' %}"><i class="bi bi-house"></i> Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'dashboard' %}"><i class="bi bi-journal-bookmark"></i> Modulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'dashboard' %}"><i class="bi bi-journal-bookmark"></i> Módulos</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'simulacros:lista_simulacros' %}"><i class="bi bi-clipboard-check"></i> Simulacros</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'commerce:product_list' %}"><i class="bi bi-cart"></i> Tienda</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'commerce:cart_detail' %}"><i class="bi bi-bag-check"></i> Carrito</a></li>
@@ -27,6 +33,12 @@
                 {% endif %}
             </ul>
             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button class="btn btn-sm theme-toggle-btn me-lg-2" type="button" id="theme-toggle" aria-label="Cambiar tema">
+                        <i class="bi bi-moon-stars"></i>
+                        <span>Tema</span>
+                    </button>
+                </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-person-circle"></i> {{ user.first_name|default:user.username }}</a>
@@ -37,13 +49,13 @@
                         <li>
                             <form method="post" action="{% url 'logout' %}" style="margin:0;">
                                 {% csrf_token %}
-                                <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Cerrar sesion</button>
+                                <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Cerrar sesión</button>
                             </form>
                         </li>
                     </ul>
                 </li>
                 {% else %}
-                <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Iniciar sesion</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'registro' %}">Registrarse</a></li>
                 {% endif %}
             </ul>
@@ -63,12 +75,33 @@
 </main>
 <footer class="footer-concurso">
     <div class="container">
-        <p class="mb-0"><i class="bi bi-mortarboard"></i> Plataforma de preparacion - Concurso Docente CNSC 2026</p>
-        <p class="small mb-0 mt-2">Aprendizaje colaborativo para el exito</p>
+        <p class="mb-0"><i class="bi bi-mortarboard"></i> Plataforma de preparación - Concurso Docente CNSC 2026</p>
+        <p class="small mb-0 mt-2">Aprendizaje colaborativo para el éxito</p>
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+    (function () {
+        var button = document.getElementById('theme-toggle');
+        if (!button) return;
+
+        function applyTheme(theme) {
+            document.documentElement.dataset.theme = theme;
+            localStorage.setItem('concurso-theme', theme);
+            var icon = button.querySelector('i');
+            if (icon) {
+                icon.className = theme === 'light' ? 'bi bi-sun' : 'bi bi-moon-stars';
+            }
+            button.querySelector('span').textContent = theme === 'light' ? 'Claro' : 'Oscuro';
+        }
+
+        applyTheme(document.documentElement.dataset.theme || 'dark');
+        button.addEventListener('click', function () {
+            applyTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
+        });
+    })();
+</script>
 {% block extra_js %}{% endblock %}
 </body>
 </html>

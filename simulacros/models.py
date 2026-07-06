@@ -10,7 +10,7 @@ class Simulacro(models.Model):
         ('tematico', 'Tematico'),
         ('tjs', 'TJS Premium'),
         ('elite', 'CNSC Elite'),
-        ('area', 'Simulacro por area'),
+        ('area', 'Simulacro por área'),
     ]
 
     AREA_CHOICES = BancoPregunta.AREA_CHOICES

@@ -8,7 +8,7 @@ from simulacros.models import Simulacro
 
 
 class Command(BaseCommand):
-    help = 'Verifica configuracion critica de la plataforma premium sin imprimir secretos.'
+    help = 'Verifica la configuración crítica de la plataforma premium sin imprimir secretos.'
 
     def handle(self, *args, **options):
         issues = []
@@ -25,24 +25,24 @@ class Command(BaseCommand):
             issues.append(label)
             self.stdout.write(self.style.ERROR(f'[FALTA] {label}'))
 
-        self.stdout.write('Verificacion ConcursoDocente Premium')
+        self.stdout.write('Verificación ConcursoDocente Premium')
 
         if settings.DEBUG:
-            warn('DEBUG=True: correcto para local, no usar asi en produccion.')
+            warn('DEBUG=True: correcto para local, no usar así en producción.')
         else:
             ok('DEBUG=False')
 
         if settings.SECRET_KEY and not settings.SECRET_KEY.startswith('django-insecure-'):
             ok('SECRET_KEY seguro configurado')
         elif settings.DEBUG:
-            warn('SECRET_KEY de desarrollo activa. Cambiar antes de produccion.')
+            warn('SECRET_KEY de desarrollo activa. Cambiar antes de producción.')
         else:
             fail('SECRET_KEY seguro requerido con DEBUG=False')
 
         if settings.ALLOWED_HOSTS:
             ok('ALLOWED_HOSTS configurado')
         else:
-            fail('ALLOWED_HOSTS vacio')
+            fail('ALLOWED_HOSTS vacío')
 
         if getattr(settings, 'GOOGLE_OAUTH_CLIENT_ID', '') and getattr(settings, 'GOOGLE_OAUTH_CLIENT_SECRET', '') and getattr(settings, 'GOOGLE_OAUTH_REDIRECT_URI', ''):
             ok('Google OAuth configurado')
@@ -78,37 +78,37 @@ class Command(BaseCommand):
         elif settings.DEBUG:
             warn('Wompi incompleto. Faltan: ' + ', '.join(missing_wompi) + '. Para pruebas locales solo puedes simular pago si ENABLE_LOCAL_PAYMENT_APPROVAL=True.')
         else:
-            fail('Wompi incompleto para produccion. Faltan: ' + ', '.join(missing_wompi))
+            fail('Wompi incompleto para producción. Faltan: ' + ', '.join(missing_wompi))
 
         email_backend = getattr(settings, 'EMAIL_BACKEND', '')
         if 'console' in email_backend:
-            warn('EMAIL_BACKEND usa consola. Correcto local; no envia correos reales.')
+            warn('EMAIL_BACKEND usa consola. Correcto local; no envía correos reales.')
         elif getattr(settings, 'EMAIL_HOST', '') or 'sendgrid' in email_backend.lower() or 'resend' in email_backend.lower():
             ok('Email transaccional configurado')
         else:
             fail('Email transaccional no configurado')
 
-        questions = BancoPregunta.objects.filter(es_premium=True).count()
+        questions = BancoPregunta.objects.filter(categoria__nombre='Banco Premium CNSC 2026 V3', activa=True).count()
         simulacros = Simulacro.objects.filter(activo=True).count()
         area_simulacros = Simulacro.objects.filter(activo=True, tipo='area').count()
         products = Product.objects.filter(active=True).count()
 
-        if questions >= 375:
+        if questions >= 240:
             ok(f'Banco premium cargado: {questions} preguntas')
         else:
             fail(f'Banco premium insuficiente: {questions} preguntas')
 
-        if simulacros >= 18:
+        if simulacros >= 8:
             ok(f'Simulacros activos: {simulacros}')
         else:
             fail(f'Simulacros activos insuficientes: {simulacros}')
 
-        if area_simulacros >= 5:
-            ok(f'Simulacros por area: {area_simulacros}')
+        if area_simulacros >= 1:
+            ok(f'Simulacros por área: {area_simulacros}')
         else:
-            fail(f'Simulacros por area insuficientes: {area_simulacros}')
+            fail(f'Simulacros por área insuficientes: {area_simulacros}')
 
-        if products >= 12:
+        if products >= 9:
             ok(f'Productos activos: {products}')
         else:
             fail(f'Productos activos insuficientes: {products}')

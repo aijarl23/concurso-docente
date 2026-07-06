@@ -13,20 +13,44 @@
     --color-borde: rgba(125, 211, 252, .22);
     --color-neon: #22d3ee;
     --sombra-neon: 0 18px 44px rgba(34, 211, 238, .14);
-}
-
-body {
-    background:
+    --fondo-pagina:
         radial-gradient(circle at 18% 8%, rgba(34, 211, 238, .16), transparent 28%),
         radial-gradient(circle at 82% 4%, rgba(163, 230, 53, .12), transparent 24%),
         linear-gradient(180deg, #07111f 0%, #081827 48%, #0b1018 100%);
+    --navbar-bg: rgba(4, 15, 29, .9);
+    --panel-gradiente: linear-gradient(180deg, rgba(15, 31, 54, .94), rgba(8, 16, 28, .94));
+}
+
+html[data-theme="light"] {
+    --color-primario: #0f766e;
+    --color-primario-hover: #0d9488;
+    --color-secundario: #0ea5e9;
+    --color-acento: #15803d;
+    --color-fondo: #f6fbff;
+    --color-panel: rgba(255, 255, 255, .96);
+    --color-panel-suave: rgba(240, 249, 255, .9);
+    --color-texto: #102033;
+    --color-texto-muted: #526274;
+    --color-borde: rgba(15, 118, 110, .18);
+    --color-neon: #0ea5e9;
+    --sombra-neon: 0 16px 36px rgba(15, 118, 110, .11);
+    --fondo-pagina:
+        radial-gradient(circle at 16% 10%, rgba(14, 165, 233, .14), transparent 28%),
+        radial-gradient(circle at 82% 8%, rgba(21, 128, 61, .10), transparent 24%),
+        linear-gradient(180deg, #f6fbff 0%, #eef9f7 52%, #f8fafc 100%);
+    --navbar-bg: rgba(255, 255, 255, .92);
+    --panel-gradiente: linear-gradient(180deg, rgba(255, 255, 255, .98), rgba(240, 249, 255, .94));
+}
+
+body {
+    background: var(--fondo-pagina);
     color: var(--color-texto);
     font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     min-height: 100vh;
 }
 
 .navbar-concurso {
-    background: rgba(4, 15, 29, .9) !important;
+    background: var(--navbar-bg) !important;
     border-bottom: 1px solid var(--color-borde);
     box-shadow: 0 10px 28px rgba(0, 0, 0, .26);
     backdrop-filter: blur(14px);
@@ -34,13 +58,28 @@ body {
 
 .navbar-concurso .navbar-brand,
 .navbar-concurso .nav-link {
-    color: white !important;
+    color: var(--color-texto) !important;
     font-weight: 500;
 }
 
 .navbar-concurso .nav-link:hover {
     color: var(--color-acento) !important;
     text-shadow: 0 0 18px rgba(163, 230, 53, .45);
+}
+
+.theme-toggle-btn {
+    border: 1px solid var(--color-borde);
+    color: var(--color-texto);
+    background: rgba(34, 211, 238, .08);
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.theme-toggle-btn:hover {
+    border-color: var(--color-neon);
+    color: var(--color-texto);
+    box-shadow: var(--sombra-neon);
 }
 
 .hero-section {
@@ -389,8 +428,7 @@ body {
 
 .product-card {
     border: 1px solid var(--color-borde) !important;
-    background:
-        linear-gradient(180deg, rgba(15, 31, 54, .94), rgba(8, 16, 28, .94));
+    background: var(--panel-gradiente);
     border-radius: 8px;
     box-shadow: 0 14px 34px rgba(0, 0, 0, .22);
     overflow: hidden;

@@ -16,7 +16,7 @@
 
                 {% if payment_config_errors %}
                 <div class="alert alert-warning mt-3">
-                    <strong>Pago real no habilitado todavia.</strong>
+                    <strong>Pago real no habilitado todavía.</strong>
                     <ul class="mb-0 mt-2">
                         {% for error in payment_config_errors %}
                         <li>{{ error }}</li>
@@ -28,7 +28,7 @@
                     <a class="btn btn-primary" href="{{ production_payment_public_url }}">Abrir tienda en la web publicada</a>
                 </div>
                 <p class="text-muted mt-2 mb-0">
-                    No uses <code>127.0.0.1</code> para pagos reales. El pago debe hacerse desde la URL publica HTTPS.
+                    No uses <code>127.0.0.1</code> para pagos reales. El pago debe hacerse desde la URL pública HTTPS.
                 </p>
                 {% else %}
                 <p class="text-muted mb-0">
@@ -37,7 +37,7 @@
                 {% endif %}
                 {% elif wompi_error %}
                 <div class="alert alert-warning mt-3">
-                    <strong>Wompi no respondio.</strong><br>
+                    <strong>Wompi no respondió.</strong><br>
                     {{ wompi_error }}
                 </div>
                 {% elif acceptance_token and signature %}

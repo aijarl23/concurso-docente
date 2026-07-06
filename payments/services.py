@@ -63,7 +63,7 @@ def send_purchase_confirmation(order):
         f'Hola {order.user.nombre},\n\n'
         f'Tu compra fue confirmada.\n'
         f'Orden: {order.reference}\n'
-        f'Modulos habilitados: {modules}\n'
+        f'Módulos habilitados: {modules}\n'
         f'Total: {order.total} {order.currency}\n\n'
         'Ya puedes ingresar a tus simulacros premium desde la plataforma.'
     )

@@ -112,16 +112,16 @@ def checkout_order(request, order_id):
     current_host = request.get_host().split(':')[0].lower()
     is_local_request = current_host in {'127.0.0.1', 'localhost'}
     if public_key.startswith('pub_prod_') and 'sandbox' in base_url:
-        payment_config_errors.append('La llave publica es de produccion (pub_prod_) pero WOMPI_BASE_URL apunta a sandbox. Usa https://production.wompi.co/v1.')
+        payment_config_errors.append('La llave pública es de producción (pub_prod_) pero WOMPI_BASE_URL apunta a sandbox. Usa https://production.wompi.co/v1.')
     if public_key.startswith('pub_test_') and 'production' in base_url:
-        payment_config_errors.append('La llave publica es de pruebas (pub_test_) pero WOMPI_BASE_URL apunta a produccion. Usa https://sandbox.wompi.co/v1.')
+        payment_config_errors.append('La llave pública es de pruebas (pub_test_) pero WOMPI_BASE_URL apunta a producción. Usa https://sandbox.wompi.co/v1.')
     production_payment_public_url = ''
     if public_key.startswith('pub_prod_') and is_local_request:
         if settings.SITE_PUBLIC_URL and not settings.SITE_PUBLIC_URL.startswith(('http://127.0.0.1', 'http://localhost')):
             production_payment_public_url = settings.SITE_PUBLIC_URL.rstrip('/') + reverse('commerce:product_list')
-            payment_config_errors.append('Estas intentando pagar desde localhost. Para Wompi de produccion abre la plataforma publicada por HTTPS.')
+            payment_config_errors.append('Estás intentando pagar desde localhost. Para Wompi de producción abre la plataforma publicada por HTTPS.')
         else:
-            payment_config_errors.append('Estas usando Wompi de produccion desde 127.0.0.1. Para cobro real configura SITE_PUBLIC_URL con la URL publica HTTPS de Render.')
+            payment_config_errors.append('Estás usando Wompi de producción desde 127.0.0.1. Para cobro real configura SITE_PUBLIC_URL con la URL pública HTTPS de Render.')
     if not settings.WOMPI_INTEGRITY_SECRET:
         payment_config_errors.append('Falta WOMPI_INTEGRITY_SECRET en .env. Sin esta llave Wompi no renderiza correctamente el checkout firmado.')
     if not request.user.email:
@@ -160,9 +160,9 @@ def checkout_order(request, order_id):
 @login_required
 def approve_order_dev(request, order_id):
     if not settings.ENABLE_LOCAL_PAYMENT_APPROVAL:
-        return HttpResponseForbidden('Aprobacion local deshabilitada')
+        return HttpResponseForbidden('Aprobación local deshabilitada')
     order = get_object_or_404(Order.objects.prefetch_related('items__module'), id=order_id, user=request.user)
-    _mark_order_approved(order, f'DEV-{order.reference}', {'mode': 'debug'}, 'Aprobacion local DEBUG')
+    _mark_order_approved(order, f'DEV-{order.reference}', {'mode': 'debug'}, 'Aprobación local DEBUG')
     messages.success(request, 'Pago de prueba aprobado y acceso premium habilitado.')
     return redirect('simulacros:lista_simulacros')
 

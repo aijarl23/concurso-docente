@@ -61,7 +61,7 @@ def _send_result_email(intento):
         f'Errores: {intento.total_incorrectas}\n'
         f'Sin responder: {intento.total_sin_responder}\n'
         f'Tiempo usado: {intento.tiempo_usado_segundos} segundos\n\n'
-        f'Desempeno por competencia:\n{detalle}\n\n'
+        f'Desempeño por competencia:\n{detalle}\n\n'
         'Revisa las justificaciones en la plataforma para orientar tu plan de mejora.'
     )
     sent = send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [user.email], fail_silently=True)
@@ -97,7 +97,7 @@ def seleccionar_area(request):
 def iniciar_simulacro(request, simulacro_id):
     simulacro = get_object_or_404(Simulacro, id=simulacro_id, activo=True)
     if simulacro.es_premium and not user_has_module_access(request.user, simulacro.module):
-        messages.warning(request, 'Este simulacro es premium. Debes comprar el modulo o paquete Elite para ingresar.')
+        messages.warning(request, 'Este simulacro es premium. Debes comprar el módulo o paquete Elite para ingresar.')
         return redirect(_checkout_for_simulacro(simulacro))
 
     if request.method != 'POST':

@@ -50,13 +50,13 @@ MODULES = [
     },
     {
         'slug': 'simulacro-final-concurso', 'tipo': 'simulacro_final', 'title': 'Simulacro final tipo concurso',
-        'area': 'general', 'competencia': 'Integracion CNSC', 'tipo_sim': 'elite',
+        'area': 'general', 'competencia': 'Integración CNSC', 'tipo_sim': 'elite',
         'description': 'Prueba integral con mezcla de competencias, lectura crítica, pedagogía, normativa, TJS y razonamiento aplicado.',
         'topics': ['Gestión del tiempo', 'Integración de competencias', 'Análisis de resultados', 'Estrategia de cierre'],
     },
     {
         'slug': 'reporte-progreso-plan-mejora', 'tipo': 'reporte_mejora', 'title': 'Reporte de progreso y plan de mejora',
-        'area': 'general', 'competencia': 'Metacognicion y mejora', 'tipo_sim': 'tematico',
+        'area': 'general', 'competencia': 'Metacognición y mejora', 'tipo_sim': 'tematico',
         'description': 'Analiza desempeño, prioriza brechas y convierte resultados de simulacros en decisiones concretas de estudio.',
         'topics': ['Lectura de resultados', 'Priorización de brechas', 'Plan semanal', 'Seguimiento de mejora'],
     },
@@ -315,6 +315,73 @@ GOOD_OPTIONS = {
     'mejora': 'Definir una acción específica, responsable, medible y revisable, conectada con el patrón de error detectado.',
 }
 
+CORRECT_BY_MODULE = {
+    'diagnostico-inicial': {
+        'inferencia': 'El desempeño inicial debe leerse por patrones de error y no solo por puntaje global, porque cada competencia exige una estrategia distinta.',
+        'decision': 'Priorizar un plan de estudio basado en evidencias del diagnóstico, diferenciando errores de lectura, dominio conceptual y manejo del tiempo.',
+        'riesgo': 'Confundir un resultado bajo con falta general de conocimiento, sin identificar si el error proviene de la consigna, del contenido o de la estrategia.',
+        'evidencia': 'Cruzar puntaje, tipo de pregunta, justificación del error y tiempo usado para definir una ruta de mejora razonable.',
+        'prioridad': 'Intervenir primero la brecha que se repite en varios ítems y afecta el desempeño transversal de la prueba.',
+        'mejora': 'Convertir el diagnóstico en metas semanales verificables, con revisión de errores y nuevos intentos comparables.',
+    },
+    'lectura-critica-aplicada': {
+        'inferencia': 'La conclusión válida debe apoyarse en la relación entre tesis, evidencias y límites del texto, no en una coincidencia literal de palabras.',
+        'decision': 'Identificar la tesis, evaluar la suficiencia de las evidencias y reconocer los supuestos antes de aceptar la conclusión del autor.',
+        'riesgo': 'Tomar como válida una generalización persuasiva aunque el texto no aporte evidencia suficiente o comparable.',
+        'evidencia': 'Contrastar ejemplos, datos y alcance de la afirmación para determinar si sostienen la conclusión planteada.',
+        'prioridad': 'Reconocer qué afirma el texto, qué prueba realmente y qué queda como supuesto no demostrado.',
+        'mejora': 'Releer el texto buscando relaciones lógicas entre ideas, no palabras aisladas que parezcan coincidir con una opción.',
+    },
+    'competencias-pedagogicas': {
+        'inferencia': 'La dificultad pedagógica se ubica en la coherencia entre propósito, actividad, evidencia y criterio de evaluación.',
+        'decision': 'Rediseñar la secuencia para alinear desempeños esperados, actividades, evidencias y retroalimentación formativa.',
+        'riesgo': 'Valorar la actividad por su atractivo o cumplimiento formal sin comprobar si produce evidencia válida de aprendizaje.',
+        'evidencia': 'Usar productos, explicaciones, desempeño observado y criterios explícitos para decidir si el aprendizaje esperado se alcanzó.',
+        'prioridad': 'Ajustar primero la alineación curricular y evaluativa antes de aumentar tareas o repetir ejercicios.',
+        'mejora': 'Incorporar retroalimentación, oportunidades de revisión y criterios conocidos por los estudiantes desde el inicio.',
+    },
+    'competencias-comportamentales-tjs': {
+        'inferencia': 'La situación exige una respuesta profesional que combine escucha, límites, registro y seguimiento institucional.',
+        'decision': 'Escuchar a los actores, verificar información, comunicar límites y acordar acciones restaurativas o pedagógicas con seguimiento.',
+        'riesgo': 'Responder solo para calmar la presión inmediata, sin documentar hechos ni proteger la confianza de la comunidad.',
+        'evidencia': 'Usar registros, testimonios contrastados y acuerdos institucionales para decidir una actuación proporcional.',
+        'prioridad': 'Proteger la dignidad de las personas y restablecer condiciones de convivencia y aprendizaje.',
+        'mejora': 'Formalizar acuerdos, responsables y revisión posterior para que la intervención no quede en una reacción aislada.',
+    },
+    'normativa-contexto-docente': {
+        'inferencia': 'La norma debe aplicarse según su finalidad educativa y las evidencias del caso, no como trámite literal aislado.',
+        'decision': 'Documentar una decisión proporcional que garantice derechos, responsabilidades institucionales y seguimiento verificable.',
+        'riesgo': 'Invocar la norma sin analizar contexto, debido proceso, inclusión o efectos sobre el derecho a aprender.',
+        'evidencia': 'Relacionar registros institucionales, marco normativo y necesidades del estudiante o de la comunidad antes de decidir.',
+        'prioridad': 'Garantizar el derecho a la educación con medidas proporcionales, comunicadas y trazables.',
+        'mejora': 'Convertir la decisión normativa en acciones, responsables y evidencias de cumplimiento institucional.',
+    },
+    'simulacros-por-area': {
+        'inferencia': 'El dato disciplinar debe interpretarse considerando proporciones, contexto, demanda cognitiva y evidencia disponible.',
+        'decision': 'Analizar la información cuantitativa o disciplinar antes de elegir una intervención académica o tecnológica.',
+        'riesgo': 'Comparar cifras aisladas o porcentajes llamativos sin revisar base de cálculo, condiciones y propósito de la medición.',
+        'evidencia': 'Relacionar tablas, gráficas, procedimientos y explicaciones de los estudiantes para sustentar la conclusión.',
+        'prioridad': 'Identificar si la dificultad está en el concepto, en la interpretación de datos o en la lectura de la consigna.',
+        'mejora': 'Diseñar práctica contextualizada que exija explicar procedimientos y transferirlos a situaciones nuevas.',
+    },
+    'simulacro-final-concurso': {
+        'inferencia': 'El caso requiere integrar lectura crítica, pedagogía, normativa y juicio situacional antes de elegir la actuación.',
+        'decision': 'Priorizar una respuesta integral, viable y sustentada que atienda aprendizaje, convivencia y responsabilidad institucional.',
+        'riesgo': 'Resolver el caso desde una sola competencia cuando la situación exige articular varias evidencias y criterios.',
+        'evidencia': 'Usar datos, testimonios, normas y efectos pedagógicos para justificar una decisión coherente.',
+        'prioridad': 'Ordenar la actuación según impacto en aprendizaje, protección de derechos y posibilidad de seguimiento.',
+        'mejora': 'Ajustar la estrategia de prueba para dedicar más lectura a ítems integradores y evitar respuestas por memoria.',
+    },
+    'reporte-progreso-plan-mejora': {
+        'inferencia': 'El progreso real depende de patrones de error, no de variaciones aisladas del puntaje total.',
+        'decision': 'Convertir los resultados en un plan específico por competencia, con metas, práctica deliberada y revisión de errores.',
+        'riesgo': 'Cambiar toda la ruta de estudio por un resultado puntual sin analizar dificultad, tiempo y tipo de error.',
+        'evidencia': 'Comparar aciertos, errores, justificaciones y tiempo usado para decidir qué reforzar primero.',
+        'prioridad': 'Intervenir la brecha que limita más competencias o se repite en distintos simulacros.',
+        'mejora': 'Definir una acción de estudio medible y revisarla con un nuevo simulacro comparable.',
+    },
+}
+
 DISTRACTORS = [
     'Aplicar la medida más visible para mostrar gestión inmediata, aunque no resuelva la causa del problema.',
     'Elegir la alternativa que repite palabras del caso, sin verificar si explica la relación entre las evidencias.',
@@ -339,7 +406,7 @@ def build_item(module, i):
         'La alternativa correcta debe ser viable en una institución educativa oficial y coherente con el derecho al aprendizaje.\n'
         'También debe evitar decisiones automáticas que confundan rapidez con pertinencia o formalidad con calidad pedagógica.'
     )
-    correct = GOOD_OPTIONS[task_key]
+    correct = CORRECT_BY_MODULE.get(module['slug'], GOOD_OPTIONS).get(task_key, GOOD_OPTIONS[task_key])
     wrongs = [DISTRACTORS[(i + offset) % len(DISTRACTORS)] for offset in range(3)]
     options = [correct] + wrongs
     shift = (i - 1) % 4
@@ -360,7 +427,7 @@ def build_item(module, i):
 
 
 class Command(BaseCommand):
-    help = 'Aplica auditoria comercial y academica: precios, ruta de 8 modulos y banco premium v2.'
+    help = 'Aplica auditoría comercial y académica: precios, ruta de 8 módulos y banco premium V3.'
 
     @transaction.atomic
     def handle(self, *args, **options):
@@ -369,7 +436,7 @@ class Command(BaseCommand):
             defaults={
                 'name': 'Ruta Premium Concurso Docente CNSC 2026',
                 'category_type': 'simulacros',
-                'description': 'Ruta integral de preparacion con diagnostico, competencias, simulacros y plan de mejora.',
+                'description': 'Ruta integral de preparación con diagnóstico, competencias, simulacros y plan de mejora.',
                 'icon': 'bi-stars',
                 'order': 1,
                 'active': True,
@@ -377,6 +444,7 @@ class Command(BaseCommand):
         )
         banco_cat, _ = Categoria.objects.get_or_create(nombre='Banco Premium CNSC 2026 V3')
 
+        BancoPregunta.objects.exclude(categoria=banco_cat).update(activa=False)
         BancoPregunta.objects.filter(categoria__nombre='Banco Premium CNSC 2026 V2').update(activa=False)
 
         # Desactiva solo bancos genericos anteriores de plantilla repetitiva.
@@ -439,7 +507,7 @@ class Command(BaseCommand):
                         'opcion_d': d,
                         'respuesta_correcta': item['respuesta'],
                         'justificacion': item['justificacion'],
-                        'fuente_normativa': 'CNSC/ICFES: razonamiento critico, competencias docentes, Ley 115, Decreto 1278, Decreto 1421 y convivencia escolar segun pertinencia del caso.',
+                        'fuente_normativa': 'CNSC/ICFES: razonamiento crítico, competencias docentes, Ley 115, Decreto 1278, Decreto 1421 y convivencia escolar según pertinencia del caso.',
                         'dificultad': 'elite',
                         'area': data['area'],
                         'competencia': data['competencia'],
@@ -473,8 +541,8 @@ class Command(BaseCommand):
             defaults={
                 'category': category,
                 'title': 'Acceso completo ConcursoDocente CNSC 2026',
-                'short_description': 'Oferta de lanzamiento: todos los modulos, simulacros premium y reportes por un solo pago.',
-                'description': 'Incluye diagnostico, lectura critica, competencias pedagogicas, TJS, normativa, areas, simulacro final y plan de mejora.',
+                'short_description': 'Oferta de lanzamiento: todos los módulos, simulacros premium y reportes por un solo pago.',
+                'description': 'Incluye diagnóstico, lectura crítica, competencias pedagógicas, TJS, normativa, áreas, simulacro final y plan de mejora.',
                 'difficulty_level': 'cnsc_expert',
                 'estimated_time_minutes': 480,
                 'is_active': True,
@@ -489,7 +557,7 @@ class Command(BaseCommand):
         valid_simulacro_names = [f'{module["title"]} - Simulacro premium' for module in MODULES]
         Simulacro.objects.exclude(nombre__in=valid_simulacro_names).update(activo=False)
 
-        # Precios definitivos: paquete completo 35k/25k; modulos individuales vigentes 15k.
+        # Precios definitivos: paquete completo 35k/25k; módulos individuales vigentes 15k.
         Product.objects.filter(module__slug__in=[module['slug'] for module in MODULES]).update(
             price=Decimal('15000'),
             sale_price=Decimal('15000'),
@@ -498,5 +566,5 @@ class Command(BaseCommand):
         Product.objects.exclude(module__slug__in=valid_module_slugs).update(active=False)
 
         self.stdout.write(self.style.SUCCESS(
-            f'Upgrade aplicado: {len(MODULES)} modulos, {created_questions} preguntas nuevas, precios actualizados.'
+            f'Upgrade aplicado: {len(MODULES)} módulos, {created_questions} preguntas nuevas, precios actualizados.'
         ))

@@ -26,7 +26,7 @@
                 <a href="{% url 'payments:checkout_order' order.id %}" class="btn btn-primary">Volver al checkout</a>
                 {% else %}
                 <div class="alert alert-info">
-                    El pago esta pendiente de confirmacion. Si ya pagaste, espera unos segundos y actualiza esta pagina.
+                    El pago está pendiente de confirmación. Si ya pagaste, espera unos segundos y actualiza esta página.
                 </div>
                 <a href="{% url 'payments:checkout_order' order.id %}" class="btn btn-outline-primary">Volver al checkout</a>
                 {% endif %}

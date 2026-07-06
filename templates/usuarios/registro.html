@@ -5,7 +5,7 @@
 <div class="login-container">
     <div class="login-card" style="max-width: 550px;">
         <h2><i class="bi bi-person-plus-fill"></i><br>Crear cuenta</h2>
-        <p class="text-center text-muted mb-4">Unete a la comunidad de estudio</p>
+        <p class="text-center text-muted mb-4">&Uacute;nete a la comunidad de estudio</p>
 
         <form method="post">
             {% csrf_token %}
@@ -35,39 +35,39 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Email</label>
+                <label class="form-label">Correo electr&oacute;nico</label>
                 <input type="email" name="email" class="form-control form-control-custom" required>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Area del concurso</label>
+                <label class="form-label">&Aacute;rea del concurso</label>
                 <select name="area_concurso" class="form-control form-control-custom" required>
-                    <option value="matematicas">Matematicas</option>
+                    <option value="matematicas">Matem&aacute;ticas</option>
                     <option value="lenguaje">Lenguaje</option>
                     <option value="ciencias_naturales">Ciencias Naturales</option>
                     <option value="ciencias_sociales">Ciencias Sociales</option>
-                    <option value="ingles">Ingles</option>
+                    <option value="ingles">Ingl&eacute;s</option>
                     <option value="preescolar">Preescolar</option>
                     <option value="primaria">Primaria</option>
-                    <option value="educacion_fisica">Educacion Fisica</option>
-                    <option value="artistica">Educacion Artistica</option>
-                    <option value="tecnologia">Tecnologia e Informatica</option>
+                    <option value="educacion_fisica">Educaci&oacute;n F&iacute;sica</option>
+                    <option value="artistica">Educaci&oacute;n Art&iacute;stica</option>
+                    <option value="tecnologia">Tecnolog&iacute;a e Inform&aacute;tica</option>
                     <option value="otro">Otro</option>
                 </select>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Entidad territorial</label>
-                <input type="text" name="entidad_territorial" class="form-control form-control-custom" placeholder="Ej: Medellin, Antioquia">
+                <input type="text" name="entidad_territorial" class="form-control form-control-custom" placeholder="Ej.: Medell&iacute;n, Antioquia">
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">Contrasena</label>
+                    <label class="form-label">Contrase&ntilde;a</label>
                     <input type="password" name="password1" class="form-control form-control-custom" required>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <label class="form-label">Confirmar contrasena</label>
+                    <label class="form-label">Confirmar contrase&ntilde;a</label>
                     <input type="password" name="password2" class="form-control form-control-custom" required>
                 </div>
             </div>
@@ -79,7 +79,7 @@
 
         <hr class="my-4">
         <p class="text-center text-muted small">
-            Ya tienes cuenta? <a href="{% url 'login' %}">Inicia sesion</a>
+            &iquest;Ya tienes cuenta? <a href="{% url 'login' %}">Inicia sesi&oacute;n</a>
         </p>
     </div>
 </div>
