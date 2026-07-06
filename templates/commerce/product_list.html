@@ -1,23 +1,34 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="d-flex justify-content-between align-items-center mb-4">
+<div class="commerce-hero d-flex justify-content-between align-items-center mb-4">
     <div>
-        <h1>Planes y modulos premium</h1>
-        <p class="text-muted mb-0">Compra un modulo individual o el paquete Elite.</p>
+        <p class="commerce-kicker">Acceso premium CNSC 2026</p>
+        <h1>Elige tu ruta de preparacion</h1>
+        <p class="mb-0">Modulos individuales a COP 15.000 o acceso completo en oferta por COP 25.000.</p>
     </div>
-    <a class="btn btn-outline-primary" href="{% url 'commerce:cart_detail' %}">Ver carrito</a>
+    <a class="btn btn-outline-primary btn-glow" href="{% url 'commerce:cart_detail' %}">Ver carrito</a>
 </div>
 
 <div class="row">
     {% for product in products %}
     <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-0">
+        <div class="card product-card h-100 {% if product.module.slug == 'elite-cnsc-2026' %}product-card-featured{% endif %}">
             <div class="card-body d-flex flex-column">
+                {% if product.module.slug == 'elite-cnsc-2026' %}
+                <span class="plan-badge">Oferta lanzamiento</span>
+                {% else %}
+                <span class="plan-badge plan-badge-soft">Modulo individual</span>
+                {% endif %}
                 <h4>{{ product.module.title }}</h4>
                 <p>{{ product.module.short_description }}</p>
-                <div class="fs-4 fw-bold mb-3">COP {{ product.final_price }}</div>
-                <a class="btn btn-primary mt-auto" href="{% url 'commerce:add_to_cart' product.id %}">Agregar al carrito</a>
+                <div class="price-zone mb-3">
+                    {% if product.sale_price and product.sale_price < product.price %}
+                    <span class="regular-price">COP {{ product.price }}</span>
+                    {% endif %}
+                    <span class="final-price">COP {{ product.final_price }}</span>
+                </div>
+                <a class="btn btn-primary mt-auto btn-glow" href="{% url 'commerce:add_to_cart' product.id %}">Agregar al carrito</a>
                 <a class="btn btn-outline-secondary mt-2" href="{% url 'payments:buy_module' product.id %}">Comprar ahora</a>
             </div>
         </div>

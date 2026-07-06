@@ -23,7 +23,12 @@ Thumbs.db
 
 # Respaldos locales
 _backups/
+_resources/auditoria_contenido/
 .env2.txt
 .env*.txt
 *.secret
 *.secrets
+
+# Utilidades temporales de auditoria documental
+scripts/data_import/extract_audit_sources.py
+scripts/data_import/extract_pdf_fast.py

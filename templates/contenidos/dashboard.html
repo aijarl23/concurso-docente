@@ -20,13 +20,13 @@
         margin: 0;
         font-size: 2rem;
         font-weight: 800;
-        color: #172554;
+        color: #e5f6ff;
     }
 
     .dashboard-copy {
         margin: 8px 0 0;
         max-width: 760px;
-        color: #475569;
+        color: #9fb4c7;
     }
 
     .action-bar {
@@ -46,10 +46,11 @@
     .metric-card,
     .module-card,
     .quick-panel {
-        background: #fff;
-        border: 1px solid #e2e8f0;
+        background: rgba(13, 24, 42, .9);
+        border: 1px solid rgba(125, 211, 252, .22);
         border-radius: 8px;
-        box-shadow: 0 8px 22px rgba(15, 23, 42, .06);
+        box-shadow: 0 18px 44px rgba(34, 211, 238, .12);
+        backdrop-filter: blur(12px);
     }
 
     .metric-card {
@@ -60,14 +61,14 @@
         display: block;
         font-size: 1.65rem;
         font-weight: 800;
-        color: #1d4ed8;
+        color: #a3e635;
         line-height: 1.1;
     }
 
     .metric-label {
         display: block;
         margin-top: 6px;
-        color: #64748b;
+        color: #9fb4c7;
         font-size: .95rem;
     }
 
@@ -91,7 +92,7 @@
 
     .module-kicker {
         margin: 0 0 8px;
-        color: #2563eb;
+        color: #22d3ee;
         font-size: .82rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -99,14 +100,14 @@
 
     .module-title {
         margin: 0;
-        color: #0f172a;
+        color: #e5f6ff;
         font-size: 1.12rem;
         font-weight: 800;
     }
 
     .module-desc {
         margin: 10px 0 14px;
-        color: #64748b;
+        color: #9fb4c7;
         font-size: .95rem;
     }
 
@@ -121,7 +122,7 @@
     .topic-list li {
         display: flex;
         gap: 8px;
-        color: #334155;
+        color: #d8edf7;
         font-size: .92rem;
     }
 
@@ -130,7 +131,8 @@
         width: 7px;
         height: 7px;
         border-radius: 999px;
-        background: #2563eb;
+        background: linear-gradient(135deg, #22d3ee, #a3e635);
+        box-shadow: 0 0 14px rgba(34, 211, 238, .35);
         flex: 0 0 auto;
         margin-top: 8px;
     }
@@ -145,11 +147,11 @@
         margin: 0 0 12px;
         font-size: 1.1rem;
         font-weight: 800;
-        color: #0f172a;
+        color: #e5f6ff;
     }
 
     .quick-panel p {
-        color: #64748b;
+        color: #9fb4c7;
         margin-bottom: 16px;
     }
 
@@ -197,7 +199,7 @@
         <div>
             <h1 class="dashboard-title">ConcursoDocente CNSC 2026</h1>
             <p class="dashboard-copy">
-                Panel de preparacion con modulos, simulacros premium, entrenamiento por area y seguimiento del avance.
+                Ruta premium de diagnostico, entrenamiento por competencias, simulacros por area y plan de mejora.
             </p>
         </div>
         <div class="action-bar">
@@ -209,16 +211,16 @@
 
     <section class="metric-grid" aria-label="Resumen de la plataforma">
         <div class="metric-card">
-            <span class="metric-number">4</span>
-            <span class="metric-label">Modulos base</span>
+            <span class="metric-number">8</span>
+            <span class="metric-label">Modulos de ruta</span>
         </div>
         <div class="metric-card">
-            <span class="metric-number">375</span>
-            <span class="metric-label">Preguntas cargadas</span>
+            <span class="metric-number">240</span>
+            <span class="metric-label">Items premium V2</span>
         </div>
         <div class="metric-card">
-            <span class="metric-number">18</span>
-            <span class="metric-label">Simulacros disponibles</span>
+            <span class="metric-number">8</span>
+            <span class="metric-label">Simulacros principales</span>
         </div>
         <div class="metric-card">
             <span class="metric-number">30</span>

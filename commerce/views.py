@@ -1,5 +1,6 @@
-﻿from django.contrib import messages
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.db.models import Case, IntegerField, When
 from django.shortcuts import get_object_or_404, redirect, render
 
 from .models import Cart, CartItem, Product
@@ -12,7 +13,26 @@ def _active_cart(request):
 
 @login_required
 def product_list(request):
-    products = Product.objects.select_related('module', 'module__category').filter(active=True, module__is_active=True)
+    products = (
+        Product.objects.select_related('module', 'module__category')
+        .filter(active=True, module__is_active=True)
+        .annotate(
+            sales_order=Case(
+                When(module__slug='elite-cnsc-2026', then=0),
+                When(module__slug='diagnostico-inicial', then=1),
+                When(module__slug='lectura-critica-aplicada', then=2),
+                When(module__slug='competencias-pedagogicas', then=3),
+                When(module__slug='competencias-comportamentales-tjs', then=4),
+                When(module__slug='normativa-contexto-docente', then=5),
+                When(module__slug='simulacros-por-area', then=6),
+                When(module__slug='simulacro-final-concurso', then=7),
+                When(module__slug='reporte-progreso-plan-mejora', then=8),
+                default=20,
+                output_field=IntegerField(),
+            )
+        )
+        .order_by('sales_order', 'module__title')
+    )
     return render(request, 'commerce/product_list.html', {'products': products})
 
 

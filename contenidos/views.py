@@ -12,54 +12,97 @@ MODULE_DESCRIPTION = (
 def seed_modulos():
     modulos_data = [
         {
-            'titulo': 'Modulo 1 - Lectura Critica y Test de Juicio Situacional (TJS)',
-            'tipo': 'lectura_tjs',
-            'descripcion': MODULE_DESCRIPTION,
+            'titulo': 'Diagnostico inicial',
+            'tipo': 'diagnostico_inicial',
+            'descripcion': 'Mapa de entrada para identificar brechas reales antes de iniciar la preparacion.',
             'temas': [
-                ('Lectura literal', 'Reconocimiento de informacion explicita y relaciones internas del texto.'),
-                ('Lectura inferencial', 'Deduccion de implicaciones, supuestos y conclusiones no expresas.'),
-                ('Lectura critica', 'Analisis de argumentos, intencion comunicativa y validez de posturas.'),
-                ('Test de juicio situacional', 'Toma de decisiones frente a dilemas del contexto escolar.'),
-                ('Casos institucionales', 'Interpretacion de situaciones reales de aula y convivencia escolar.'),
+                ('Mapa de fortalezas y brechas', 'Lectura inicial del nivel por competencia.'),
+                ('Lectura de consignas', 'Identificacion precisa de lo que pregunta cada item.'),
+                ('Toma de decisiones inicial', 'Priorizacion de acciones segun evidencia.'),
+                ('Plan de entrada', 'Ruta de estudio sugerida a partir del desempeno.'),
             ],
         },
         {
-            'titulo': 'Modulo 2 - Perfil Docente',
-            'tipo': 'perfil_docente',
-            'descripcion': MODULE_DESCRIPTION,
+            'titulo': 'Lectura critica aplicada',
+            'tipo': 'lectura_critica_aplicada',
+            'descripcion': 'Inferencia, tesis, intencion comunicativa y evaluacion de argumentos en textos complejos.',
             'temas': [
-                ('Rol docente', 'Responsabilidades profesionales, liderazgo pedagogico y servicio publico.'),
-                ('Etica profesional', 'Criterios de actuacion frente a conflictos, equidad y cuidado institucional.'),
-                ('Competencias funcionales', 'Gestion del aula, seguimiento de procesos y trabajo colaborativo.'),
-                ('Gestion escolar', 'Articulacion con el PEI, convivencia, inclusion y mejoramiento continuo.'),
-                ('Contexto educativo', 'Lectura de necesidades territoriales, familiares e institucionales.'),
+                ('Inferencia y supuestos', 'Reconocimiento de informacion implicita sustentada.'),
+                ('Tesis y argumentos', 'Analisis de estructura argumentativa y evidencias.'),
+                ('Intencion del autor', 'Interpretacion del proposito comunicativo.'),
+                ('Evaluacion de evidencia', 'Valoracion de suficiencia, pertinencia y coherencia.'),
             ],
         },
         {
-            'titulo': 'Modulo 3 - Componente Pedagogico',
-            'tipo': 'pedagogico',
-            'descripcion': MODULE_DESCRIPTION,
+            'titulo': 'Competencias pedagogicas',
+            'tipo': 'competencias_pedagogicas',
+            'descripcion': 'Casos de planeacion, evaluacion formativa, inclusion, didactica y gestion del aula.',
             'temas': [
-                ('Didactica', 'Seleccion de estrategias pertinentes segun objetivos, estudiantes y contexto.'),
-                ('Planeacion curricular', 'Coherencia entre estandares, evidencias, actividades y evaluacion.'),
-                ('Evaluacion', 'Uso pedagogico de evidencias, retroalimentacion y criterios de desempeno.'),
-                ('Inclusion', 'Ajustes razonables, barreras para el aprendizaje y participacion efectiva.'),
-                ('Modelos pedagogicos', 'Relacion entre enfoques, practicas de aula y formacion integral.'),
+                ('Planeacion curricular', 'Coherencia entre objetivos, desempenos, actividades y evaluacion.'),
+                ('Evaluacion formativa', 'Uso de evidencias y retroalimentacion para mejorar aprendizajes.'),
+                ('Inclusion y DUA', 'Barreras, ajustes razonables y participacion efectiva.'),
+                ('Didactica situada', 'Estrategias pertinentes segun contexto y necesidad.'),
             ],
         },
         {
-            'titulo': 'Modulo 4 - Psicotecnico y Autoevaluacion',
-            'tipo': 'psicotecnico',
-            'descripcion': MODULE_DESCRIPTION,
+            'titulo': 'Competencias comportamentales / TJS',
+            'tipo': 'competencias_tjs',
+            'descripcion': 'Juicio situacional docente para convivencia, liderazgo, comunicacion y trabajo colaborativo.',
             'temas': [
-                ('Razonamiento verbal', 'Analisis de relaciones semanticas, argumentos y comprension compleja.'),
-                ('Series logicas', 'Identificacion de patrones, secuencias y reglas de transformacion.'),
-                ('Analogias', 'Comparacion de relaciones conceptuales y transferencia de criterios.'),
-                ('Atencion y concentracion', 'Control de detalle, discriminacion de informacion y precision.'),
-                ('Autoevaluacion', 'Reconocimiento de fortalezas, brechas y decisiones de mejora.'),
+                ('Comunicacion asertiva', 'Respuesta profesional ante tension y desacuerdo.'),
+                ('Liderazgo', 'Actuacion orientada a acuerdos, cuidado y mejora institucional.'),
+                ('Trabajo en equipo', 'Coordinacion con pares, familias y directivos.'),
+                ('Orientacion al logro', 'Decisiones con seguimiento y evidencia.'),
+            ],
+        },
+        {
+            'titulo': 'Normativa y contexto docente',
+            'tipo': 'normativa_contexto',
+            'descripcion': 'Aplicacion contextual de normativa educativa, inclusion, convivencia y funciones docentes.',
+            'temas': [
+                ('Estatuto docente', 'Uso aplicado del marco de profesionalizacion docente.'),
+                ('Ley General de Educacion', 'Fines, responsabilidades y sentido pedagogico.'),
+                ('Convivencia escolar', 'Prevencion, corresponsabilidad y rutas de actuacion.'),
+                ('Inclusion y ajustes razonables', 'Garantia del derecho a aprender con trazabilidad.'),
+            ],
+        },
+        {
+            'titulo': 'Simulacros por area',
+            'tipo': 'simulacros_area',
+            'descripcion': 'Entrenamiento por disciplina con razonamiento cuantitativo, datos y situaciones contextualizadas.',
+            'temas': [
+                ('Razonamiento cuantitativo', 'Interpretacion de datos, proporciones y tendencias.'),
+                ('Matematicas aplicadas', 'Resolucion de problemas en contexto escolar.'),
+                ('Interpretacion de datos', 'Lectura de tablas, graficas e indicadores.'),
+                ('Problemas contextualizados', 'Transferencia de procedimientos a situaciones nuevas.'),
+            ],
+        },
+        {
+            'titulo': 'Simulacro final tipo concurso',
+            'tipo': 'simulacro_final',
+            'descripcion': 'Prueba integral con mezcla de lectura critica, pedagogia, normativa, TJS y razonamiento aplicado.',
+            'temas': [
+                ('Gestion del tiempo', 'Estrategia para responder bajo limite real.'),
+                ('Integracion de competencias', 'Cruce de lectura, criterio pedagogico y juicio situacional.'),
+                ('Analisis de resultados', 'Lectura tecnica de aciertos, errores y tendencias.'),
+                ('Estrategia de cierre', 'Plan final de preparacion antes de la prueba.'),
+            ],
+        },
+        {
+            'titulo': 'Reporte de progreso y plan de mejora',
+            'tipo': 'reporte_mejora',
+            'descripcion': 'Conversion de resultados en una ruta concreta de refuerzo, seguimiento y mejora.',
+            'temas': [
+                ('Lectura de resultados', 'Interpretacion de desempeno por competencia.'),
+                ('Priorizacion de brechas', 'Seleccion de focos segun impacto y urgencia.'),
+                ('Plan semanal', 'Organizacion de sesiones de estudio por evidencia.'),
+                ('Seguimiento de mejora', 'Revision de avances y ajuste de estrategia.'),
             ],
         },
     ]
+
+    tipos_vigentes = [module_data['tipo'] for module_data in modulos_data]
+    Modulo.objects.exclude(tipo__in=tipos_vigentes).update(activo=False)
 
     for order, module_data in enumerate(modulos_data, 1):
         temas = module_data.pop('temas')
