@@ -23,9 +23,18 @@
                         {% endfor %}
                     </ul>
                 </div>
+                {% if production_payment_public_url %}
+                <div class="mt-3">
+                    <a class="btn btn-primary" href="{{ production_payment_public_url }}">Abrir tienda en la web publicada</a>
+                </div>
+                <p class="text-muted mt-2 mb-0">
+                    No uses <code>127.0.0.1</code> para pagos reales. El pago debe hacerse desde la URL publica HTTPS.
+                </p>
+                {% else %}
                 <p class="text-muted mb-0">
                     Completa esos valores en <code>C:\ConcursoDocente\.env</code>, reinicia el servidor y vuelve a entrar al checkout.
                 </p>
+                {% endif %}
                 {% elif wompi_error %}
                 <div class="alert alert-warning mt-3">
                     <strong>Wompi no respondio.</strong><br>

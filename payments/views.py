@@ -1,4 +1,4 @@
-﻿import json
+import json
 import uuid
 from decimal import Decimal
 
@@ -104,8 +104,13 @@ def checkout_order(request, order_id):
         payment_config_errors.append('La llave publica es de produccion (pub_prod_) pero WOMPI_BASE_URL apunta a sandbox. Usa https://production.wompi.co/v1.')
     if public_key.startswith('pub_test_') and 'production' in base_url:
         payment_config_errors.append('La llave publica es de pruebas (pub_test_) pero WOMPI_BASE_URL apunta a produccion. Usa https://sandbox.wompi.co/v1.')
+    production_payment_public_url = ''
     if public_key.startswith('pub_prod_') and is_local_request:
-        payment_config_errors.append('Estas usando Wompi de produccion desde 127.0.0.1. Para cobro real abre la plataforma desde un dominio publico HTTPS o un tunel HTTPS y configura SITE_PUBLIC_URL. En localhost el modal de produccion puede quedarse procesando.')
+        if settings.SITE_PUBLIC_URL and not settings.SITE_PUBLIC_URL.startswith(('http://127.0.0.1', 'http://localhost')):
+            production_payment_public_url = settings.SITE_PUBLIC_URL.rstrip('/') + reverse('commerce:product_list')
+            payment_config_errors.append('Estas intentando pagar desde localhost. Para Wompi de produccion abre la plataforma publicada por HTTPS.')
+        else:
+            payment_config_errors.append('Estas usando Wompi de produccion desde 127.0.0.1. Para cobro real configura SITE_PUBLIC_URL con la URL publica HTTPS de Render.')
     if not settings.WOMPI_INTEGRITY_SECRET:
         payment_config_errors.append('Falta WOMPI_INTEGRITY_SECRET en .env. Sin esta llave Wompi no renderiza correctamente el checkout firmado.')
     if not request.user.email:
@@ -133,6 +138,7 @@ def checkout_order(request, order_id):
         'wompi_error': wompi_error,
         'payment_config_errors': payment_config_errors,
         'enable_local_payment_approval': settings.ENABLE_LOCAL_PAYMENT_APPROVAL,
+        'production_payment_public_url': production_payment_public_url,
     }
     return render(request, 'payments/checkout.html', context)
 
