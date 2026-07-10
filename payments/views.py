@@ -12,8 +12,10 @@ from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.cache import never_cache
 
-from access_control.services import grant_module_access
+from access_control.services import grant_full_access
 from commerce.models import Cart, Order, OrderItem, Product
+
+ELITE_SLUG = 'elite-cnsc-2026'
 from payments.models import Payment
 from payments.services import WompiService, send_purchase_confirmation
 
@@ -33,8 +35,7 @@ def _mark_order_approved(order, transaction_id, raw_response, notes):
             'paid_at': timezone.now(),
         }
     )
-    for item in order.items.select_related('module'):
-        grant_module_access(order.user, item.module, notes=notes)
+    grant_full_access(order.user, notes=notes)
     send_purchase_confirmation(order)
 
 
@@ -88,8 +89,9 @@ def _build_order_from_products(user, products):
 
 @login_required
 def buy_module(request, product_id):
-    product = get_object_or_404(Product.objects.select_related('module'), id=product_id, active=True)
-    order = _build_order_from_products(request.user, [product])
+    get_object_or_404(Product.objects.select_related('module'), id=product_id, active=True)
+    elite_product = get_object_or_404(Product.objects.select_related('module'), module__slug=ELITE_SLUG, active=True)
+    order = _build_order_from_products(request.user, [elite_product])
     return redirect('payments:checkout_order', order_id=order.id)
 
 

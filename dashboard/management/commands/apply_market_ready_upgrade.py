@@ -1,4 +1,4 @@
-﻿from decimal import Decimal
+from decimal import Decimal
 import hashlib
 
 from django.core.management.base import BaseCommand
@@ -442,6 +442,7 @@ def build_item(module, i):
         f'{case[0]}\n'
         f'{case[1]}\n'
         f'{case[2]}\n'
+        f'La pregunta pertenece a {module["title"]} y evalúa {module["competencia"]}; por tanto, la respuesta debe considerar el enfoque específico de esa competencia.\n'
         'Para responder no basta recordar una definición: es necesario interpretar la situación, reconocer tensiones y valorar consecuencias.\n'
         'La alternativa correcta debe ser viable en una institución educativa oficial y coherente con el derecho al aprendizaje.\n'
         'También debe evitar decisiones automáticas que confundan rapidez con pertinencia o formalidad con calidad pedagógica.'
@@ -527,7 +528,7 @@ class Command(BaseCommand):
             )
             Product.objects.update_or_create(
                 module=module,
-                defaults={'price': Decimal('15000'), 'sale_price': Decimal('15000'), 'active': True}
+                defaults={'price': Decimal('20000'), 'sale_price': Decimal('20000'), 'active': False}
             )
 
             if data['slug'] == AREA_MODULE_SLUG:
@@ -650,7 +651,7 @@ class Command(BaseCommand):
             defaults={
                 'category': category,
                 'title': 'Acceso completo ConcursoDocente CNSC 2026',
-                'short_description': 'Oferta de lanzamiento: todos los módulos, simulacros premium y reportes por un solo pago.',
+                'short_description': 'Acceso completo a todos los módulos, simulacros premium y reportes por un único pago.',
                 'description': 'Incluye diagnóstico, lectura crítica, competencias pedagógicas, TJS, normativa, áreas, simulacro final y plan de mejora.',
                 'difficulty_level': 'cnsc_expert',
                 'estimated_time_minutes': 480,
@@ -660,7 +661,7 @@ class Command(BaseCommand):
         )
         Product.objects.update_or_create(
             module=elite,
-            defaults={'price': Decimal('35000'), 'sale_price': Decimal('25000'), 'active': True}
+            defaults={'price': Decimal('20000'), 'sale_price': Decimal('20000'), 'active': True}
         )
 
         valid_simulacro_names = [
@@ -670,14 +671,19 @@ class Command(BaseCommand):
         ] + [f'Simulacro por área - {area["label"]}' for area in AREA_SIMULACROS]
         Simulacro.objects.exclude(nombre__in=valid_simulacro_names).update(activo=False)
 
-        # Precios definitivos: paquete completo 35k/25k; módulos individuales vigentes 15k.
+        # Modelo comercial definitivo: un único pago de acceso completo por COP 20.000.
         Product.objects.filter(module__slug__in=[module['slug'] for module in MODULES]).update(
-            price=Decimal('15000'),
-            sale_price=Decimal('15000'),
+            price=Decimal('20000'),
+            sale_price=Decimal('20000'),
+            active=False,
+        )
+        Product.objects.filter(module__slug='elite-cnsc-2026').update(
+            price=Decimal('20000'),
+            sale_price=Decimal('20000'),
             active=True,
         )
         Product.objects.exclude(module__slug__in=valid_module_slugs).update(active=False)
 
         self.stdout.write(self.style.SUCCESS(
-            f'Upgrade aplicado: {len(MODULES)} módulos, {created_questions} preguntas nuevas, precios actualizados.'
+            f'Upgrade aplicado: {len(MODULES)} módulos, {created_questions} preguntas nuevas y acceso completo por COP 20.000.'
         ))

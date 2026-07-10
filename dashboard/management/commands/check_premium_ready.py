@@ -116,10 +116,12 @@ class Command(BaseCommand):
         else:
             fail(f'Simulacros por área insuficientes: {area_simulacros}. Faltan: {", ".join(missing_areas)}')
 
-        if products >= 9:
-            ok(f'Productos activos: {products}')
+        active_products = Product.objects.filter(active=True).select_related('module')
+        elite_product = active_products.filter(module__slug='elite-cnsc-2026').first()
+        if products == 1 and elite_product and elite_product.final_price == 20000:
+            ok('Producto único activo: acceso completo por COP 20.000')
         else:
-            fail(f'Productos activos insuficientes: {products}')
+            fail(f'Modelo de pago inconsistente: {products} producto(s) activo(s). Debe existir solo elite-cnsc-2026 por COP 20.000')
 
         self.stdout.write('')
         if issues:

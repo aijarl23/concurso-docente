@@ -36,7 +36,7 @@
                     {% if card.has_access %}
                     <a href="{% url 'simulacros:iniciar_simulacro' simulacro.id %}" class="btn btn-primary w-100">Iniciar simulacro</a>
                     {% else %}
-                    <a href="{{ card.checkout_url }}" class="btn btn-outline-primary w-100">Comprar para desbloquear</a>
+                    <a href="{{ card.checkout_url }}" class="btn btn-outline-primary w-100">Comprar acceso completo</a>
                     {% endif %}
                 </div>
             </div>

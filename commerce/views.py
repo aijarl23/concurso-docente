@@ -5,6 +5,8 @@ from django.shortcuts import get_object_or_404, redirect, render
 
 from .models import Cart, CartItem, Product
 
+ELITE_SLUG = 'elite-cnsc-2026'
+
 
 def _active_cart(request):
     cart, _ = Cart.objects.get_or_create(user=request.user, status='active')
@@ -15,7 +17,7 @@ def _active_cart(request):
 def product_list(request):
     products = (
         Product.objects.select_related('module', 'module__category')
-        .filter(active=True, module__is_active=True)
+        .filter(active=True, module__is_active=True, module__slug=ELITE_SLUG)
         .annotate(
             sales_order=Case(
                 When(module__slug='elite-cnsc-2026', then=0),
@@ -38,8 +40,10 @@ def product_list(request):
 
 @login_required
 def add_to_cart(request, product_id):
-    product = get_object_or_404(Product, id=product_id, active=True)
+    get_object_or_404(Product, id=product_id, active=True)
+    product = get_object_or_404(Product, module__slug=ELITE_SLUG, active=True)
     cart = _active_cart(request)
+    cart.items.exclude(product=product).delete()
     item, created = CartItem.objects.get_or_create(
         cart=cart,
         product=product,
@@ -79,8 +83,8 @@ def checkout_cart(request):
     if not items:
         messages.warning(request, 'El carrito esta vacio.')
         return redirect('commerce:product_list')
-    products = [item.product for item in items]
-    order = _build_order_from_products(request.user, products)
+    elite_product = get_object_or_404(Product, module__slug=ELITE_SLUG, active=True)
+    order = _build_order_from_products(request.user, [elite_product])
     cart.status = 'converted'
     cart.save(update_fields=['status'])
     return redirect('payments:checkout_order', order_id=order.id)
