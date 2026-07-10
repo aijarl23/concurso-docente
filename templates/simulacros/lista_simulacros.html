@@ -1,42 +1,43 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="d-flex justify-content-between align-items-start mb-4">
+<section class="lms-hero mb-4">
     <div>
-        <h1 class="mb-2">Simulacros CNSC Premium</h1>
-        <p class="text-muted mb-0">Simulacros profesionales de alta exigencia tipo CNSC.</p>
+        <p class="section-kicker">Simulacros premium</p>
+        <h1>Practica tipo Concurso Docente CNSC</h1>
+        <p>Todos los simulacros quedan incluidos con el acceso unico. Al finalizar recibes resultado, respuestas correctas y justificacion por pregunta.</p>
     </div>
-    <div class="d-flex gap-2">
-        <a class="btn btn-outline-primary" href="{% url 'simulacros:seleccionar_area' %}">Simulacro por área</a>
-        <a class="btn btn-primary" href="{% url 'commerce:product_list' %}">Comprar acceso</a>
+    <div class="hero-actions">
+        <a class="btn btn-outline-primary btn-lg" href="{% url 'simulacros:seleccionar_area' %}"><i class="bi bi-grid"></i> Simulacro por area</a>
+        <a class="btn btn-primary btn-lg" href="{% url 'commerce:product_list' %}"><i class="bi bi-unlock"></i> Acceso completo</a>
     </div>
-</div>
+</section>
 
-<div class="row">
+<div class="row g-4">
     {% for card in simulacro_cards %}
     {% with simulacro=card.simulacro %}
-    <div class="col-md-6 mb-4">
-        <div class="card shadow-sm border-0 h-100">
+    <div class="col-lg-6">
+        <div class="card module-card h-100">
             <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between gap-3">
-                    <h4>{{ simulacro.nombre }}</h4>
-                    {% if simulacro.es_premium %}
-                    <span class="badge text-bg-warning align-self-start">Premium</span>
+                <div class="d-flex justify-content-between gap-3 mb-2">
+                    <h2 class="h5 mb-0">{{ simulacro.nombre }}</h2>
+                    {% if card.has_access %}
+                    <span class="status-pill"><i class="bi bi-unlock"></i> Disponible</span>
+                    {% else %}
+                    <span class="status-pill status-locked"><i class="bi bi-lock"></i> Requiere acceso</span>
                     {% endif %}
                 </div>
-                <p>{{ simulacro.descripcion }}</p>
-
-                <div class="row text-center mb-3">
-                    <div class="col"><strong>{{ simulacro.total_preguntas }}</strong><br>Preguntas</div>
-                    <div class="col"><strong>{{ simulacro.tiempo_por_pregunta_segundos }}</strong><br>Seg/pregunta</div>
-                    <div class="col"><strong>{{ simulacro.puntaje_minimo_aprobacion }}%</strong><br>Aprobación</div>
+                <p class="text-muted">{{ simulacro.descripcion }}</p>
+                <div class="metric-mini-grid mb-3">
+                    <div><strong>{{ simulacro.total_preguntas }}</strong><span>Preguntas</span></div>
+                    <div><strong>{{ simulacro.tiempo_por_pregunta_segundos }}</strong><span>Seg/pregunta</span></div>
+                    <div><strong>{{ simulacro.puntaje_minimo_aprobacion }}%</strong><span>Meta</span></div>
                 </div>
-
                 <div class="mt-auto">
                     {% if card.has_access %}
-                    <a href="{% url 'simulacros:iniciar_simulacro' simulacro.id %}" class="btn btn-primary w-100">Iniciar simulacro</a>
+                    <a href="{% url 'simulacros:iniciar_simulacro' simulacro.id %}" class="btn btn-primary w-100"><i class="bi bi-play-circle"></i> Iniciar simulacro</a>
                     {% else %}
-                    <a href="{{ card.checkout_url }}" class="btn btn-outline-primary w-100">Comprar acceso completo</a>
+                    <a href="{{ card.checkout_url }}" class="btn btn-outline-primary w-100"><i class="bi bi-credit-card"></i> Comprar acceso completo</a>
                     {% endif %}
                 </div>
             </div>

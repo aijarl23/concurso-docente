@@ -1,21 +1,22 @@
 ﻿import random
 from collections import defaultdict
 
+from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
-from django.conf import settings
 from django.db import transaction
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.utils import timezone
 
 from access_control.services import user_has_module_access
-from banco.models import BancoPregunta
 from commerce.models import Product
-from seguimiento.models import Intento, RespuestaIntento
+from contenidos.models import Modulo
+from seguimiento.models import Intento, ProgresoModulo, RespuestaIntento
 from .models import Simulacro
 
+ELITE_SLUG = 'elite-cnsc-2026'
 
 AREAS_DISCIPLINARES = [
     ('ingles', 'Ingles'),
@@ -25,14 +26,48 @@ AREAS_DISCIPLINARES = [
     ('ciencias_sociales', 'Ciencias Sociales'),
 ]
 
+MODULE_SLUG_TO_CONTENT_TYPE = {
+    'diagnostico-inicial': 'diagnostico_inicial',
+    'lectura-critica-aplicada': 'lectura_critica_aplicada',
+    'competencias-pedagogicas': 'competencias_pedagogicas',
+    'competencias-comportamentales-tjs': 'competencias_tjs',
+    'normativa-contexto-docente': 'normativa_contexto',
+    'simulacros-por-area': 'simulacros_area',
+    'simulacro-final-concurso': 'simulacro_final',
+    'reporte-progreso-plan-mejora': 'reporte_mejora',
+}
+
 
 def _checkout_for_simulacro(simulacro):
-    if not simulacro.module:
-        return reverse('commerce:product_list')
-    product = Product.objects.filter(module=simulacro.module, active=True).first()
+    product = Product.objects.filter(module__slug=ELITE_SLUG, active=True).first()
     if product:
         return reverse('payments:buy_module', args=[product.id])
     return reverse('commerce:product_list')
+
+
+def _option_text(pregunta, option):
+    return {
+        'A': pregunta.opcion_a,
+        'B': pregunta.opcion_b,
+        'C': pregunta.opcion_c,
+        'D': pregunta.opcion_d,
+    }.get(option or '', '')
+
+
+def _sync_module_progress(intento):
+    module = getattr(intento.simulacro, 'module', None)
+    if not module:
+        return
+    content_type = MODULE_SLUG_TO_CONTENT_TYPE.get(module.slug)
+    if not content_type:
+        return
+    content_module = Modulo.objects.filter(tipo=content_type, activo=True).first()
+    if not content_module:
+        return
+    progress, _ = ProgresoModulo.objects.get_or_create(usuario=intento.usuario, modulo=content_module)
+    if progress.porcentaje < 100:
+        progress.porcentaje = 100
+        progress.save(update_fields=['porcentaje'])
 
 
 def _send_result_email(intento):
@@ -51,21 +86,21 @@ def _send_result_email(intento):
             por_competencia[competencia]['correctas'] += 1
 
     detalle = '\n'.join(
-        f"- {nombre}: {datos['correctas']}/{datos['total']}"
+        f'- {nombre}: {datos["correctas"]}/{datos["total"]}'
         for nombre, datos in sorted(por_competencia.items())
     )
-    subject = f'Resultado de simulacro - {intento.simulacro.nombre}'
     detalle_preguntas = []
     for idx, respuesta in enumerate(intento.respuestas.select_related('pregunta').order_by('id'), 1):
         pregunta = respuesta.pregunta
         seleccion = respuesta.respuesta_seleccionada or 'Sin responder'
         detalle_preguntas.append(
             f'{idx}. {pregunta.enunciado}\n'
-            f'   Tu respuesta: {seleccion}\n'
-            f'   Respuesta correcta: {pregunta.respuesta_correcta}\n'
-            f'   Justificación: {pregunta.justificacion or "No disponible."}'
+            f'   Tu respuesta: {seleccion} {_option_text(pregunta, respuesta.respuesta_seleccionada)}\n'
+            f'   Respuesta correcta: {pregunta.respuesta_correcta} {_option_text(pregunta, pregunta.respuesta_correcta)}\n'
+            f'   Justificacion: {pregunta.justificacion or "No disponible."}'
         )
 
+    subject = f'Resultado de simulacro - {intento.simulacro.nombre}'
     body = (
         f'Hola {user.nombre},\n\n'
         f'Finalizaste el simulacro: {intento.simulacro.nombre}.\n'
@@ -74,20 +109,11 @@ def _send_result_email(intento):
         f'Errores: {intento.total_incorrectas}\n'
         f'Sin responder: {intento.total_sin_responder}\n'
         f'Tiempo usado: {intento.tiempo_usado_segundos} segundos\n\n'
-        f'Desempeño por competencia:\n{detalle}\n\n'
-        f'Retroalimentación por pregunta:\n' + '\n\n'.join(detalle_preguntas)
+        f'Desempeno por competencia:\n{detalle}\n\n'
+        f'Retroalimentacion por pregunta:\n' + '\n\n'.join(detalle_preguntas)
     )
     sent = send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [user.email], fail_silently=True)
     return bool(sent)
-
-
-def _option_text(pregunta, option):
-    return {
-        'A': pregunta.opcion_a,
-        'B': pregunta.opcion_b,
-        'C': pregunta.opcion_c,
-        'D': pregunta.opcion_d,
-    }.get(option or '', '')
 
 
 @login_required
@@ -119,7 +145,7 @@ def seleccionar_area(request):
 def iniciar_simulacro(request, simulacro_id):
     simulacro = get_object_or_404(Simulacro, id=simulacro_id, activo=True)
     if simulacro.es_premium and not user_has_module_access(request.user, simulacro.module):
-        messages.warning(request, 'Este simulacro es premium. Debes comprar el módulo o paquete Elite para ingresar.')
+        messages.warning(request, 'Este simulacro hace parte del curso completo. Compra el acceso unico para ingresar a todos los modulos y simulacros.')
         return redirect(_checkout_for_simulacro(simulacro))
 
     if request.method != 'POST':
@@ -144,12 +170,7 @@ def realizar_simulacro(request, intento_id):
 
     preguntas = list(intento.simulacro.preguntas.filter(activa=True).order_by('id'))
     random.Random(intento.id).shuffle(preguntas)
-    seconds_per_question = int(
-        request.session.get(
-            f'simulacro_seconds_per_question_{intento.id}',
-            intento.simulacro.tiempo_por_pregunta_segundos or 180,
-        )
-    )
+    seconds_per_question = int(request.session.get(f'simulacro_seconds_per_question_{intento.id}', intento.simulacro.tiempo_por_pregunta_segundos or 180))
     seconds_per_question = min(max(seconds_per_question, 60), 600)
     total_time_limit = seconds_per_question * max(len(preguntas), 1)
 
@@ -164,12 +185,10 @@ def realizar_simulacro(request, intento_id):
             for pregunta in preguntas:
                 respuesta = request.POST.get(f'pregunta_{pregunta.id}')
                 es_correcta = respuesta == pregunta.respuesta_correcta and respondida_en_tiempo
-
                 if not respuesta:
                     sin_responder += 1
                 elif es_correcta:
                     correctas += 1
-
                 RespuestaIntento.objects.create(
                     intento=intento,
                     pregunta=pregunta,
@@ -187,8 +206,10 @@ def realizar_simulacro(request, intento_id):
             intento.fecha_finalizacion = timezone.now()
             intento.tiempo_usado_segundos = tiempo_total
             intento.puntaje_obtenido = round((correctas / total) * 100, 2)
-            intento.reporte_enviado = _send_result_email(intento)
             intento.save()
+            _sync_module_progress(intento)
+            intento.reporte_enviado = _send_result_email(intento)
+            intento.save(update_fields=['reporte_enviado'])
 
         return redirect('simulacros:resultado_simulacro', intento_id=intento.id)
 
@@ -212,7 +233,6 @@ def resultado_simulacro(request, intento_id):
         resumen[competencia]['total'] += 1
         if respuesta.es_correcta:
             resumen[competencia]['correctas'] += 1
-
         revision.append({
             'respuesta': respuesta,
             'pregunta': pregunta,
@@ -222,8 +242,7 @@ def resultado_simulacro(request, intento_id):
             'correcta_texto': _option_text(pregunta, pregunta.respuesta_correcta),
         })
 
-    email_backend = getattr(settings, 'EMAIL_BACKEND', '')
-    email_console_mode = 'console' in email_backend.lower()
+    email_console_mode = 'console' in getattr(settings, 'EMAIL_BACKEND', '').lower()
     return render(request, 'simulacros/resultado_simulacro.html', {
         'intento': intento,
         'respuestas': respuestas,

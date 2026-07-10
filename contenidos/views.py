@@ -7,129 +7,112 @@ from simulacros.models import Simulacro
 from seguimiento.models import Intento
 
 
-MODULE_DESCRIPTION = (
-    'Entrenamiento por competencias para Concurso Docente CNSC, con enfoque '
-    'en lectura crítica, juicio situacional y resolución de casos aplicados.'
-)
-
-
 def seed_modulos():
     modulos_data = [
         {
-            'titulo': 'Diagnóstico inicial',
+            'titulo': 'Diagnostico inicial',
             'tipo': 'diagnostico_inicial',
-            'descripcion': 'Mapa de entrada para identificar brechas reales antes de iniciar la preparación.',
+            'descripcion': 'Mapa de entrada para identificar brechas reales antes de iniciar la preparacion.',
             'temas': [
                 ('Mapa de fortalezas y brechas', 'Lectura inicial del nivel por competencia.'),
-                ('Lectura de consignas', 'Identificación precisa de lo que pregunta cada ítem.'),
-                ('Toma de decisiones inicial', 'Priorización de acciones según evidencia.'),
-                ('Plan de entrada', 'Ruta de estudio sugerida a partir del desempeño.'),
+                ('Lectura de consignas', 'Identificacion precisa de lo que pregunta cada item.'),
+                ('Toma de decisiones inicial', 'Priorizacion de acciones segun evidencia.'),
+                ('Plan de entrada', 'Ruta de estudio sugerida a partir del desempeno.'),
             ],
         },
         {
-            'titulo': 'Lectura crítica aplicada',
+            'titulo': 'Lectura critica aplicada',
             'tipo': 'lectura_critica_aplicada',
-            'descripcion': 'Inferencia, tesis, intención comunicativa y evaluación de argumentos en textos complejos.',
+            'descripcion': 'Inferencia, tesis, intencion comunicativa y evaluacion de argumentos en textos complejos.',
             'temas': [
-                ('Inferencia y supuestos', 'Reconocimiento de información implícita sustentada.'),
-                ('Tesis y argumentos', 'Análisis de estructura argumentativa y evidencias.'),
-                ('Intención del autor', 'Interpretación del propósito comunicativo.'),
-                ('Evaluación de evidencia', 'Valoración de suficiencia, pertinencia y coherencia.'),
+                ('Inferencia y supuestos', 'Reconocimiento de informacion implicita sustentada.'),
+                ('Tesis y argumentos', 'Analisis de estructura argumentativa y evidencias.'),
+                ('Intencion del autor', 'Interpretacion del proposito comunicativo.'),
+                ('Evaluacion de evidencia', 'Valoracion de suficiencia, pertinencia y coherencia.'),
             ],
         },
         {
-            'titulo': 'Competencias pedagógicas',
+            'titulo': 'Competencias pedagogicas',
             'tipo': 'competencias_pedagogicas',
-            'descripcion': 'Casos de planeación, evaluación formativa, inclusión, didáctica y gestión del aula.',
+            'descripcion': 'Casos de planeacion, evaluacion formativa, inclusion, didactica y gestion del aula.',
             'temas': [
-                ('Planeación curricular', 'Coherencia entre objetivos, desempeños, actividades y evaluación.'),
-                ('Evaluación formativa', 'Uso de evidencias y retroalimentación para mejorar aprendizajes.'),
-                ('Inclusión y DUA', 'Barreras, ajustes razonables y participación efectiva.'),
-                ('Didáctica situada', 'Estrategias pertinentes según contexto y necesidad.'),
+                ('Planeacion curricular', 'Coherencia entre objetivos, desempenos, actividades y evaluacion.'),
+                ('Evaluacion formativa', 'Uso de evidencias y retroalimentacion para mejorar aprendizajes.'),
+                ('Inclusion y DUA', 'Barreras, ajustes razonables y participacion efectiva.'),
+                ('Didactica situada', 'Estrategias pertinentes segun contexto y necesidad.'),
             ],
         },
         {
             'titulo': 'Competencias comportamentales / TJS',
             'tipo': 'competencias_tjs',
-            'descripcion': 'Juicio situacional docente para convivencia, liderazgo, comunicación y trabajo colaborativo.',
+            'descripcion': 'Juicio situacional docente para convivencia, liderazgo, comunicacion y trabajo colaborativo.',
             'temas': [
-                ('Comunicación asertiva', 'Respuesta profesional ante tensión y desacuerdo.'),
-                ('Liderazgo', 'Actuación orientada a acuerdos, cuidado y mejora institucional.'),
-                ('Trabajo en equipo', 'Coordinación con pares, familias y directivos.'),
-                ('Orientación al logro', 'Decisiones con seguimiento y evidencia.'),
+                ('Comunicacion asertiva', 'Respuesta profesional ante tension y desacuerdo.'),
+                ('Liderazgo', 'Actuacion orientada a acuerdos, cuidado y mejora institucional.'),
+                ('Trabajo en equipo', 'Coordinacion con pares, familias y directivos.'),
+                ('Orientacion al logro', 'Decisiones con seguimiento y evidencia.'),
             ],
         },
         {
             'titulo': 'Normativa y contexto docente',
             'tipo': 'normativa_contexto',
-            'descripcion': 'Aplicación contextual de normativa educativa, inclusión, convivencia y funciones docentes.',
+            'descripcion': 'Aplicacion contextual de normativa educativa, inclusion, convivencia y funciones docentes.',
             'temas': [
-                ('Estatuto docente', 'Uso aplicado del marco de profesionalización docente.'),
-                ('Ley General de Educación', 'Fines, responsabilidades y sentido pedagógico.'),
-                ('Convivencia escolar', 'Prevención, corresponsabilidad y rutas de actuación.'),
-                ('Inclusión y ajustes razonables', 'Garantía del derecho a aprender con trazabilidad.'),
+                ('Estatuto docente', 'Uso aplicado del marco de profesionalizacion docente.'),
+                ('Ley General de Educacion', 'Fines, responsabilidades y sentido pedagogico.'),
+                ('Convivencia escolar', 'Prevencion, corresponsabilidad y rutas de actuacion.'),
+                ('Inclusion y ajustes razonables', 'Garantia del derecho a aprender con trazabilidad.'),
             ],
         },
         {
-            'titulo': 'Simulacros por área',
+            'titulo': 'Simulacros por area',
             'tipo': 'simulacros_area',
-            'descripcion': 'Entrenamiento por disciplina con razonamiento cuantitativo, datos y situaciones contextualizadas.',
+            'descripcion': 'Entrenamiento por disciplina con lectura critica, datos y situaciones contextualizadas.',
             'temas': [
-                ('Razonamiento cuantitativo', 'Interpretación de datos, proporciones y tendencias.'),
-                ('Matemáticas aplicadas', 'Resolución de problemas en contexto escolar.'),
-                ('Interpretación de datos', 'Lectura de tablas, gráficas e indicadores.'),
-                ('Problemas contextualizados', 'Transferencia de procedimientos a situaciones nuevas.'),
+                ('Comprension disciplinar', 'Uso de conceptos del area para interpretar situaciones.'),
+                ('Problemas contextualizados', 'Resolucion de casos aplicados al aula.'),
+                ('Interpretacion de datos', 'Lectura de tablas, graficas e indicadores.'),
+                ('Decision pedagogica por area', 'Intervenciones coherentes con el saber disciplinar.'),
             ],
         },
         {
             'titulo': 'Simulacro final tipo concurso',
             'tipo': 'simulacro_final',
-            'descripcion': 'Prueba integral con mezcla de lectura crítica, pedagogía, normativa, TJS y razonamiento aplicado.',
+            'descripcion': 'Prueba integral con lectura critica, pedagogia, normativa, TJS y razonamiento aplicado.',
             'temas': [
-                ('Gestión del tiempo', 'Estrategia para responder bajo límite real.'),
-                ('Integración de competencias', 'Cruce de lectura, criterio pedagógico y juicio situacional.'),
-                ('Análisis de resultados', 'Lectura técnica de aciertos, errores y tendencias.'),
-                ('Estrategia de cierre', 'Plan final de preparación antes de la prueba.'),
+                ('Gestion del tiempo', 'Estrategia para responder bajo limite real.'),
+                ('Integracion de competencias', 'Cruce de lectura, criterio pedagogico y juicio situacional.'),
+                ('Analisis de resultados', 'Lectura tecnica de aciertos, errores y tendencias.'),
+                ('Estrategia de cierre', 'Plan final de preparacion antes de la prueba.'),
             ],
         },
         {
             'titulo': 'Reporte de progreso y plan de mejora',
             'tipo': 'reporte_mejora',
-            'descripcion': 'Conversión de resultados en una ruta concreta de refuerzo, seguimiento y mejora.',
+            'descripcion': 'Conversion de resultados en una ruta concreta de refuerzo, seguimiento y mejora.',
             'temas': [
-                ('Lectura de resultados', 'Interpretación de desempeño por competencia.'),
-                ('Priorización de brechas', 'Selección de focos según impacto y urgencia.'),
-                ('Plan semanal', 'Organización de sesiones de estudio por evidencia.'),
-                ('Seguimiento de mejora', 'Revisión de avances y ajuste de estrategia.'),
+                ('Lectura de resultados', 'Interpretacion de desempeno por competencia.'),
+                ('Priorizacion de brechas', 'Seleccion de focos segun impacto y urgencia.'),
+                ('Plan semanal', 'Organizacion de sesiones de estudio por evidencia.'),
+                ('Seguimiento de mejora', 'Revision de avances y ajuste de estrategia.'),
             ],
         },
     ]
 
     tipos_vigentes = [module_data['tipo'] for module_data in modulos_data]
     Modulo.objects.exclude(tipo__in=tipos_vigentes).update(activo=False)
-
     for order, module_data in enumerate(modulos_data, 1):
         temas = module_data.pop('temas')
         modulo, _ = Modulo.objects.update_or_create(
             tipo=module_data['tipo'],
-            defaults={
-                'titulo': module_data['titulo'],
-                'descripcion': module_data['descripcion'],
-                'orden': order,
-                'activo': True,
-            },
+            defaults={'titulo': module_data['titulo'], 'descripcion': module_data['descripcion'], 'orden': order, 'activo': True},
         )
-
         Tema.objects.filter(modulo=modulo).exclude(orden__in=range(1, len(temas) + 1)).update(activo=False)
         for topic_order, (titulo, descripcion) in enumerate(temas, 1):
             Tema.objects.update_or_create(
                 modulo=modulo,
                 orden=topic_order,
-                defaults={
-                    'titulo': titulo,
-                    'descripcion': descripcion,
-                    'activo': True,
-                },
+                defaults={'titulo': titulo, 'descripcion': descripcion, 'activo': True},
             )
 
 
@@ -150,12 +133,10 @@ def dashboard(request):
         'promedio': round(float(promedio), 1),
         'progreso': min(progreso, 100),
     }
-
     return render(request, 'contenidos/dashboard.html', {'modulos': modulos, 'metricas': metricas})
 
 
 def detalle_modulo(request, modulo_id):
     seed_modulos()
     modulo = get_object_or_404(Modulo.objects.prefetch_related('temas'), id=modulo_id, activo=True)
-
     return render(request, 'contenidos/detalle_modulo.html', {'modulo': modulo})

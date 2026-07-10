@@ -1,4 +1,4 @@
-from django.contrib import messages
+﻿from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Case, IntegerField, When
 from django.shortcuts import get_object_or_404, redirect, render
@@ -50,7 +50,7 @@ def add_to_cart(request, product_id):
         defaults={'quantity': 1, 'unit_price': product.final_price}
     )
     if not created:
-        item.quantity += 1
+        item.quantity = 1
         item.unit_price = product.final_price
         item.save(update_fields=['quantity', 'unit_price'])
     messages.success(request, 'Producto agregado al carrito.')
@@ -60,7 +60,12 @@ def add_to_cart(request, product_id):
 @login_required
 def cart_detail(request):
     cart = _active_cart(request)
-    items = cart.items.select_related('product__module')
+    items = list(cart.items.select_related('product__module'))
+    for item in items:
+        if item.quantity != 1 or item.unit_price != item.product.final_price:
+            item.quantity = 1
+            item.unit_price = item.product.final_price
+            item.save(update_fields=['quantity', 'unit_price'])
     total = sum(item.subtotal for item in items)
     return render(request, 'commerce/cart_detail.html', {'cart': cart, 'items': items, 'total': total})
 
@@ -88,3 +93,5 @@ def checkout_cart(request):
     cart.status = 'converted'
     cart.save(update_fields=['status'])
     return redirect('payments:checkout_order', order_id=order.id)
+
+

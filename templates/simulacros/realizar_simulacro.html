@@ -2,45 +2,41 @@
 
 {% block content %}
 <div class="container mt-4">
-    <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
         <div>
-            <h2 class="mb-1">Simulacro en curso</h2>
-            <p class="text-muted mb-0">{{ intento.simulacro.nombre }}</p>
+            <p class="section-kicker mb-1">Simulacro en curso</p>
+            <h1 class="h3 mb-1">{{ intento.simulacro.nombre }}</h1>
+            <p class="text-muted mb-0">Puedes revisar tus respuestas antes de finalizar. El resultado se guarda en tu perfil.</p>
         </div>
-        <span class="badge text-bg-primary">{{ seconds_per_question }} segundos por pregunta · tiempo total administrable</span>
+        <span class="badge text-bg-primary timer-badge"><i class="bi bi-clock"></i> {{ seconds_per_question }} segundos por pregunta</span>
     </div>
 
     <form method="post" id="simulacro-form">
         {% csrf_token %}
         <input type="hidden" name="tiempo_total_prueba" value="0" id="tiempo-total-prueba">
-        <div class="alert alert-info d-flex justify-content-between align-items-center">
-            <span>Administra el tiempo de forma global. Puedes avanzar y volver sobre las preguntas antes de finalizar.</span>
+        <div class="alert alert-info d-flex flex-wrap justify-content-between align-items-center gap-2 sticky-timer-panel">
+            <span>Administra el tiempo global de la prueba.</span>
             <strong id="global-timer" data-limit="{{ total_time_limit }}"></strong>
         </div>
         {% for pregunta in preguntas %}
-        <div class="card mb-4 shadow-sm question-card">
+        <article class="card mb-4 shadow-sm question-card">
             <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h5 class="mb-0">Pregunta {{ forloop.counter }}</h5>
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
+                    <h2 class="h5 mb-0">Pregunta {{ forloop.counter }}</h2>
                     <span class="badge text-bg-light border">{{ pregunta.competencia }}</span>
                 </div>
-
-                {% if pregunta.contexto %}
-                <div class="alert alert-light border lh-lg">{{ pregunta.contexto|linebreaksbr }}</div>
-                {% endif %}
-
-                <p><strong>{{ pregunta.enunciado }}</strong></p>
-
+                {% if pregunta.contexto %}<div class="question-context lh-lg">{{ pregunta.contexto|linebreaksbr }}</div>{% endif %}
+                <p class="fw-semibold mt-3">{{ pregunta.enunciado }}</p>
                 <div class="vstack gap-2 options">
-                    <label class="border rounded p-2"><input type="radio" name="pregunta_{{ pregunta.id }}" value="A"> A. {{ pregunta.opcion_a }}</label>
-                    <label class="border rounded p-2"><input type="radio" name="pregunta_{{ pregunta.id }}" value="B"> B. {{ pregunta.opcion_b }}</label>
-                    <label class="border rounded p-2"><input type="radio" name="pregunta_{{ pregunta.id }}" value="C"> C. {{ pregunta.opcion_c }}</label>
-                    <label class="border rounded p-2"><input type="radio" name="pregunta_{{ pregunta.id }}" value="D"> D. {{ pregunta.opcion_d }}</label>
+                    <label class="option-card"><input type="radio" name="pregunta_{{ pregunta.id }}" value="A"> <span>A. {{ pregunta.opcion_a }}</span></label>
+                    <label class="option-card"><input type="radio" name="pregunta_{{ pregunta.id }}" value="B"> <span>B. {{ pregunta.opcion_b }}</span></label>
+                    <label class="option-card"><input type="radio" name="pregunta_{{ pregunta.id }}" value="C"> <span>C. {{ pregunta.opcion_c }}</span></label>
+                    <label class="option-card"><input type="radio" name="pregunta_{{ pregunta.id }}" value="D"> <span>D. {{ pregunta.opcion_d }}</span></label>
                 </div>
             </div>
-        </div>
+        </article>
         {% endfor %}
-        <button class="btn btn-success btn-lg w-100">Finalizar simulacro</button>
+        <button class="btn btn-success btn-lg w-100"><i class="bi bi-check-circle"></i> Finalizar y ver retroalimentacion</button>
     </form>
 </div>
 {% endblock %}
@@ -53,27 +49,18 @@
     const form = document.getElementById('simulacro-form');
     const limit = Number(timer.dataset.limit || 0);
     let elapsed = 0;
-
     function format(seconds) {
         const minutes = Math.floor(seconds / 60);
         const rest = seconds % 60;
         return String(minutes).padStart(2, '0') + ':' + String(rest).padStart(2, '0');
     }
-
     function render() {
         const remaining = Math.max(limit - elapsed, 0);
         timer.textContent = 'Tiempo restante: ' + format(remaining);
         hidden.value = elapsed;
-        if (remaining <= 0) {
-            clearInterval(intervalId);
-            form.submit();
-        }
+        if (remaining <= 0) { clearInterval(intervalId); form.submit(); }
     }
-
-    const intervalId = setInterval(() => {
-        elapsed += 1;
-        render();
-    }, 1000);
+    const intervalId = setInterval(() => { elapsed += 1; render(); }, 1000);
     render();
 })();
 </script>

@@ -1,4 +1,4 @@
-﻿from django.utils import timezone
+from django.utils import timezone
 
 from .models import UserAccess
 
@@ -7,7 +7,9 @@ ELITE_SLUG = 'elite-cnsc-2026'
 
 def _active_access_queryset(user):
     now = timezone.now()
-    return UserAccess.objects.filter(user=user, status='active').filter(expires_at__isnull=True) | UserAccess.objects.filter(user=user, status='active', expires_at__gt=now)
+    active_no_expiry = UserAccess.objects.filter(user=user, status='active', expires_at__isnull=True)
+    active_with_expiry = UserAccess.objects.filter(user=user, status='active', expires_at__gt=now)
+    return active_no_expiry | active_with_expiry
 
 
 def user_has_module_access(user, module):
@@ -17,9 +19,7 @@ def user_has_module_access(user, module):
         return True
     if module is None:
         return True
-
-    active_access = _active_access_queryset(user)
-    return active_access.filter(module=module).exists() or active_access.filter(module__slug=ELITE_SLUG).exists()
+    return _active_access_queryset(user).filter(module__slug=ELITE_SLUG).exists()
 
 
 def user_has_full_access(user):
@@ -30,19 +30,22 @@ def user_has_full_access(user):
     return _active_access_queryset(user).filter(module__slug=ELITE_SLUG).exists()
 
 
-def grant_module_access(user, module, access_type='single_purchase', expires_at=None, notes=''):
+def grant_module_access(user, module, access_type='combo', expires_at=None, notes=''):
+    from academics.models import Module
+
+    elite = module if module.slug == ELITE_SLUG else Module.objects.get(slug=ELITE_SLUG)
     access, _ = UserAccess.objects.update_or_create(
         user=user,
-        module=module,
+        module=elite,
         defaults={
-            'access_type': 'combo' if module.slug == ELITE_SLUG else access_type,
+            'access_type': 'combo',
             'status': 'active',
             'expires_at': expires_at,
-            'notes': notes,
-        }
+            'notes': notes or 'Acceso completo por pago unico',
+        },
     )
     user.estado_pago = 'activo'
-    user.modulo_adquirido = module.slug
+    user.modulo_adquirido = ELITE_SLUG
     user.fecha_expiracion = expires_at
     user.save(update_fields=['estado_pago', 'modulo_adquirido', 'fecha_expiracion'])
     return access

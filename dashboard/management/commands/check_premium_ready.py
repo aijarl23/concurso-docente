@@ -1,4 +1,4 @@
-from django.conf import settings
+﻿from django.conf import settings
 from django.core.management.base import BaseCommand
 from django.urls import reverse
 
@@ -8,7 +8,7 @@ from simulacros.models import Simulacro
 
 
 class Command(BaseCommand):
-    help = 'Verifica la configuración crítica de la plataforma premium sin imprimir secretos.'
+    help = 'Verifica configuracion critica, banco de preguntas, pago unico y simulacros activos.'
 
     def handle(self, *args, **options):
         issues = []
@@ -25,24 +25,24 @@ class Command(BaseCommand):
             issues.append(label)
             self.stdout.write(self.style.ERROR(f'[FALTA] {label}'))
 
-        self.stdout.write('Verificación ConcursoDocente Premium')
+        self.stdout.write('Verificacion ConcursoDocente Premium')
 
         if settings.DEBUG:
-            warn('DEBUG=True: correcto para local, no usar así en producción.')
+            warn('DEBUG=True: correcto para local, no usar asi en produccion.')
         else:
             ok('DEBUG=False')
 
         if settings.SECRET_KEY and not settings.SECRET_KEY.startswith('django-insecure-'):
             ok('SECRET_KEY seguro configurado')
         elif settings.DEBUG:
-            warn('SECRET_KEY de desarrollo activa. Cambiar antes de producción.')
+            warn('SECRET_KEY de desarrollo activa. Cambiar antes de produccion.')
         else:
             fail('SECRET_KEY seguro requerido con DEBUG=False')
 
         if settings.ALLOWED_HOSTS:
             ok('ALLOWED_HOSTS configurado')
         else:
-            fail('ALLOWED_HOSTS vacío')
+            fail('ALLOWED_HOSTS vacio')
 
         if getattr(settings, 'GOOGLE_OAUTH_CLIENT_ID', '') and getattr(settings, 'GOOGLE_OAUTH_CLIENT_SECRET', '') and getattr(settings, 'GOOGLE_OAUTH_REDIRECT_URI', ''):
             ok('Google OAuth configurado')
@@ -57,14 +57,9 @@ class Command(BaseCommand):
             fail('Google redirect URI no coincide con /cuentas/google/callback/')
 
         missing_wompi = []
-        if not getattr(settings, 'WOMPI_PUBLIC_KEY', ''):
-            missing_wompi.append('WOMPI_PUBLIC_KEY')
-        if not getattr(settings, 'WOMPI_PRIVATE_KEY', ''):
-            missing_wompi.append('WOMPI_PRIVATE_KEY')
-        if not getattr(settings, 'WOMPI_INTEGRITY_SECRET', ''):
-            missing_wompi.append('WOMPI_INTEGRITY_SECRET')
-        if not getattr(settings, 'WOMPI_EVENTS_SECRET', ''):
-            missing_wompi.append('WOMPI_EVENTS_SECRET')
+        for name in ['WOMPI_PUBLIC_KEY', 'WOMPI_PRIVATE_KEY', 'WOMPI_INTEGRITY_SECRET', 'WOMPI_EVENTS_SECRET']:
+            if not getattr(settings, name, ''):
+                missing_wompi.append(name)
 
         public_key = getattr(settings, 'WOMPI_PUBLIC_KEY', '').strip()
         base_url = getattr(settings, 'WOMPI_BASE_URL', '').strip().lower()
@@ -78,19 +73,20 @@ class Command(BaseCommand):
         elif settings.DEBUG:
             warn('Wompi incompleto. Faltan: ' + ', '.join(missing_wompi) + '. Para pruebas locales solo puedes simular pago si ENABLE_LOCAL_PAYMENT_APPROVAL=True.')
         else:
-            fail('Wompi incompleto para producción. Faltan: ' + ', '.join(missing_wompi))
+            fail('Wompi incompleto para produccion. Faltan: ' + ', '.join(missing_wompi))
 
         email_backend = getattr(settings, 'EMAIL_BACKEND', '')
         if 'console' in email_backend and settings.DEBUG:
-            warn('EMAIL_BACKEND usa consola. Correcto local; no envía correos reales.')
+            warn('EMAIL_BACKEND usa consola. Correcto local; no envia correos reales.')
         elif 'console' in email_backend:
-            fail('EMAIL_BACKEND usa consola. En producción no enviará correos reales.')
+            fail('EMAIL_BACKEND usa consola. En produccion no enviara correos reales.')
         elif getattr(settings, 'EMAIL_HOST', '') or 'sendgrid' in email_backend.lower() or 'resend' in email_backend.lower():
             ok('Email transaccional configurado')
         else:
             fail('Email transaccional no configurado')
 
-        questions = BancoPregunta.objects.filter(categoria__nombre='Banco Premium CNSC 2026 V3', activa=True).count()
+        question_qs = BancoPregunta.objects.filter(categoria__nombre='Banco Premium CNSC 2026 V3', activa=True)
+        questions = question_qs.count()
         simulacros = Simulacro.objects.filter(activo=True).count()
         area_simulacros = Simulacro.objects.filter(activo=True, tipo='area').count()
         products = Product.objects.filter(active=True).count()
@@ -100,26 +96,63 @@ class Command(BaseCommand):
         else:
             fail(f'Banco premium insuficiente: {questions} preguntas')
 
+        seen_items = set()
+        duplicate_items = 0
+        invalid_options = 0
+        invalid_answers = 0
+        missing_feedback = 0
+        for question in question_qs:
+            key = (''.join((question.contexto or '').lower().split()), ''.join((question.enunciado or '').lower().split()))
+            if key in seen_items:
+                duplicate_items += 1
+            seen_items.add(key)
+            options = [
+                (question.opcion_a or '').strip().lower(),
+                (question.opcion_b or '').strip().lower(),
+                (question.opcion_c or '').strip().lower(),
+                (question.opcion_d or '').strip().lower(),
+            ]
+            if len(set(options)) != 4 or any(not option for option in options):
+                invalid_options += 1
+            if question.respuesta_correcta not in {'A', 'B', 'C', 'D'}:
+                invalid_answers += 1
+            if not (question.justificacion or '').strip():
+                missing_feedback += 1
+
+        if duplicate_items:
+            fail(f'Banco con preguntas duplicadas: {duplicate_items}')
+        else:
+            ok('Banco sin duplicados exactos de contexto/enunciado')
+        if invalid_options:
+            fail(f'Preguntas con opciones repetidas o vacias: {invalid_options}')
+        else:
+            ok('Opciones de respuesta unicas y completas')
+        if invalid_answers:
+            fail(f'Preguntas con respuesta correcta invalida: {invalid_answers}')
+        else:
+            ok('Respuesta correcta valida en todas las preguntas')
+        if missing_feedback:
+            fail(f'Preguntas sin justificacion tecnica: {missing_feedback}')
+        else:
+            ok('Retroalimentacion tecnica registrada en todas las preguntas')
+
         if simulacros >= 12:
             ok(f'Simulacros activos: {simulacros}')
         else:
             fail(f'Simulacros activos insuficientes: {simulacros}')
 
         expected_areas = {'ingles', 'tecnologia', 'matematicas', 'ciencias_naturales', 'ciencias_sociales'}
-        loaded_areas = set(
-            Simulacro.objects.filter(activo=True, tipo='area').values_list('area', flat=True)
-        )
+        loaded_areas = set(Simulacro.objects.filter(activo=True, tipo='area').values_list('area', flat=True))
         missing_areas = sorted(expected_areas - loaded_areas)
-
         if area_simulacros >= 5 and not missing_areas:
-            ok(f'Simulacros por área: {area_simulacros}')
+            ok(f'Simulacros por area: {area_simulacros}')
         else:
-            fail(f'Simulacros por área insuficientes: {area_simulacros}. Faltan: {", ".join(missing_areas)}')
+            fail(f'Simulacros por area insuficientes: {area_simulacros}. Faltan: {", ".join(missing_areas)}')
 
         active_products = Product.objects.filter(active=True).select_related('module')
         elite_product = active_products.filter(module__slug='elite-cnsc-2026').first()
         if products == 1 and elite_product and elite_product.final_price == 20000:
-            ok('Producto único activo: acceso completo por COP 20.000')
+            ok('Producto unico activo: acceso completo por COP 20.000')
         else:
             fail(f'Modelo de pago inconsistente: {products} producto(s) activo(s). Debe existir solo elite-cnsc-2026 por COP 20.000')
 

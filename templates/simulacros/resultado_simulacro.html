@@ -4,52 +4,50 @@
 <div class="container mt-4">
     <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
         <div>
+            <p class="section-kicker mb-1">Resultado guardado</p>
             <h1 class="mb-1">Resultado del simulacro</h1>
             <p class="text-muted mb-0">{{ intento.simulacro.nombre }}</p>
         </div>
-        <a class="btn btn-primary" href="{% url 'simulacros:lista_simulacros' %}">Volver a simulacros</a>
+        <a class="btn btn-primary" href="{% url 'simulacros:lista_simulacros' %}"><i class="bi bi-arrow-left"></i> Volver a simulacros</a>
     </div>
 
-    <div class="card shadow-sm border-0 mb-4">
+    <section class="result-summary card shadow-sm border-0 mb-4">
         <div class="card-body">
-            <h3>Puntaje: {{ intento.puntaje_obtenido }}%</h3>
-            <div class="row g-3 mt-2">
-                <div class="col-md-3"><strong>Correctas:</strong> {{ intento.total_correctas }}</div>
-                <div class="col-md-3"><strong>Incorrectas:</strong> {{ intento.total_incorrectas }}</div>
-                <div class="col-md-3"><strong>Sin responder:</strong> {{ intento.total_sin_responder }}</div>
-                <div class="col-md-3"><strong>Tiempo usado:</strong> {{ intento.tiempo_usado_segundos }} segundos</div>
+            <div class="d-flex flex-wrap justify-content-between align-items-end gap-3">
+                <div>
+                    <span class="text-muted">Puntaje obtenido</span>
+                    <h2 class="display-6 fw-bold mb-0">{{ intento.puntaje_obtenido }}%</h2>
+                </div>
+                <div class="metric-mini-grid result-metrics">
+                    <div><strong>{{ intento.total_correctas }}</strong><span>Correctas</span></div>
+                    <div><strong>{{ intento.total_incorrectas }}</strong><span>Incorrectas</span></div>
+                    <div><strong>{{ intento.total_sin_responder }}</strong><span>Sin responder</span></div>
+                    <div><strong>{{ intento.tiempo_usado_segundos }}</strong><span>Segundos</span></div>
+                </div>
             </div>
-
             <div class="alert {% if intento.reporte_enviado and not email_console_mode %}alert-success{% else %}alert-warning{% endif %} mt-4 mb-0">
                 {% if intento.reporte_enviado and not email_console_mode %}
                     Reporte enviado al correo registrado.
                 {% elif email_console_mode %}
-                    El correo real aun no esta configurado. El sistema esta en modo consola y no entrega mensajes a Gmail.
+                    El correo real aun no esta configurado. El resultado queda guardado en la plataforma, pero no se entrega por email hasta configurar SMTP.
                 {% else %}
                     El reporte no pudo enviarse. Revisa la configuracion SMTP o del proveedor transaccional.
                 {% endif %}
             </div>
         </div>
-    </div>
+    </section>
 
-    <h3 class="h5">Desempeno por competencia</h3>
+    <h2 class="h5">Desempeno por competencia</h2>
     <div class="table-responsive mb-4">
-        <table class="table table-sm align-middle">
-            <thead>
-                <tr>
-                    <th>Competencia</th>
-                    <th>Aciertos</th>
-                    <th>Total</th>
-                    <th>Resultado</th>
-                </tr>
-            </thead>
+        <table class="table table-sm align-middle stack-table">
+            <thead><tr><th>Competencia</th><th>Aciertos</th><th>Total</th><th>Resultado</th></tr></thead>
             <tbody>
             {% for competencia, datos in resumen_competencias.items %}
                 <tr>
-                    <td>{{ competencia }}</td>
-                    <td>{{ datos.correctas }}</td>
-                    <td>{{ datos.total }}</td>
-                    <td>{{ datos.correctas }}/{{ datos.total }}</td>
+                    <td data-label="Competencia">{{ competencia }}</td>
+                    <td data-label="Aciertos">{{ datos.correctas }}</td>
+                    <td data-label="Total">{{ datos.total }}</td>
+                    <td data-label="Resultado">{{ datos.correctas }}/{{ datos.total }}</td>
                 </tr>
             {% empty %}
                 <tr><td colspan="4">No hay respuestas registradas.</td></tr>
@@ -58,53 +56,22 @@
         </table>
     </div>
 
-    <h3 class="h5 mb-3">Retroalimentacion por pregunta</h3>
+    <h2 class="h5 mb-3">Retroalimentacion por pregunta</h2>
     <div class="d-grid gap-3 mb-5">
         {% for item in revision_preguntas %}
-            <article class="card shadow-sm border-0">
+            <article class="card shadow-sm border-0 feedback-card {% if item.respuesta.es_correcta %}feedback-ok{% elif item.seleccion == 'Sin responder' %}feedback-empty{% else %}feedback-wrong{% endif %}">
                 <div class="card-body">
                     <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
-                        <h4 class="h6 mb-0">Pregunta {{ forloop.counter }}</h4>
-                        {% if item.respuesta.es_correcta %}
-                            <span class="badge text-bg-success">Correcta</span>
-                        {% elif item.seleccion == 'Sin responder' %}
-                            <span class="badge text-bg-secondary">Sin responder</span>
-                        {% else %}
-                            <span class="badge text-bg-danger">Incorrecta</span>
-                        {% endif %}
+                        <h3 class="h6 mb-0">Pregunta {{ forloop.counter }}</h3>
+                        {% if item.respuesta.es_correcta %}<span class="badge text-bg-success">Correcta</span>{% elif item.seleccion == 'Sin responder' %}<span class="badge text-bg-secondary">Sin responder</span>{% else %}<span class="badge text-bg-danger">Incorrecta</span>{% endif %}
                     </div>
-
-                    {% if item.pregunta.contexto %}
-                        <div class="p-3 rounded border mb-3 bg-body-tertiary">
-                            {{ item.pregunta.contexto|linebreaksbr }}
-                        </div>
-                    {% endif %}
-
+                    {% if item.pregunta.contexto %}<div class="question-context mb-3">{{ item.pregunta.contexto|linebreaksbr }}</div>{% endif %}
                     <p class="fw-semibold">{{ item.pregunta.enunciado }}</p>
-
                     <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="p-3 rounded border h-100">
-                                <div class="small text-muted mb-1">Tu respuesta</div>
-                                <strong>{{ item.seleccion }}</strong>
-                                {% if item.seleccion_texto %}
-                                    <p class="mb-0 mt-2">{{ item.seleccion_texto }}</p>
-                                {% endif %}
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 rounded border h-100">
-                                <div class="small text-muted mb-1">Respuesta correcta</div>
-                                <strong>{{ item.correcta }}</strong>
-                                <p class="mb-0 mt-2">{{ item.correcta_texto }}</p>
-                            </div>
-                        </div>
+                        <div class="col-md-6"><div class="answer-box h-100"><div class="small text-muted mb-1">Tu respuesta</div><strong>{{ item.seleccion }}</strong>{% if item.seleccion_texto %}<p class="mb-0 mt-2">{{ item.seleccion_texto }}</p>{% endif %}</div></div>
+                        <div class="col-md-6"><div class="answer-box answer-correct h-100"><div class="small text-muted mb-1">Respuesta correcta</div><strong>{{ item.correcta }}</strong><p class="mb-0 mt-2">{{ item.correcta_texto }}</p></div></div>
                     </div>
-
-                    <div class="alert alert-info mt-3 mb-0">
-                        <strong>Justificacion tecnica:</strong>
-                        {{ item.pregunta.justificacion|default:'Esta pregunta no tiene justificacion registrada.' }}
-                    </div>
+                    <div class="alert alert-info mt-3 mb-0"><strong>Justificacion tecnica:</strong> {{ item.pregunta.justificacion|default:'Esta pregunta no tiene justificacion registrada.' }}</div>
                 </div>
             </article>
         {% empty %}
