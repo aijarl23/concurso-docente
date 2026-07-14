@@ -45,6 +45,7 @@ WORD_REPLACEMENTS = {
     'comunicacion': 'comunicaci\u00f3n', 'priorizacion': 'priorizaci\u00f3n', 'resolucion': 'resoluci\u00f3n',
     'genericas': 'gen\u00e9ricas', 'mecanicos': 'mec\u00e1nicos', 'periodos': 'per\u00edodos', 'practica': 'pr\u00e1ctica',
     'integracion': 'integraci\u00f3n', 'hipotesis': 'hip\u00f3tesis', 'proposito': 'prop\u00f3sito', 'ciudadania': 'ciudadan\u00eda',
+    'Evaluacion': 'Evaluaci\u00f3n', 'calificacion': 'calificaci\u00f3n', 'cientifica': 'cient\u00edfica', 'Cientifica': 'Cient\u00edfica',
 }
 
 PHRASE_REPLACEMENTS = {
