@@ -1,0 +1,236 @@
+[
+  {
+    "archivo": "200-Errores-Comunes-en-Concursos-Docentes.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\200-Errores-Comunes-en-Concursos-Docentes.pdf",
+    "paginas": 10,
+    "caracteres_extraidos": 18763,
+    "bloques_candidatos_pregunta": 0,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "cl-i-1756927367-ticket-de-salida-autoevaluacion_ver_1.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\cl-i-1756927367-ticket-de-salida-autoevaluacion_ver_1.pdf",
+    "paginas": 4,
+    "caracteres_extraidos": 3105,
+    "bloques_candidatos_pregunta": 6,
+    "destino_pedagogico": "componente_pedagogico",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "Concurso-Docente-Modulo-1-Contexto-y-Gestion.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\Concurso-Docente-Modulo-1-Contexto-y-Gestion.pdf",
+    "paginas": 10,
+    "caracteres_extraidos": 14398,
+    "bloques_candidatos_pregunta": 7,
+    "destino_pedagogico": "normativa_contexto",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "Curso-Intensivo-Temas-Oro-Concurso-Docente-Bloque-1.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\Curso-Intensivo-Temas-Oro-Concurso-Docente-Bloque-1.pdf",
+    "paginas": 10,
+    "caracteres_extraidos": 24965,
+    "bloques_candidatos_pregunta": 11,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "es-t-1674631278-hoja-informativa-que-es-el-dua-formacion-docente_ver_1.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\es-t-1674631278-hoja-informativa-que-es-el-dua-formacion-docente_ver_1.pdf",
+    "paginas": 4,
+    "caracteres_extraidos": 6996,
+    "bloques_candidatos_pregunta": 2,
+    "destino_pedagogico": "componente_pedagogico",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "sa-es-1762976277-infografia-leyes-que-deben-saber-los-docentes-en-colombia_ver_1 (1).pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\sa-es-1762976277-infografia-leyes-que-deben-saber-los-docentes-en-colombia_ver_1 (1).pdf",
+    "paginas": 1,
+    "caracteres_extraidos": 1379,
+    "bloques_candidatos_pregunta": 0,
+    "destino_pedagogico": "normativa_contexto",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "sa-es-1770244959-diseno-curricular-y-pei-proyecto-educativo-institucional_ver_2.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\sa-es-1770244959-diseno-curricular-y-pei-proyecto-educativo-institucional_ver_2.pdf",
+    "paginas": 6,
+    "caracteres_extraidos": 5395,
+    "bloques_candidatos_pregunta": 1,
+    "destino_pedagogico": "componente_pedagogico",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "sa-es-1770502231b-educacion-inclusiva-piar-y-dua-decreto-1421-de-2017-black-and-white_ver_1.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\sa-es-1770502231b-educacion-inclusiva-piar-y-dua-decreto-1421-de-2017-black-and-white_ver_1.pdf",
+    "paginas": 9,
+    "caracteres_extraidos": 7657,
+    "bloques_candidatos_pregunta": 2,
+    "destino_pedagogico": "componente_pedagogico",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "sa-es-1772058079-tipos-de-evaluacion-evaluacion-diagnostica-formativa-sumativa-autoevaluacion-heteroevaluacion-y-coevaluacion_ve.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\sa-es-1772058079-tipos-de-evaluacion-evaluacion-diagnostica-formativa-sumativa-autoevaluacion-heteroevaluacion-y-coevaluacion_ve.pdf",
+    "paginas": 22,
+    "caracteres_extraidos": 22238,
+    "bloques_candidatos_pregunta": 2,
+    "destino_pedagogico": "componente_pedagogico",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "sa-l-1772534428-orientaciones-curriculares-lenguaje-concurso-docente-abierto-2026-colombia_ver_1.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\sa-l-1772534428-orientaciones-curriculares-lenguaje-concurso-docente-abierto-2026-colombia_ver_1.pdf",
+    "paginas": 11,
+    "caracteres_extraidos": 11730,
+    "bloques_candidatos_pregunta": 2,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "sa-m-1770840302-concurso-docente-2026-simulacro-1-razonamiento-cuantitativo_ver_3.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\sa-m-1770840302-concurso-docente-2026-simulacro-1-razonamiento-cuantitativo_ver_3.pdf",
+    "paginas": 11,
+    "caracteres_extraidos": 11577,
+    "bloques_candidatos_pregunta": 9,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "sa-m-1771422142-concurso-docente-2026-simulacro-2-razonamiento-cuantitativo_ver_2 (1).pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\sa-m-1771422142-concurso-docente-2026-simulacro-2-razonamiento-cuantitativo_ver_2 (1).pdf",
+    "paginas": 11,
+    "caracteres_extraidos": 11673,
+    "bloques_candidatos_pregunta": 10,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "t-1773151358-test-de-conocimientos-concurso-docente-gestion-de-aula_ver_2.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\t-1773151358-test-de-conocimientos-concurso-docente-gestion-de-aula_ver_2.pdf",
+    "paginas": 15,
+    "caracteres_extraidos": 19642,
+    "bloques_candidatos_pregunta": 6,
+    "destino_pedagogico": "componente_pedagogico",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "t-1773153578-guia-docente-decreto-1278-de-2002_ver_2.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Documents\\simulacro\\SIMULACROS-20260706T023112Z-3-001\\t-1773153578-guia-docente-decreto-1278-de-2002_ver_2.pdf",
+    "paginas": 8,
+    "caracteres_extraidos": 5924,
+    "bloques_candidatos_pregunta": 2,
+    "destino_pedagogico": "normativa_contexto",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "banco-de-preguntas-para-docentes_compress.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\banco-de-preguntas-para-docentes_compress.pdf",
+    "paginas": 11,
+    "caracteres_extraidos": 26753,
+    "bloques_candidatos_pregunta": 52,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "concurso-docente-2016-docentes-matematicas_compress.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\concurso-docente-2016-docentes-matematicas_compress.pdf",
+    "paginas": 45,
+    "caracteres_extraidos": 123145,
+    "bloques_candidatos_pregunta": 109,
+    "destino_pedagogico": "matematicas",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "Simulacro - Razonamiento cuantitativo.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\Simulacro - Razonamiento cuantitativo.pdf",
+    "paginas": 25,
+    "caracteres_extraidos": 30415,
+    "bloques_candidatos_pregunta": 18,
+    "destino_pedagogico": "matematicas",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "SIMULACRO Competencias Pedagógicas.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\SIMULACRO Competencias Pedagógicas.pdf",
+    "paginas": 19,
+    "caracteres_extraidos": 35802,
+    "bloques_candidatos_pregunta": 30,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "Simulacro Lectura Crítica.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\Simulacro Lectura Crítica.pdf",
+    "paginas": 25,
+    "caracteres_extraidos": 46232,
+    "bloques_candidatos_pregunta": 24,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "SIMULACRO PSICOTÉCNICAS.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\SIMULACRO PSICOTÉCNICAS.pdf",
+    "paginas": 20,
+    "caracteres_extraidos": 41913,
+    "bloques_candidatos_pregunta": 20,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "SIMULACRO ÁREA MATEMÁTICAS.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\SIMULACRO ÁREA MATEMÁTICAS.pdf",
+    "paginas": 27,
+    "caracteres_extraidos": 55855,
+    "bloques_candidatos_pregunta": 24,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "simulacro-componente-pedago-gico-2-2022_compress.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\simulacro-componente-pedago-gico-2-2022_compress.pdf",
+    "paginas": 11,
+    "caracteres_extraidos": 20577,
+    "bloques_candidatos_pregunta": 30,
+    "destino_pedagogico": "componente_pedagogico",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "simulacro-componente-pedagogico-1_compress.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\simulacro-componente-pedagogico-1_compress.pdf",
+    "paginas": 14,
+    "caracteres_extraidos": 29126,
+    "bloques_candidatos_pregunta": 30,
+    "destino_pedagogico": "componente_pedagogico",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "simulacro-de-examen-docente-pdf_compress.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\simulacro-de-examen-docente-pdf_compress.pdf",
+    "paginas": 13,
+    "caracteres_extraidos": 35919,
+    "bloques_candidatos_pregunta": 56,
+    "destino_pedagogico": "referencia_general",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "simulacro-prueba-pedagogica-concurso-docente-removed_compress.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\simulacro-prueba-pedagogica-concurso-docente-removed_compress.pdf",
+    "paginas": 4,
+    "caracteres_extraidos": 12570,
+    "bloques_candidatos_pregunta": 20,
+    "destino_pedagogico": "componente_pedagogico",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  },
+  {
+    "archivo": "simulacro-componente-pedagogico-1_compress.pdf",
+    "ruta": "C:\\Users\\Jose Alberto\\Desktop\\CONCURSO\\SIMULACROS\\Nueva carpeta\\simulacro-componente-pedagogico-1_compress.pdf",
+    "paginas": 14,
+    "caracteres_extraidos": 29126,
+    "bloques_candidatos_pregunta": 30,
+    "destino_pedagogico": "componente_pedagogico",
+    "uso": "Referencia y calibracion; no se carga literal sin curaduria."
+  }
+]

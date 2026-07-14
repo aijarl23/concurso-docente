@@ -32,3 +32,5 @@ _resources/auditoria_contenido/
 # Utilidades temporales de auditoria documental
 scripts/data_import/extract_audit_sources.py
 scripts/data_import/extract_pdf_fast.py
+_resources/pdf_extracts/*
+!_resources/pdf_extracts/_source_classification.json
