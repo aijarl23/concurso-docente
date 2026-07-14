@@ -22,6 +22,9 @@ class Subcategoria(models.Model):
 
 class BancoPregunta(models.Model):
     DIFICULTAD_CHOICES = [
+        ('basico', 'Basico'),
+        ('intermedio', 'Intermedio'),
+        ('avanzado', 'Avanzado'),
         ('intermedia', 'Intermedia'),
         ('alta', 'Alta'),
         ('premium', 'Premium'),
@@ -68,6 +71,8 @@ class BancoPregunta(models.Model):
     )
     area = models.CharField(max_length=40, choices=AREA_CHOICES, default='general')
     competencia = models.CharField(max_length=120, blank=True)
+    nivel_dificultad = models.CharField(max_length=20, choices=DIFICULTAD_CHOICES, default='avanzado')
+    hash_contenido = models.CharField(max_length=40, blank=True, db_index=True)
     tiempo_limite_segundos = models.PositiveIntegerField(default=120)
     es_premium = models.BooleanField(default=True)
     activa = models.BooleanField(default=True)

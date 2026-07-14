@@ -16,6 +16,6 @@ class SubcategoriaAdmin(admin.ModelAdmin):
 
 @admin.register(BancoPregunta)
 class BancoPreguntaAdmin(admin.ModelAdmin):
-    list_display = ('id', 'categoria', 'subcategoria', 'area', 'competencia', 'dificultad', 'tiempo_limite_segundos', 'activa')
-    list_filter = ('categoria', 'subcategoria', 'area', 'dificultad', 'es_premium', 'activa')
-    search_fields = ('titulo', 'contexto', 'enunciado', 'competencia')
+    list_display = ('id', 'titulo', 'categoria', 'subcategoria', 'area', 'competencia', 'nivel_dificultad', 'hash_contenido', 'activa')
+    list_filter = ('categoria', 'subcategoria', 'area', 'nivel_dificultad', 'dificultad', 'es_premium', 'activa')
+    search_fields = ('titulo', 'contexto', 'enunciado', 'competencia', 'hash_contenido')

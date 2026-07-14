@@ -3,6 +3,7 @@ from django.core.management.base import BaseCommand
 from django.urls import reverse
 
 from banco.models import BancoPregunta
+from dashboard.question_generator import QUESTION_CATEGORY, SIMILARITY_THRESHOLD, jaccard, normalize, token_set
 from commerce.models import Product
 from simulacros.models import Simulacro
 
@@ -85,7 +86,7 @@ class Command(BaseCommand):
         else:
             fail('Email transaccional no configurado')
 
-        question_qs = BancoPregunta.objects.filter(categoria__nombre='Banco Premium CNSC 2026 V3', activa=True)
+        question_qs = BancoPregunta.objects.filter(categoria__nombre=QUESTION_CATEGORY, activa=True)
         questions = question_qs.count()
         simulacros = Simulacro.objects.filter(activo=True).count()
         area_simulacros = Simulacro.objects.filter(activo=True, tipo='area').count()
@@ -98,22 +99,52 @@ class Command(BaseCommand):
 
         seen_items = set()
         duplicate_items = 0
+        duplicate_hashes = 0
+        semantic_duplicates = 0
+        recycled_options = 0
         invalid_options = 0
         invalid_answers = 0
         missing_feedback = 0
+        missing_metadata = 0
+        seen_hashes = set()
+        seen_options = set()
+        signatures = []
+        levels = set()
         for question in question_qs:
             key = (''.join((question.contexto or '').lower().split()), ''.join((question.enunciado or '').lower().split()))
             if key in seen_items:
                 duplicate_items += 1
             seen_items.add(key)
+
+            if not question.hash_contenido or not question.nivel_dificultad:
+                missing_metadata += 1
+            if question.hash_contenido:
+                if question.hash_contenido in seen_hashes:
+                    duplicate_hashes += 1
+                seen_hashes.add(question.hash_contenido)
+            if question.nivel_dificultad:
+                levels.add(question.nivel_dificultad)
+
             options = [
-                (question.opcion_a or '').strip().lower(),
-                (question.opcion_b or '').strip().lower(),
-                (question.opcion_c or '').strip().lower(),
-                (question.opcion_d or '').strip().lower(),
+                normalize(question.opcion_a or ''),
+                normalize(question.opcion_b or ''),
+                normalize(question.opcion_c or ''),
+                normalize(question.opcion_d or ''),
             ]
             if len(set(options)) != 4 or any(not option for option in options):
                 invalid_options += 1
+            for option in options:
+                if option in seen_options:
+                    recycled_options += 1
+                seen_options.add(option)
+
+            signature = token_set((question.contexto or '') + ' ' + (question.enunciado or ''))
+            for previous in signatures:
+                if jaccard(signature, previous) > SIMILARITY_THRESHOLD:
+                    semantic_duplicates += 1
+                    break
+            signatures.append(signature)
+
             if question.respuesta_correcta not in {'A', 'B', 'C', 'D'}:
                 invalid_answers += 1
             if not (question.justificacion or '').strip():
@@ -123,6 +154,27 @@ class Command(BaseCommand):
             fail(f'Banco con preguntas duplicadas: {duplicate_items}')
         else:
             ok('Banco sin duplicados exactos de contexto/enunciado')
+        if duplicate_hashes:
+            fail(f'Banco con hashes duplicados: {duplicate_hashes}')
+        else:
+            ok('Hashes de contenido unicos')
+        if semantic_duplicates:
+            fail(f'Banco con preguntas demasiado similares: {semantic_duplicates}')
+        else:
+            ok('Banco sin similitud semantica por encima del umbral')
+        if recycled_options:
+            fail(f'Opciones recicladas literalmente entre preguntas: {recycled_options}')
+        else:
+            ok('Opciones sin reciclaje literal entre preguntas')
+        if missing_metadata:
+            fail(f'Preguntas sin hash o nivel de dificultad: {missing_metadata}')
+        else:
+            ok('Metadatos de hash y nivel completos')
+        expected_levels = {'basico', 'intermedio', 'avanzado'}
+        if expected_levels.issubset(levels):
+            ok('Distribucion incluye niveles basico, intermedio y avanzado')
+        else:
+            fail('Faltan niveles de dificultad: ' + ', '.join(sorted(expected_levels - levels)))
         if invalid_options:
             fail(f'Preguntas con opciones repetidas o vacias: {invalid_options}')
         else:
