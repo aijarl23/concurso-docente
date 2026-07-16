@@ -5,7 +5,7 @@ from banco.models import BancoPregunta, Categoria
 from simulacros.models import Simulacro
 
 TJS_CATEGORIA = 'Test de Juicios Situacionales (TJS)'
-SIMULACRO_PREMIUM_ID = 34
+SIMULACRO_NOMBRE = 'Competencias comportamentales / TJS - Simulacro premium'
 
 
 class Command(BaseCommand):
@@ -32,9 +32,16 @@ class Command(BaseCommand):
             self.stderr.write(self.style.ERROR(f'No existe la categoria "{TJS_CATEGORIA}".'))
             return
 
-        simulacro = Simulacro.objects.filter(id=SIMULACRO_PREMIUM_ID, tipo='tjs').first()
+        # Buscar por nombre, no por id: id34 y id35 en local (sqlite) no tienen
+        # por que coincidir con el id real en produccion (Postgres), son bases
+        # de datos independientes con su propio autoincrement.
+        simulacro = (
+            Simulacro.objects.filter(nombre=SIMULACRO_NOMBRE, tipo='tjs')
+            .order_by('-activo', 'id')
+            .first()
+        )
         if not simulacro:
-            self.stderr.write(self.style.ERROR(f'No se encontro el simulacro TJS premium (id={SIMULACRO_PREMIUM_ID}).'))
+            self.stderr.write(self.style.ERROR(f'No se encontro el simulacro TJS premium "{SIMULACRO_NOMBRE}".'))
             return
 
         with transaction.atomic():
