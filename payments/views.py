@@ -176,7 +176,7 @@ def wompi_webhook(request):
 
     try:
         payload = json.loads(request.body.decode('utf-8'))
-        if not WompiService.validate_event(payload, request.headers.get('X-Event-Signature')):
+        if not WompiService.validate_event(payload, request.headers.get('X-Event-Checksum')):
             return JsonResponse({'error': 'Firma invalida'}, status=403)
 
         transaction = payload.get('data', {}).get('transaction', {})

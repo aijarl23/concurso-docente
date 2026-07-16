@@ -45,13 +45,37 @@ class WompiService:
 
     @staticmethod
     def validate_event(payload, event_signature=None):
+        """Verifica el checksum de un evento Wompi siguiendo su esquema oficial:
+        SHA256(valor(prop1) + valor(prop2) + ... + timestamp + secret), comparado
+        contra signature.checksum (o el header X-Event-Checksum). Ver
+        https://docs.wompi.co/en/docs/colombia/eventos/.
+        """
         secret = getattr(settings, 'WOMPI_EVENTS_SECRET', '')
         if not secret:
-            return True
-        if not event_signature:
             return False
-        expected = hmac.new(secret.encode('utf-8'), str(payload).encode('utf-8'), hashlib.sha256).hexdigest()
-        return hmac.compare_digest(expected, event_signature)
+
+        signature_block = payload.get('signature') or {}
+        properties = signature_block.get('properties') or []
+        timestamp = signature_block.get('timestamp')
+        checksum = event_signature or signature_block.get('checksum')
+        if not properties or timestamp is None or not checksum:
+            return False
+
+        data = payload.get('data', {})
+        parts = []
+        for prop_path in properties:
+            value = data
+            for key in prop_path.split('.'):
+                value = value.get(key) if isinstance(value, dict) else None
+                if value is None:
+                    break
+            if value is None:
+                return False
+            parts.append(str(value))
+
+        raw = ''.join(parts) + str(timestamp) + secret
+        expected = hashlib.sha256(raw.encode('utf-8')).hexdigest()
+        return hmac.compare_digest(expected.lower(), str(checksum).lower())
 
 
 def send_purchase_confirmation(order):
