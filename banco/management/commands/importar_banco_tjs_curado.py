@@ -17,6 +17,13 @@ def normalize_title(item: dict) -> str:
     return f"{item['codigo']} - {item['competencia']}"
 
 
+def tipo_item_de(item: dict) -> str:
+    tipo = (item.get('tipo_item') or '').upper()
+    if 'MENOS' in tipo:
+        return 'menos_adecuada'
+    return 'mas_adecuada'
+
+
 class Command(BaseCommand):
     help = (
         'Importa el banco TJS curado (225 items reales, 6 competencias del CNSC) desde '
@@ -53,6 +60,7 @@ class Command(BaseCommand):
             all_questions = []
 
             for item in payload['questions']:
+                idoneidad = item.get('idoneidad') or {}
                 question, was_created = BancoPregunta.objects.update_or_create(
                     titulo=normalize_title(item),
                     defaults={
@@ -65,6 +73,11 @@ class Command(BaseCommand):
                         'opcion_c': item['opcion_c'],
                         'opcion_d': item['opcion_d'],
                         'respuesta_correcta': item['respuesta_correcta'],
+                        'tipo_item': tipo_item_de(item),
+                        'idoneidad_a': idoneidad.get('a'),
+                        'idoneidad_b': idoneidad.get('b'),
+                        'idoneidad_c': idoneidad.get('c'),
+                        'idoneidad_d': idoneidad.get('d'),
                         'justificacion': item['justificacion'],
                         'fuente_normativa': 'CNSC - Competencias comportamentales docentes / Test de Juicios Situacionales',
                         'dificultad': 'elite',

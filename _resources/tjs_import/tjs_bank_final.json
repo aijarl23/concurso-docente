@@ -27,7 +27,13 @@
       "opcion_d": "Suspender la presentación, pedir disculpas al grupo por la incomodidad generada y replantear la propuesta en un documento escrito para que cada colega la analice de forma individual.",
       "respuesta_correcta": "B",
       "justificacion": "reconoce al interlocutor sin ceder ante la descalificación ni responder con agresividad. Solicitar evidencia concreta eleva el debate al plano técnico-pedagógico y propone una salida colectiva que protege el clima institucional. La opción A es pasiva y traslada el conflicto sin resolverlo. La opción C puede ser técnicamente sólida, pero confrontar en público deteriora las relaciones. La opción D abandona el proceso comunicativo, lo que valida implícitamente la crítica recibida.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 3,
+        "d": 0
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -42,9 +48,15 @@
       "opcion_b": "Responder en ese mismo espacio explicando los criterios de evaluación del SIEE y mostrando que la nota es justa, para que los estudiantes presentes entiendan que usted actuó correctamente y no hay favoritismos",
       "opcion_c": "Informar a la madre que sus amenazas constituyen una falta de respeto y que, si desea hablar, debe solicitar una cita formal a través de la coordinación, de lo contrario no habrá diálogo posible.",
       "opcion_d": "Llamar de inmediato al coordinador para que intervenga en la situación y sea él quien le explique a la madre los criterios de evaluación, evitando que el conflicto se intensifique.",
-      "respuesta_correcta": "B",
+      "respuesta_correcta": "A",
       "justificacion": "EXPLICACIÓN PEDAGÓGICA La opción A protege la dignidad de la madre, del docente y de los estudiantes presentes al trasladar la conversación a un espacio apropiado, y prepara el soporte evidencial que fundamentará el diálogo. La comunicación asertiva implica elegir el momento y el lugar correctos para abordar temas sensibles. La opción B expone información académica confidencial frente a terceros. La opción C cierra el canal de comunicación de forma innecesaria. La opción D delega prematuramente sin intentar resolver la situación directamente.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 0,
+        "c": 1,
+        "d": 2
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -61,7 +73,13 @@
       "opcion_d": "Consultar con el orientador escolar y con un colega de confianza sobre cómo proceder ante esta situación, buscando asesoría antes de dar una respuesta definitiva al rector.",
       "respuesta_correcta": "A",
       "justificacion": "la responsabilidad del acto no desaparece por haber obedecido una orden ilegal. La opción B es la más adecuada. Las opciones C y D buscan protegerse o asesorarse antes de actuar, lo que las hace más aceptables que la opción A.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 2
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -78,7 +96,13 @@
       "opcion_d": "Elevar el problema al rector con un informe detallado y solicitarle que ordene al equipo docente implementar un plan de lectura, dado que sin autoridad formal ninguna propuesta será tomada en serio.",
       "respuesta_correcta": "B",
       "justificacion": "actuar desde la propia iniciativa, con datos como base, involucrando al equipo y buscando respaldo institucional sin depender de él para comenzar. Este tipo de liderazgo no requiere autoridad formal. La opción A es pasiva y desaprovecha la capacidad de influencia del docente. La opción C limita el impacto a un solo espacio. La opción D delega toda la responsabilidad en el rector y puede generar resistencias al percibirse como una orden externa.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 1
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -95,7 +119,13 @@
       "opcion_d": "Pedir a los estudiantes más maduros del grupo que apoyen a sus compañeros de forma autónoma mientras se resuelve la situación, manteniendo la supervisión desde su propio espacio.",
       "respuesta_correcta": "A",
       "justificacion": "EXPLICACIÓN PEDAGÓGICA La opción A es la MENOS adecuada porque dejar a estudiantes sin orientación como mecanismo de presión hacia un colega ausente constituye una negligencia en el deber de cuidado. La responsabilidad sobre el bienestar de los estudiantes no puede condicionarse a dinámicas de consecuencias laborales entre adultos. Las opciones B, C y D resuelven el problema inmediato con los recursos disponibles, todas coherentes con el rol de liderazgo en un evento institucional.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 4,
+        "d": 3
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -112,7 +142,13 @@
       "opcion_d": "Informar al coordinador académico sobre el estancamiento para que intervenga con su autoridad y tome la decisión final, dado que el equipo no puede resolver el impasse por sus propios medios.",
       "respuesta_correcta": "B",
       "justificacion": "no elegir un bando, sino identificar los puntos de convergencia y construir una síntesis que respete las contribuciones de ambos colegas. La opción A puede generar resentimiento en quien pierde la votación. La opción C produce fragmentación en el documento final. La opción D delega prematuramente en la autoridad sin agotar los recursos internos del equipo.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 1,
+        "d": 1
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -129,7 +165,13 @@
       "opcion_d": "Explicar al padre los objetivos del proyecto y los beneficios esperados para los estudiantes, sin entrar en detalles sobre el proceso interno de deliberación del equipo.",
       "respuesta_correcta": "B",
       "justificacion": "EXPLICACIÓN PEDAGÓGICA La opción B es la MENOS adecuada porque expresar la disconformidad personal con una decisión colectiva ante un padre de familia erosiona la confianza en el cuerpo docente y puede generar dudas sobre la legitimidad del proyecto antes de que comience. El trabajo en equipo implica discrepar hacia adentro y presentar unidad hacia afuera. Las opciones A, C y D respetan la decisión colectiva en la comunicación con las familias.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 0,
+        "c": 3,
+        "d": 3
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -144,9 +186,15 @@
       "opcion_b": "Reportar la situación al orientador escolar y a la coordinación para activar la ruta de atención integral y articular apoyos desde trabajo social y psicología escolar.",
       "opcion_c": "Diseñar, con aprobación de la coordinación, estrategias evaluativas flexibles que respeten el contexto de los estudiantes sin sacrificar los aprendizajes esenciales del área.",
       "opcion_d": "Comunicarse con las familias para informar la situación y explorar conjuntamente alternativas que permitan a los jóvenes continuar su proceso escolar sin abandonar sus responsabilidades económicas.",
-      "respuesta_correcta": "A",
+      "respuesta_correcta": "B",
       "justificacion": "aplicar la norma de forma rígida ignorando el contexto de vulnerabilidad socioeconómica contradice el principio de inclusión y el enfoque diferencial que establece la Ley 115 de 1994. Un docente orientado al logro activa rutas de atención, busca alternativas pedagógicas y vincula a la familia. Las opciones B, C y D representan respuestas progresivas y complementarias propias de un docente comprometido con la permanencia escolar.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 3,
+        "d": 3
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -163,7 +211,13 @@
       "opcion_d": "Aceptar la situación como resultado del contexto socioeconómico del grupo y concentrarse en los estudiantes que sí tienen posibilidades reales de mejorar su desempeño antes de la prueba.",
       "respuesta_correcta": "B",
       "justificacion": "involucra actores internos disponibles (docente del área y pares de alto rendimiento), aprovecha el aprendizaje entre iguales —estrategia con fuerte respaldo investigativo— y no requiere recursos económicos adicionales. La opción A transfiere la responsabilidad a las familias. La opción C es desproporcionada e inviable institucionalmente. La opción D refleja una visión determinista que contradice el principio de educabilidad y el compromiso ético del docente.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 1,
+        "d": 0
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -180,7 +234,13 @@
       "opcion_d": "Solicitar al rector que contrate un psicólogo externo con carácter urgente, dado que la situación supera las competencias del personal docente y directivo actual.",
       "respuesta_correcta": "C",
       "justificacion": "actuar proactivamente ante un problema identificado, partir de evidencia documentada, generar una solución concreta y viable, e involucrar a los actores institucionales pertinentes. La opción A es pasiva y deja a los estudiantes desprotegidos. La opción B restringe la responsabilidad al ámbito individual. La opción D puede ser un complemento, pero no reemplaza la necesidad de un protocolo interno inmediato.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 1,
+        "c": 4,
+        "d": 2
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -197,7 +257,13 @@
       "opcion_d": "Preparar toda la documentación de postulación y entregársela al coordinador con la propuesta de que sea él quien asuma la responsabilidad formal durante la ausencia del rector.",
       "respuesta_correcta": "B",
       "justificacion": "informa al rector y solicita una decisión o delegación explícita. El liderazgo eficaz no implica actuar unilateralmente cuando la situación permite la consulta rápida. La opción A es pasiva y hace perder una oportunidad relevante. La opción C actúa sin autorización, lo que puede tener consecuencias institucionales. La opción D transfiere la responsabilidad al coordinador sin que este tenga la autoridad necesaria.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 1,
+        "d": 1
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -214,7 +280,13 @@
       "opcion_d": "Escuchar al colega, compartir información general sin mencionar el diagnóstico y recordarle que debe guardar discreción sobre lo que leyó en el sistema.",
       "respuesta_correcta": "B",
       "justificacion": "EXPLICACIÓN PEDAGÓGICA La opción B protege la confidencialidad de los datos académicos y de salud del estudiante, y redirige la conversación al canal institucional correcto. El manejo ético de la información implica no compartir datos sensibles en espacios informales, en concordancia con la Ley 1581 de 2012 (habeas data) y los protocolos de confidencialidad escolar. La opción A vulnera la privacidad del estudiante aunque la intención sea pedagógica. La opción C puede ser válida como segunda acción. La opción D sigue compartiendo información sensible en un contexto inadecuado.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 3,
+        "d": 1
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -231,7 +303,13 @@
       "opcion_d": "Negarse a compartir los datos con el periodista y no comentar la situación con nadie en la institución, dado que revelar que fue contactado podría generar sospechas innecesarias sobre usted.",
       "respuesta_correcta": "A",
       "justificacion": "EXPLICACIÓN PEDAGÓGICA La opción A es la MENOS adecuada porque divulgar resultados preliminares sin autorización constituye una filtración de información institucional que puede comprometer la integridad del proceso de publicación oficial, generar interpretaciones incorrectas de datos no definitivos y tener consecuencias disciplinarias para el docente. El argumento del \"interés público\" no exime la obligación de respetar los protocolos de manejo de información institucional. Las opciones B, C y D respetan los canales oficiales y protegen al docente.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 3,
+        "d": 3
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -248,7 +326,13 @@
       "opcion_d": "Informar al orientador escolar y solicitar que elabore un informe de los seis casos para que sea presentado a la coordinación y se tomen las medidas pertinentes desde la dirección.",
       "respuesta_correcta": "C",
       "justificacion": "apoyos pedagógicos y psicosociales para todos, y articulación con el ICBF para los casos con mayor vulnerabilidad. Este enfoque combina orientación al logro académico con atención a los factores del contexto. La opción A es un inicio valioso pero insuficiente. La opción B traslada la responsabilidad a las familias en contextos de alta vulnerabilidad. La opción D delega sin aportar la perspectiva del director de grupo.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 2,
+        "b": 1,
+        "c": 4,
+        "d": 2
+      }
     },
     {
       "source_file": "Banco_TJS_ConcursoDocente_15preguntas.docx",
@@ -265,7 +349,13 @@
       "opcion_d": "Solicitar a la Secretaría de Educación que envíe un asesor pedagógico para orientar a la institución sobre cómo atender las demandas de la comunidad sin salirse del marco normativo vigente.",
       "respuesta_correcta": "B",
       "justificacion": "EXPLICACIÓN PEDAGÓGICA La opción B reconoce el derecho de las comunidades indígenas a una educación culturalmente pertinente, consagrado en la Constitución y en el Decreto 804 de 1995, y propone un proceso participativo y normativo para materializarlo. La iniciativa en contextos interculturales implica conocer los marcos legales y activar los procesos que permiten transformaciones estructurales con legitimidad. La opción A minimiza los derechos de la comunidad. La opción C es valiosa pero insuficiente para un cambio de escala. La opción D delega sin asumir la responsabilidad interna de liderar el proceso.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 3,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -282,7 +372,13 @@
       "opcion_d": "Enviar al rector, al terminar la reunión, un correo electrónico formal con los datos desagregados y una solicitud de rectificación en la próxima reunión, dejando constancia escrita de la imprecisión sin generar tensión en el espacio colectivo.",
       "respuesta_correcta": "B",
       "justificacion": "(1) corrige la información imprecisa con datos objetivos sin atacar al rector, (2) reconoce voluntariamente las áreas de mejora reales, lo que demuestra madurez profesional y credibilidad, y (3) propone una acción concreta que transforma la crítica en una oportunidad de mejora. Este equilibrio es exactamente lo que el CNSC valora en la competencia de comunicación asertiva: ni sumisión ni confrontación, sino claridad con responsabilidad. La opción A es pasiva: protege la relación a corto plazo pero valida públicamente una información incorrecta y pierde la oportunidad de demostrar capacidad de respuesta profesional. La opción C es directa pero confrontacional; decir \"los datos son inexactos\" en público puede percibirse como un ataque al rector, lo que deteriora la relación sin necesidad. La opción D es técnicamente válida pero tardía: el espacio para corregir la información era la reunión misma, no un correo posterior que llega cuando la percepción del grupo ya está formada.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 2,
+        "d": 3
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -299,7 +395,13 @@
       "opcion_d": "Escuchar a los padres sin interrumpir, tomar nota de sus preocupaciones específicas, comprometerse a revisar la metodología con el coordinador pedagógico y fijar una fecha concreta para un segundo encuentro donde se presenten los ajustes.",
       "respuesta_correcta": "C",
       "justificacion": "deteriora la relación con la comunidad, genera una percepción de fragilidad emocional y puede escalar el conflicto a instancias superiores sin haber intentado la resolución directa. La comunicación asertiva exige precisamente mantenerse en el espacio difícil y manejar la tensión sin agresividad ni evasión. La opción A es técnicamente sólida aunque puede percibirse como defensiva si no va acompañada de reconocimiento de las dificultades reales. La opción B es la más adecuada: escucha activa, reconocimiento genuino y propuesta de seguimiento estructurado. La opción D también es adecuada: permite que los padres se sientan escuchados y establece un proceso de seguimiento con compromisos concretos.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 3,
+        "b": 4,
+        "c": 0,
+        "d": 4
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -316,7 +418,13 @@
       "opcion_d": "Manifestar en la reunión que usted no aplicará evaluaciones homogéneas porque eso contradice su autonomía profesional como docente, y señalar que la coordinadora no tiene la autoridad para imponerle un tipo específico de evaluación.",
       "respuesta_correcta": "B",
       "justificacion": "reconoce la intención legítima detrás de la propuesta (equidad), plantea la objeción con fundamento normativo específico (PEI y Decreto 1290) y propone una alternativa constructiva que no destruye el objetivo original sino que lo enriquece. Este tipo de intervención demuestra dominio técnico, respeto institucional y capacidad de negociación, que son exactamente las competencias que el CNSC evalúa. La opción A es éticamente inaceptable: actuar en desacuerdo con lo pactado de forma encubierta destruye la confianza institucional. La opción C tiene un contenido válido pero el canal (correo con copia al rector) puede percibirse como una escalada innecesaria que pone a la coordinadora a la defensiva antes de haber intentado el diálogo directo. La opción D tiene el contenido correcto (autonomía docente y Decreto 1290) pero el tono confrontacional y la negativa unilateral pueden deteriorar la relación sin necesidad.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -333,7 +441,13 @@
       "opcion_d": "Hablar directamente con el estudiante que supuestamente expresó ideación de autolesión, preguntarle en privado cómo se siente y evaluar personalmente si la situación requiere la activación del orientador o si el joven solo necesita ser escuchado.",
       "respuesta_correcta": "B",
       "justificacion": "esperar más información ante señales de riesgo puede resultar en una omisión con consecuencias irreversibles. La opción C es igualmente peligrosa: dar un plazo de veinticuatro horas en una situación de posible riesgo de vida es inaceptable. La opción D asigna al docente un rol de valoración clínica para el que no está formado; el orientador escolar es quien debe hacer esa evaluación con los protocolos correspondientes.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -350,7 +464,13 @@
       "opcion_d": "Elaborar un informe detallado sobre las causas del bajo rendimiento en razonamiento cuantitativo y enviarlo a la Secretaría de Educación, solicitando que intervenga con un programa de formación docente especializada que la institución no puede ofrecer por sus propios medios.",
       "respuesta_correcta": "B",
       "justificacion": "no espera una designación formal, no actúa de forma aislada y no escala el problema externamente antes de agotar los recursos internos. Presentar los datos de sus propios grupos como prueba de efectividad es mucho más poderoso que una propuesta abstracta, y hacerlo ante el rector garantiza el respaldo institucional que la iniciativa necesita para sostenerse. La opción A es pasiva y subestima la capacidad de influencia que tiene un docente con evidencia a su favor. La opción C puede generar acuerdos informales valiosos, pero sin respaldo institucional la iniciativa se agota cuando los tiempos y las cargas se complican. La opción D salta los recursos internos y puede generar una percepción de que la institución no está gestionando sus propios problemas, lo que puede tener consecuencias en la relación con la Secretaría.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -367,7 +487,13 @@
       "opcion_d": "Hablar honestamente con el grupo sobre la brecha de calidad observada, darles la opción de participar en un formato diferente (presentación del proceso más que del producto) o de prepararse para una segunda instancia interna antes de la presentación final.",
       "respuesta_correcta": "A",
       "justificacion": "la B trabaja activamente con el grupo para elevar el nivel, la C contextualiza la diversidad de procesos con transparencia y la D da al grupo agencia sobre su propia participación. Todas estas alternativas son pedagógicamente más responsables que la exclusión unilateral y silenciosa.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 4,
+        "d": 4
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -384,7 +510,13 @@
       "opcion_d": "Hablar con los padres de los estudiantes en condición de mayor vulnerabilidad para explicarles la importancia de garantizar las condiciones básicas para el aprendizaje, y pedirles que gestionen con las autoridades locales los apoyos que la institución no puede brindar.",
       "respuesta_correcta": "B",
       "justificacion": "ruta de atención del ICBF, asociación de padres, programa de alimentación escolar y comunicación transparente con el rector. Este es el liderazgo pedagógico que se espera de un docente comprometido con el derecho a la educación: no acepta la precariedad como un estado permanente ni actúa de forma aislada, sino que moviliza los recursos existentes con iniciativa y criterio. La opción A es pasiva y normaliza condiciones que afectan el derecho a la educación de los estudiantes. La opción C puede generar un vínculo afectivo valioso pero no resuelve el problema de fondo, establece una dependencia insostenible en el tiempo y puede crear expectativas que el docente no podrá mantener. La opción D transfiere la responsabilidad a las familias, que probablemente ya intentaron gestionar sin éxito.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -401,7 +533,13 @@
       "opcion_d": "Proponer al rector que contrate un coach o facilitador externo especializado en clima organizacional para que intervenga con el equipo docente, dado que la profundidad del malestar requiere una mirada externa y especializada que los actores internos no pueden ofrecer.",
       "respuesta_correcta": "B",
       "justificacion": "hace que el equipo docente se sienta parte de la solución (no solo del problema) y genera información real sobre las causas del malestar que la dirección puede abordar con mayor precisión. Proponer este proceso al rector, en lugar de ejecutarlo de forma paralela, garantiza que los acuerdos que emerjan tengan respaldo institucional. La opción A renuncia a la capacidad de influencia que el docente ya tiene en el equipo, lo cual es una pérdida institucional. La opción C puede generar alivio temporal pero sin respaldo de la dirección puede agotarse sin cambios estructurales. La opción D puede ser valiosa en una segunda etapa, pero externaliza un problema que el equipo tiene capacidad de abordar internamente con la facilitación adecuada.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -418,7 +556,13 @@
       "opcion_d": "Abstenerse de votar en la aprobación del plan y dejar constancia escrita de su abstención, indicando que no puede respaldar un documento con contradicciones internas que pueden afectar su implementación.",
       "respuesta_correcta": "B",
       "justificacion": "nadie puede mejorar lo que nadie nombra. Hacerlo en la plenaria garantiza que todos los involucrados estén presentes para la corrección. La opción A aprueba un plan con fallas estructurales que afectarán la implementación, lo cual es una omisión de responsabilidad colectiva. La opción C traslada la responsabilidad al coordinador sin intentar el abordaje directo en el espacio colectivo correspondiente. La opción D es un gesto de integridad individual pero no aporta ninguna solución al problema y puede percibirse como una obstrucción sin propuesta.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 1,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -435,7 +579,13 @@
       "opcion_d": "Escribir un documento complementario de forma individual con el enfoque socioeconómico que considera necesario y presentarlo como un anexo al borrador principal, dejando que cada docente implementador decida cuál enfoque adopta en su práctica.",
       "respuesta_correcta": "B",
       "justificacion": "antes de la aprobación final, no después. La opción A firma un producto que considera incompleto, lo cual es una omisión de responsabilidad profesional. La opción C puede ser un paso previo válido, pero si la colega se niega a incorporar ajustes, el tema debe llegar igualmente al equipo; postergarlo puede hacer que el momento oportuno se pierda. La opción D genera un documento paralelo que fragmenta el trabajo colectivo y deja la decisión en manos de cada docente, lo que produce inconsistencias en la implementación.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -452,7 +602,13 @@
       "opcion_d": "Hablar con el coordinador en el receso para expresarle la preocupación por la dinámica de complacencia que observa y pedirle que reencuadre el propósito de la autoevaluación con el equipo antes de continuar.",
       "respuesta_correcta": "A",
       "justificacion": "identificar brechas para mejorar. Distorsionar sus resultados colectivamente es una práctica que perjudica a la institución, a sus estudiantes y puede tener consecuencias si la Secretaría de Educación contrasta los datos con otras fuentes. Además, argumentar que \"es un trámite formal sin impacto\" es una racionalización que no exime la responsabilidad ética. Las opciones B, C y D son formas distintas y complementarias de ejercer la responsabilidad profesional en el equipo: calificar con honestidad, señalar el problema en la plenaria o abordarlo con el coordinador. Todas son más adecuadas que la complicidad pasiva.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 3,
+        "d": 3
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -469,7 +625,13 @@
       "opcion_d": "Informar al coordinador sobre los resultados con un análisis detallado de las causas y solicitar un espacio de trabajo colaborativo con los docentes de Lenguaje y Ciencias Sociales para diseñar una estrategia transversal de pensamiento crítico que trascienda el área de Filosofía.",
       "respuesta_correcta": "B",
       "justificacion": "ANÁLISIS PEDAGÓGICO DETALLADO La opción B es la más adecuada porque responde directamente a la brecha identificada con una solución pedagógica concreta, graduada y articulada con otra área. La orientación al logro no consiste en trabajar más horas, sino en reorientar con precisión la estrategia cuando los resultados revelan que la actual no está funcionando. Rediseñar las unidades restantes para atacar específicamente las habilidades débiles y articularse con Lenguaje es la respuesta más eficiente dado el tiempo disponible antes de la Saber 11. La opción A sacrifica el aprendizaje real por la imagen numérica, lo cual contradice directamente el principio de orientación al logro. La opción C traslada la responsabilidad del aprendizaje al estudiante sin el acompañamiento pedagógico que la situación requiere. La opción D es un paso adicional valioso pero no reemplaza la acción pedagógica directa dentro del aula que el docente puede implementar de inmediato.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 1,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -486,7 +648,13 @@
       "opcion_d": "Hablar con los estudiantes sobre los resultados del primer período, explicarles con honestidad que el proceso necesita ajustes, pedir su retroalimentación sobre qué les resulta más difícil de aprender y construir juntos algunos acuerdos sobre cómo trabajarán en el segundo período.",
       "respuesta_correcta": "A",
       "justificacion": "analizar los resultados con rigor, identificar las causas con honestidad y ajustar la estrategia de forma proactiva. El comentario del coordinador puede ser bien intencionado, pero no es una razón para no actuar. Las opciones B, C y D representan distintos niveles de respuesta activa y responsable: la B actúa desde el propio análisis, la C busca acompañamiento experto y la D involucra a los estudiantes en la mejora del proceso. Todas son más adecuadas que la aceptación pasiva.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 3,
+        "d": 3
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -503,7 +671,13 @@
       "opcion_d": "Solicitar al coordinador que reconsidere la posibilidad de crear un grupo diferenciado presentando un argumento pedagógico sobre el impacto del aburrimiento en estudiantes con altas capacidades y el potencial que tienen para representar a la institución en eventos académicos en inglés.",
       "respuesta_correcta": "B",
       "justificacion": "sin crear un grupo diferenciado ni sacrificar a los estudiantes avanzados en roles de monitores, diseña una estructura de clase con dos niveles simultáneos que desafía a cada estudiante según su nivel real. Esta es la orientación al logro en su expresión más sofisticada: encontrar la solución dentro de las condiciones actuales con creatividad pedagógica. La opción A usa a los estudiantes avanzados como recurso humano al servicio del grupo básico, lo que puede resultar desmotivador y no les garantiza un aprendizaje de mayor nivel. La opción C traslada la responsabilidad a las familias sin agotar las posibilidades internas. La opción D es una gestión válida como paso adicional, pero no resuelve el problema inmediato de los estudiantes que ya están en el aula hoy.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 1,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -520,7 +694,13 @@
       "opcion_d": "Organizar un taller extracurricular voluntario en una hora libre de la semana donde los estudiantes interesados puedan explorar diseño gráfico y programación básica, sin modificar el currículo oficial ni comprometer a la institución en alianzas que requieran gestión directiva.",
       "respuesta_correcta": "B",
       "justificacion": "propone un cambio curricular con sustento (intereses identificados en estudiantes y aliados productivos disponibles), lo gestiona a través de los canales legítimos (rector y consejo académico) y articula la educación con el mundo productivo, lo que es una orientación explícita del MEN para la educación media. Esta es la iniciativa que transforma condiciones estructurales, no solo situaciones puntuales. La opción A es pasiva y espera cambios externos que pueden tardar años. La opción C tiene un contenido pedagógicamente válido pero omite los canales institucionales de aprobación curricular, lo que puede tener consecuencias al momento de la evaluación docente. La opción D genera un espacio valioso pero informal y no resuelve el problema estructural del currículo oficial.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -537,7 +717,13 @@
       "opcion_d": "Hablar con el orientador el próximo martes cuando visite la sede, presentarle los casos documentados y explorar juntos qué intervenciones psicosociales podrían implementarse con el grupo de grado octavo.",
       "respuesta_correcta": "A",
       "justificacion": "la B documenta y propone una solución institucional, la C usa el propio espacio pedagógico para abordar la problemática y la D activa el canal del orientador con información concreta. Todas son más adecuadas que la inacción justificada en límites de rol.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 4,
+        "d": 4
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -554,7 +740,13 @@
       "opcion_d": "Hablar con varios colegas de otras áreas para construir un respaldo colectivo a la propuesta y presentarla al rector con firmas de apoyo, dado que una iniciativa respaldada por varios docentes tiene más peso que una propuesta individual.",
       "respuesta_correcta": "B",
       "justificacion": "no ignora la señal de la coordinadora pero tampoco se rinde ante ella sin intentar una vía directa. Preparar una propuesta ejecutiva concisa que enfatice el costo cero y el respaldo del MEN, y llevarla directamente al rector, respeta la cadena de autoridad y maximiza las posibilidades de aprobación. Un docente con iniciativa no espera el momento perfecto: construye las condiciones para que su propuesta sea viable. La opción A renuncia a una oportunidad pedagógica excepcional por temor a la reacción de la dirección, lo cual no es compatible con la competencia de iniciativa. La opción C actúa sin autorización en un contexto donde la dirección ya señaló que no es el momento, lo que puede deteriorar la relación institucional. La opción D puede generar una percepción de presión grupal que deteriore la relación con el rector en un momento ya difícil.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 1,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -571,7 +763,13 @@
       "opcion_d": "Hablar con los padres del estudiante para informarles que su hijo está pasando por un momento difícil emocionalmente, sin revelar el contenido de la carta, para que puedan estar más atentos a su estado emocional en casa.",
       "respuesta_correcta": "B",
       "justificacion": "la orientación sexual del estudiante (que es un dato personal sensible protegido por la Ley 1581 de 2012 y por el derecho a la intimidad, y que el estudiante tiene derecho a revelar o no en sus propios términos) y las señales de malestar emocional observable (ansiedad, dificultades de concentración) que el docente tiene la responsabilidad de reportar al orientador para garantizar el bienestar del estudiante. Esta distinción es clave: el docente no guarda silencio absoluto ni revela todo; actúa con precisión sobre lo que le corresponde. La opción A guarda silencio absoluto sobre señales de malestar emocional que sí deben reportarse. La opción C revela información que el estudiante entregó en confianza y cuya divulgación podría tener consecuencias graves en su entorno familiar. La opción D informa a los padres sobre el estado emocional del hijo sin su conocimiento, lo que puede generar en el hogar una situación difícil si los padres presionan al joven para que explique qué le ocurre.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -588,7 +786,13 @@
       "opcion_d": "Hablar con el colega que le comentó la situación para expresarle que usar ese acceso no autorizado es éticamente cuestionable y que considera necesario reportar la falla al administrador, independientemente de lo que otros hayan hecho.",
       "respuesta_correcta": "A",
       "justificacion": "los registros de notas de otros docentes son información protegida cuyo acceso está regulado por los permisos del sistema. Usar una falla de seguridad de forma consciente puede tener implicaciones disciplinarias y, en algunos contextos, legales. La opción B es la más adecuada: no usa el acceso no autorizado y reporta la falla. La opción C es intermedia: no usa el acceso pero demora el reporte, lo que puede ser comprensible pero no es lo más responsable. La opción D aborda el problema con el colega involucrado, lo cual es un paso ético válido aunque no reemplaza el reporte al administrador.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque1_20preguntas_NivelAvanzado.docx",
@@ -605,7 +809,13 @@
       "opcion_d": "Responder que no tiene autorización para hablar sobre ese tema y sugerirle al colega que si tiene interés legítimo en los resultados de la evaluación institucional, lo consulte directamente con la coordinación.",
       "respuesta_correcta": "B",
       "justificacion": "nombra que el informe es de circulación restringida, declina compartirlo y lo hace de forma natural, sin tratar al colega como si hubiera cometido una falta. El manejo ético de la información confidencial no requiere evasión ni dureza; requiere claridad y respeto simultáneos. La opción A cede parcialmente ante la curiosidad del colega bajo el argumento de que \"lo general no compromete a nadie\": esta distinción es falaz en un grupo pequeño donde los patrones generales pueden identificar indirectamente a personas específicas. La opción C es evasiva y deshonesta: fingir que no se sabe o dar respuestas vagas no es manejo ético de la información. La opción D tiene el contenido correcto pero puede percibirse como un poco rígida y puede hacer sentir al colega que hizo algo inadecuado al preguntar.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 0,
+        "d": 3
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -622,7 +832,13 @@
       "opcion_d": "Responder al estudiante que su padre tiene todo el derecho de hablar con el rector, que usted confía plenamente en la solidez académica de su trabajo y que cualquier revisión del contenido será bienvenida, y continuar la clase sin más comentarios al respecto.",
       "respuesta_correcta": "B",
       "justificacion": "el estudiante, el grupo, el eventual padre y la institución. Responder con calma sin ignorar el comentario demuestra seguridad profesional. Mostrar las fuentes en tiempo real convierte la acusación en una oportunidad de transparencia pedagógica. Proponer la reunión con el padre canaliza el conflicto hacia el espacio institucional correcto sin generar confrontación pública. Este tipo de respuesta es la que el CNSC valora porque combina equilibrio emocional, fundamentación técnica y gestión institucional. La opción A puede ser necesaria si la grabación persiste, pero como primera respuesta es desproporcionada y puede amplificar el conflicto frente al grupo. La opción C ignora el incidente frente a treinta estudiantes que observan la reacción del docente, lo que puede interpretarse como evasión o inseguridad. La opción D tiene un buen tono pero no aborda la dimensión pedagógica del grupo ni propone ninguna acción concreta que gestione el conflicto.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 2,
+        "b": 4,
+        "c": 1,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -639,7 +855,13 @@
       "opcion_d": "Escuchar al coordinador con atención, tomar nota de cada crítica puntual, pedir ejemplos concretos de qué estrategias esperan ver en las clases y comprometerse a implementarlas gradualmente, sin mencionar las dificultades del laboratorio para no parecer que busca excusas.",
       "respuesta_correcta": "B",
       "justificacion": "reconoce lo que puede mejorar (sin negar la crítica) y comunica con respeto las condiciones que han limitado las opciones metodológicas (sin evadir la responsabilidad ni atacar al coordinador). Este equilibrio es clave: un docente que solo acepta pasivamente una crítica injusta pierde credibilidad profesional; uno que solo se defiende pierde la oportunidad de recibir apoyo real. La opción A acepta la crítica en su totalidad sin señalar los factores estructurales, lo que puede generar más presión sin resolución de los problemas reales. La opción C tiene el contenido correcto pero el tono confrontacional puede cerrar el canal de apoyo que el coordinador podría ofrecer. La opción D toma nota sin plantear las condiciones reales, lo que perpetúa las limitaciones sin resolverlas.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 2,
+        "b": 4,
+        "c": 2,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -656,7 +878,13 @@
       "opcion_d": "Explicarle al colega que comprende su situación pero que no puede comprometer su integridad profesional, y proponerle hablar juntos con el coordinador para explorar si hay alguna forma institucional de resolver la situación sin recurrir a la falsificación.",
       "respuesta_correcta": "A",
       "justificacion": "la B comunica el límite con claridad, la C orienta hacia procedimientos institucionales alternativos y la D propone una solución conjunta que respeta los canales legítimos. Todas son más adecuadas que la complicidad.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 4,
+        "d": 4
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -673,7 +901,13 @@
       "opcion_d": "Firmar el acta bajo protesta, consignando por escrito su desacuerdo y los fundamentos normativos que lo sustentan, e informando que ejercerá los mecanismos de revisión disponibles si la decisión no es reconsiderada en la próxima comisión.",
       "respuesta_correcta": "B",
       "justificacion": "consiste en ejercer la voz profesional con datos cuando una decisión puede vulnerar los derechos de un estudiante. Este es exactamente el escenario que el CNSC evalúa con la competencia de comunicación asertiva. La opción A firma una decisión que considera injusta y traslada la responsabilidad a una conversación posterior que ya no tiene efecto sobre el acta. La opción C es válida como complemento pero aplaza la decisión sin ofrecer la información que ya tiene disponible. La opción D preserva la integridad del docente pero permite que la decisión se ejecute sin el cuestionamiento técnico que la situación requiere.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 3,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -690,7 +924,13 @@
       "opcion_d": "Decirle a la estudiante que para poder eximirla de la actividad necesita una nota del acudiente o una constancia de la enfermería, dado que sin ese soporte no puede modificar su participación en la clase de forma que sea válida para la evaluación.",
       "respuesta_correcta": "B",
       "justificacion": "respeta la confidencialidad solicitada por la estudiante, no la deja sin actividad evaluable (lo que podría afectar su nota), y abre con cuidado la posibilidad de buscar apoyo médico si el dolor es frecuente, sin imponérselo. Esta respuesta también repara de forma implícita el daño causado por la experiencia anterior con otro docente, transmitiendo que este espacio es seguro. La opción A resuelve el problema inmediato pero pierde la oportunidad de acompañar a la estudiante más allá del episodio puntual. La opción C también es adecuada en su trato a la estudiante, aunque registrar internamente la conducta del otro docente sin un proceso claro puede ser ambiguo. La opción D exige un soporte documental que puede ser innecesario para una situación fisiológica natural y puede hacer sentir a la estudiante que no le creen.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 3,
+        "b": 4,
+        "c": 3,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -707,7 +947,13 @@
       "opcion_d": "Interrumpir amablemente al padre antes de que profundice más en la comparación, agradecerle el reconocimiento y explicar al grupo que cualquier observación sobre el trabajo docente puede comunicarse de forma individual al coordinador académico, dado que ese es el espacio apropiado para ese tipo de retroalimentación.",
       "respuesta_correcta": "A",
       "justificacion": "es una respuesta que permite que el mensaje comparativo quede instalado. Las opciones B, C y D son distintas formas de corregir la comparación con asertividad: la B y la C visibilizan el trabajo colectivo, y la D redirige el tipo de retroalimentación al canal apropiado. Todas son más adecuadas que la aceptación silenciosa de un elogio que perjudica a otros.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 4,
+        "d": 4
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -724,7 +970,13 @@
       "opcion_d": "No aplicar consecuencia evaluativa por esta vez, dado que el estudiante reconoció el error y expresó su dificultad real, pero exigirle que reescriba el trabajo en un plazo de tres días con guía del docente, dejando constancia informal del acuerdo sin reportarlo institucionalmente.",
       "respuesta_correcta": "B",
       "justificacion": "aplica el procedimiento evaluativo correspondiente al plagio (lo que es necesario para la equidad con el resto del grupo y para la formación en integridad académica del propio estudiante) y activa con urgencia la ruta de atención psicosocial ante las señales de malestar que el estudiante expresó. La frase \"ya no aguanto más\" en un menor de edad es una señal que el docente tiene la obligación legal y ética de reportar al orientador de forma inmediata, independientemente del plagio. La opción A confunde empatía con omisión: no aplicar consecuencias y no registrar el hecho perjudica la formación del estudiante y viola los protocolos institucionales. La opción C aplica las consecuencias correctas pero actúa directamente con la madre antes de que el orientador evalúe la situación emocional, lo cual puede no ser el canal más adecuado para las señales de malestar expresadas. La opción D es informal, no registra el hecho y puede generar precedentes negativos.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -741,7 +993,13 @@
       "opcion_d": "Firmar el acta bajo protesta, escribir a mano en el documento que firma sin estar de acuerdo con los fundamentos, y luego presentar una queja formal ante la Secretaría de Educación adjuntando su expediente de desempeño y las evaluaciones de los últimos tres años.",
       "respuesta_correcta": "B",
       "justificacion": "ANÁLISIS PEDAGÓGICO DETALLADO La opción B es la más adecuada porque protege los derechos laborales del docente sin cerrar el canal de diálogo con la rectora ni hacer acusaciones que aún no puede probar formalmente. Solicitar los fundamentos por escrito y anunciar la revisión jurídica es un ejercicio de comunicación asertiva que deja en evidencia que el docente conoce sus derechos, actúa con inteligencia institucional y no se deja presionar. Esta combinación es mucho más efectiva que la confrontación directa o la resignación pasiva. La opción A renuncia a los derechos laborales sin intentar ningún mecanismo de defensa, lo cual no es compatible con la asertividad. La opción C confronta directamente con información que aún no puede probar formalmente, lo que puede debilitar la posición del docente si la acusación no tiene soporte documental. La opción D es una acción válida como paso posterior, pero firmar primero puede complicar el recurso legal.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 1,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -758,7 +1016,13 @@
       "opcion_d": "Responder que no puede apoyar un plan que no fue consultado previamente con los docentes, dado que la participación del cuerpo docente en las decisiones pedagógicas está establecida en la Ley 115 y en el gobierno escolar de la institución.",
       "respuesta_correcta": "B",
       "justificacion": "no apoya ciegamente el plan (lo que sería sumisión) ni lo rechaza de plano (lo que alimentaría la resistencia colectiva), sino que identifica su valor potencial y propone una alternativa de proceso que lo hace viable. Proponer mesas de trabajo en un plazo concreto es una acción de liderazgo real: convierte la tensión de la reunión en un proceso productivo con un resultado esperado. La opción A apoya de forma incondicional un plan que el propio docente considera defectuoso, lo cual no es liderazgo sino adhesión. La opción C aplaza sin proponer nada concreto, lo que puede percibirse como evasión. La opción D rechaza el plan con un argumento normativo válido pero sin ofrecer ninguna salida constructiva, lo que amplifica la resistencia sin generar soluciones.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 1,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -775,7 +1039,13 @@
       "opcion_d": "Postular la institución a la convocatoria de forma autónoma usando los datos institucionales disponibles, dado que el rector probablemente apoyará la iniciativa una vez vea los resultados y el plazo de diez días no permite un proceso de aprobación institucional formal.",
       "respuesta_correcta": "B",
       "justificacion": "ANÁLISIS PEDAGÓGICO DETALLADO La opción B es la más adecuada porque actúa con la urgencia que la situación requiere sin saltarse los canales institucionales. Preparar un borrador en tres días es perfectamente viable para un docente comprometido, y presentarlo al rector con un argumento sólido respeta la cadena de autoridad mientras ejerce una iniciativa real. Ofrecerse a liderar el proyecto si se aprueba demuestra que la iniciativa va acompañada de compromiso de ejecución, no solo de identificación de oportunidades. La opción A transfiere la responsabilidad completamente a la dirección, lo que puede resultar en que la oportunidad se pierda por falta de iniciativa. La opción C involucra a los estudiantes en una etapa en que aún no hay aprobación institucional, lo que puede generar expectativas que no se cumplan. La opción D actúa sin autorización usando datos institucionales, lo que puede tener consecuencias disciplinarias y comprometer a la institución sin respaldo directivo.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 2,
+        "d": 0
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -792,7 +1062,13 @@
       "opcion_d": "Proponer en el informe que el rector formalice la participación en los espacios de la comisión de convivencia como un componente de la evaluación de desempeño docente, dado que sin ese respaldo institucional ningún líder de comisión puede garantizar resultados sostenibles.",
       "respuesta_correcta": "A",
       "justificacion": "es maquillaje institucional. Un líder que oculta dificultades para \"mantener buena relación\" no está ejerciendo liderazgo; está gestionando su imagen a expensas de la efectividad del proceso. El rector necesita información veraz para tomar decisiones que fortalezcan la comisión. Las opciones B, C y D son formas distintas de ejercer liderazgo con honestidad: la B documenta el problema con propuesta de solución, la C lo aborda en conversación directa con el rector antes del informe y la D propone un mecanismo estructural para resolver la causa del problema. Todas son más adecuadas que la omisión.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 4,
+        "d": 4
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -809,7 +1085,13 @@
       "opcion_d": "Informarles a los estudiantes que el proyecto tiene obstáculos institucionales, orientarlos para que presenten la propuesta formalmente al rector con los fundamentos curriculares y el apoyo del personero estudiantil, y ofrecerse a acompañarlos en esa gestión sin comprometerse aún como asesor.",
       "respuesta_correcta": "B",
       "justificacion": "no abandona el proyecto ni desafía la autoridad del rector de forma unilateral, sino que regresa con argumentos sólidos y propone condiciones concretas que reducen el riesgo percibido. Ofrecer salvaguardas (revisión previa, enfoque académico, validación docente) transforma una preocupación legítima del rector en un proyecto viable. Este es el tipo de liderazgo que construye confianza institucional sin sacrificar el valor pedagógico. La opción A abandona a los estudiantes sin intentar superar el obstáculo institucional. La opción C actúa de forma unilateral y puede deteriorar gravemente la relación con el rector si el proyecto genera alguna controversia. La opción D es una alternativa válida pero traslada la gestión a los estudiantes sin que el docente haya agotado primero su propio canal de negociación con la dirección.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 1,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -826,7 +1108,13 @@
       "opcion_d": "Elevar la situación directamente a la Secretaría de Educación departamental mediante un informe escrito que documente el estado de los recursos de la institución, solicitando intervención prioritaria dado que las condiciones actuales limitan el derecho a la educación de los estudiantes.",
       "respuesta_correcta": "B",
       "justificacion": "investiga las fuentes de financiación disponibles, involucra al rector (respetando la cadena institucional), articula actores del entorno (alcaldía, comunidad) y propone un plan con plazos. En contextos rurales con escasos recursos, el liderazgo docente se mide precisamente por la capacidad de movilizar recursos externos que la institución no puede generar por sí sola. Hacer esto en los primeros dos meses demuestra iniciativa sin generar la percepción de crítica a la gestión anterior. La opción A acepta las condiciones sin intentar mejorarlas, lo que perjudica a los estudiantes que merecen mejores recursos. La opción C es un gesto de compromiso individual valioso pero no resuelve el problema estructural. La opción D escala el problema a la Secretaría sin haber agotado los recursos internos y las alternativas de gestión directa, lo que puede deteriorar la relación con el rector.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -843,7 +1131,13 @@
       "opcion_d": "Hablar en privado con el rector después de la reunión para señalarle que la actitud del equipo docente frente a los resultados es parte del problema y que se necesita un liderazgo directivo más firme para que la mejora de la retroalimentación sea una exigencia real y no una sugerencia opcional.",
       "respuesta_correcta": "B",
       "justificacion": "no atribuye los resultados a \"expectativas irreales\" ni guarda silencio cómplice, sino que reconoce la validez de los datos y propone una acción concreta (protocolo compartido) con un compromiso personal de liderarla. Esta combinación de honestidad, propuesta y compromiso de ejecución es exactamente lo que distingue el liderazgo de la simple crítica. La opción A es pasividad institucional: protege la relación con el equipo a expensas de la mejora real. La opción C cuestiona la validez de los datos como mecanismo para aplazar la acción, lo cual puede percibirse como evasión. La opción D traslada la responsabilidad al rector sin proponer ninguna acción concreta y puede interpretarse como una denuncia indirecta del equipo que puede deteriorar las relaciones.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 1,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -860,7 +1154,13 @@
       "opcion_d": "Asumir de forma voluntaria la orientación vocacional de todos los estudiantes de once en tiempos extraescolares, dado que la necesidad es urgente y usted tiene las competencias para atenderla sin necesidad de esperar a que la institución genere los recursos.",
       "respuesta_correcta": "B",
       "justificacion": "usa tiempos ya disponibles (horas de dirección de grupo), no requiere presupuesto (alianzas con SENA y universidades que ofrecen charlas gratuitas) y se integra al PEI de forma sostenible. Este es el liderazgo que transforma vacíos institucionales en soluciones viables con los recursos disponibles, que es exactamente lo que el CNSC valora. La opción A es un aporte mínimo que no resuelve la necesidad de forma estructurada. La opción C identifica correctamente la necesidad de un profesional, pero esperar esa respuesta institucional puede tardar años y los estudiantes actuales no pueden esperar. La opción D genera una carga insostenible para el docente en tiempos extraescolares no remunerados, lo que puede derivar en agotamiento y abandono del proceso.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 2,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -877,7 +1177,13 @@
       "opcion_d": "Hablar en privado con los dos docentes de cada posición para explorar qué aspectos del enfoque contrario podrían aceptar sin renunciar a sus principios, y llegar a la próxima reunión con una propuesta de síntesis que cada subgrupo haya validado previamente.",
       "respuesta_correcta": "B",
       "justificacion": "no elige entre los dos enfoques (lo que generaría un ganador y un perdedor) sino que diseña un proyecto que los necesita a ambos en secuencia lógica. La fase investigativa produce los datos que fundamentan la acción comunitaria, y la acción comunitaria da sentido y destino a la investigación. Esta síntesis respeta las visiones de todos y produce un proyecto pedagógicamente más rico que cualquiera de los dos enfoques por separado. La opción A renuncia al trabajo en equipo y genera dos productos paralelos que compiten entre sí. La opción C delega la resolución al coordinador antes de agotar los recursos internos del equipo. La opción D es una estrategia válida de construcción de acuerdos pero requiere más tiempo del disponible y puede generar desconfianza si los subgrupos perciben que el proceso fue manipulado.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 1,
+        "b": 4,
+        "c": 1,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -894,7 +1200,13 @@
       "opcion_d": "Proponer que antes de decidir se verifique si el reglamento tiene algún artículo sobre casos excepcionales que la comisión no haya revisado, y que si no lo tiene, la decisión sea elevada al rector para que tenga respaldo de una autoridad superior.",
       "respuesta_correcta": "A",
       "justificacion": "la B propone elevar el caso a instancias con autoridad para crear excepciones formales, la C preserva la integridad del voto personal con registro en acta y la D busca revisar exhaustivamente el reglamento antes de decidir. Todas son más adecuadas que la complicidad con la excepción irregular.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 4,
+        "d": 3
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -911,7 +1223,13 @@
       "opcion_d": "Consultar con el coordinador pedagógico sobre las estrategias que han funcionado con ese grupo en otras áreas y adaptar alguna de ellas a Ciencias Sociales, dado que los colegas con más tiempo en la institución conocen mejor las características de aprendizaje del grupo.",
       "respuesta_correcta": "B",
       "justificacion": "reconocer que la propia estrategia no está funcionando y ajustarla con base en evidencia, sin esperar al final del año. Diseñar una estrategia basada en análisis de casos, hacer un diagnóstico de lo que sí está claro y comunicar el cambio al grupo con transparencia son tres acciones que combinan rigor pedagógico, honestidad profesional y respeto por los estudiantes. La opción A ajusta los resultados numéricos sin mejorar el aprendizaje real, lo que contradice directamente la orientación al logro. La opción C traslada la responsabilidad del problema al estudiante sin cuestionar la estrategia docente, lo cual puede ser parcialmente válido pero omite la autorreflexión profesional necesaria. La opción D busca apoyo externo antes de intentar la solución con los propios recursos pedagógicos del docente.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 2
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -928,7 +1246,13 @@
       "opcion_d": "Guardar la nota como evidencia, esperar a tener más señales de que la situación descrita es real y verificable antes de activar un proceso que puede tener consecuencias graves para la familia de la estudiante si resulta ser una situación malinterpretada.",
       "respuesta_correcta": "B",
       "justificacion": "esperar más evidencia ante indicios de abuso puede dejar a la estudiante en riesgo prolongado.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 1
+      }
     },
     {
       "source_file": "TJS_Bloque2_20preguntas_CA_LID.docx",
@@ -945,7 +1269,13 @@
       "opcion_d": "Proponer en la reunión de docentes que cada área designe un responsable de documentar las prácticas del equipo, sin que esto implique trabajo adicional para usted, y dejar que el proceso se desarrolle de forma orgánica desde cada área.",
       "respuesta_correcta": "B",
       "justificacion": "identifica una herramienta viable de costo cero, se ofrece a diseñarla y coordinarla, y lo hace con el respaldo del rector para garantizar que el proceso tenga legitimidad y sostenibilidad. Presentarlo como una acción de mejora institucional (no como una iniciativa personal) aumenta las probabilidades de apropiación colectiva. La opción A acepta pasivamente una brecha institucional que el docente tiene capacidad de contribuir a resolver. La opción C crea el repositorio sin aprobación institucional, lo que puede resultar en que los colegas no lo usen por falta de legitimidad formal. La opción D propone una solución sin comprometerse a liderarla, lo que reduce significativamente las probabilidades de que el proceso avance.",
-      "generated": false
+      "generated": false,
+      "idoneidad": {
+        "a": 0,
+        "b": 4,
+        "c": 2,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -954,15 +1284,21 @@
       "competencia": "Liderazgo",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente líder de área sin cargo directivo SITUACIÓN un equipo de docentes rechaza implementar ajustes razonables porque considera que aumentan la carga laboral, aunque hay evidencias de estudiantes que no acceden plenamente a la evaluación. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Usted lidera informalmente el area de ciencias, sin cargo directivo. Propuso implementar ajustes razonables para dos estudiantes con discapacidad -tiempo adicional y formato accesible en las evaluaciones-, pero el resto del equipo docente los rechaza porque considera que aumentan su carga de trabajo. Mientras tanto, hay evidencia de que esos estudiantes no estan accediendo plenamente a las evaluaciones actuales.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en acuerdos inclusivos verificables.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Presentar al equipo la evidencia concreta del impacto en los estudiantes, abrir un espacio de dialogo sobre como distribuir la carga de los ajustes de forma viable, y proponer un acuerdo de seguimiento con compromisos verificables.",
+      "opcion_b": "Evitar insistir en el tema para no generar mas tension con el equipo, y esperar a que coordinacion academica decida por su cuenta si corresponde exigir los ajustes.",
+      "opcion_c": "Imponer los ajustes razonables en su propia asignatura sin coordinar con el resto del equipo, dejando en evidencia publicamente a quienes se niegan.",
+      "opcion_d": "Remitir el caso completo a coordinacion mediante un informe extenso, sin adelantar ninguna gestion pedagogica mientras se resuelve el tramite.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre acuerdos inclusivos verificables, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "El liderazgo sin autoridad formal se ejerce con evidencia y construccion de acuerdos, no con imposicion ni con pasividad. Evitar el tema deja sin resolver una vulneracion real de derechos. Imponer unilateralmente y exponer a los colegas deteriora la relacion de equipo sin garantizar sostenibilidad. Trasladar todo a coordinacion sin ninguna accion inmediata retrasa una respuesta que los estudiantes necesitan ya.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -971,15 +1307,21 @@
       "competencia": "Liderazgo",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente provisional con alto reconocimiento estudiantil SITUACIÓN el consejo académico evita discutir resultados críticos de convivencia porque teme afectar la imagen institucional ante la Secretaría de Educación. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Usted es docente provisional pero goza de alto reconocimiento entre los estudiantes. En el consejo academico, ha notado que se evita sistematicamente discutir los resultados criticos de la ultima encuesta de convivencia, porque varios directivos temen que la Secretaria de Educacion los interprete como una señal de mala gestion institucional.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en mejora institucional basada en evidencia.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Reconocer la tension entre la imagen institucional y la necesidad de mejora, presentar la evidencia con objetividad y proponer una ruta de mejora basada en los datos de la encuesta.",
+      "opcion_b": "Solicitar apoyo de la Secretaria de Educacion para que acompañe el analisis de los resultados, dejando constancia formal de los hallazgos y las acciones propuestas.",
+      "opcion_c": "Sumarse a la decision de no discutir los resultados en el consejo, asumiendo que cuestionar la postura institucional podria afectar su continuidad como docente provisional.",
+      "opcion_d": "Convocar una reunion breve con los miembros mas receptivos del consejo para revisar los datos de forma extraoficial, sin buscar que quede en el acta formal.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete mejora institucional basada en evidencia al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada es evitar el tema por temor a las consecuencias sobre su propia situacion laboral, priorizando la conveniencia personal sobre la responsabilidad etica de mejorar la convivencia escolar. Buscar acuerdos informales sin registro formal es mejor que el silencio, pero deja el problema sin trazabilidad institucional. Pedir apoyo externo con evidencia documentada es una via solida, aunque menos directa que enfrentar el tema en el propio consejo.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 3,
+        "c": 0,
+        "d": 2
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -988,15 +1330,21 @@
       "competencia": "Trabajo en equipo",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente nuevo en una institución rural SITUACIÓN dos áreas deben diseñar una secuencia interdisciplinar, pero cada una defiende sus contenidos y acusa a la otra de no comprender las necesidades del contexto. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "En una institucion rural, dos areas deben diseñar juntas una secuencia interdisciplinar para el proximo periodo. En la primera reunion de planeacion, cada area defiende sus propios contenidos como prioritarios y se acusan mutuamente de no entender las necesidades reales del contexto de los estudiantes.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en integración curricular realista.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Proponer identificar juntos un problema real del contexto que ambas areas puedan abordar desde sus contenidos, y construir la secuencia a partir de ese punto comun.",
+      "opcion_b": "Sugerir que cada area diseñe su parte de la secuencia por separado y luego se unan los dos documentos sin una revision conjunta previa.",
+      "opcion_c": "Insistir en que su propia area asuma el liderazgo total de la secuencia, dado que considera que su enfoque es mas pertinente para el contexto.",
+      "opcion_d": "Suspender el intento de trabajo interdisciplinar y proponer que cada area continue trabajando de forma independiente, como se ha hecho en años anteriores.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre integración curricular realista, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "El trabajo en equipo efectivo parte de un punto en comun genuino, no de la imposicion de una sola perspectiva ni de la suma mecanica de partes separadas. Insistir en liderar unilateralmente perpetua el conflicto de fondo. Suspender el intento renuncia al valor pedagogico de la interdisciplinariedad. Diseñar por separado y unir despues evita el conflicto inmediato, pero no logra una integracion real entre las areas.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1005,15 +1353,21 @@
       "competencia": "Trabajo en equipo",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de secundaria con experiencia SITUACIÓN un proyecto transversal está atrasado porque los responsables no comparten avances y cada equipo maneja criterios distintos de calidad. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Un proyecto transversal en el que participan cuatro areas esta atrasado. Al revisar el avance, usted nota que los responsables de cada area no han compartido su progreso entre si, y cada uno esta usando criterios de calidad distintos para lo que se supone es un producto conjunto.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en coordinación y corresponsabilidad.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Convocar una reunion breve con los responsables, diferenciar hechos de interpretaciones sobre el atraso, y acordar criterios comunes de calidad con un cronograma de seguimiento verificable.",
+      "opcion_b": "Pedir apoyo a coordinacion para que medie en el atraso, documentando los hechos observados y las acciones ya intentadas por el equipo.",
+      "opcion_c": "Asumir, sin verificar con los demas responsables, que el atraso se debe a la falta de compromiso de un area en particular, y comunicarlo asi al resto del equipo.",
+      "opcion_d": "Absorber personalmente el trabajo pendiente de las otras areas para cumplir el plazo, sin abordar la falta de coordinacion de fondo.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete coordinación y corresponsabilidad al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada es señalar responsabilidades sin verificar los hechos con las partes involucradas, lo cual puede ser injusto y deteriorar la confianza del equipo sin resolver el problema real de coordinacion. Absorber el trabajo ajeno evita el conflicto pero no corrige la falta de coordinacion que volvera a repetirse. Pedir mediacion de coordinacion es razonable, aunque implica un paso adicional frente a resolverlo directamente con el equipo.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 3,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1022,15 +1376,21 @@
       "competencia": "Trabajo en equipo",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente orientador de semillero académico SITUACIÓN un colega se apropia de productos elaborados por el equipo y presenta los avances como logro individual ante directivos. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Un colega del semillero academico que usted orienta ha presentado ante directivos los avances de un producto elaborado colectivamente por todo el equipo, atribuyendose el logro de forma individual y sin mencionar el trabajo de los demas docentes ni de los estudiantes involucrados.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en reconocimiento del trabajo colectivo.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Conversar directamente con el colega sobre lo ocurrido, y en la siguiente presentacion ante directivos asegurarse de que se reconozca explicitamente el trabajo colectivo de todo el equipo.",
+      "opcion_b": "Comentar el episodio con otros integrantes del equipo sin abordarlo directamente con el colega que se atribuyo el logro individual.",
+      "opcion_c": "Reclamar publicamente ante los directivos en la misma reunion, señalando al colega frente a todos por haberse atribuido el trabajo del equipo.",
+      "opcion_d": "No decir nada al respecto, asumiendo que discutir el reconocimiento del trabajo no vale el desgaste de un conflicto con el colega.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre reconocimiento del trabajo colectivo, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "Resolver el desacuerdo de forma directa y despues corregir el reconocimiento publico protege tanto la relacion de equipo como la justicia del credito colectivo. Callar por completo normaliza la apropiacion indebida del trabajo ajeno. Confrontar publicamente en el momento genera un conflicto innecesario frente a directivos que pudo resolverse en privado. Comentarlo solo entre colegas sin hablar con la persona involucrada no resuelve nada y puede generar mas tension indirecta.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 1,
+        "d": 0
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1039,15 +1399,21 @@
       "competencia": "Trabajo en equipo",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de matemáticas en jornada única SITUACIÓN el equipo acuerda una estrategia común, pero varios docentes la aplican de forma fragmentada y los estudiantes reciben mensajes contradictorios. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "El equipo de matematicas acordo una estrategia comun para enseñar resolucion de problemas este periodo. Sin embargo, al recorrer las aulas usted nota que cada docente la esta aplicando de forma distinta -algunos ni siquiera la estan usando-, y los estudiantes reciben instrucciones contradictorias segun el docente que les toque.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en consistencia pedagógica.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Convocar al equipo para revisar juntos como se esta aplicando la estrategia en cada aula, identificar las diferencias y acordar ajustes concretos para lograr consistencia real.",
+      "opcion_b": "Enviar un recordatorio escrito al equipo sobre el acuerdo original, sin abrir un espacio de conversacion sobre por que no se esta aplicando de forma uniforme.",
+      "opcion_c": "Continuar aplicando la estrategia solo en su propia aula, sin intervenir en lo que hacen sus colegas del area.",
+      "opcion_d": "Proponer abandonar la estrategia comun por completo, ya que su aplicacion desigual demuestra que el acuerdo no esta funcionando.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre consistencia pedagógica, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "La consistencia pedagogica que necesitan los estudiantes se logra revisando juntos las diferencias reales de aplicacion, no solo recordando el acuerdo por escrito. Aplicarla solo en su propia aula resuelve su caso individual pero no la inconsistencia del area. Abandonar la estrategia completa por su aplicacion desigual renuncia a un acuerdo que podria funcionar si se aplicara correctamente.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 1,
+        "d": 0
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1056,15 +1422,21 @@
       "competencia": "Trabajo en equipo",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente encargado de feria institucional SITUACIÓN faltan dos días para el evento y un área informa que no entregará evidencias porque considera que la planeación inicial fue deficiente. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Faltan dos dias para la feria institucional y un area informa que no entregara sus evidencias porque considera que la planeacion inicial del evento fue deficiente y no reflejo sus necesidades. El resto de areas ya tiene su material listo y el evento no se puede posponer.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en recuperación colaborativa del proceso.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Reunirse de inmediato con el area faltante para entender sus objeciones especificas, y definir juntos una entrega minima viable que si pueda estar lista a tiempo.",
+      "opcion_b": "Pedir a coordinacion que intervenga para exigir la entrega del area faltante, sin explorar antes una solucion conjunta directamente con ellos.",
+      "opcion_c": "Excluir al area faltante de la feria sin conversar con ellos, presentando el evento solo con las areas que si cumplieron a tiempo.",
+      "opcion_d": "Aplazar la feria completa para todas las areas, aunque la mayoria ya tiene su material listo, solo por la situacion de una de ellas.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete recuperación colaborativa del proceso al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La recuperacion colaborativa del proceso busca una solucion conjunta y minima viable antes de escalar el conflicto o excluir a nadie. Excluir al area sin dialogo desconoce sus objeciones y rompe la logica de trabajo en equipo. Aplazar todo el evento perjudica innecesariamente a las areas que si cumplieron. Escalar directamente a coordinacion sin intentar primero una solucion directa es un paso razonable pero no el mas eficiente dado el poco tiempo disponible.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1073,15 +1445,21 @@
       "competencia": "Trabajo en equipo",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de media técnica SITUACIÓN un conflicto entre docentes antiguos y nuevos paraliza una decisión sobre criterios de evaluación común. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "En media tecnica, un conflicto entre docentes de mayor antigüedad y docentes nuevos ha paralizado la decision sobre los criterios de evaluacion comunes del area. Cada grupo defiende su propia perspectiva y ya han pasado tres reuniones sin llegar a ningun acuerdo, mientras el periodo de evaluacion se acerca.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en mediación entre perspectivas.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Facilitar un espacio donde ambos grupos presenten los fundamentos pedagogicos de su postura, identificar los puntos en comun y construir un criterio hibrido que integre lo valioso de cada perspectiva.",
+      "opcion_b": "Proponer que se someta la decision a votacion simple entre todos los docentes del area, sin analizar antes los fundamentos de cada postura.",
+      "opcion_c": "Alinearse abiertamente con el grupo de docentes de mayor antigüedad, considerando que su experiencia deberia tener mas peso en la decision.",
+      "opcion_d": "Postergar la definicion de criterios comunes indefinidamente, dejando que cada docente aplique los suyos propios mientras se resuelve el conflicto.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre mediación entre perspectivas, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "Mediar entre perspectivas construyendo un acuerdo basado en fundamentos pedagogicos es mas sostenible que imponer una postura o evadir la decision. Alinearse con un grupo por su antigüedad, sin analizar los argumentos, es una forma de imposicion disfrazada. Postergar indefinidamente deja a los estudiantes sin criterios claros justo antes de la evaluacion. Votar sin analizar los fundamentos puede resolver el impasse pero no necesariamente produce el mejor criterio pedagogico.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1090,15 +1468,21 @@
       "competencia": "Trabajo en equipo",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de aula multigrado SITUACIÓN el equipo rural debe distribuir materiales escasos, pero cada sede prioriza sus propias urgencias sin mirar el impacto global. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "En una zona rural con aula multigrado, el equipo docente debe distribuir materiales didacticos escasos entre varias sedes. Cada sede prioriza cubrir sus propias urgencias inmediatas sin considerar el impacto en las demas, lo que ha dejado a una sede sin ningun material durante todo el mes.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en equidad en el uso de recursos.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Proponer al equipo un criterio compartido de distribucion basado en necesidad real de cada sede, y hacer seguimiento para que ninguna quede sin material de forma prolongada.",
+      "opcion_b": "Ceder los materiales de su propia sede a la sede mas necesitada este mes, sin proponer un criterio compartido que evite que la situacion se repita.",
+      "opcion_c": "Priorizar unicamente las necesidades de su propia sede en la proxima distribucion, replicando la misma logica que genero el problema.",
+      "opcion_d": "Solicitar a la institucion mas materiales sin proponer ningun cambio en el criterio actual de distribucion entre sedes.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre equidad en el uso de recursos, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "La equidad real en el uso de recursos requiere un criterio compartido y sostenido, no gestos aislados ni la misma logica individualista que causo el problema. Priorizar solo la propia sede repite exactamente el patron que dejo a otra sede sin material. Ceder los recursos este mes ayuda puntualmente pero no evita que la situacion se repita el proximo periodo. Pedir mas materiales sin cambiar el criterio de distribucion no resuelve la causa real del problema.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1107,15 +1491,21 @@
       "competencia": "Trabajo en equipo",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente coordinador de proyecto lector SITUACIÓN la estrategia depende de aportes de varias áreas, pero solo una ha cumplido y empieza a reclamar control total del proceso. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Un proyecto de lectura institucional depende de aportes coordinados de varias areas, pero solo el area de lenguaje ha cumplido con sus entregas hasta ahora. Al ver que las demas areas se han retrasado, la coordinadora de lenguaje empieza a tomar decisiones sobre el proyecto completo sin consultar a las otras areas involucradas.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en corresponsabilidad sin ruptura del equipo.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Reconocer el esfuerzo del area de lenguaje, y proponer un espacio conjunto para reactivar el compromiso de las demas areas sin que el proyecto quede bajo el control de una sola.",
+      "opcion_b": "Apoyar en privado a la coordinadora de lenguaje para que siga tomando decisiones sola, dado que es la unica que ha cumplido con los plazos establecidos.",
+      "opcion_c": "Permitir que el area de lenguaje asuma el control total del proyecto de forma permanente, ya que es la que demostro mayor compromiso con los plazos.",
+      "opcion_d": "Cancelar el proyecto completo por el incumplimiento de la mayoria de las areas, sin intentar antes reactivar la participacion de quienes se atrasaron.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete corresponsabilidad sin ruptura del equipo al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada consolida el control de un proyecto colectivo en una sola area de forma permanente, lo cual rompe la corresponsabilidad que el proyecto necesita para sostenerse. Cancelarlo por completo desperdicia el trabajo ya realizado por quienes si cumplieron. Apoyar en privado que una sola area decida, aunque menos definitivo que hacerlo permanente, tambien deja sin corregir el desequilibrio de fondo.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1124,15 +1514,21 @@
       "competencia": "Orientación al logro",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de grado once SITUACIÓN los resultados de simulacros muestran mejora en memorización, pero bajo desempeño en lectura inferencial y uso de evidencia. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Los resultados del ultimo simulacro de grado once muestran una mejora notable en preguntas de memorizacion y datos puntuales, pero un desempeño bajo y estancado en preguntas que exigen lectura inferencial y uso de evidencia del texto. El simulacro final esta a ocho semanas y el plan de estudio actual no distingue entre ambos tipos de habilidad.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en metas de aprendizaje medibles.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Rediseñar el plan de las proximas semanas con metas especificas y medibles para fortalecer la lectura inferencial, manteniendo el repaso de memorizacion en un segundo plano.",
+      "opcion_b": "Aumentar la cantidad total de simulacros practicados, sin diferenciar el tipo de habilidad que cada uno esta reforzando.",
+      "opcion_c": "Mantener el plan de estudio actual sin cambios, confiando en que la mejora general seguira su curso hasta el simulacro final.",
+      "opcion_d": "Concentrar todo el tiempo restante exclusivamente en ejercicios de memorizacion, ya que es donde el grupo ya muestra mejores resultados.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre metas de aprendizaje medibles, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "La orientacion al logro exige ajustar el plan segun la evidencia especifica de donde esta el rezago real. Mantener el plan sin cambios ignora una señal clara de estancamiento. Reforzar solo lo que ya funciona bien desperdicia el tiempo restante en la habilidad que menos lo necesita. Aumentar la cantidad de simulacros sin diferenciar habilidades diluye el esfuerzo sin atacar la brecha identificada.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 0
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1141,15 +1537,21 @@
       "competencia": "Orientación al logro",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de básica secundaria SITUACIÓN la institución celebra una mejora leve en promedios, aunque los estudiantes con mayor rezago siguen sin avances significativos. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "La institucion celebra una mejora leve en el promedio general de resultados del ultimo periodo. Sin embargo, al revisar el detalle por estudiante, usted nota que ese promedio esta impulsado por estudiantes que ya tenian buen desempeño, mientras que el grupo con mayor rezago -cerca de un cuarto del curso- no muestra ningun avance real.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en progreso de todos los grupos.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Presentar el analisis desagregado al equipo, mostrando que el avance no es parejo, y proponer un plan especifico de acompañamiento para el grupo que sigue rezagado.",
+      "opcion_b": "Sumarse a la celebracion institucional del promedio general, sin mencionar el estancamiento del grupo con mayor rezago mientras se define una estrategia mas adelante.",
+      "opcion_c": "Celebrar publicamente la mejora del promedio general como un logro completo del grupo, sin mencionar que una parte de los estudiantes no avanzo.",
+      "opcion_d": "Cuestionar la validez de todos los resultados del periodo sin evidencia especifica, solo porque el promedio no refleja lo que usted observa en el aula.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete progreso de todos los grupos al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada es presentar como logro colectivo una mejora que en realidad oculta que un grupo de estudiantes no avanzo, lo cual retrasa cualquier intervencion real hacia ellos. Sumarse sin corregir el mensaje tambien posterga el problema, aunque sin agravarlo activamente. Cuestionar todos los resultados sin evidencia especifica no aporta una alternativa constructiva a la situacion.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1158,15 +1560,21 @@
       "competencia": "Orientación al logro",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de ciencias SITUACIÓN un plan de mejoramiento tiene muchas actividades, pero no define indicadores ni momentos de revisión. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "El plan de mejoramiento de su area para este año enumera doce actividades distintas, pero ninguna tiene un indicador de exito definido ni una fecha de revision intermedia. Ya transcurrio la mitad del año escolar y nadie del equipo puede decir con certeza si el plan esta funcionando o no.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en seguimiento de resultados.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Proponer al equipo definir dos o tres indicadores medibles para las actividades prioritarias del plan y establecer una fecha concreta de revision antes de que termine el año.",
+      "opcion_b": "Continuar ejecutando las doce actividades tal como estan planteadas, confiando en que la cantidad de acciones por si sola producira mejora.",
+      "opcion_c": "Reducir el plan a una sola actividad simbolica para simplificar el seguimiento, sin analizar cual de las doce era realmente prioritaria.",
+      "opcion_d": "Esperar al cierre del año escolar para evaluar el plan completo de una sola vez, sin ningun punto de revision intermedio.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre seguimiento de resultados, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "Un plan de mejora solo es verificable si tiene indicadores y momentos de revision definidos con tiempo suficiente para ajustar el rumbo. Esperar al cierre del año para revisar todo de una vez elimina la posibilidad de corregir a tiempo. Continuar sin indicadores mantiene la misma falla de origen. Reducir el plan a una sola actividad sin analisis pierde de vista posibles prioridades reales entre las doce acciones.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 1,
+        "d": 0
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1175,15 +1583,21 @@
       "competencia": "Orientación al logro",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de lenguaje SITUACIÓN el grupo obtiene buenos resultados en tareas de baja complejidad, pero falla cuando debe justificar decisiones con información del texto. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "En lenguaje, su grupo obtiene buenos resultados en preguntas de comprension literal -ubicar un dato explicito en el texto-, pero falla sistematicamente cuando debe justificar una respuesta usando evidencia del propio texto para sustentar una interpretacion. Este patron se repite en los ultimos tres simulacros.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en desempeño transferible.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Diseñar ejercicios especificos donde los estudiantes deban argumentar sus respuestas citando evidencia textual, con retroalimentacion puntual sobre la calidad de esa argumentacion.",
+      "opcion_b": "Aumentar la cantidad de textos leidos en clase, sin cambiar el tipo de pregunta que se les exige responder sobre ellos.",
+      "opcion_c": "Concluir que el grupo ya domina lectura critica, porque los resultados generales en comprension literal son buenos.",
+      "opcion_d": "Dejar de trabajar preguntas de justificacion con evidencia, ya que es el tipo de pregunta donde el grupo obtiene peores resultados.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre desempeño transferible, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "El desempeño transferible se construye entrenando especificamente la habilidad que falla, no evitandola ni asumiendo que un buen resultado parcial representa el dominio completo. Concluir que el grupo ya domina lectura critica ignora una señal clara y repetida de estancamiento. Evitar el tipo de pregunta donde el grupo falla renuncia directamente a cerrar la brecha. Leer mas sin cambiar la exigencia de la pregunta no ataca la habilidad especifica que esta fallando.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 0
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1192,15 +1606,21 @@
       "competencia": "Orientación al logro",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de primaria SITUACIÓN la presión por subir indicadores lleva al equipo a entrenar solo preguntas tipo prueba y abandonar procesos formativos de fondo. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "La presion institucional por subir los indicadores en la proxima prueba externa ha llevado al equipo docente a dedicar casi todo el tiempo de clase a resolver preguntas tipo prueba, dejando de lado la retroalimentacion formativa y el trabajo de comprension profunda que se venia haciendo antes.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en aprendizaje sostenible.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
-      "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete aprendizaje sostenible al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "opcion_a": "Proponer al equipo un balance entre practica tipo prueba y trabajo formativo, sustentando con evidencia que ambos son necesarios para un aprendizaje sostenible y no solo para el indicador inmediato.",
+      "opcion_b": "Continuar entrenando exclusivamente preguntas tipo prueba durante el resto del periodo, priorizando el indicador inmediato sobre el proceso formativo.",
+      "opcion_c": "Abandonar por completo la practica tipo prueba, ignorando que los estudiantes tambien necesitan familiarizarse con el formato de la evaluacion externa.",
+      "opcion_d": "Dejar que cada docente decida por su cuenta si prioriza practica tipo prueba o trabajo formativo, sin ningun acuerdo de area.",
+      "respuesta_correcta": "B",
+      "justificacion": "La respuesta MENOS adecuada sacrifica por completo el proceso formativo de fondo por perseguir unicamente el indicador inmediato, lo cual compromete el aprendizaje real del grupo a mediano plazo. Abandonar la practica tipo prueba tambien desatiende una necesidad legitima de los estudiantes, aunque en sentido opuesto. Dejar la decision fragmentada entre docentes, sin acuerdo de area, produce inconsistencia pero no compromete de forma tan directa el aprendizaje como entrenar solo para el examen.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 0,
+        "c": 1,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1209,15 +1629,21 @@
       "competencia": "Orientación al logro",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de educación media SITUACIÓN un estudiante con alto potencial baja su rendimiento porque las tareas no le exigen análisis ni producción argumentativa. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Un estudiante de educacion media con alto potencial academico ha bajado notablemente su rendimiento este periodo. Al revisar sus trabajos, usted nota que las tareas asignadas no le exigen analisis ni produccion argumentativa propia, y el mismo le ha comentado que encuentra las actividades poco desafiantes.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en retos diferenciados.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Diseñar para el estudiante retos diferenciados dentro de la misma planeacion de aula, que exijan mayor analisis y produccion argumentativa sin separarlo del resto del grupo.",
+      "opcion_b": "Asignarle trabajo adicional de la misma naturaleza que las tareas actuales, solo que en mayor cantidad.",
+      "opcion_c": "Concluir que la baja de rendimiento se debe a falta de compromiso personal del estudiante, sin revisar si las actividades son adecuadas para su nivel.",
+      "opcion_d": "Recomendar que el estudiante avance de grado de forma anticipada como unica respuesta al problema, sin ajustar primero las actividades de su nivel actual.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre retos diferenciados, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "Retar academicamente a un estudiante con alto potencial dentro de su propio grupo suele ser mas sostenible que un cambio estructural inmediato. Concluir que el problema es solo actitudinal ignora una causa pedagogica evidente. Mas cantidad de la misma tarea no resuelve la falta de exigencia cualitativa. Proponer un adelanto de grado sin antes ajustar las actividades actuales es una respuesta desproporcionada frente a una solucion mas simple y disponible.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1226,15 +1652,21 @@
       "competencia": "Orientación al logro",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de matemáticas SITUACIÓN la institución tiene metas ambiciosas, pero los docentes no usan datos por grupo ni por habilidad para ajustar la enseñanza. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "La institucion se ha fijado metas ambiciosas de mejora en matematicas para este año, pero al revisar la practica de aula usted nota que ningun docente del area consulta los resultados desagregados por grupo o por habilidad especifica antes de planear sus clases; todos usan la misma planeacion general del año anterior.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en uso pedagógico de datos.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Proponer al area revisar juntos los resultados por grupo y por habilidad antes de ajustar la planeacion, para que las metas institucionales se traduzcan en decisiones concretas de aula.",
+      "opcion_b": "Ajustar unicamente su propia planeacion con base en los datos disponibles, sin proponerlo como practica del area completa.",
+      "opcion_c": "Mantener la planeacion general del año anterior sin cambios, confiando en que fijar metas ambiciosas por si solo movilizara la mejora.",
+      "opcion_d": "Solicitar a coordinacion que sea ella quien decida los ajustes de planeacion de todo el area, sin involucrar al equipo docente en el analisis de los datos.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre uso pedagógico de datos, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "Las metas institucionales solo se cumplen si se traducen en decisiones pedagogicas concretas basadas en datos, y eso requiere que el equipo completo los revise. Mantener la planeacion sin cambios desconecta la meta institucional de la practica real de aula. Ajustar solo su propia planeacion mejora una parte pero no cierra la brecha del area completa. Delegar el analisis a coordinacion sin involucrar al equipo debilita la apropiacion de los datos por quienes enseñan directamente.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1243,15 +1675,21 @@
       "competencia": "Orientación al logro",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente jefe de área SITUACIÓN una estrategia exitosa se aplica igual en todos los cursos sin considerar diferencias de contexto, ritmo y prerrequisitos. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Una estrategia de lectura que funciono muy bien en un curso de grado sexto se replica exactamente igual, sin ningun ajuste, en todos los demas cursos de la institucion -desde primero hasta once-, sin considerar diferencias de edad, ritmo de aprendizaje ni prerrequisitos de cada grupo.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en adaptación de la mejora.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Adaptar los elementos centrales de la estrategia exitosa al nivel y ritmo de cada grupo, conservando su logica pedagogica pero ajustando su complejidad segun el grado.",
+      "opcion_b": "Aplicar la estrategia con pequeños ajustes de tiempo por grado, sin revisar a fondo si el nivel de complejidad tambien deberia cambiar.",
+      "opcion_c": "Replicar la estrategia exactamente igual en todos los grados, confiando en que si funciono en un curso funcionara igual en cualquier otro.",
+      "opcion_d": "Descartar por completo la estrategia para el resto de los grados, considerando que una practica exitosa en un solo curso no tiene ningun valor generalizable.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete adaptación de la mejora al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada es replicar sin ningun ajuste una estrategia pensada para un grupo especifico, ignorando diferencias evidentes de edad y nivel entre grados. Descartarla por completo desperdicia una practica que si demostro funcionar, aunque en un contexto distinto. Ajustar solo el tiempo sin revisar la complejidad es un avance parcial que no resuelve del todo el problema de fondo.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 3,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1260,15 +1698,21 @@
       "competencia": "Iniciativa",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente provisional en zona urbana SITUACIÓN detecta que los estudiantes nuevos no reciben inducción académica y por eso repiten errores administrativos y pedagógicos durante semanas. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Usted es docente provisional en una institucion urbana y lleva tres semanas notando que los estudiantes que ingresaron a mitad de periodo no recibieron ninguna induccion sobre horarios, canales de comunicacion ni el SIEE. Como resultado, varios han sido reportados por llegar tarde a evaluaciones que no sabian que existian, y dos familias ya reclamaron por escrito. Coordinacion no ha asignado a nadie esa tarea y el periodo academico cierra en diez dias.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en soluciones viables de bajo costo.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Elaborar en el dia una guia breve de induccion con la informacion esencial, entregarla a los estudiantes nuevos y a sus acudientes, y proponer a coordinacion que se formalice como protocolo para el proximo ingreso.",
+      "opcion_b": "Enviar un correo a coordinacion señalando el vacio y esperar instrucciones antes de actuar directamente con los estudiantes, para no exceder su rol como docente de aula.",
+      "opcion_c": "Aplicar las evaluaciones pendientes sin ajustes, argumentando que la induccion es responsabilidad exclusiva de la coordinacion y no del docente de aula.",
+      "opcion_d": "Reunir a los estudiantes nuevos y anunciarles que a partir de ahora seran evaluados con mayor severidad para que aprendan a informarse por su cuenta.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre soluciones viables de bajo costo, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "La opcion mas adecuada actua sobre la causa (falta de induccion) con una solucion inmediata y proporcional, y ademas la convierte en mejora institucional duradera. Escalar sin actuar retrasa una solucion urgente; desentenderse del problema ignora el efecto sobre estudiantes que no tuvieron responsabilidad en el vacio; y endurecer la evaluacion como castigo es desproporcionado y ajeno al problema real.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 1,
+        "d": 0
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1277,15 +1721,21 @@
       "competencia": "Iniciativa",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de escuela rural dispersa SITUACIÓN observa que la conectividad irregular impide sostener tareas digitales, pero hay recursos impresos subutilizados en biblioteca. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Usted trabaja en una escuela rural dispersa donde la conectividad es intermitente. Durante el ultimo mes, las tareas digitales enviadas por la coordinacion academica no han podido completarse en la mayoria de los hogares, y el rendimiento del grupo ha bajado de forma notoria. Al revisar la biblioteca de la sede, encuentra guias impresas y material didactico en buen estado que casi no se ha usado en los ultimos dos años.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en respuesta creativa al contexto.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Reconocer la limitacion de conectividad, adaptar las actividades al material impreso disponible y acordar con el equipo docente un plan de seguimiento que documente el avance de cada estudiante.",
+      "opcion_b": "Reducir temporalmente la exigencia academica del grupo hasta que la conectividad mejore, sin definir un plan alternativo de trabajo mientras tanto.",
+      "opcion_c": "Insistir en el uso exclusivo de las tareas digitales tal como fueron diseñadas, indicando que cualquier adaptacion debe esperar a que la coordinacion apruebe un cambio formal.",
+      "opcion_d": "Culpar públicamente a las familias por no gestionar mejor el acceso a internet, sin revisar si existen alternativas pedagogicas disponibles en la propia institucion.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete respuesta creativa al contexto al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada es imponer una via que ya demostro no funcionar mientras se culpa a las familias por una condicion estructural que no controlan; ademas ignora recursos disponibles en la propia sede. Reducir la exigencia sin plan alterno tambien es problematico, pero al menos no traslada la responsabilidad de forma injusta. Insistir en el canal digital sin adaptarlo desconoce la evidencia del propio contexto.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 0
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1294,15 +1744,21 @@
       "competencia": "Iniciativa",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de ciencias sociales SITUACIÓN nota que las familias desconocen el SIEE y esto genera reclamos tardíos que podrían prevenirse con orientación oportuna. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Como docente de ciencias sociales, viene observando que varias familias desconocen como funciona el SIEE de la institucion: no saben cuando se publican notas, como solicitar una revision ni los plazos para hacerlo. Esto ha generado reclamos tardios, algunos ya fuera del plazo reglamentario, que generan tension innecesaria entre acudientes y coordinacion al cierre de cada periodo.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en prevención de conflictos.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Diseñar una comunicacion breve y clara sobre el SIEE (fechas, canales y plazos de reclamacion) para socializarla en la proxima reunion de padres y proponerla como practica permanente del area.",
+      "opcion_b": "Explicar el SIEE de forma individual solo a las familias que reclamen directamente con usted, sin generalizar la informacion al resto del grupo.",
+      "opcion_c": "Indicar a las familias que consulten el SIEE por su cuenta en la pagina institucional, sin verificar si tienen acceso real a ese canal.",
+      "opcion_d": "Aceptar reclamos fuera de plazo de manera informal para evitar conflictos, sin remitirlos al procedimiento formal establecido por el SIEE.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre prevención de conflictos, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "Prevenir el problema con informacion oportuna y de alcance colectivo es la accion mas coherente con la orientacion al logro y la iniciativa docente. Resolver caso por caso no previene la recurrencia; remitir a un canal sin verificar accesibilidad desatiende al usuario real; y aceptar reclamos informales fuera de plazo vulnera el debido proceso institucional que el propio SIEE establece.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 1,
+        "d": 0
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1311,15 +1767,21 @@
       "competencia": "Iniciativa",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de aula inclusiva SITUACIÓN un estudiante con barreras de aprendizaje depende de adaptaciones informales que solo conoce un docente. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "En su aula inclusiva tiene un estudiante con barreras de aprendizaje que depende de adaptaciones especificas -tiempo extendido, formato de letra ampliada y apoyos visuales- que solo usted conoce, porque las acordo informalmente hace dos años y nunca quedaron registradas en el PIAR. Esta semana se entera de que sera trasladado a otro grado el proximo periodo.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en continuidad pedagógica.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Documentar formalmente las adaptaciones en el PIAR del estudiante, articularlas con el equipo de orientacion y entregar la informacion al docente que continuara el proceso antes del traslado.",
+      "opcion_b": "Escribir una nota informal para el proximo docente explicando las adaptaciones, sin gestionar su incorporacion formal al PIAR.",
+      "opcion_c": "No compartir la informacion, considerando que cada docente debe descubrir por su cuenta las necesidades de sus estudiantes.",
+      "opcion_d": "Solicitar que el estudiante permanezca con usted indefinidamente para evitar que el proceso se pierda, sin gestionar la continuidad institucional del caso.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre continuidad pedagógica, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "La continuidad pedagogica real se garantiza formalizando el PIAR, no dependiendo de la memoria de un solo docente. Una nota informal ayuda pero es fragil y no queda protegida institucionalmente. Omitir la informacion pone en riesgo directo el derecho a la educacion del estudiante. Retener al estudiante evita el problema en lugar de resolverlo de fondo.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1328,15 +1790,21 @@
       "competencia": "Iniciativa",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de jornada tarde SITUACIÓN los estudiantes llegan tarde de forma recurrente por problemas de transporte y el equipo solo registra sanciones sin analizar causas. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "En la jornada de la tarde, un grupo de estudiantes llega tarde de forma recurrente porque el unico bus que cubre su ruta rural sufre retrasos frecuentes. El equipo docente ha optado por registrar la tardanza como falta disciplinaria sin excepcion, y ya hay tres estudiantes en riesgo de perder el periodo por acumulacion de fallas que no dependen de ellos.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en análisis proactivo de causas.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Analizar con el equipo docente las causas reales de las tardanzas, proponer un ajuste razonable para los casos de transporte verificable y mantener el registro sin penalizar injustamente.",
+      "opcion_b": "Solicitar que se revise el caso en el comite de convivencia antes de aplicar cualquier sancion adicional a los estudiantes afectados.",
+      "opcion_c": "Mantener el registro de faltas sin excepcion, argumentando que flexibilizar la norma para unos estudiantes seria injusto frente al resto del grupo.",
+      "opcion_d": "Excusar automaticamente a todos los estudiantes de esa ruta sin verificar caso por caso, para evitar el desgaste de revisar cada situacion.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete análisis proactivo de causas al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada es sostener una norma de forma rigida sin analizar la causa, penalizando a estudiantes por una circunstancia estructural ajena a su voluntad. Excusar sin verificar tambien es problematico porque no distingue casos reales de excusas injustificadas. Elevar el caso a comite es razonable pero mas lento que resolverlo con analisis directo del equipo docente.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 3,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1345,15 +1813,21 @@
       "competencia": "Iniciativa",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de tecnología SITUACIÓN la institución tiene datos dispersos de asistencia, desempeño y convivencia, pero nadie los cruza para anticipar riesgo escolar. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Como docente de tecnologia, tiene acceso a los reportes de asistencia, desempeño academico y observador de convivencia de su grado. Al revisarlos por separado nota que ningun area cruza esta informacion, aunque varios estudiantes muestran señales combinadas -ausentismo creciente, bajas notas y anotaciones de aislamiento social- que podrian anticipar un riesgo de desercion si nadie interviene pronto.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en alertas tempranas.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Cruzar los tres tipos de datos para identificar los casos de mayor riesgo, presentar el hallazgo a coordinacion y proponer un protocolo de alerta temprana compartido entre areas.",
+      "opcion_b": "Informar el hallazgo solo al director de grupo de cada estudiante, sin proponer un mecanismo que se sostenga en el tiempo.",
+      "opcion_c": "Guardar la observacion para si mismo, considerando que no es su funcion revisar informacion de otras areas.",
+      "opcion_d": "Publicar la lista de estudiantes en riesgo en la sala de profesores para que cualquier docente la consulte libremente.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre alertas tempranas, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "La iniciativa mas valiosa convierte una observacion aislada en un mecanismo institucional replicable. Informar solo puntualmente ayuda a corto plazo pero no previene que el patron se repita. Callar la informacion desaprovecha una alerta temprana real. Exponer los datos sin control vulnera la confidencialidad de los estudiantes, incluso con buena intencion.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 0,
+        "d": 0
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1362,15 +1836,21 @@
       "competencia": "Iniciativa",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de educación artística SITUACIÓN un grupo con baja participación mejora cuando las tareas se conectan con problemas de la comunidad, pero la estrategia no se documenta. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "En educacion artistica, nota que la participacion de su grupo mejora notablemente cuando conecta las actividades con problemas reales de la comunidad -un mural sobre el rio contaminado, una obra sobre el reciclaje del barrio-, comparado con las guias estandar del plan de area. Sin embargo, nunca ha registrado por que funciona ni ha compartido la estrategia con sus colegas.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en innovación documentada.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Sistematizar la estrategia (que se hizo, por que funciono, que evidencias de aprendizaje produjo) y compartirla en la proxima reunion de area como una practica replicable.",
+      "opcion_b": "Seguir aplicando la estrategia en su propia aula sin documentarla, confiando en que su efecto se mantendra igual con el tiempo.",
+      "opcion_c": "Reservarse la estrategia como un metodo personal, sin compartirla con el area para evitar que otros la usen sin reconocerle el merito.",
+      "opcion_d": "Presentarla directamente a rectoria como una innovacion institucional sin antes validarla ni compartirla con el equipo de area que la aplicaria.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre innovación documentada, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "La iniciativa docente de mayor valor no se queda en la practica individual: se documenta y se comparte para que otros puedan aprovecharla. No registrar la estrategia arriesga perderla o no poder sostenerla. Guardarla por interes personal contradice el sentido colaborativo de la funcion docente. Saltar directamente a rectoria sin el aval del area que la aplicaria es un atajo que debilita la apropiacion real de la practica.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1379,15 +1859,21 @@
       "competencia": "Iniciativa",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de lengua castellana SITUACIÓN varios estudiantes talentosos no participan en eventos académicos porque nadie sistematiza convocatorias ni acompaña postulaciones. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "En lengua castellana, ha identificado a varios estudiantes con talento evidente para concursos de oratoria y olimpiadas academicas, pero ninguno ha participado en los ultimos dos años porque nadie en la institucion sistematiza las convocatorias externas ni acompaña el proceso de inscripcion. Se entera de una convocatoria regional con cierre en cinco dias.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en gestión de oportunidades.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Gestionar de inmediato la inscripcion de los estudiantes con mayor potencial, informar a sus familias y proponer a coordinacion crear un mecanismo permanente de seguimiento a convocatorias.",
+      "opcion_b": "Informar a los estudiantes sobre la convocatoria y dejar que ellos mismos gestionen la inscripcion sin acompañamiento adicional.",
+      "opcion_c": "No informar sobre la convocatoria por considerar que, al no haber un canal institucional establecido, no es su responsabilidad gestionarla.",
+      "opcion_d": "Inscribir a los estudiantes sin informar a sus familias, para no exponerse a que ellas decidan no autorizar la participacion.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete gestión de oportunidades al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada es omitir una oportunidad real de desarrollo del estudiante escudandose en la ausencia de un procedimiento formal, cuando el docente si tiene la informacion y el tiempo para actuar. Informar sin acompañar deja la gestion en manos de estudiantes que probablemente no conocen el proceso. Inscribir sin informar a la familia, aunque bien intencionado, vulnera su derecho a decidir sobre la participacion de su hijo o hija.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 0,
+        "d": 0
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1396,15 +1882,21 @@
       "competencia": "Manejo de la información",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente director de grupo SITUACIÓN recibe versiones contradictorias sobre una agresión verbal entre estudiantes y una familia exige sanción inmediata antes de escuchar a todos. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Como director de grupo, recibe dos versiones contradictorias sobre una agresion verbal entre dos estudiantes durante el descanso. Antes de que pueda escuchar a los testigos, la familia de uno de los involucrados llega exigiendo una sancion inmediata para el otro estudiante, amenazando con escalar el caso a la Secretaria de Educacion si no se actua hoy mismo.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en verificación responsable de información.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Explicar a la familia que se activara la ruta de convivencia, escuchar a ambos estudiantes y a los testigos disponibles, y comunicar una decision basada en la evidencia recolectada en los plazos establecidos.",
+      "opcion_b": "Pedir a la familia un tiempo breve para recolectar informacion de las dos partes antes de dar cualquier respuesta, sin comprometerse aun con un plazo especifico.",
+      "opcion_c": "Sancionar de inmediato al estudiante señalado por la familia reclamante, para evitar que el caso escale a la Secretaria de Educacion.",
+      "opcion_d": "Decirle a la familia que el caso no es prioritario y que se resolvera cuando el equipo de convivencia tenga disponibilidad, sin dar un marco de tiempo.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre verificación responsable de información, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "El manejo responsable de la informacion exige verificarla antes de decidir, y comunicarlo con claridad y plazos a la familia. Sancionar bajo presion sin verificar los hechos vulnera el debido proceso y puede ser injusto. Restar prioridad al caso sin explicacion desatiende una situacion de convivencia real. Pedir tiempo sin comprometerse con un plazo es razonable pero deja a la familia sin la claridad que necesita.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 3,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1413,15 +1905,21 @@
       "competencia": "Manejo de la información",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de ciencias naturales SITUACIÓN un informe institucional usa promedios generales para concluir que no hay rezago, pero usted observa brechas fuertes por subgrupos. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Un informe institucional reciente concluye, con base en promedios generales, que no existe rezago academico significativo en el grado noveno. Sin embargo, al revisar los datos desagregados por grupo de estudiantes, usted observa brechas fuertes: los estudiantes con necesidades educativas especiales y los de menor nivel socioeconomico tienen resultados muy por debajo del promedio general que oculta esa diferencia.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en lectura crítica de datos.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Presentar el analisis desagregado a coordinacion, mostrando que el promedio general oculta brechas relevantes, y proponer acciones diferenciadas para los subgrupos con mayor rezago.",
+      "opcion_b": "Solicitar apoyo del equipo de orientacion para verificar los datos desagregados antes de presentarlos formalmente a coordinacion.",
+      "opcion_c": "Aceptar la conclusion del informe general sin cuestionarla, asumiendo que los promedios institucionales ya reflejan el panorama completo del grado.",
+      "opcion_d": "Compartir el hallazgo de forma extraoficial solo con otros docentes de confianza, sin llevarlo al espacio institucional donde se toman decisiones sobre el grado.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete lectura crítica de datos al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada es aceptar sin analisis critico una conclusion que un promedio general puede estar ocultando, renunciando a la funcion de lectura critica de datos que le corresponde al docente. Compartir el hallazgo solo informalmente evita el silencio pero no lo convierte en una decision institucional. Verificar con orientacion antes de presentar es una buena practica, aunque implica un paso adicional antes de actuar.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 3,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1430,15 +1928,21 @@
       "competencia": "Manejo de la información",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de matemáticas SITUACIÓN la coordinación solicita publicar una lista de estudiantes con bajo desempeño para presionar asistencia a refuerzos. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "La coordinacion academica le solicita publicar en la cartelera del pasillo la lista de estudiantes con bajo desempeño del grado, con el argumento de que la exposicion publica aumentara la asistencia a las sesiones de refuerzo. Usted tiene acceso directo a esos datos porque es quien lleva el registro de notas del grado.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en protección de datos sensibles.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Explicar a coordinacion que publicar la lista vulnera la proteccion de datos de los estudiantes, y proponer una alternativa como la comunicacion privada a cada familia con invitacion directa al refuerzo.",
+      "opcion_b": "Publicar la lista solo con las iniciales de los estudiantes, asumiendo que eso reduce el riesgo de exposicion publica.",
+      "opcion_c": "Publicar la lista completa tal como lo pide coordinacion, priorizando cumplir la instruccion recibida sobre la proteccion de los datos de los estudiantes.",
+      "opcion_d": "Negarse a publicar la lista sin ofrecer ninguna alternativa a coordinacion para lograr el objetivo de aumentar la asistencia al refuerzo.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre protección de datos sensibles, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "El manejo adecuado de informacion sensible protege los datos de los estudiantes y a la vez resuelve el objetivo legitimo de la coordinacion mediante un canal apropiado. Publicar con iniciales sigue exponiendo a estudiantes identificables en un grupo pequeño. Publicar la lista completa vulnera directamente su derecho a la privacidad. Negarse sin proponer alternativa deja sin resolver el objetivo pedagogico legitimo detras de la solicitud.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 2
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1447,15 +1951,21 @@
       "competencia": "Manejo de la información",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de humanidades SITUACIÓN un colega comparte por chat capturas de calificaciones y comentarios sobre estudiantes para pedir opinión rápida al equipo. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Un colega le escribe por el chat del area, compartiendo capturas de pantalla con calificaciones y comentarios sobre el comportamiento de varios estudiantes, pidiendo la opinion rapida del grupo antes de una reunion con un acudiente. El chat incluye a docentes de otras areas que no tienen relacion directa con esos estudiantes.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en confidencialidad y uso pertinente.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Responder al colega en privado, sugerir eliminar la informacion del chat grupal y ofrecer revisar el caso en un espacio adecuado con quienes si tienen relacion directa con el estudiante.",
+      "opcion_b": "Dar su opinion sobre el caso directamente en el chat grupal, sin comentar el problema de haber compartido la informacion de forma abierta.",
+      "opcion_c": "Reenviar las capturas a otro colega para pedir una segunda opinion, ampliando aun mas la circulacion de la informacion del estudiante.",
+      "opcion_d": "Ignorar el mensaje sin señalar el problema, dejando que la informacion continue circulando en el chat grupal.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre confidencialidad y uso pertinente, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "La respuesta mas adecuada corrige el manejo indebido de la informacion y a la vez ofrece un canal apropiado para resolver la necesidad real del colega. Opinar sin señalar el problema normaliza la practica. Reenviar la informacion la expone aun mas. Ignorar el mensaje permite que la exposicion de datos sensibles continue sin ninguna correccion.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1464,15 +1974,21 @@
       "competencia": "Manejo de la información",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de grado noveno SITUACIÓN una herramienta digital genera reportes automáticos, pero varios datos aparecen duplicados o sin fecha de actualización. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "La plataforma institucional que usa para el seguimiento academico genera reportes automaticos de asistencia y desempeño, pero en las ultimas semanas ha notado registros duplicados, fechas de actualizacion inconsistentes y datos que no coinciden con lo observado en clase. Coordinacion le pide usar esos reportes para decidir que estudiantes requieren apoyo adicional esta semana.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en calidad de la información.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Reportar las inconsistencias al equipo tecnico, contrastar los datos dudosos con su propio registro de clase antes de decidir, y aplazar unos dias las decisiones que dependan de datos no verificados.",
+      "opcion_b": "Usar los reportes automaticos tal como estan, considerando que revisarlos manualmente tomaria demasiado tiempo esta semana.",
+      "opcion_c": "Decidir el apoyo adicional basandose unicamente en su impresion personal de cada estudiante, sin usar ningun dato del sistema ni reportar el problema tecnico.",
+      "opcion_d": "Suspender por completo el proceso de asignacion de apoyos hasta que la plataforma sea corregida, sin usar ninguna fuente alternativa de informacion mientras tanto.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete calidad de la información al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada descarta toda fuente de datos y decide solo por impresion personal, sin siquiera reportar el problema tecnico que afecta a toda la institucion. Usar datos que ya se saben inconsistentes tambien es riesgoso, aunque menos grave que prescindir de cualquier evidencia. Suspender todo el proceso, aunque cauteloso, deja sin apoyo a estudiantes que si lo necesitan mientras se resuelve el tema tecnico.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1481,15 +1997,21 @@
       "competencia": "Manejo de la información",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente encargado de seguimiento SITUACIÓN debe decidir si un estudiante requiere apoyo adicional con base en observaciones docentes, registros de asistencia y resultados de evaluación. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Debe decidir si un estudiante de su grado requiere apoyo academico adicional. Cuenta con tres fuentes de informacion que no coinciden del todo entre si: sus propias observaciones de aula, los registros de asistencia (con varias inasistencias no justificadas) y los resultados de la ultima evaluacion, que estuvieron dentro del promedio del grupo.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en triangulación de evidencia.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Triangular las tres fuentes de evidencia, conversar directamente con el estudiante para entender el contexto de las inasistencias, y decidir con base en el conjunto de la informacion, no en una sola fuente.",
+      "opcion_b": "Decidir con base unicamente en los resultados de la evaluacion, ya que es el dato mas objetivo y verificable de los tres disponibles.",
+      "opcion_c": "Decidir con base unicamente en las inasistencias registradas, sin conversar con el estudiante ni revisar las demas fuentes de informacion.",
+      "opcion_d": "Postergar la decision indefinidamente hasta contar con una cuarta fuente de informacion que confirme con certeza total el diagnostico.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre triangulación de evidencia, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "La decision mas solida integra distintas fuentes de evidencia y escucha al estudiante antes de concluir. Basarse solo en la evaluacion ignora señales de riesgo como la inasistencia. Basarse solo en la inasistencia sin dialogo puede llevar a conclusiones injustas. Postergar indefinidamente en busca de certeza total retrasa un apoyo que el estudiante podria necesitar ya.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 1,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1498,15 +2020,21 @@
       "competencia": "Manejo de la información",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de media SITUACIÓN un directivo solicita una explicación simple de bajos resultados, pero los datos muestran causas múltiples: asistencia, lectura y cambios docentes. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Un directivo le pide una explicacion simple y rapida sobre por que bajaron los resultados del grado en el ultimo periodo, para presentarla en la reunion de padres de esta semana. Al revisar los datos, usted encuentra que las causas son multiples y estan entrelazadas: aumento de inasistencia, bajo desempeño especifico en comprension lectora, y dos cambios de docente titular durante el periodo.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en interpretación no reduccionista.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Presentar al directivo un resumen breve que reconozca las tres causas identificadas y su interrelacion, evitando reducir el problema a una sola explicacion simple pero incompleta.",
+      "opcion_b": "Explicar unicamente el cambio de docentes como causa principal, porque es la mas facil de comunicar a los padres en la reunion.",
+      "opcion_c": "Explicar unicamente el aumento de inasistencia como causa principal, porque es la variable que menos compromete la gestion institucional.",
+      "opcion_d": "Negarse a dar una explicacion hasta poder hacer un estudio estadistico completo, dejando al directivo sin ninguna informacion para la reunion de esta semana.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre interpretación no reduccionista, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "El manejo responsable de datos complejos no los reduce a una sola causa comoda, sino que comunica la interrelacion real de forma clara y breve. Elegir una sola causa -sea cual sea- simplifica indebidamente un fenomeno multicausal. Negarse a dar cualquier informacion, aunque busca rigor, deja al directivo sin insumos para una reunion que ya esta programada.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 1,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1515,15 +2043,21 @@
       "competencia": "Manejo de la información",
       "tipo_item": "Respuesta MENOS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de primaria SITUACIÓN una madre pide conocer los resultados comparativos de otros estudiantes para demostrar que su hijo fue evaluado injustamente. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "La madre de un estudiante de primaria solicita conocer los resultados comparativos de otros estudiantes del salon, para demostrar que su hijo fue evaluado de forma injusta frente al resto del grupo. Insiste en que tiene derecho a esa informacion porque se trata del rendimiento academico de su propio hijo.",
       "enunciado": "¿Cuál es la respuesta MENOS adecuada ante esta situación?",
-      "opcion_a": "Reconocer la tensión, proteger a los estudiantes involucrados, contrastar información y acordar una respuesta pedagógica proporcional centrada en reserva de información de terceros.",
-      "opcion_b": "Pedir apoyo institucional cuando el caso exceda la competencia individual, dejando evidencia de los hechos y de las acciones pedagógicas realizadas.",
-      "opcion_c": "Actuar solo con base en impresiones personales, desestimar las voces que contradicen la primera versión y cerrar el caso para evitar desgaste institucional.",
-      "opcion_d": "Convocar un diálogo breve con los actores pertinentes, diferenciar hechos de interpretaciones y definir un seguimiento verificable.",
+      "opcion_a": "Explicar a la madre que puede acceder a la informacion completa de su hijo y a los criterios de evaluacion aplicados, pero que los resultados individuales de otros estudiantes son informacion protegida que no puede compartirse.",
+      "opcion_b": "Compartir los resultados comparativos sin los nombres de los demas estudiantes, asumiendo que eso protege suficientemente su identidad en un grupo pequeño.",
+      "opcion_c": "Entregar la lista completa de resultados del salon con nombres, considerando que la madre tiene derecho a verificar que la evaluacion de su hijo fue justa.",
+      "opcion_d": "Negarse a dar cualquier informacion a la madre, incluyendo los criterios de evaluacion de su propio hijo, para evitar cualquier riesgo de reclamo posterior.",
       "respuesta_correcta": "C",
-      "justificacion": "La opción C es la menos adecuada porque reduce el caso a una impresión inicial, desconoce evidencia contradictoria y compromete reserva de información de terceros al cerrar prematuramente el análisis. En un TJS de alta exigencia no basta con elegir una respuesta formalmente defendible: se debe identificar la actuación que preserva derechos, evidencia, clima institucional y responsabilidad profesional. Las demás opciones, aunque perfectibles, contienen mecanismos de diálogo, verificación o mitigación.",
-      "generated": true
+      "justificacion": "La respuesta MENOS adecuada entrega datos identificables de otros estudiantes sin su consentimiento, vulnerando directamente su derecho a la reserva de informacion. Compartir resultados sin nombres sigue siendo riesgoso en un grupo pequeño donde la identificacion es facil. Negarse a dar cualquier informacion, incluida la que si le corresponde a la madre sobre su propio hijo, tampoco resuelve el reclamo legitimo que esta plantea.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 1,
+        "c": 0,
+        "d": 1
+      }
     },
     {
       "source_file": "Ítem generado para completar matriz TJS",
@@ -1532,15 +2066,21 @@
       "competencia": "Manejo de la información",
       "tipo_item": "Respuesta MÁS ADECUADA",
       "nivel": "Avanzado TJS Concurso Docente",
-      "contexto": "PERFIL DEL DOCENTE: Docente de ética SITUACIÓN un rumor en redes sociales señala a un estudiante como responsable de daño institucional y varios compañeros exigen expulsión. El caso exige valorar simultáneamente el efecto pedagógico inmediato, la legitimidad institucional de la actuación y las consecuencias éticas de la decisión ante estudiantes, familias y equipo docente.",
+      "contexto": "Un rumor circula en redes sociales señalando a un estudiante como responsable de un daño a la infraestructura del colegio. Varios compañeros, influenciados por el rumor, exigen en el grupo de chat del curso que sea expulsado de inmediato. Usted no cuenta con ninguna evidencia formal que confirme quien causo el daño.",
       "enunciado": "¿Cuál es la respuesta MÁS adecuada ante esta situación?",
-      "opcion_a": "Actuar de inmediato con una intervención técnica, reconocer los hechos verificables, abrir un espacio de diálogo y proponer un acuerdo de seguimiento centrado en distinción entre rumor y evidencia.",
-      "opcion_b": "Evitar intervenir para no aumentar la tensión, esperar a que la coordinación defina el procedimiento y limitarse a cumplir las instrucciones posteriores.",
-      "opcion_c": "Imponer una decisión unilateral ante el grupo, dejando claro que la autoridad docente prevalece cuando hay presión institucional o desacuerdo entre actores.",
-      "opcion_d": "Trasladar el caso completo a rectoría mediante un informe extenso, sin realizar ninguna acción pedagógica inicial ni recoger información adicional.",
+      "opcion_a": "Aclarar publicamente que no existe evidencia formal aun, activar el protocolo institucional de verificacion de hechos, y proteger al estudiante señalado de cualquier accion anticipada mientras se investiga.",
+      "opcion_b": "Pedir a los estudiantes que dejen de comentar el tema en redes mientras se investiga, sin dar ninguna explicacion sobre el estado del caso.",
+      "opcion_c": "Sancionar preventivamente al estudiante señalado por el rumor, para responder a la presion del grupo mientras se recolecta evidencia.",
+      "opcion_d": "Ignorar el rumor por completo, sin activar ningun protocolo de verificacion ni proteger al estudiante de la presion social que esta recibiendo.",
       "respuesta_correcta": "A",
-      "justificacion": "La opción A es la más adecuada porque integra lectura del contexto, acción profesional y seguimiento sobre distinción entre rumor y evidencia, sin evadir la responsabilidad ni sustituir el diálogo por imposición. Responde al dilema con proporcionalidad, lectura del contexto, uso de evidencia y cuidado de las relaciones pedagógicas. Las demás opciones son insuficientes por ser evasivas, reactivas, autoritarias o por trasladar la responsabilidad sin agotar la actuación profesional esperada.",
-      "generated": true
+      "justificacion": "La respuesta mas adecuada distingue explicitamente entre rumor y evidencia, protege al estudiante señalado y activa el canal formal de verificacion. Pedir silencio sin explicar el proceso reduce el ruido pero no protege activamente al estudiante. Sancionar sin evidencia bajo presion social es una vulneracion grave del debido proceso. Ignorar el rumor deja al estudiante expuesto a una presion social real sin ninguna intervencion institucional.",
+      "generated": false,
+      "idoneidad": {
+        "a": 4,
+        "b": 2,
+        "c": 0,
+        "d": 0
+      }
     }
   ]
 }

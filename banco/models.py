@@ -1,4 +1,4 @@
-﻿from django.db import models
+from django.db import models
 
 
 class Categoria(models.Model):
@@ -33,12 +33,12 @@ class BancoPregunta(models.Model):
 
     AREA_CHOICES = [
         ('general', 'General'),
-        ('ingles', 'Ingles'),
-        ('tecnologia', 'Tecnologia e Informatica'),
-        ('matematicas', 'Matematicas'),
+        ('ingles', 'Inglés'),
+        ('tecnologia', 'Tecnología e Informática'),
+        ('matematicas', 'Matemáticas'),
         ('ciencias_naturales', 'Ciencias Naturales'),
         ('ciencias_sociales', 'Ciencias Sociales'),
-        ('lectura_critica', 'Lectura Critica'),
+        ('lectura_critica', 'Lectura Crítica'),
         ('perfil_docente', 'Perfil Docente'),
         ('componente_pedagogico', 'Componente Pedagogico'),
         ('psicotecnico', 'Psicotecnico'),
@@ -62,6 +62,16 @@ class BancoPregunta(models.Model):
         max_length=1,
         choices=[('A', 'A'), ('B', 'B'), ('C', 'C'), ('D', 'D')]
     )
+    TIPO_ITEM_CHOICES = [
+        ('estandar', 'Pregunta estandar (correcto/incorrecto)'),
+        ('mas_adecuada', 'TJS - Respuesta MAS adecuada'),
+        ('menos_adecuada', 'TJS - Respuesta MENOS adecuada'),
+    ]
+    tipo_item = models.CharField(max_length=20, choices=TIPO_ITEM_CHOICES, default='estandar')
+    idoneidad_a = models.PositiveSmallIntegerField(null=True, blank=True)
+    idoneidad_b = models.PositiveSmallIntegerField(null=True, blank=True)
+    idoneidad_c = models.PositiveSmallIntegerField(null=True, blank=True)
+    idoneidad_d = models.PositiveSmallIntegerField(null=True, blank=True)
     justificacion = models.TextField()
     fuente_normativa = models.CharField(max_length=300, blank=True)
     dificultad = models.CharField(
@@ -83,3 +93,30 @@ class BancoPregunta(models.Model):
 
     def __str__(self):
         return self.enunciado[:100]
+
+    @property
+    def usa_idoneidad_graduada(self):
+        return self.idoneidad_a is not None
+
+    def idoneidad_de(self, letra):
+        if not letra or not self.usa_idoneidad_graduada:
+            return None
+        return getattr(self, f'idoneidad_{letra.lower()}', None)
+
+    def puntos_por_respuesta(self, letra):
+        """Fraccion 0-1 de credito por la opcion elegida.
+
+        En items MAS_ADECUADA el credito crece con la idoneidad de la opcion
+        elegida (se premia elegir la mejor accion). En items MENOS_ADECUADA
+        el juicio correcto es identificar la opcion de MENOR idoneidad, asi
+        que el credito se invierte: elegir la peor opcion (idoneidad 0) es
+        el acierto pleno, elegir la mejor opcion es el fallo total.
+        Si la pregunta no usa idoneidad graduada, cae al esquema binario
+        (1.0 si coincide con respuesta_correcta, 0.0 si no).
+        """
+        idoneidad = self.idoneidad_de(letra)
+        if idoneidad is None:
+            return 1.0 if letra == self.respuesta_correcta else 0.0
+        if self.tipo_item == 'menos_adecuada':
+            return (4 - idoneidad) / 4
+        return idoneidad / 4

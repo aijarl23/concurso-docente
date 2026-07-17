@@ -1,4 +1,4 @@
-﻿import random
+import random
 from collections import defaultdict
 
 from django.conf import settings
@@ -19,9 +19,9 @@ from .models import Simulacro
 ELITE_SLUG = 'elite-cnsc-2026'
 
 AREAS_DISCIPLINARES = [
-    ('ingles', 'Ingles'),
-    ('tecnologia', 'Tecnologia e Informatica'),
-    ('matematicas', 'Matematicas'),
+    ('ingles', 'Inglés'),
+    ('tecnologia', 'Tecnología e Informática'),
+    ('matematicas', 'Matemáticas'),
     ('ciencias_naturales', 'Ciencias Naturales'),
     ('ciencias_sociales', 'Ciencias Sociales'),
 ]
@@ -110,7 +110,7 @@ def _send_result_email(intento):
         f'Sin responder: {intento.total_sin_responder}\n'
         f'Tiempo usado: {intento.tiempo_usado_segundos} segundos\n\n'
         f'Desempeno por competencia:\n{detalle}\n\n'
-        f'Retroalimentacion por pregunta:\n' + '\n\n'.join(detalle_preguntas)
+        f'Retroalimentación por pregunta:\n' + '\n\n'.join(detalle_preguntas)
     )
     sent = send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [user.email], fail_silently=True)
     return bool(sent)
@@ -145,7 +145,7 @@ def seleccionar_area(request):
 def iniciar_simulacro(request, simulacro_id):
     simulacro = get_object_or_404(Simulacro, id=simulacro_id, activo=True)
     if simulacro.es_premium and not user_has_module_access(request.user, simulacro.module):
-        messages.warning(request, 'Este simulacro hace parte del curso completo. Compra el acceso unico para ingresar a todos los modulos y simulacros.')
+        messages.warning(request, 'Este simulacro hace parte del curso completo. Compra el acceso único para ingresar a todos los módulos y simulacros.')
         return redirect(_checkout_for_simulacro(simulacro))
 
     if request.method != 'POST':
@@ -179,6 +179,7 @@ def realizar_simulacro(request, intento_id):
             intento.respuestas.all().delete()
             correctas = 0
             sin_responder = 0
+            puntos_obtenidos = []
             tiempo_total = int(request.POST.get('tiempo_total_prueba') or 0)
             respondida_en_tiempo = tiempo_total <= total_time_limit
 
@@ -187,8 +188,18 @@ def realizar_simulacro(request, intento_id):
                 es_correcta = respuesta == pregunta.respuesta_correcta and respondida_en_tiempo
                 if not respuesta:
                     sin_responder += 1
-                elif es_correcta:
-                    correctas += 1
+                    puntos_obtenidos.append(0)
+                else:
+                    if es_correcta:
+                        correctas += 1
+                    if respondida_en_tiempo:
+                        # Idoneidad graduada (TJS): puntaje por cercania al
+                        # mejor juicio posible, no solo acierto binario. Cae
+                        # al esquema binario si la pregunta no tiene
+                        # idoneidad definida (ver BancoPregunta.puntos_por_respuesta).
+                        puntos_obtenidos.append(pregunta.puntos_por_respuesta(respuesta))
+                    else:
+                        puntos_obtenidos.append(0)
                 RespuestaIntento.objects.create(
                     intento=intento,
                     pregunta=pregunta,
@@ -205,7 +216,7 @@ def realizar_simulacro(request, intento_id):
             intento.estado = 'completado'
             intento.fecha_finalizacion = timezone.now()
             intento.tiempo_usado_segundos = tiempo_total
-            intento.puntaje_obtenido = round((correctas / total) * 100, 2)
+            intento.puntaje_obtenido = round((sum(puntos_obtenidos) / total) * 100, 2)
             intento.save()
             _sync_module_progress(intento)
             intento.reporte_enviado = _send_result_email(intento)
