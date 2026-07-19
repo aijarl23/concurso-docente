@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block title %}Panel principal{% endblock %}
+
 {% block content %}
 <section class="lms-hero mb-4">
     <div>
@@ -8,8 +10,8 @@
         <p>Ruta estructurada alineada con los componentes oficiales del Concurso Docente: lectura crítica, marco normativo, prueba pedagógica, análisis de casos y componente disciplinar.</p>
     </div>
     <div class="hero-actions">
-        <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-primary btn-lg"><i class="bi bi-play-circle"></i> Continuar programa</a>
-        <a href="{% url 'commerce:product_list' %}" class="btn btn-outline-primary btn-lg"><i class="bi bi-unlock"></i> Matrícula al programa — $20.000</a>
+        <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-primary btn-lg"><i class="bi bi-play-circle" aria-hidden="true"></i> Continuar programa</a>
+        <a href="{% url 'commerce:product_list' %}" class="btn btn-outline-primary btn-lg"><i class="bi bi-unlock" aria-hidden="true"></i> Matrícula al programa — $20.000</a>
     </div>
 </section>
 
@@ -21,9 +23,7 @@
         </div>
         <strong class="progress-score">{{ metricas.progreso }}%</strong>
     </div>
-    <div class="progress progress-custom" role="progressbar" aria-label="Progreso general" aria-valuenow="{{ metricas.progreso }}" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: {{ metricas.progreso }}%"></div>
-    </div>
+    {% include 'partials/_progress_bar.html' with value=metricas.progreso label="Progreso general" %}
 </section>
 
 <section class="metric-grid" aria-label="Resumen de la plataforma">
@@ -39,15 +39,17 @@
         <article class="module-card">
             <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
                 <p class="module-kicker mb-0">Módulo {{ forloop.counter }}</p>
-                <span class="status-pill"><i class="bi bi-unlock"></i> Disponible</span>
+                {% include 'partials/_status_pill.html' %}
             </div>
             <h2 class="module-title">{{ modulo.titulo }}</h2>
             <p class="module-desc">{{ modulo.descripcion }}</p>
             <ul class="topic-list">
                 {% for tema in modulo.temas.all %}{% if tema.activo %}<li>{{ tema.titulo }}</li>{% endif %}{% endfor %}
             </ul>
-            <a href="{% url 'detalle_modulo' modulo.id %}" class="btn btn-primary w-100"><i class="bi bi-journal-text"></i> Abrir modulo</a>
+            <a href="{% url 'detalle_modulo' modulo.id %}" class="btn btn-primary w-100"><i class="bi bi-journal-text" aria-hidden="true"></i> Abrir módulo</a>
         </article>
+        {% empty %}
+        {% include 'partials/_empty_state.html' with message="Todavía no hay módulos publicados." icon="journal-x" %}
         {% endfor %}
     </section>
 
@@ -56,10 +58,10 @@
         <p>Matrícula única: incluye los 9 componentes de la ruta, simulacro integral e informe de desempeño.</p>
         <div class="price-box mb-3"><span>Programa completo</span><strong>COP 20.000</strong></div>
         <div class="quick-actions">
-            <a href="{% url 'commerce:product_list' %}" class="btn btn-primary"><i class="bi bi-credit-card"></i> Iniciar matrícula</a>
-            <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-outline-primary"><i class="bi bi-clipboard-check"></i> Simulacros</a>
-            <a href="{% url 'simulacros:seleccionar_area' %}" class="btn btn-outline-primary"><i class="bi bi-grid"></i> Simulacro por área</a>
-            <a href="{% url 'mi_progreso' %}" class="btn btn-outline-secondary"><i class="bi bi-graph-up"></i> Mi progreso</a>
+            <a href="{% url 'commerce:product_list' %}" class="btn btn-primary"><i class="bi bi-credit-card" aria-hidden="true"></i> Iniciar matrícula</a>
+            <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-outline-primary"><i class="bi bi-clipboard-check" aria-hidden="true"></i> Simulacros</a>
+            <a href="{% url 'simulacros:seleccionar_area' %}" class="btn btn-outline-primary"><i class="bi bi-grid" aria-hidden="true"></i> Simulacro por área</a>
+            <a href="{% url 'mi_progreso' %}" class="btn btn-outline-secondary"><i class="bi bi-graph-up" aria-hidden="true"></i> Mi progreso</a>
         </div>
     </aside>
 </div>

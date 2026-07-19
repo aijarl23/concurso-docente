@@ -146,7 +146,16 @@ def lista_simulacros(request):
 def seleccionar_area(request):
     area = request.GET.get('area') or request.user.area_concurso or 'matematicas'
     simulacros = Simulacro.objects.filter(activo=True, tipo='area', area=area).select_related('module')
+    has_full_access = user_has_full_access(request.user)
+    simulacro_cards = [
+        {
+            'simulacro': simulacro,
+            'has_access': not simulacro.es_premium or simulacro.module_id is None or has_full_access,
+        }
+        for simulacro in simulacros
+    ]
     return render(request, 'simulacros/seleccionar_area.html', {
+        'simulacro_cards': simulacro_cards,
         'areas': AREAS_DISCIPLINARES,
         'area_actual': area,
         'simulacros': simulacros,

@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block title %}Matrícula al programa{% endblock %}
+
 {% block content %}
 <section class="commerce-hero d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
     <div>
@@ -7,7 +9,7 @@
         <h1>Programa completo — Matrícula única COP 20.000</h1>
         <p class="mb-0">Una sola matrícula habilita todos los componentes de la ruta, simulacros por área, simulacro integral, resultados, historial y retroalimentación por pregunta.</p>
     </div>
-    <a class="btn btn-outline-primary btn-glow" href="{% url 'commerce:cart_detail' %}"><i class="bi bi-bag-check"></i> Ver carrito</a>
+    <a class="btn btn-outline-primary btn-glow" href="{% url 'commerce:cart_detail' %}"><i class="bi bi-bag-check" aria-hidden="true"></i> Ver carrito</a>
 </section>
 
 <div class="row justify-content-center">
@@ -30,13 +32,13 @@
                 </div>
                 <form method="post" action="{% url 'payments:buy_module' product.id %}" class="mt-auto">
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-primary btn-lg w-100 btn-glow"><i class="bi bi-credit-card"></i> Iniciar matrícula</button>
+                    <button type="submit" class="btn btn-primary btn-lg w-100 btn-glow"><i class="bi bi-credit-card" aria-hidden="true"></i> Iniciar matrícula</button>
                 </form>
             </div>
         </div>
     </div>
     {% empty %}
-    <div class="col-12"><div class="alert alert-warning">No hay producto activo. Ejecuta la carga premium inicial.</div></div>
+    <div class="col-12">{% include 'partials/_empty_state.html' with message="No hay producto activo. Ejecuta la carga premium inicial." icon="bag-x" variant="warning" %}</div>
     {% endfor %}
 </div>
 

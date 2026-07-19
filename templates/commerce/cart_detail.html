@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block title %}Carrito de compras{% endblock %}
+
 {% block content %}
 <h1>Carrito de compras</h1>
 <div class="card border-0 shadow-sm checkout-card">
@@ -36,8 +38,8 @@
             </form>
         </div>
         {% else %}
-        <p>Tu carrito esta vacio.</p>
-        <a class="btn btn-primary" href="{% url 'commerce:product_list' %}">Iniciar matrícula</a>
+        {% include 'partials/_empty_state.html' with message="Tu carrito está vacío." icon="cart-x" %}
+        <a class="btn btn-primary mt-3" href="{% url 'commerce:product_list' %}">Iniciar matrícula</a>
         {% endif %}
     </div>
 </div>

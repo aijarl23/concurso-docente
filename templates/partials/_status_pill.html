@@ -1,0 +1,9 @@
+{% comment %}
+Uso: {% include 'partials/_status_pill.html' with has_access=card.has_access %}
+Si no se pasa has_access (ni locked), por defecto muestra "Disponible".
+{% endcomment %}
+{% if has_access == False or locked %}
+<span class="status-pill status-locked"><i class="bi bi-lock" aria-hidden="true"></i> Requiere acceso</span>
+{% else %}
+<span class="status-pill"><i class="bi bi-unlock" aria-hidden="true"></i> Disponible</span>
+{% endif %}

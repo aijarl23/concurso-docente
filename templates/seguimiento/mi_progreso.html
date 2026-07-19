@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block title %}Mi progreso{% endblock %}
+
 {% block content %}
 <div class="container mt-5 mb-5">
     <div class="d-flex align-items-start justify-content-between gap-3 mb-4 flex-wrap">
@@ -8,10 +10,17 @@
             <h1 class="fw-bold mb-2">Mi progreso</h1>
             <p class="text-muted mb-0">Seguimiento del avance por módulos completados y resultados registrados.</p>
         </div>
-        <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-primary"><i class="bi bi-play-circle"></i> Continuar simulacros</a>
+        <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-primary"><i class="bi bi-play-circle" aria-hidden="true"></i> Continuar simulacros</a>
     </div>
 
     {% if progresos %}
+        {{ chart_data|json_script:"progreso-chart-data" }}
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="h6 text-muted mb-3">Avance por módulo</h2>
+                <canvas id="progreso-chart" height="90" role="img" aria-label="Gráfico de avance por módulo"></canvas>
+            </div>
+        </div>
         <div class="row g-3">
             {% for progreso in progresos %}
             <div class="col-md-6">
@@ -19,9 +28,7 @@
                     <div class="card-body">
                         <h2 class="h5 fw-bold">{{ progreso.modulo.titulo }}</h2>
                         <p class="text-muted mb-2">Avance registrado</p>
-                        <div class="progress progress-custom" role="progressbar" aria-valuenow="{{ progreso.porcentaje }}" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: {{ progreso.porcentaje }}%;"></div>
-                        </div>
+                        {% include 'partials/_progress_bar.html' with value=progreso.porcentaje label=progreso.modulo.titulo %}
                         <p class="fw-bold mt-2 mb-0">{{ progreso.porcentaje }}%</p>
                     </div>
                 </div>
@@ -29,7 +36,42 @@
             {% endfor %}
         </div>
     {% else %}
-        <div class="alert alert-info">Aun no tienes progreso registrado. Presenta un simulacro para empezar a medir tu avance.</div>
+        {% include 'partials/_empty_state.html' with message="Aún no tienes progreso registrado. Presenta un simulacro para empezar a medir tu avance." icon="graph-up" %}
     {% endif %}
 </div>
+{% endblock %}
+
+{% block extra_js %}
+{% if progresos %}
+<script>
+(function () {
+    var data = JSON.parse(document.getElementById('progreso-chart-data').textContent);
+    var canvas = document.getElementById('progreso-chart');
+    if (!canvas || typeof Chart === 'undefined') return;
+    var isDark = document.documentElement.dataset.theme !== 'light';
+    var gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+    var textColor = isDark ? '#e5e7eb' : '#334155';
+    new Chart(canvas.getContext('2d'), {
+        type: 'bar',
+        data: {
+            labels: data.labels,
+            datasets: [{
+                label: 'Avance (%)',
+                data: data.valores,
+                backgroundColor: 'rgba(99, 102, 241, 0.6)',
+                borderRadius: 6,
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+                y: { beginAtZero: true, max: 100, ticks: { color: textColor }, grid: { color: gridColor } },
+                x: { ticks: { color: textColor }, grid: { display: false } }
+            }
+        }
+    });
+})();
+</script>
+{% endif %}
 {% endblock %}

@@ -19,42 +19,41 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-concurso sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'dashboard' %}"><i class="bi bi-mortarboard-fill"></i> ConcursoDocente</a>
+        <a class="navbar-brand" href="{% url 'dashboard' %}"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i> ConcursoDocente</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarMain">
             <ul class="navbar-nav me-auto">
                 {% if user.is_authenticated %}
-                <li class="nav-item"><a class="nav-link" href="{% url 'dashboard' %}"><i class="bi bi-house"></i> Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'dashboard' %}"><i class="bi bi-journal-bookmark"></i> Módulos</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'simulacros:lista_simulacros' %}"><i class="bi bi-clipboard-check"></i> Simulacros</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'commerce:product_list' %}"><i class="bi bi-credit-card"></i> Matrícula</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'commerce:cart_detail' %}"><i class="bi bi-bag-check"></i> Carrito</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'mi_progreso' %}"><i class="bi bi-graph-up"></i> Mi progreso</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'dashboard' %}"><i class="bi bi-house" aria-hidden="true"></i> Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'simulacros:lista_simulacros' %}"><i class="bi bi-clipboard-check" aria-hidden="true"></i> Simulacros</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'commerce:product_list' %}"><i class="bi bi-credit-card" aria-hidden="true"></i> Matrícula</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'commerce:cart_detail' %}"><i class="bi bi-bag-check" aria-hidden="true"></i> Carrito</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'mi_progreso' %}"><i class="bi bi-graph-up" aria-hidden="true"></i> Mi progreso</a></li>
                 {% endif %}
             </ul>
             <ul class="navbar-nav align-items-lg-center">
                 <li class="nav-item">
                     <button class="btn btn-sm theme-toggle-btn me-lg-2" type="button" id="theme-toggle" aria-label="Cambiar tema">
-                        <i class="bi bi-moon-stars"></i><span>Tema</span>
+                        <i class="bi bi-moon-stars" aria-hidden="true"></i><span>Tema</span>
                     </button>
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-person-circle"></i> {{ user.first_name|default:user.username }}</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-person-circle" aria-hidden="true"></i> {{ user.first_name|default:user.username }}</a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="{% url 'mi_perfil' %}"><i class="bi bi-person"></i> Mi perfil</a></li>
-                        {% if user.is_staff %}<li><a class="dropdown-item" href="/admin/"><i class="bi bi-shield-lock"></i> Admin</a></li>{% endif %}
+                        <li><a class="dropdown-item" href="{% url 'mi_perfil' %}"><i class="bi bi-person" aria-hidden="true"></i> Mi perfil</a></li>
+                        {% if user.is_staff %}<li><a class="dropdown-item" href="/admin/"><i class="bi bi-shield-lock" aria-hidden="true"></i> Admin</a></li>{% endif %}
                         <li><hr class="dropdown-divider"></li>
                         <li>
                             <form method="post" action="{% url 'logout' %}" class="m-0">
                                 {% csrf_token %}
-                                <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Cerrar sesion</button>
+                                <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right" aria-hidden="true"></i> Cerrar sesión</button>
                             </form>
                         </li>
                     </ul>
                 </li>
                 {% else %}
-                <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Iniciar sesion</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'registro' %}">Registrarse</a></li>
                 {% endif %}
             </ul>
@@ -74,7 +73,7 @@
 </main>
 <footer class="footer-concurso">
     <div class="container">
-        <p class="mb-0"><i class="bi bi-mortarboard"></i> Plataforma de preparacion - Concurso Docente CNSC 2026</p>
+        <p class="mb-0"><i class="bi bi-mortarboard" aria-hidden="true"></i> Plataforma de preparacion - Concurso Docente CNSC 2026</p>
         <p class="small mb-0 mt-2">Entrenamiento por competencias, simulacros y retroalimentación inmediata.</p>
     </div>
 </footer>

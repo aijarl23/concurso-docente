@@ -1,5 +1,7 @@
 ﻿{% extends 'base.html' %}
 
+{% block title %}Simulacro por área{% endblock %}
+
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
@@ -23,20 +25,29 @@
 </form>
 
 <div class="row">
-    {% for simulacro in simulacros %}
+    {% for card in simulacro_cards %}
+    {% with simulacro=card.simulacro %}
     <div class="col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
             <div class="card-body">
-                <h4>{{ simulacro.nombre }}</h4>
+                <div class="d-flex justify-content-between gap-3 mb-2">
+                    <h4 class="mb-0">{{ simulacro.nombre }}</h4>
+                    {% include 'partials/_status_pill.html' with has_access=card.has_access %}
+                </div>
                 <p>{{ simulacro.descripcion }}</p>
                 <p class="text-muted">{{ simulacro.total_preguntas }} preguntas - {{ simulacro.tiempo_por_pregunta_segundos }} segundos por pregunta</p>
+                {% if card.has_access %}
                 <a class="btn btn-primary w-100" href="{% url 'simulacros:iniciar_simulacro' simulacro.id %}">Iniciar</a>
+                {% else %}
+                <a class="btn btn-outline-primary w-100" href="{% url 'commerce:product_list' %}"><i class="bi bi-credit-card" aria-hidden="true"></i> Iniciar matrícula</a>
+                {% endif %}
             </div>
         </div>
     </div>
+    {% endwith %}
     {% empty %}
     <div class="col-12">
-        <div class="alert alert-warning">A&uacute;n no hay banco activo para esta &aacute;rea. Ejecuta el comando de carga premium para poblarlo.</div>
+        {% include 'partials/_empty_state.html' with message="Aún no hay banco activo para esta área. Ejecuta el comando de carga premium para poblarlo." icon="clipboard-x" variant="warning" %}
     </div>
     {% endfor %}
 </div>

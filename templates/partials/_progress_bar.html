@@ -1,0 +1,6 @@
+{% comment %}
+Uso: {% include 'partials/_progress_bar.html' with value=metricas.progreso label="Progreso general" %}
+{% endcomment %}
+<div class="progress progress-custom" role="progressbar" aria-label="{{ label|default:"Progreso" }}" aria-valuenow="{{ value }}" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: {{ value }}%"></div>
+</div>

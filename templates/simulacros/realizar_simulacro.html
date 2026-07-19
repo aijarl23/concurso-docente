@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block title %}Presentando simulacro{% endblock %}
+
 {% block content %}
 <div class="container mt-4">
     <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
@@ -8,7 +10,7 @@
             <h1 class="h3 mb-1">{{ intento.simulacro.nombre }}</h1>
             <p class="text-muted mb-0">Puedes revisar tus respuestas antes de finalizar. El resultado se guarda en tu perfil.</p>
         </div>
-        <span class="badge text-bg-primary timer-badge"><i class="bi bi-clock"></i> {{ seconds_per_question }} segundos por pregunta</span>
+        <span class="badge text-bg-primary timer-badge"><i class="bi bi-clock" aria-hidden="true"></i> {{ seconds_per_question }} segundos por pregunta</span>
     </div>
 
     <form method="post" id="simulacro-form">
@@ -36,7 +38,7 @@
             </div>
         </article>
         {% endfor %}
-        <button class="btn btn-success btn-lg w-100"><i class="bi bi-check-circle"></i> Finalizar y ver retroalimentacion</button>
+        <button class="btn btn-success btn-lg w-100"><i class="bi bi-check-circle" aria-hidden="true"></i> Finalizar y ver retroalimentacion</button>
     </form>
 </div>
 {% endblock %}

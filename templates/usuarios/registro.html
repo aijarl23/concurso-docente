@@ -1,85 +1,83 @@
 {% extends "base.html" %}
-{% block title %}Registro{% endblock %}
+{% block title %}Crear cuenta{% endblock %}
 {% block content %}
 
 <div class="login-container">
     <div class="login-card" style="max-width: 550px;">
-        <h2><i class="bi bi-person-plus-fill"></i><br>Crear cuenta</h2>
-        <p class="text-center text-muted mb-4">&Uacute;nete a la comunidad de estudio</p>
+        <h2><i class="bi bi-person-plus-fill" aria-hidden="true"></i><br>Crear cuenta</h2>
+        <p class="text-center text-muted mb-4">Únete a la comunidad de estudio</p>
 
-        <form method="post">
+        <form method="post" novalidate>
             {% csrf_token %}
 
-            {% if form.errors %}
+            {% if form.non_field_errors %}
             <div class="alert alert-danger">
-                {% for field, errors in form.errors.items %}
-                    {% for error in errors %}<div>{{ error }}</div>{% endfor %}
-                {% endfor %}
+                {% for error in form.non_field_errors %}<div>{{ error }}</div>{% endfor %}
             </div>
             {% endif %}
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">Nombres</label>
-                    <input type="text" name="first_name" class="form-control form-control-custom" required>
+                    <label class="form-label" for="{{ form.first_name.id_for_label }}">Nombres</label>
+                    <input type="text" name="first_name" id="{{ form.first_name.id_for_label }}" value="{{ form.first_name.value|default_if_none:'' }}" class="form-control form-control-custom{% if form.first_name.errors %} is-invalid{% endif %}" required>
+                    {% if form.first_name.errors %}<div class="invalid-feedback d-block">{{ form.first_name.errors|join:', ' }}</div>{% endif %}
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">Apellidos</label>
-                    <input type="text" name="last_name" class="form-control form-control-custom" required>
+                    <label class="form-label" for="{{ form.last_name.id_for_label }}">Apellidos</label>
+                    <input type="text" name="last_name" id="{{ form.last_name.id_for_label }}" value="{{ form.last_name.value|default_if_none:'' }}" class="form-control form-control-custom{% if form.last_name.errors %} is-invalid{% endif %}" required>
+                    {% if form.last_name.errors %}<div class="invalid-feedback d-block">{{ form.last_name.errors|join:', ' }}</div>{% endif %}
                 </div>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Usuario</label>
-                <input type="text" name="username" class="form-control form-control-custom" required>
+                <label class="form-label" for="{{ form.username.id_for_label }}">Usuario</label>
+                <input type="text" name="username" id="{{ form.username.id_for_label }}" value="{{ form.username.value|default_if_none:'' }}" class="form-control form-control-custom{% if form.username.errors %} is-invalid{% endif %}" required autocomplete="username">
+                {% if form.username.errors %}<div class="invalid-feedback d-block">{{ form.username.errors|join:', ' }}</div>{% endif %}
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Correo electr&oacute;nico</label>
-                <input type="email" name="email" class="form-control form-control-custom" required>
+                <label class="form-label" for="{{ form.email.id_for_label }}">Correo electrónico</label>
+                <input type="email" name="email" id="{{ form.email.id_for_label }}" value="{{ form.email.value|default_if_none:'' }}" class="form-control form-control-custom{% if form.email.errors %} is-invalid{% endif %}" required autocomplete="email">
+                {% if form.email.errors %}<div class="invalid-feedback d-block">{{ form.email.errors|join:', ' }}</div>{% endif %}
             </div>
 
             <div class="mb-3">
-                <label class="form-label">&Aacute;rea del concurso</label>
-                <select name="area_concurso" class="form-control form-control-custom" required>
-                    <option value="matematicas">Matem&aacute;ticas</option>
-                    <option value="lenguaje">Lenguaje</option>
-                    <option value="ciencias_naturales">Ciencias Naturales</option>
-                    <option value="ciencias_sociales">Ciencias Sociales</option>
-                    <option value="ingles">Ingl&eacute;s</option>
-                    <option value="preescolar">Preescolar</option>
-                    <option value="primaria">Primaria</option>
-                    <option value="educacion_fisica">Educaci&oacute;n F&iacute;sica</option>
-                    <option value="artistica">Educaci&oacute;n Art&iacute;stica</option>
-                    <option value="tecnologia">Tecnolog&iacute;a e Inform&aacute;tica</option>
-                    <option value="otro">Otro</option>
+                <label class="form-label" for="{{ form.area_concurso.id_for_label }}">Área del concurso</label>
+                <select name="area_concurso" id="{{ form.area_concurso.id_for_label }}" class="form-control form-control-custom{% if form.area_concurso.errors %} is-invalid{% endif %}" required>
+                    {% for value, label in form.fields.area_concurso.choices %}
+                    <option value="{{ value }}"{% if form.area_concurso.value == value %} selected{% endif %}>{{ label }}</option>
+                    {% endfor %}
                 </select>
+                {% if form.area_concurso.errors %}<div class="invalid-feedback d-block">{{ form.area_concurso.errors|join:', ' }}</div>{% endif %}
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Entidad territorial</label>
-                <input type="text" name="entidad_territorial" class="form-control form-control-custom" placeholder="Ej.: Medell&iacute;n, Antioquia">
+                <label class="form-label" for="{{ form.entidad_territorial.id_for_label }}">Entidad territorial</label>
+                <input type="text" name="entidad_territorial" id="{{ form.entidad_territorial.id_for_label }}" value="{{ form.entidad_territorial.value|default_if_none:'' }}" class="form-control form-control-custom{% if form.entidad_territorial.errors %} is-invalid{% endif %}" placeholder="Ej.: Medellín, Antioquia">
+                {% if form.entidad_territorial.errors %}<div class="invalid-feedback d-block">{{ form.entidad_territorial.errors|join:', ' }}</div>{% endif %}
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">Contrase&ntilde;a</label>
-                    <input type="password" name="password1" class="form-control form-control-custom" required>
+                    <label class="form-label" for="{{ form.password1.id_for_label }}">Contraseña</label>
+                    <input type="password" name="password1" id="{{ form.password1.id_for_label }}" class="form-control form-control-custom{% if form.password1.errors %} is-invalid{% endif %}" required autocomplete="new-password">
+                    {% if form.password1.errors %}<div class="invalid-feedback d-block">{{ form.password1.errors|join:', ' }}</div>{% endif %}
                 </div>
                 <div class="col-md-6 mb-4">
-                    <label class="form-label">Confirmar contrase&ntilde;a</label>
-                    <input type="password" name="password2" class="form-control form-control-custom" required>
+                    <label class="form-label" for="{{ form.password2.id_for_label }}">Confirmar contraseña</label>
+                    <input type="password" name="password2" id="{{ form.password2.id_for_label }}" class="form-control form-control-custom{% if form.password2.errors %} is-invalid{% endif %}" required autocomplete="new-password">
+                    {% if form.password2.errors %}<div class="invalid-feedback d-block">{{ form.password2.errors|join:', ' }}</div>{% endif %}
                 </div>
             </div>
 
             <button type="submit" class="btn btn-primary-concurso w-100">
-                <i class="bi bi-check-circle"></i> Crear cuenta
+                <i class="bi bi-check-circle" aria-hidden="true"></i> Crear cuenta
             </button>
         </form>
 
         <hr class="my-4">
         <p class="text-center text-muted small">
-            &iquest;Ya tienes cuenta? <a href="{% url 'login' %}">Inicia sesi&oacute;n</a>
+            ¿Ya tienes cuenta? <a href="{% url 'login' %}">Inicia sesión</a>
         </p>
     </div>
 </div>

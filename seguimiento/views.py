@@ -8,12 +8,18 @@ def mi_progreso(request):
     if request.user.is_authenticated:
         progresos = ProgresoModulo.objects.filter(
             usuario=request.user
-        ).select_related('modulo')
+        ).select_related('modulo').order_by('modulo__orden')
+
+    chart_data = {
+        'labels': [p.modulo.titulo for p in progresos],
+        'valores': [p.porcentaje for p in progresos],
+    }
 
     return render(
         request,
         'seguimiento/mi_progreso.html',
         {
-            'progresos': progresos
+            'progresos': progresos,
+            'chart_data': chart_data,
         }
     )
