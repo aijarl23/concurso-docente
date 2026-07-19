@@ -88,6 +88,28 @@ class BancoPregunta(models.Model):
     activa = models.BooleanField(default=True)
     fecha_creacion = models.DateTimeField(auto_now_add=True)
 
+    # Trazabilidad (Constitucion Academica, Cap. 12 - Control de versiones)
+    PROCESO_COGNITIVO_CHOICES = [
+        ('identificacion', 'Nivel 1 - Identificacion'),
+        ('comprension_aplicada', 'Nivel 2 - Comprension aplicada'),
+        ('analisis_situacional', 'Nivel 3 - Analisis situacional'),
+        ('evaluacion_juicio', 'Nivel 4 - Evaluacion y juicio'),
+    ]
+    ESTADO_CHOICES = [
+        ('borrador', 'Borrador'),
+        ('en_revision', 'En revision'),
+        ('aprobado', 'Aprobado'),
+        ('publicado', 'Publicado'),
+        ('rechazado', 'Rechazado'),
+    ]
+    proceso_cognitivo = models.CharField(
+        max_length=25, choices=PROCESO_COGNITIVO_CHOICES, blank=True
+    )
+    version = models.PositiveIntegerField(default=1)
+    autor = models.CharField(max_length=60, default='IA')
+    estado = models.CharField(max_length=20, choices=ESTADO_CHOICES, default='borrador')
+    puntaje_validacion = models.PositiveSmallIntegerField(null=True, blank=True)
+
     class Meta:
         ordering = ['categoria__nombre', 'subcategoria__nombre', 'id']
 
