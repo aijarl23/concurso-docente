@@ -106,11 +106,37 @@ class Command(BaseCommand):
         changed = 0
         suspicious = []
 
+        # Corrige corrupcion ya aplicada por versiones anteriores de este mismo
+        # comando: el reemplazo generico de abajo alguna vez toco Modulo.tipo
+        # (una clave de codigo con choices fijos, no texto de usuario) y le puso
+        # tildes por error (ej. 'analisis_desempeno' -> 'análisis_desempeno'),
+        # rompiendo silenciosamente cualquier comparacion `tipo == 'analisis_desempeno'`
+        # en el codigo (vistas, TIPOS_CON_ANALISIS, etc.). Fix explicito y de una
+        # sola vez para autocurar produccion en el proximo deploy.
+        if not check_only:
+            corregidas = 0
+            corregidas += Modulo.objects.filter(tipo='análisis_desempeno').update(tipo='analisis_desempeno')
+            corregidas += Modulo.objects.filter(tipo='gestión_escolar').update(tipo='gestion_escolar')
+            if corregidas:
+                self.stdout.write(self.style.WARNING(f'Corregidas {corregidas} claves Modulo.tipo con tildes indebidas.'))
+
         for model in TEXT_MODELS:
             fields = [
                 field.name
                 for field in model._meta.fields
-                if field.get_internal_type() in {'CharField', 'TextField', 'SlugField', 'EmailField'}
+                # Los campos con choices son claves de codigo (tipo, area,
+                # estado, respuesta_correcta, etc.), nunca texto libre para
+                # el usuario - jamas deben pasar por el reemplazo de acentos.
+                # SlugField tampoco: un slug es un identificador tecnico
+                # (referenciado por FK y por strings hardcodeados en el
+                # codigo - MODULES, MODULE_SLUG_TO_CONTENT_TYPE, etc.), no
+                # texto para mostrar. Acentuarlo in-place rompe cualquier
+                # comparacion por slug y, peor, choca con el UNIQUE del
+                # campo y con la fila canonica que apply_market_ready_upgrade
+                # recrea en cada deploy (root cause del bug real: academics.Module
+                # duplicado con y sin tildes en el slug tras varios deploys).
+                if field.get_internal_type() in {'CharField', 'TextField', 'EmailField'}
+                and not field.choices
             ]
             for obj in model.objects.all():
                 scanned += 1

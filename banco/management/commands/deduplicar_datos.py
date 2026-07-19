@@ -55,22 +55,50 @@ class Command(BaseCommand):
         from simulacros.models import Simulacro
         from seguimiento.models import Intento
 
-        dupes = Simulacro.objects.values('nombre').annotate(n=Count('id')).filter(n__gt=1)
-        planes = []
-        for d in dupes:
-            grupo = list(Simulacro.objects.filter(nombre=d['nombre']).order_by('id'))
+        def score(s):
+            return (Intento.objects.filter(simulacro=s).count(), s.activo, s.id)
 
-            def score(s):
-                return (Intento.objects.filter(simulacro=s).count(), s.activo, s.id)
+        def planear(queryset_dupes, obtener_grupo, etiqueta):
+            planes = []
+            vistos_para_eliminar = set()
+            for d in queryset_dupes:
+                grupo = [s for s in obtener_grupo(d) if s.id not in vistos_para_eliminar]
+                if len(grupo) < 2:
+                    continue
+                grupo.sort(key=score)
+                conservar = grupo[-1]
+                eliminar = grupo[:-1]
+                self.stdout.write(
+                    f'Simulacro [{etiqueta}] "{conservar.nombre}": conservar id={conservar.id} '
+                    f'(activo={conservar.activo}), eliminar ids={[s.id for s in eliminar]}'
+                )
+                vistos_para_eliminar.update(s.id for s in eliminar)
+                planes.append((conservar, eliminar))
+            return planes
 
-            grupo.sort(key=score)
-            conservar = grupo[-1]
-            eliminar = grupo[:-1]
-            self.stdout.write(
-                f'Simulacro "{d["nombre"]}": conservar id={conservar.id} '
-                f'(activo={conservar.activo}), eliminar ids={[s.id for s in eliminar]}'
-            )
-            planes.append((conservar, eliminar))
+        # Pasada 1: mismo nombre exacto (duplicados de reintentos de seed).
+        dupes_nombre = Simulacro.objects.values('nombre').annotate(n=Count('id')).filter(n__gt=1)
+        planes = planear(
+            dupes_nombre,
+            lambda d: list(Simulacro.objects.filter(nombre=d['nombre']).order_by('id')),
+            'mismo nombre',
+        )
+
+        # Pasada 2: mismo (module, tipo, area) con nombres distintos - ocurre
+        # cuando un rename (renombrar_arquitectura_institucional) alcanza una
+        # fila pero deja huerfana otra con un nombre viejo que ya no esta en
+        # su mapa de renombres (ej. sufijo "- Simulacro premium V2").
+        dupes_modulo = (
+            Simulacro.objects.exclude(module__isnull=True)
+            .values('module_id', 'tipo', 'area').annotate(n=Count('id')).filter(n__gt=1)
+        )
+        planes += planear(
+            dupes_modulo,
+            lambda d: list(Simulacro.objects.filter(
+                module_id=d['module_id'], tipo=d['tipo'], area=d['area']
+            ).order_by('id')),
+            'mismo modulo',
+        )
 
         planned_total = sum(len(eliminar) for _, eliminar in planes)
         universe_total = Simulacro.objects.count()
