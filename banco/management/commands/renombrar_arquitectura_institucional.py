@@ -11,8 +11,15 @@ class Command(BaseCommand):
     )
 
     RENOMBRES_SIMULACRO = {
+        # Cada nombre viejo se mapea con y sin tildes: repair_text_quality ya
+        # habia corregido acentos en algunas filas en deploys anteriores, y
+        # otras seguian sin corregir - sin las dos variantes, el filtro por
+        # nombre exacto no encuentra la fila y queda huerfana (paso con
+        # "Diagnostico" y "Lectura critica" en el primer intento de este rename).
         'Diagnostico inicial - Simulacro premium': 'Evaluación Diagnóstica de Entrada',
+        'Diagnóstico inicial - Simulacro premium': 'Evaluación Diagnóstica de Entrada',
         'Lectura critica aplicada - Simulacro premium': 'Componente de Lectura Crítica',
+        'Lectura crítica aplicada - Simulacro premium': 'Componente de Lectura Crítica',
         'Competencias pedagogicas - Simulacro premium': 'Prueba Pedagógica - Enseñanza, Formación y Valoración',
         'Competencias pedagógicas - Simulacro premium': 'Prueba Pedagógica - Enseñanza, Formación y Valoración',
         'Competencias comportamentales / TJS - Simulacro premium': 'PJS - Prueba de Juicio Situacional',
