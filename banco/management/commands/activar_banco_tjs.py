@@ -4,8 +4,8 @@ from django.db import transaction
 from banco.models import BancoPregunta, Categoria
 from simulacros.models import Simulacro
 
-TJS_CATEGORIA = 'Test de Juicios Situacionales (TJS)'
-SIMULACRO_NOMBRE = 'Competencias comportamentales / TJS - Simulacro premium'
+TJS_CATEGORIA = 'Prueba de Juicio Situacional (PJS)'
+SIMULACRO_NOMBRE = 'PJS - Prueba de Juicio Situacional'
 
 
 class Command(BaseCommand):

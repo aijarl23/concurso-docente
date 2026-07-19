@@ -4,9 +4,9 @@ from contenidos.models import Modulo, Tema
 
 MODULOS_DATA = [
     {
-        'titulo': 'Diagnostico inicial',
+        'titulo': 'Evaluación Diagnóstica de Entrada',
         'tipo': 'diagnostico_inicial',
-        'descripcion': 'Mapa de entrada para identificar brechas reales antes de iniciar la preparacion.',
+        'descripcion': 'Línea base para identificar brechas reales antes de iniciar la preparación.',
         'temas': [
             ('Mapa de fortalezas y brechas', 'Lectura inicial del nivel por competencia.'),
             ('Lectura de consignas', 'Identificacion precisa de lo que pregunta cada item.'),
@@ -15,9 +15,9 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Lectura critica aplicada',
+        'titulo': 'Componente de Lectura Crítica',
         'tipo': 'lectura_critica_aplicada',
-        'descripcion': 'Inferencia, tesis, intencion comunicativa y evaluacion de argumentos en textos complejos.',
+        'descripcion': 'Inferencia, tesis, intención comunicativa y evaluación de argumentos en textos complejos.',
         'temas': [
             ('Inferencia y supuestos', 'Reconocimiento de informacion implicita sustentada.'),
             ('Tesis y argumentos', 'Analisis de estructura argumentativa y evidencias.'),
@@ -26,9 +26,9 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Competencias pedagogicas',
+        'titulo': 'Prueba Pedagógica - Enseñanza, Formación y Valoración',
         'tipo': 'competencias_pedagogicas',
-        'descripcion': 'Casos de planeacion, evaluacion formativa, inclusion, didactica y gestion del aula.',
+        'descripcion': 'Casos de planeación, evaluación formativa, inclusión, didáctica y gestión del aula.',
         'temas': [
             ('Planeacion curricular', 'Coherencia entre objetivos, desempenos, actividades y evaluacion.'),
             ('Evaluacion formativa', 'Uso de evidencias y retroalimentacion para mejorar aprendizajes.'),
@@ -37,9 +37,9 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Competencias comportamentales / TJS',
+        'titulo': 'PJS - Prueba de Juicio Situacional',
         'tipo': 'competencias_tjs',
-        'descripcion': 'Juicio situacional docente para convivencia, liderazgo, comunicacion y trabajo colaborativo.',
+        'descripcion': 'Juicio situacional y competencias comportamentales: convivencia, liderazgo, comunicación y trabajo colaborativo.',
         'temas': [
             ('Comunicacion asertiva', 'Respuesta profesional ante tension y desacuerdo.'),
             ('Liderazgo', 'Actuacion orientada a acuerdos, cuidado y mejora institucional.'),
@@ -48,9 +48,9 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Normativa y contexto docente',
+        'titulo': 'Marco Normativo del Ejercicio Docente',
         'tipo': 'normativa_contexto',
-        'descripcion': 'Aplicacion contextual de normativa educativa, inclusion, convivencia y funciones docentes.',
+        'descripcion': 'Aplicación contextual de normativa educativa, inclusión, convivencia y funciones docentes.',
         'temas': [
             ('Estatuto docente', 'Uso aplicado del marco de profesionalizacion docente.'),
             ('Ley General de Educacion', 'Fines, responsabilidades y sentido pedagogico.'),
@@ -59,9 +59,9 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Simulacros por area',
+        'titulo': 'Componente Disciplinar por Área de Conocimiento',
         'tipo': 'simulacros_area',
-        'descripcion': 'Entrenamiento por disciplina con lectura critica, datos y situaciones contextualizadas.',
+        'descripcion': 'Entrenamiento por disciplina con lectura crítica, datos y situaciones contextualizadas.',
         'temas': [
             ('Comprension disciplinar', 'Uso de conceptos del area para interpretar situaciones.'),
             ('Problemas contextualizados', 'Resolucion de casos aplicados al aula.'),
@@ -70,9 +70,9 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Simulacro final tipo concurso',
+        'titulo': 'Simulacro Integral del Concurso',
         'tipo': 'simulacro_final',
-        'descripcion': 'Prueba integral con lectura critica, pedagogia, normativa, TJS y razonamiento aplicado.',
+        'descripcion': 'Prueba integral con lectura crítica, pedagogía, normativa, PJS y razonamiento disciplinar aplicado.',
         'temas': [
             ('Gestion del tiempo', 'Estrategia para responder bajo limite real.'),
             ('Integracion de competencias', 'Cruce de lectura, criterio pedagogico y juicio situacional.'),
@@ -81,9 +81,9 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Reporte de progreso y plan de mejora',
+        'titulo': 'Informe de Desempeño y Plan de Fortalecimiento',
         'tipo': 'reporte_mejora',
-        'descripcion': 'Conversion de resultados en una ruta concreta de refuerzo, seguimiento y mejora.',
+        'descripcion': 'Conversión de resultados en una ruta concreta de refuerzo, seguimiento y mejora.',
         'temas': [
             ('Lectura de resultados', 'Interpretacion de desempeno por competencia.'),
             ('Priorizacion de brechas', 'Seleccion de focos segun impacto y urgencia.'),

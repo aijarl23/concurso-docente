@@ -3,9 +3,9 @@
 {% block content %}
 <section class="commerce-hero d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
     <div>
-        <p class="commerce-kicker">Acceso unico</p>
-        <h1>Curso completo por COP 20.000</h1>
-        <p class="mb-0">Un solo pago habilita todos los modulos, simulacros por area, simulacro final, resultados, historial y retroalimentacion por pregunta.</p>
+        <p class="commerce-kicker">Matrícula única</p>
+        <h1>Programa completo — Matrícula única COP 20.000</h1>
+        <p class="mb-0">Una sola matrícula habilita todos los componentes de la ruta, simulacros por área, simulacro integral, resultados, historial y retroalimentación por pregunta.</p>
     </div>
     <a class="btn btn-outline-primary btn-glow" href="{% url 'commerce:cart_detail' %}"><i class="bi bi-bag-check"></i> Ver carrito</a>
 </section>
@@ -15,20 +15,20 @@
     <div class="col-lg-7 mb-4">
         <div class="card product-card product-card-featured h-100">
             <div class="card-body d-flex flex-column p-4">
-                <span class="plan-badge">Acceso completo</span>
+                <span class="plan-badge">Programa Integral</span>
                 <h2 class="h3">{{ product.module.title }}</h2>
                 <p>{{ product.module.short_description }}</p>
                 <ul class="feature-list mb-4">
-                    <li>Todos los modulos de preparacion.</li>
-                    <li>Simulacros por area y simulacro final.</li>
-                    <li>Retroalimentacion por pregunta al finalizar cada intento.</li>
+                    <li>Todos los módulos de preparacion.</li>
+                    <li>Simulacros por área y simulacro final.</li>
+                    <li>Retroalimentación por pregunta al finalizar cada intento.</li>
                     <li>Historial de resultados y seguimiento de progreso.</li>
                 </ul>
                 <div class="price-zone mb-3">
                     <span class="final-price">COP {{ product.final_price }}</span>
-                    <span class="text-muted">Pago unico. Sin cobros adicionales por modulo.</span>
+                    <span class="text-muted">Pago único. Sin cobros adicionales por modulo.</span>
                 </div>
-                <a class="btn btn-primary btn-lg mt-auto btn-glow" href="{% url 'payments:buy_module' product.id %}"><i class="bi bi-credit-card"></i> Comprar acceso completo</a>
+                <a class="btn btn-primary btn-lg mt-auto btn-glow" href="{% url 'payments:buy_module' product.id %}"><i class="bi bi-credit-card"></i> Iniciar matrícula</a>
             </div>
         </div>
     </div>

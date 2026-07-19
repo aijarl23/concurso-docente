@@ -3,13 +3,13 @@
 {% block content %}
 <section class="lms-hero mb-4">
     <div>
-        <p class="section-kicker">Ruta premium CNSC 2026</p>
-        <h1>Plataforma de preparacion Concurso Docente</h1>
-        <p>Entrena con simulacros por competencia, revision tecnica por pregunta, resultados guardados e indicadores de progreso en una sola ruta de estudio.</p>
+        <p class="section-kicker">Programa de Preparación — Concurso Docente CNSC</p>
+        <h1>Programa Integral de Preparación — Concurso Docente CNSC</h1>
+        <p>Ruta estructurada alineada con los componentes oficiales del Concurso Docente: lectura crítica, marco normativo, prueba pedagógica, juicio situacional y componente disciplinar.</p>
     </div>
     <div class="hero-actions">
-        <a href="/simulacros/" class="btn btn-primary btn-lg"><i class="bi bi-play-circle"></i> Continuar practica</a>
-        <a href="/tienda/" class="btn btn-outline-primary btn-lg"><i class="bi bi-unlock"></i> Acceso completo $20.000</a>
+        <a href="/simulacros/" class="btn btn-primary btn-lg"><i class="bi bi-play-circle"></i> Continuar programa</a>
+        <a href="/tienda/" class="btn btn-outline-primary btn-lg"><i class="bi bi-unlock"></i> Matrícula al programa — $20.000</a>
     </div>
 </section>
 
@@ -27,7 +27,7 @@
 </section>
 
 <section class="metric-grid" aria-label="Resumen de la plataforma">
-    <div class="metric-card"><span class="metric-number">{{ metricas.modulos }}</span><span class="metric-label">Modulos de ruta</span></div>
+    <div class="metric-card"><span class="metric-number">{{ metricas.módulos }}</span><span class="metric-label">Módulos de ruta</span></div>
     <div class="metric-card"><span class="metric-number">{{ metricas.preguntas }}</span><span class="metric-label">Preguntas activas</span></div>
     <div class="metric-card"><span class="metric-number">{{ metricas.simulacros }}</span><span class="metric-label">Simulacros disponibles</span></div>
     <div class="metric-card"><span class="metric-number">{{ metricas.promedio }}%</span><span class="metric-label">Promedio obtenido</span></div>
@@ -35,10 +35,10 @@
 
 <div class="content-grid mt-4">
     <section class="module-list" aria-label="Ruta formativa">
-        {% for modulo in modulos %}
+        {% for modulo in módulos %}
         <article class="module-card">
             <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <p class="module-kicker mb-0">Modulo {{ forloop.counter }}</p>
+                <p class="module-kicker mb-0">Módulo {{ forloop.counter }}</p>
                 <span class="status-pill"><i class="bi bi-unlock"></i> Disponible</span>
             </div>
             <h2 class="module-title">{{ modulo.titulo }}</h2>
@@ -52,13 +52,13 @@
     </section>
 
     <aside class="quick-panel">
-        <h2>Acceso completo</h2>
-        <p>Un solo pago habilita toda la plataforma: modulos, simulacros por area, simulacro final, resultados e historial.</p>
-        <div class="price-box mb-3"><span>Curso completo</span><strong>COP 20.000</strong></div>
+        <h2>Programa Integral</h2>
+        <p>Matrícula única: incluye los 9 componentes de la ruta, simulacro integral e informe de desempeño.</p>
+        <div class="price-box mb-3"><span>Programa completo</span><strong>COP 20.000</strong></div>
         <div class="quick-actions">
-            <a href="/tienda/" class="btn btn-primary"><i class="bi bi-credit-card"></i> Comprar acceso</a>
+            <a href="/tienda/" class="btn btn-primary"><i class="bi bi-credit-card"></i> Iniciar matrícula</a>
             <a href="/simulacros/" class="btn btn-outline-primary"><i class="bi bi-clipboard-check"></i> Simulacros</a>
-            <a href="/simulacros/areas/" class="btn btn-outline-primary"><i class="bi bi-grid"></i> Simulacro por area</a>
+            <a href="/simulacros/areas/" class="btn btn-outline-primary"><i class="bi bi-grid"></i> Simulacro por área</a>
             <a href="/progreso/" class="btn btn-outline-secondary"><i class="bi bi-graph-up"></i> Mi progreso</a>
         </div>
     </aside>

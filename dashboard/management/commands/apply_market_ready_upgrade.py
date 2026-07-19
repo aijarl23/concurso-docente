@@ -23,7 +23,7 @@ FULL_ACCESS_PRICE = Decimal('20000')
 
 
 class Command(BaseCommand):
-    help = 'Regenera la plataforma premium con pago ?nico y banco SNCS validado contra duplicados.'
+    help = 'Regenera la plataforma premium con pago único y banco SNCS validado contra duplicados.'
 
     @transaction.atomic
     def handle(self, *args, **options):
@@ -32,7 +32,7 @@ class Command(BaseCommand):
             defaults={
                 'name': 'Ruta Premium Concurso Docente SNCS 2026',
                 'category_type': 'simulacros',
-                'description': 'Ruta integral con diagn?stico, competencias, simulacros, retroalimentaci?n y plan de mejora.',
+                'description': 'Ruta integral con diagnóstico, competencias, simulacros, retroalimentación y plan de mejora.',
                 'icon': 'bi-stars',
                 'order': 1,
                 'active': True,
@@ -94,7 +94,7 @@ class Command(BaseCommand):
 
             questions = self._build_questions_for_module(banco_cat, data, registry)
             total_questions += len(questions)
-            sim_name = f'{data["title"]} - Simulacro premium'
+            sim_name = data['title']
             simulacro, _ = Simulacro.objects.update_or_create(
                 nombre=sim_name,
                 defaults={
@@ -118,14 +118,14 @@ class Command(BaseCommand):
         for area_data in AREA_SIMULACROS:
             module_data = {
                 **area_module_data,
-                'title': f'Simulacro por ?rea - {area_data["label"]}',
+                'title': f'Simulacro por área - {area_data["label"]}',
                 'area': area_data['area'],
                 'competencia': area_data['competencia'],
-                'description': f'Banco disciplinar para {area_data["label"]} con lectura cr?tica, datos, problemas contextualizados y decisi?n pedag?gica.',
+                'description': f'Banco disciplinar para {area_data["label"]} con lectura crítica, datos, problemas contextualizados y decisión pedagógica.',
             }
             questions = self._build_questions_for_module(banco_cat, module_data, registry)
             total_questions += len(questions)
-            sim_name = f'Simulacro por ?rea - {area_data["label"]}'
+            sim_name = f'Simulacro por área - {area_data["label"]}'
             simulacro, _ = Simulacro.objects.update_or_create(
                 nombre=sim_name,
                 defaults={
@@ -149,8 +149,8 @@ class Command(BaseCommand):
             defaults={
                 'category': category,
                 'title': 'Acceso completo ConcursoDocente SNCS 2026',
-                'short_description': 'Acceso completo a todos los m?dulos, simulacros y retroalimentaciones por un pago ?nico.',
-                'description': 'Incluye diagn?stico, lectura cr?tica, competencias pedag?gicas, TJS, normativa, ?reas, simulacro final y plan de mejora.',
+                'short_description': 'Acceso completo a todos los módulos, simulacros y retroalimentaciónes por un pago único.',
+                'description': 'Incluye diagnóstico, lectura crítica, competencias pedagógicas, TJS, normativa, áreas, simulacro final y plan de mejora.',
                 'difficulty_level': 'sncs_expert',
                 'estimated_time_minutes': 480,
                 'is_active': True,
@@ -170,8 +170,8 @@ class Command(BaseCommand):
         Simulacro.objects.exclude(nombre__in=active_sim_names).update(activo=False)
 
         self.stdout.write(self.style.SUCCESS(
-            f'Plataforma actualizada: pago ?nico COP 20.000, {len(active_sim_names)} simulacros, '
-            f'{total_questions} preguntas SNCS validadas y {len(registry.hashes)} hashes ?nicos.'
+            f'Plataforma actualizada: pago único COP 20.000, {len(active_sim_names)} simulacros, '
+            f'{total_questions} preguntas SNCS validadas y {len(registry.hashes)} hashes únicos.'
         ))
 
     def _build_questions_for_module(self, banco_cat, data, registry):

@@ -9,8 +9,8 @@ from banco.models import BancoPregunta, Categoria, Subcategoria
 from simulacros.models import Simulacro
 
 BANK_PATH = Path(settings.BASE_DIR) / '_resources' / 'tjs_import' / 'tjs_bank_final.json'
-CATEGORY_NAME = 'Test de Juicios Situacionales (TJS)'
-FULL_SIM_NAME = 'TJS Concurso Docente CNSC - Banco completo 90 preguntas'
+CATEGORY_NAME = 'Prueba de Juicio Situacional (PJS)'
+FULL_SIM_NAME = 'PJS Concurso Docente CNSC - Banco completo 90 preguntas'
 
 
 def normalize_title(item: dict) -> str:
@@ -106,9 +106,9 @@ class Command(BaseCommand):
 
             for competency, questions in sorted(questions_by_competency.items()):
                 sim, _ = Simulacro.objects.update_or_create(
-                    nombre=f'TJS - {competency} - 15 preguntas',
+                    nombre=f'PJS - {competency} - 15 preguntas',
                     defaults={
-                        'descripcion': f'Seccion TJS de nivel avanzado enfocada en {competency}.',
+                        'descripcion': f'Seccion PJS de nivel avanzado enfocada en {competency}.',
                         'tipo': 'simulacro',
                         'tiempo_limite_minutos': 35,
                         'puntaje_minimo_aprobacion': 70,
@@ -118,6 +118,6 @@ class Command(BaseCommand):
                 sim.preguntas.set(questions)
 
         self.stdout.write(self.style.SUCCESS(
-            f'Banco TJS curado importado: {created} creadas, {updated} actualizadas, '
+            f'Banco PJS curado importado: {created} creadas, {updated} actualizadas, '
             f'{len(all_questions)} total en categoria "{CATEGORY_NAME}".'
         ))

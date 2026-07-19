@@ -1,4 +1,4 @@
-﻿
+
 from __future__ import annotations
 
 import hashlib
@@ -8,7 +8,7 @@ from typing import Dict, Iterable, List, Sequence, Tuple
 
 ELITE_SLUG = 'elite-cnsc-2026'
 AREA_MODULE_SLUG = 'simulacros-por-area'
-QUESTION_CATEGORY = 'Banco Premium CNSC 2026 SNCS'
+QUESTION_CATEGORY = 'Banco Premium CNSC/SNCS 2026'
 SIMILARITY_THRESHOLD = 0.92
 QUESTIONS_PER_SIMULACRO = 30
 
@@ -83,14 +83,14 @@ def polish_text(value: str) -> str:
     return value
 
 MODULES = [
-    {'slug': 'diagnostico-inicial', 'tipo': 'diagnostico_inicial', 'title': 'Diagnostico inicial', 'area': 'general', 'competencia': 'Diagnostico integral', 'tipo_sim': 'diagnostico', 'description': 'Identifica brechas reales de lectura, pedagogia, normativa, juicio situacional y manejo del tiempo antes de iniciar la ruta.', 'topics': ['Analisis de errores', 'Comprension de consigna', 'Gestion del tiempo', 'Plan de estudio']},
-    {'slug': 'lectura-critica-aplicada', 'tipo': 'lectura_critica_aplicada', 'title': 'Lectura critica aplicada', 'area': 'lectura_critica', 'competencia': 'Lectura critica', 'tipo_sim': 'tematico', 'description': 'Entrena inferencia, tesis, intencion comunicativa, supuestos, estructura argumentativa y valoracion de evidencias.', 'topics': ['Inferencia textual', 'Tesis y argumento', 'Intencion del autor', 'Evaluacion de evidencia']},
-    {'slug': 'competencias-pedagogicas', 'tipo': 'competencias_pedagogicas', 'title': 'Competencias pedagogicas', 'area': 'componente_pedagogico', 'competencia': 'Pedagogia y didactica', 'tipo_sim': 'tematico', 'description': 'Casos de planeacion, evaluacion formativa, inclusion, didactica situada y gestion del aula.', 'topics': ['Planeacion curricular', 'Evaluacion formativa', 'Inclusion y DUA', 'Didactica situada']},
-    {'slug': 'competencias-comportamentales-tjs', 'tipo': 'competencias_tjs', 'title': 'Competencias comportamentales / TJS', 'area': 'psicotecnico', 'competencia': 'Juicio situacional docente', 'tipo_sim': 'tjs', 'description': 'Situaciones de convivencia, comunicacion, liderazgo, iniciativa, trabajo en equipo y orientacion al logro.', 'topics': ['Comunicacion asertiva', 'Liderazgo pedagogico', 'Trabajo colaborativo', 'Orientacion al logro']},
-    {'slug': 'normativa-contexto-docente', 'tipo': 'normativa_contexto', 'title': 'Normativa y contexto docente', 'area': 'general', 'competencia': 'Normativa educativa aplicada', 'tipo_sim': 'tematico', 'description': 'Aplicacion contextual de Ley 115, Decreto 1278, evaluacion, inclusion, convivencia escolar y responsabilidad docente.', 'topics': ['Estatuto docente', 'Ley General de Educacion', 'Convivencia escolar', 'Inclusion y ajustes razonables']},
-    {'slug': AREA_MODULE_SLUG, 'tipo': 'simulacros_area', 'title': 'Simulacros por area', 'area': 'general', 'competencia': 'Competencia disciplinar aplicada', 'tipo_sim': 'area', 'description': 'Entrenamiento disciplinar por area con lectura critica, datos, problemas contextualizados y decision pedagogica.', 'topics': ['Comprension disciplinar', 'Problemas contextualizados', 'Analisis de datos', 'Decision pedagogica por area']},
-    {'slug': 'simulacro-final-concurso', 'tipo': 'simulacro_final', 'title': 'Simulacro final tipo concurso', 'area': 'general', 'competencia': 'Integracion SNCS', 'tipo_sim': 'elite', 'description': 'Prueba integral con mezcla de lectura critica, pedagogia, normativa, TJS y razonamiento aplicado.', 'topics': ['Integracion de competencias', 'Gestion del tiempo', 'Analisis de resultados', 'Estrategia de cierre']},
-    {'slug': 'reporte-progreso-plan-mejora', 'tipo': 'reporte_mejora', 'title': 'Reporte de progreso y plan de mejora', 'area': 'general', 'competencia': 'Metacognicion y mejora', 'tipo_sim': 'tematico', 'description': 'Convierte resultados en decisiones de estudio, priorizacion de brechas y seguimiento verificable.', 'topics': ['Lectura de resultados', 'Priorizacion de brechas', 'Plan semanal', 'Seguimiento de mejora']},
+    {'slug': 'diagnostico-inicial', 'tipo': 'diagnostico_inicial', 'title': 'Evaluación Diagnóstica de Entrada', 'area': 'general', 'competencia': 'Diagnostico integral', 'tipo_sim': 'diagnostico', 'description': 'Establece la línea base real del aspirante antes de iniciar la ruta: lectura, pedagogía, normativa, juicio situacional y manejo del tiempo.', 'topics': ['Analisis de errores', 'Comprension de consigna', 'Gestion del tiempo', 'Plan de estudio']},
+    {'slug': 'lectura-critica-aplicada', 'tipo': 'lectura_critica_aplicada', 'title': 'Componente de Lectura Crítica', 'area': 'lectura_critica', 'competencia': 'Lectura critica', 'tipo_sim': 'tematico', 'description': 'Inferencia, tesis, intención comunicativa, supuestos, estructura argumentativa y valoración de evidencias.', 'topics': ['Inferencia textual', 'Tesis y argumento', 'Intencion del autor', 'Evaluacion de evidencia']},
+    {'slug': 'competencias-pedagogicas', 'tipo': 'competencias_pedagogicas', 'title': 'Prueba Pedagógica - Enseñanza, Formación y Valoración', 'area': 'componente_pedagogico', 'competencia': 'Pedagogia y didactica', 'tipo_sim': 'tematico', 'description': 'Casos de planeación, evaluación formativa, inclusión, didáctica situada y gestión del aula.', 'topics': ['Planeacion curricular', 'Evaluacion formativa', 'Inclusion y DUA', 'Didactica situada']},
+    {'slug': 'competencias-comportamentales-tjs', 'tipo': 'competencias_tjs', 'title': 'PJS - Prueba de Juicio Situacional', 'area': 'psicotecnico', 'competencia': 'Juicio situacional y competencias comportamentales', 'tipo_sim': 'tjs', 'description': 'Dilemas de convivencia, comunicación, liderazgo, iniciativa, trabajo en equipo y orientación al logro, calificados por idoneidad graduada.', 'topics': ['Comunicacion asertiva', 'Liderazgo pedagogico', 'Trabajo colaborativo', 'Orientacion al logro']},
+    {'slug': 'normativa-contexto-docente', 'tipo': 'normativa_contexto', 'title': 'Marco Normativo del Ejercicio Docente', 'area': 'general', 'competencia': 'Normativa educativa aplicada', 'tipo_sim': 'tematico', 'description': 'Aplicación contextual de Ley 115, Decreto 1278, Decreto 1290, Decreto 1421, Ley 1620, evaluación, inclusión y convivencia escolar.', 'topics': ['Estatuto docente', 'Ley General de Educacion', 'Convivencia escolar', 'Inclusion y ajustes razonables']},
+    {'slug': AREA_MODULE_SLUG, 'tipo': 'simulacros_area', 'title': 'Componente Disciplinar por Área de Conocimiento', 'area': 'general', 'competencia': 'Competencia disciplinar aplicada', 'tipo_sim': 'area', 'description': 'Saber disciplinar aplicado a la enseñanza del área: lectura crítica, datos, problemas contextualizados y decisión pedagógica.', 'topics': ['Comprension disciplinar', 'Problemas contextualizados', 'Analisis de datos', 'Decision pedagogica por area']},
+    {'slug': 'simulacro-final-concurso', 'tipo': 'simulacro_final', 'title': 'Simulacro Integral del Concurso', 'area': 'general', 'competencia': 'Integracion CNSC', 'tipo_sim': 'elite', 'description': 'Prueba integral con mezcla de lectura crítica, pedagogía, normativa, PJS y razonamiento disciplinar aplicado, bajo tiempo real de examen.', 'topics': ['Integracion de competencias', 'Gestion del tiempo', 'Analisis de resultados', 'Estrategia de cierre']},
+    {'slug': 'reporte-progreso-plan-mejora', 'tipo': 'reporte_mejora', 'title': 'Informe de Desempeño y Plan de Fortalecimiento', 'area': 'general', 'competencia': 'Metacognicion y mejora', 'tipo_sim': 'tematico', 'description': 'Convierte resultados en decisiones de estudio, priorización de brechas y seguimiento verificable.', 'topics': ['Lectura de resultados', 'Priorizacion de brechas', 'Plan semanal', 'Seguimiento de mejora']},
 ]
 
 AREA_SIMULACROS = [
@@ -205,7 +205,7 @@ class GenerationRegistry:
 
 def normalize(value: str) -> str:
     value = value.lower()
-    value = re.sub(r'[^a-z???????0-9\s]', ' ', value)
+    value = re.sub(r'[^a-záéíóúüñ0-9\s]', ' ', value)
     return re.sub(r'\s+', ' ', value).strip()
 
 def token_set(value: str) -> set:

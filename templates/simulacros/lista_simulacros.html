@@ -3,13 +3,13 @@
 {% block content %}
 <section class="lms-hero mb-4">
     <div>
-        <p class="section-kicker">Simulacros premium</p>
-        <h1>Practica tipo Concurso Docente CNSC</h1>
-        <p>Todos los simulacros quedan incluidos con el acceso unico. Al finalizar recibes resultado, respuestas correctas y justificacion por pregunta.</p>
+        <p class="section-kicker">Simulacros del programa</p>
+        <h1>Práctica tipo Concurso Docente CNSC</h1>
+        <p>Todos los simulacros quedan incluidos con la matrícula única. Al finalizar recibes resultado, respuestas correctas y justificación por pregunta.</p>
     </div>
     <div class="hero-actions">
-        <a class="btn btn-outline-primary btn-lg" href="{% url 'simulacros:seleccionar_area' %}"><i class="bi bi-grid"></i> Simulacro por area</a>
-        <a class="btn btn-primary btn-lg" href="{% url 'commerce:product_list' %}"><i class="bi bi-unlock"></i> Acceso completo</a>
+        <a class="btn btn-outline-primary btn-lg" href="{% url 'simulacros:seleccionar_area' %}"><i class="bi bi-grid"></i> Componente disciplinar</a>
+        <a class="btn btn-primary btn-lg" href="{% url 'commerce:product_list' %}"><i class="bi bi-unlock"></i> Matrícula al programa</a>
     </div>
 </section>
 
@@ -37,7 +37,7 @@
                     {% if card.has_access %}
                     <a href="{% url 'simulacros:iniciar_simulacro' simulacro.id %}" class="btn btn-primary w-100"><i class="bi bi-play-circle"></i> Iniciar simulacro</a>
                     {% else %}
-                    <a href="{{ card.checkout_url }}" class="btn btn-outline-primary w-100"><i class="bi bi-credit-card"></i> Comprar acceso completo</a>
+                    <a href="{{ card.checkout_url }}" class="btn btn-outline-primary w-100"><i class="bi bi-credit-card"></i> Iniciar matrícula</a>
                     {% endif %}
                 </div>
             </div>

@@ -6,15 +6,15 @@
         <div class="card border-0 shadow-sm checkout-card">
             <div class="card-body">
                 <p class="commerce-kicker">Pago seguro</p>
-                <h1 class="h3">Acceso completo al curso</h1>
-                <p class="text-muted">Orden {{ order.reference }} · Pago unico por toda la plataforma</p>
+                <h1 class="h3">Matrícula al Programa Integral de Preparación</h1>
+                <p class="text-muted">Orden {{ order.reference }} · Matrícula única para toda la ruta de estudio</p>
                 <ul>
                     {% for item in order.items.all %}
                     <li>{{ item.module.title }} - COP {{ item.price }}</li>
                     {% endfor %}
                 </ul>
                 <h4>Total: COP {{ order.total }}</h4>
-                <p class="text-muted">Al aprobarse el pago, tu usuario tendra acceso a todos los modulos, simulacros y retroalimentaciones.</p>
+                <p class="text-muted">Al aprobarse el pago, tu usuario tendra acceso a todos los módulos, simulacros y retroalimentaciónes.</p>
 
                 {% if payment_config_errors %}
                 <div class="alert alert-warning mt-3">
