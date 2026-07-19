@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, render
 from django.db.models import Avg
 
-from .models import Modulo, Tema
+from .models import Modulo
 from banco.models import BancoPregunta
 from simulacros.models import Simulacro
 from seguimiento.models import Intento
@@ -19,7 +19,7 @@ def dashboard(request):
     progreso = int((simulacros_completados / total_simulacros) * 100) if total_simulacros else 0
     metricas = {
         'modulos': total_modulos,
-        'preguntas': BancoPregunta.objects.filter(categoria__nombre='Banco Premium CNSC 2026 V3', activa=True).count(),
+        'preguntas': BancoPregunta.objects.filter(activa=True).count(),
         'simulacros': total_simulacros,
         'completados': simulacros_completados,
         'promedio': round(float(promedio), 1),

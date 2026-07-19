@@ -1,4 +1,5 @@
 import json
+import logging
 import uuid
 from decimal import Decimal
 
@@ -11,13 +12,15 @@ from django.urls import reverse
 from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.cache import never_cache
+from django.views.decorators.http import require_POST
 
 from access_control.services import grant_full_access
-from commerce.models import Cart, Order, OrderItem, Product
-
-ELITE_SLUG = 'elite-cnsc-2026'
+from commerce.models import Order, OrderItem, Product
 from payments.models import Payment
 from payments.services import WompiService, send_purchase_confirmation
+
+logger = logging.getLogger(__name__)
+GENERIC_PAYMENT_ERROR = 'No fue posible completar la operación con la pasarela de pago. Intenta nuevamente en unos minutos.'
 
 
 def _mark_order_approved(order, transaction_id, raw_response, notes):
@@ -70,8 +73,22 @@ def _order_reference_from_wompi(reference):
 
 
 def _build_order_from_products(user, products):
-    reference = f"CNSC-{uuid.uuid4().hex[:12].upper()}"
     total = sum(Decimal(product.final_price) for product in products)
+    module_ids = sorted(product.module_id for product in products)
+
+    # Reutiliza una orden 'pending' ya existente para el mismo usuario y el
+    # mismo conjunto de modulos en vez de crear una fila nueva en cada click
+    # (doble click, "atras + repetir" en el checkout) — evita acumular
+    # ordenes huerfanas en commerce_order/commerce_orderitem.
+    for order in Order.objects.filter(user=user, status='pending').prefetch_related('items').order_by('-created_at'):
+        if sorted(item.module_id for item in order.items.all()) == module_ids:
+            if order.total != total:
+                order.subtotal = total
+                order.total = total
+                order.save(update_fields=['subtotal', 'total'])
+            return order
+
+    reference = f"CNSC-{uuid.uuid4().hex[:12].upper()}"
     order = Order.objects.create(
         user=user,
         reference=reference,
@@ -88,10 +105,10 @@ def _build_order_from_products(user, products):
 
 
 @login_required
+@require_POST
 def buy_module(request, product_id):
-    get_object_or_404(Product.objects.select_related('module'), id=product_id, active=True)
-    elite_product = get_object_or_404(Product.objects.select_related('module'), module__slug=ELITE_SLUG, active=True)
-    order = _build_order_from_products(request.user, [elite_product])
+    product = get_object_or_404(Product.objects.select_related('module'), id=product_id, active=True)
+    order = _build_order_from_products(request.user, [product])
     return redirect('payments:checkout_order', order_id=order.id)
 
 
@@ -135,8 +152,9 @@ def checkout_order(request, order_id):
         signature = WompiService.transaction_signature(wompi_reference, amount_in_cents, order.currency)
         try:
             acceptance_token = WompiService.get_acceptance_token()
-        except Exception as exc:
-            wompi_error = str(exc)
+        except Exception:
+            logger.exception('Fallo al obtener acceptance_token de Wompi (order=%s)', order.id)
+            wompi_error = GENERIC_PAYMENT_ERROR
     else:
         wompi_reference = order.reference
 
@@ -207,9 +225,11 @@ def wompi_webhook(request):
 
         return JsonResponse({'status': 'ok'})
     except Order.DoesNotExist:
+        logger.warning('Webhook Wompi: orden no encontrada para referencia=%s', reference)
         return JsonResponse({'error': 'Orden no encontrada'}, status=404)
-    except Exception as exc:
-        return JsonResponse({'error': str(exc)}, status=400)
+    except Exception:
+        logger.exception('Webhook Wompi: error procesando payload')
+        return JsonResponse({'error': 'No se pudo procesar la notificación'}, status=400)
 
 
 @login_required
@@ -246,8 +266,9 @@ def payment_return(request, order_id):
                     }
                 )
                 messages.info(request, 'El pago quedo pendiente de confirmacion.')
-        except Exception as exc:
-            verify_error = str(exc)
+        except Exception:
+            logger.exception('Fallo al verificar transacción Wompi (order=%s, transaction_id=%s)', order.id, transaction_id)
+            verify_error = GENERIC_PAYMENT_ERROR
 
     order.refresh_from_db()
     return render(request, 'payments/payment_return.html', {

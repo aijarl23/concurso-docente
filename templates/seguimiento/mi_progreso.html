@@ -6,9 +6,9 @@
         <div>
             <p class="section-kicker mb-1">Historial de estudio</p>
             <h1 class="fw-bold mb-2">Mi progreso</h1>
-            <p class="text-muted mb-0">Seguimiento del avance por modulos completados y resultados registrados.</p>
+            <p class="text-muted mb-0">Seguimiento del avance por módulos completados y resultados registrados.</p>
         </div>
-        <a href="/simulacros/" class="btn btn-primary"><i class="bi bi-play-circle"></i> Continuar simulacros</a>
+        <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-primary"><i class="bi bi-play-circle"></i> Continuar simulacros</a>
     </div>
 
     {% if progresos %}

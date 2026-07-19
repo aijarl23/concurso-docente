@@ -28,7 +28,10 @@
                     <span class="final-price">COP {{ product.final_price }}</span>
                     <span class="text-muted">Pago único. Sin cobros adicionales por modulo.</span>
                 </div>
-                <a class="btn btn-primary btn-lg mt-auto btn-glow" href="{% url 'payments:buy_module' product.id %}"><i class="bi bi-credit-card"></i> Iniciar matrícula</a>
+                <form method="post" action="{% url 'payments:buy_module' product.id %}" class="mt-auto">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary btn-lg w-100 btn-glow"><i class="bi bi-credit-card"></i> Iniciar matrícula</button>
+                </form>
             </div>
         </div>
     </div>
@@ -36,4 +39,22 @@
     <div class="col-12"><div class="alert alert-warning">No hay producto activo. Ejecuta la carga premium inicial.</div></div>
     {% endfor %}
 </div>
+
+{% if page_obj.paginator.num_pages > 1 %}
+<nav class="mt-4" aria-label="Paginación de productos">
+    <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+        <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Anterior</a></li>
+        {% else %}
+        <li class="page-item disabled"><span class="page-link">Anterior</span></li>
+        {% endif %}
+        <li class="page-item disabled"><span class="page-link">Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</span></li>
+        {% if page_obj.has_next %}
+        <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Siguiente</a></li>
+        {% else %}
+        <li class="page-item disabled"><span class="page-link">Siguiente</span></li>
+        {% endif %}
+    </ul>
+</nav>
+{% endif %}
 {% endblock %}

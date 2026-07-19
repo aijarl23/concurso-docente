@@ -1,7 +1,9 @@
 ﻿from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 from django.db.models import Case, IntegerField, When
 from django.shortcuts import get_object_or_404, redirect, render
+from django.views.decorators.http import require_POST
 
 from .models import Cart, CartItem, Product
 
@@ -35,13 +37,14 @@ def product_list(request):
         )
         .order_by('sales_order', 'module__title')
     )
-    return render(request, 'commerce/product_list.html', {'products': products})
+    page_obj = Paginator(products, 20).get_page(request.GET.get('page'))
+    return render(request, 'commerce/product_list.html', {'products': page_obj, 'page_obj': page_obj})
 
 
 @login_required
+@require_POST
 def add_to_cart(request, product_id):
-    get_object_or_404(Product, id=product_id, active=True)
-    product = get_object_or_404(Product, module__slug=ELITE_SLUG, active=True)
+    product = get_object_or_404(Product, id=product_id, active=True)
     cart = _active_cart(request)
     cart.items.exclude(product=product).delete()
     item, created = CartItem.objects.get_or_create(
@@ -71,6 +74,7 @@ def cart_detail(request):
 
 
 @login_required
+@require_POST
 def remove_from_cart(request, item_id):
     cart = _active_cart(request)
     item = get_object_or_404(CartItem, id=item_id, cart=cart)
@@ -80,6 +84,7 @@ def remove_from_cart(request, item_id):
 
 
 @login_required
+@require_POST
 def checkout_cart(request):
     from payments.views import _build_order_from_products
 

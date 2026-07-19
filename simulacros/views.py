@@ -5,12 +5,13 @@ from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
+from django.core.paginator import Paginator
 from django.db import transaction
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.utils import timezone
 
-from access_control.services import user_has_module_access
+from access_control.services import user_has_full_access, user_has_module_access
 from commerce.models import Product
 from contenidos.models import Modulo
 from seguimiento.models import Intento, ProgresoModulo, RespuestaIntento
@@ -119,15 +120,26 @@ def _send_result_email(intento):
 @login_required
 def lista_simulacros(request):
     simulacros = Simulacro.objects.filter(activo=True).select_related('module').prefetch_related('preguntas').order_by('nombre')
+    paginator = Paginator(simulacros, 20)
+    page_obj = paginator.get_page(request.GET.get('page'))
+
+    # user_has_module_access siempre resuelve contra el mismo bundle 'elite'
+    # (acceso todo-o-nada) salvo que module sea None, asi que calcular el
+    # acceso una sola vez evita una query de UserAccess por cada fila.
+    has_full_access = user_has_full_access(request.user)
     cards = []
-    for simulacro in simulacros:
-        has_access = not simulacro.es_premium or user_has_module_access(request.user, simulacro.module)
+    for simulacro in page_obj:
+        has_access = not simulacro.es_premium or simulacro.module_id is None or has_full_access
         cards.append({
             'simulacro': simulacro,
             'has_access': has_access,
             'checkout_url': None if has_access else _checkout_for_simulacro(simulacro),
         })
-    return render(request, 'simulacros/lista_simulacros.html', {'simulacro_cards': cards, 'areas': AREAS_DISCIPLINARES})
+    return render(request, 'simulacros/lista_simulacros.html', {
+        'simulacro_cards': cards,
+        'areas': AREAS_DISCIPLINARES,
+        'page_obj': page_obj,
+    })
 
 
 @login_required
@@ -183,6 +195,7 @@ def realizar_simulacro(request, intento_id):
             tiempo_total = int(request.POST.get('tiempo_total_prueba') or 0)
             respondida_en_tiempo = tiempo_total <= total_time_limit
 
+            respuestas_a_crear = []
             for pregunta in preguntas:
                 respuesta = request.POST.get(f'pregunta_{pregunta.id}')
                 es_correcta = respuesta == pregunta.respuesta_correcta and respondida_en_tiempo
@@ -200,14 +213,15 @@ def realizar_simulacro(request, intento_id):
                         puntos_obtenidos.append(pregunta.puntos_por_respuesta(respuesta))
                     else:
                         puntos_obtenidos.append(0)
-                RespuestaIntento.objects.create(
+                respuestas_a_crear.append(RespuestaIntento(
                     intento=intento,
                     pregunta=pregunta,
                     respuesta_seleccionada=respuesta,
                     es_correcta=es_correcta,
                     respondida_en_tiempo=respondida_en_tiempo,
                     tiempo_usado_segundos=0,
-                )
+                ))
+            RespuestaIntento.objects.bulk_create(respuestas_a_crear)
 
             total = len(preguntas) or 1
             intento.total_correctas = correctas
@@ -219,8 +233,12 @@ def realizar_simulacro(request, intento_id):
             intento.puntaje_obtenido = round((sum(puntos_obtenidos) / total) * 100, 2)
             intento.save()
             _sync_module_progress(intento)
-            intento.reporte_enviado = _send_result_email(intento)
-            intento.save(update_fields=['reporte_enviado'])
+
+        # El envio de correo queda fuera de la transaccion: es una llamada
+        # SMTP bloqueante y no debe mantener abiertos los locks de
+        # Intento/RespuestaIntento mientras dura el round-trip de red.
+        intento.reporte_enviado = _send_result_email(intento)
+        intento.save(update_fields=['reporte_enviado'])
 
         return redirect('simulacros:resultado_simulacro', intento_id=intento.id)
 

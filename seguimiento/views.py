@@ -8,7 +8,7 @@ def mi_progreso(request):
     if request.user.is_authenticated:
         progresos = ProgresoModulo.objects.filter(
             usuario=request.user
-        )
+        ).select_related('modulo')
 
     return render(
         request,

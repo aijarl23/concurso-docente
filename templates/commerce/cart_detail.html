@@ -14,7 +14,12 @@
                     <td data-label="Producto">{{ item.product.module.title }}</td>
                     <td data-label="Cantidad">{{ item.quantity }}</td>
                     <td data-label="Subtotal">COP {{ item.subtotal }}</td>
-                    <td><a class="btn btn-sm btn-outline-danger" href="{% url 'commerce:remove_from_cart' item.id %}">Retirar</a></td>
+                    <td>
+                        <form method="post" action="{% url 'commerce:remove_from_cart' item.id %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-sm btn-outline-danger">Retirar</button>
+                        </form>
+                    </td>
                 </tr>
                 {% endfor %}
                 </tbody>
@@ -25,7 +30,10 @@
                 <strong>Total: COP {{ total }}</strong>
                 <p class="text-muted mb-0">Este pago habilita toda la plataforma. No hay pagos por modulo.</p>
             </div>
-            <a class="btn btn-primary" href="{% url 'commerce:checkout_cart' %}">Ir a pagar</a>
+            <form method="post" action="{% url 'commerce:checkout_cart' %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary">Ir a pagar</button>
+            </form>
         </div>
         {% else %}
         <p>Tu carrito esta vacio.</p>

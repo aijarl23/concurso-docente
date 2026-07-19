@@ -21,10 +21,10 @@
     </section>
 
     <section class="module-actions">
-        <a href="/" class="btn btn-outline-secondary"><i class="bi bi-arrow-left"></i> Volver al panel</a>
+        <a href="{% url 'dashboard' %}" class="btn btn-outline-secondary"><i class="bi bi-arrow-left"></i> Volver al panel</a>
         <div class="d-flex flex-wrap gap-2">
-            <a href="/simulacros/areas/" class="btn btn-outline-primary"><i class="bi bi-grid"></i> Simulacro por area</a>
-            <a href="/simulacros/" class="btn btn-primary"><i class="bi bi-play-circle"></i> Presentar simulacro</a>
+            <a href="{% url 'simulacros:seleccionar_area' %}" class="btn btn-outline-primary"><i class="bi bi-grid"></i> Simulacro por área</a>
+            <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-primary"><i class="bi bi-play-circle"></i> Presentar simulacro</a>
         </div>
     </section>
 </div>
