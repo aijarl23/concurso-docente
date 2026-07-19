@@ -37,9 +37,9 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'PJS - Prueba de Juicio Situacional',
+        'titulo': 'Análisis de Casos',
         'tipo': 'competencias_tjs',
-        'descripcion': 'Juicio situacional y competencias comportamentales: convivencia, liderazgo, comunicación y trabajo colaborativo.',
+        'descripcion': 'Análisis de casos y competencias comportamentales: convivencia, liderazgo, comunicación y trabajo colaborativo.',
         'temas': [
             ('Comunicacion asertiva', 'Respuesta profesional ante tension y desacuerdo.'),
             ('Liderazgo', 'Actuacion orientada a acuerdos, cuidado y mejora institucional.'),

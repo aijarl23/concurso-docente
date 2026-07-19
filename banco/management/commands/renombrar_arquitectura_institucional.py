@@ -22,15 +22,14 @@ class Command(BaseCommand):
         'Lectura crítica aplicada - Simulacro premium': 'Componente de Lectura Crítica',
         'Competencias pedagogicas - Simulacro premium': 'Prueba Pedagógica - Enseñanza, Formación y Valoración',
         'Competencias pedagógicas - Simulacro premium': 'Prueba Pedagógica - Enseñanza, Formación y Valoración',
-        'Competencias comportamentales / TJS - Simulacro premium': 'PJS - Prueba de Juicio Situacional',
+        'Competencias comportamentales / TJS - Simulacro premium': 'Análisis de Casos',
+        'PJS - Prueba de Juicio Situacional': 'Análisis de Casos',
         'Normativa y contexto docente - Simulacro premium': 'Marco Normativo del Ejercicio Docente',
         'Simulacro final tipo concurso - Simulacro premium': 'Simulacro Integral del Concurso',
         'Reporte de progreso y plan de mejora - Simulacro premium': 'Informe de Desempeño y Plan de Fortalecimiento',
     }
 
-    RENOMBRES_CATEGORIA = {
-        'Test de Juicios Situacionales (TJS)': 'Prueba de Juicio Situacional (PJS)',
-    }
+    RENOMBRES_CATEGORIA = {}
 
     def handle(self, *args, **options):
         from banco.models import Categoria
@@ -57,16 +56,5 @@ class Command(BaseCommand):
             afectados.update(nombre=nombre_nuevo)
             self.stdout.write(f'Renombrado: "{nombre_viejo}" -> "{nombre_nuevo}" ({count} fila(s))')
             total += count
-
-        # El acronimo oficial de la CNSC es PJS (Prueba de Juicio Situacional),
-        # no TJS. Cubre nombres auxiliares/inactivos (bancos por competencia,
-        # variantes V2) que no estan en el mapa exacto de arriba.
-        restantes = Simulacro.objects.filter(nombre__icontains='TJS')
-        for s in restantes:
-            nuevo = s.nombre.replace('TJS', 'PJS')
-            s.nombre = nuevo
-            s.save(update_fields=['nombre'])
-            self.stdout.write(f'Renombrado (TJS->PJS generico): "{nuevo}"')
-            total += 1
 
         self.stdout.write(self.style.SUCCESS(f'Simulacros renombrados: {total}'))
