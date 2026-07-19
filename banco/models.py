@@ -21,14 +21,15 @@ class Subcategoria(models.Model):
 
 
 class BancoPregunta(models.Model):
+    # Taxonomia oficial de 4 niveles (Constitucion Academica, Cap. 1.4 / 9).
+    # Los valores viejos (basico/intermedio/avanzado/intermedia/alta/premium/
+    # elite) quedan en filas legacy inactivas; no se migran retroactivamente
+    # porque Django no valida choices a nivel de base de datos.
     DIFICULTAD_CHOICES = [
-        ('basico', 'Basico'),
-        ('intermedio', 'Intermedio'),
-        ('avanzado', 'Avanzado'),
-        ('intermedia', 'Intermedia'),
-        ('alta', 'Alta'),
-        ('premium', 'Premium'),
-        ('elite', 'Elite'),
+        ('facil', 'Fácil'),
+        ('medio', 'Medio'),
+        ('alto', 'Alto'),
+        ('muy_alto', 'Muy Alto'),
     ]
 
     AREA_CHOICES = [
@@ -77,11 +78,11 @@ class BancoPregunta(models.Model):
     dificultad = models.CharField(
         max_length=20,
         choices=DIFICULTAD_CHOICES,
-        default='alta'
+        default='alto'
     )
     area = models.CharField(max_length=40, choices=AREA_CHOICES, default='general')
     competencia = models.CharField(max_length=120, blank=True)
-    nivel_dificultad = models.CharField(max_length=20, choices=DIFICULTAD_CHOICES, default='avanzado')
+    nivel_dificultad = models.CharField(max_length=20, choices=DIFICULTAD_CHOICES, default='alto')
     hash_contenido = models.CharField(max_length=40, blank=True, db_index=True)
     tiempo_limite_segundos = models.PositiveIntegerField(default=120)
     es_premium = models.BooleanField(default=True)
