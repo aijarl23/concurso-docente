@@ -5,7 +5,13 @@ from django.db.models import Avg
 from .models import Modulo
 from banco.models import BancoPregunta
 from simulacros.models import Simulacro
+from seguimiento.analitica import analizar_historial
 from seguimiento.models import Intento
+
+# Estos dos tipos de modulo se venden en el catalogo pero no tienen
+# contenido de ruta tematica (temas/subtemas) - su "contenido" es el
+# analisis en vivo del historial del usuario, no texto estatico.
+TIPOS_CON_ANALISIS = {'analisis_desempeno', 'plan_fortalecimiento'}
 
 
 @login_required
@@ -31,4 +37,7 @@ def dashboard(request):
 @login_required
 def detalle_modulo(request, modulo_id):
     modulo = get_object_or_404(Modulo.objects.prefetch_related('temas'), id=modulo_id, activo=True)
-    return render(request, 'contenidos/detalle_modulo.html', {'modulo': modulo})
+    analisis = None
+    if modulo.tipo in TIPOS_CON_ANALISIS:
+        analisis = analizar_historial(request.user)
+    return render(request, 'contenidos/detalle_modulo.html', {'modulo': modulo, 'analisis': analisis})

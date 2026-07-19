@@ -1,4 +1,4 @@
-﻿from django.conf import settings
+from django.conf import settings
 from django.core.management.base import BaseCommand
 from django.urls import reverse
 
@@ -9,7 +9,7 @@ from simulacros.models import Simulacro
 
 
 class Command(BaseCommand):
-    help = 'Verifica configuracion critica, banco de preguntas, pago unico y simulacros activos.'
+    help = 'Verifica configuracion critica, banco de preguntas, pago único y simulacros activos.'
 
     def handle(self, *args, **options):
         issues = []
@@ -186,7 +186,7 @@ class Command(BaseCommand):
         if missing_feedback:
             fail(f'Preguntas sin justificacion tecnica: {missing_feedback}')
         else:
-            ok('Retroalimentacion tecnica registrada en todas las preguntas')
+            ok('Retroalimentación tecnica registrada en todas las preguntas')
 
         if simulacros >= 12:
             ok(f'Simulacros activos: {simulacros}')
@@ -197,9 +197,9 @@ class Command(BaseCommand):
         loaded_areas = set(Simulacro.objects.filter(activo=True, tipo='area').values_list('area', flat=True))
         missing_areas = sorted(expected_areas - loaded_areas)
         if area_simulacros >= 5 and not missing_areas:
-            ok(f'Simulacros por area: {area_simulacros}')
+            ok(f'Simulacros por área: {area_simulacros}')
         else:
-            fail(f'Simulacros por area insuficientes: {area_simulacros}. Faltan: {", ".join(missing_areas)}')
+            fail(f'Simulacros por área insuficientes: {area_simulacros}. Faltan: {", ".join(missing_areas)}')
 
         active_products = Product.objects.filter(active=True).select_related('module')
         elite_product = active_products.filter(module__slug='elite-cnsc-2026').first()

@@ -8,10 +8,20 @@
         <div>
             <p class="section-kicker mb-1">Historial de estudio</p>
             <h1 class="fw-bold mb-2">Mi progreso</h1>
-            <p class="text-muted mb-0">Seguimiento del avance por módulos completados y resultados registrados.</p>
+            <p class="text-muted mb-0">Seguimiento del avance por módulos, tendencia de puntaje y desempeño por competencia.</p>
         </div>
         <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-primary"><i class="bi bi-play-circle" aria-hidden="true"></i> Continuar simulacros</a>
     </div>
+
+    {% if intentos %}
+        {{ tendencia_data|json_script:"tendencia-chart-data" }}
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="h6 text-muted mb-3">Tendencia de puntaje</h2>
+                <canvas id="tendencia-chart" height="80" role="img" aria-label="Gráfico de tendencia de puntaje en el tiempo"></canvas>
+            </div>
+        </div>
+    {% endif %}
 
     {% if progresos %}
         {{ chart_data|json_script:"progreso-chart-data" }}
@@ -21,7 +31,7 @@
                 <canvas id="progreso-chart" height="90" role="img" aria-label="Gráfico de avance por módulo"></canvas>
             </div>
         </div>
-        <div class="row g-3">
+        <div class="row g-3 mb-4">
             {% for progreso in progresos %}
             <div class="col-md-6">
                 <div class="card border-0 shadow-sm h-100 module-card">
@@ -38,40 +48,119 @@
     {% else %}
         {% include 'partials/_empty_state.html' with message="Aún no tienes progreso registrado. Presenta un simulacro para empezar a medir tu avance." icon="graph-up" %}
     {% endif %}
+
+    {% if analisis.por_competencia %}
+    <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+            <h2 class="h6 text-muted mb-3">Desempeño acumulado por competencia</h2>
+            <div class="table-responsive">
+                <table class="table table-sm align-middle stack-table mb-0">
+                    <thead><tr><th>Competencia</th><th>Aciertos</th><th>Total</th><th>%</th></tr></thead>
+                    <tbody>
+                    {% for c in analisis.por_competencia %}
+                        <tr>
+                            <td data-label="Competencia">{{ c.competencia }}</td>
+                            <td data-label="Aciertos">{{ c.correctas }}</td>
+                            <td data-label="Total">{{ c.total }}</td>
+                            <td data-label="%">
+                                <span class="badge {% if c.porcentaje >= 75 %}text-bg-success{% elif c.porcentaje < 60 %}text-bg-danger{% else %}text-bg-warning{% endif %}">{{ c.porcentaje }}%</span>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+            <h2 class="h6 text-muted mb-3">Historial de intentos</h2>
+            {% if intentos %}
+            <div class="table-responsive">
+                <table class="table table-sm align-middle stack-table mb-0">
+                    <thead><tr><th>Simulacro</th><th>Fecha</th><th>Puntaje</th><th></th></tr></thead>
+                    <tbody>
+                    {% for intento in intentos %}
+                        <tr>
+                            <td data-label="Simulacro">{{ intento.simulacro.nombre }}</td>
+                            <td data-label="Fecha">{{ intento.fecha_finalizacion|date:"d/m/Y H:i" }}</td>
+                            <td data-label="Puntaje">{{ intento.puntaje_obtenido }}%</td>
+                            <td><a href="{% url 'simulacros:resultado_simulacro' intento.id %}" class="btn btn-sm btn-outline-primary">Ver resultado</a></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            {% include 'partials/_empty_state.html' with message="Todavía no has completado ningún simulacro." icon="clock-history" %}
+            {% endif %}
+        </div>
+    </div>
 </div>
 {% endblock %}
 
 {% block extra_js %}
-{% if progresos %}
 <script>
 (function () {
-    var data = JSON.parse(document.getElementById('progreso-chart-data').textContent);
-    var canvas = document.getElementById('progreso-chart');
-    if (!canvas || typeof Chart === 'undefined') return;
     var isDark = document.documentElement.dataset.theme !== 'light';
     var gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
     var textColor = isDark ? '#e5e7eb' : '#334155';
-    new Chart(canvas.getContext('2d'), {
-        type: 'bar',
-        data: {
-            labels: data.labels,
-            datasets: [{
-                label: 'Avance (%)',
-                data: data.valores,
-                backgroundColor: 'rgba(99, 102, 241, 0.6)',
-                borderRadius: 6,
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: { legend: { display: false } },
-            scales: {
-                y: { beginAtZero: true, max: 100, ticks: { color: textColor }, grid: { color: gridColor } },
-                x: { ticks: { color: textColor }, grid: { display: false } }
+
+    var tendenciaEl = document.getElementById('tendencia-chart-data');
+    var tendenciaCanvas = document.getElementById('tendencia-chart');
+    if (tendenciaEl && tendenciaCanvas && typeof Chart !== 'undefined') {
+        var tendencia = JSON.parse(tendenciaEl.textContent);
+        new Chart(tendenciaCanvas.getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: tendencia.labels,
+                datasets: [{
+                    label: 'Puntaje (%)',
+                    data: tendencia.valores,
+                    borderColor: 'rgba(99, 102, 241, 1)',
+                    backgroundColor: 'rgba(99, 102, 241, 0.15)',
+                    tension: 0.3,
+                    fill: true,
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, max: 100, ticks: { color: textColor }, grid: { color: gridColor } },
+                    x: { ticks: { color: textColor }, grid: { display: false } }
+                }
             }
-        }
-    });
+        });
+    }
+
+    var progresoEl = document.getElementById('progreso-chart-data');
+    var progresoCanvas = document.getElementById('progreso-chart');
+    if (progresoEl && progresoCanvas && typeof Chart !== 'undefined') {
+        var data = JSON.parse(progresoEl.textContent);
+        new Chart(progresoCanvas.getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: data.labels,
+                datasets: [{
+                    label: 'Avance (%)',
+                    data: data.valores,
+                    backgroundColor: 'rgba(99, 102, 241, 0.6)',
+                    borderRadius: 6,
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, max: 100, ticks: { color: textColor }, grid: { color: gridColor } },
+                    x: { ticks: { color: textColor }, grid: { display: false } }
+                }
+            }
+        });
+    }
 })();
 </script>
-{% endif %}
 {% endblock %}

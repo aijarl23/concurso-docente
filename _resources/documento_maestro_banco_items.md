@@ -372,7 +372,7 @@ Esta es la **columna vertebral de la plataforma**: cada fila representa una cade
 
 ### 8.4 Reglas para elaborar distractores
 1. Los 4 deben ser plausibles — ninguno absurdo o descartable sin leer el caso.
-2. Cada distractor representa un error de razonamiento documentado: pasividad/evasión, imposición sin proceso, omisión de responsabilidad, generalización indebida, confusión de jerarquía normativa, sesgo de confirmación.
+2. Cada distractor representa un error de razonamiento documentado: pasividad/evasión, imposición sin proceso, omisión de responsabilidad, generalización indebida, confusión de jerarquía normativa, sesgo de confirmación. **Para ítems construidos bajo el Principio de la Mejor Decisión Profesional (8.10), esta regla se refina**: el distractor no tiene que ser un error de razonamiento — puede ser una decisión profesionalmente válida pero de menor calidad relativa (parcial, menos fundamentada, o que optimiza un criterio secundario sobre el principal).
 3. Prohibido reciclar el mismo texto de distractor entre ítems de competencias distintas (defecto real ya detectado y corregido — 35 ítems de Análisis de Casos compartían solo 2 plantillas entre 6 competencias).
 4. Longitud y complejidad gramatical comparables entre las 4 opciones.
 5. Opciones mutuamente excluyentes.
@@ -405,6 +405,36 @@ Ver Capítulo 10 (Manual de Estilo) — la totalidad de las reglas de estilo apl
 8. Doble negación no justificada por el formato.
 9. Justificación que solo explica la respuesta correcta y omite los distractores.
 10. Ítems fuera del rango de extensión declarado (8.2).
+
+### 8.9 Principio de Competencias Integradas
+
+Ninguna pregunta del Banco Oficial de Ítems evalúa una única habilidad de manera aislada. Todo ítem debe integrar, como mínimo, **dos competencias**, y **preferiblemente tres** cuando la complejidad del caso lo permita sin forzar el constructo. Esta regla nace de la constatación de que un ítem de una sola competencia — por ejemplo, inferencia textual pura — puede superar toda la validación mecánica y aun así medir comprensión lectora básica en lugar de desempeño profesional docente.
+
+Combinaciones válidas (lista ilustrativa, no exhaustiva — cualquier módulo puede combinarse con cualquier otro cuando el caso lo sustente genuinamente):
+- Lectura crítica + juicio profesional.
+- Lectura crítica + interpretación normativa.
+- Lectura crítica + evaluación formativa.
+- Lectura crítica + toma de decisiones.
+- Lectura crítica + liderazgo pedagógico.
+- Lectura crítica + gestión escolar.
+- Lectura crítica + inclusión.
+- Lectura crítica + convivencia escolar.
+- Lectura crítica + análisis curricular.
+- Lectura crítica + ética profesional.
+
+La(s) competencia(s) integrada(s) en cada ítem deben quedar explícitas en la ficha de trazabilidad del ítem (Capítulo 12), no solo inferirse del texto. El modelo de datos actual no tiene un campo dedicado para declarar la combinación de competencias integradas por ítem; se requiere, en una fase de implementación posterior, un campo estructurado (lista o texto controlado) que registre explícitamente esa combinación, de forma análoga a `proceso_cognitivo`.
+
+### 8.10 Principio de la Mejor Decisión Profesional
+
+Las cuatro opciones de todo ítem deben representar **decisiones técnicamente posibles** dentro del contexto presentado. La diferencia entre ellas no debe radicar en que unas sean evidentemente correctas y otras evidentemente incorrectas o absurdas — eso es precisamente lo que la Validación Cognitiva del Ítem (Capítulo 11.0, criterios 3 y 4) prohíbe. La diferencia debe estar en el **nivel de calidad profesional de la decisión**: qué tan sólida, completa, fundamentada y coherente es cada una con los principios pedagógicos, normativos, éticos y administrativos aplicables al caso.
+
+La respuesta correcta es la decisión que mejor satisface, de manera integral, esos cuatro planos (pedagógico, normativo, ético, administrativo) simultáneamente — no la única opción compatible con el texto ni la única libre de defectos evidentes. Los distractores son decisiones reales que un profesional podría tomar de buena fe, pero que:
+- Atienden solo una parte de los criterios aplicables y desatienden otra (por ejemplo, resuelven lo normativo pero ignoran lo pedagógico, o viceversa).
+- Priorizan un criterio secundario sobre el principal sin justificación suficiente.
+- Son procedimentalmente correctas pero incompletas frente a la evidencia ya disponible en el caso.
+- Anticipan un riesgo razonable pero lo resuelven de forma desproporcionada frente a lo que el caso exige.
+
+Este principio obliga al aspirante a comparar alternativas, priorizar criterios en conflicto, ponderar consecuencias y justificar mentalmente por qué una opción supera a las demás — no a reconocer cuál opción "no contradice el texto". Aplica de forma transversal a todos los módulos con banco de ítems, no solo a Análisis de Casos (que ya usa idoneidad graduada 0-4 desde el Capítulo 8.5); en módulos con `tipo_item='estandar'`, el principio se aplica en el diseño de las opciones aunque el modelo de puntuación siga siendo binario.
 
 ---
 
@@ -494,8 +524,26 @@ Solo en inicio de oración y nombres propios/siglas institucionales (SIEE, PEI, 
 
 Proceso obligatorio que todo ítem debe superar antes de poder activarse (`activa=True`), sin importar la fase de crecimiento del módulo.
 
+### 11.0 Validación Cognitiva del Ítem (etapa previa y bloqueante)
+
+Ningún ítem puede entrar a las etapas 1-10 de este capítulo sin superar primero esta etapa. Nace del hallazgo de que la validación mecánica (ortografía, longitud, trazabilidad, no-duplicidad) puede aprobarse por completo y aun así producir un ítem de comprensión lectora básica, no de una prueba de selección docente de alta complejidad. La validación mecánica certifica que el ítem está bien construido; la Validación Cognitiva certifica que el ítem es difícil por las razones correctas.
+
+Un ítem debe cumplir, sin excepción, los ocho criterios siguientes. El incumplimiento de cualquiera de ellos rechaza el ítem de forma automática, sin pasar a las etapas 1-10, y activa la regla de reconstrucción de 11.2 (se descarta y se reconstruye desde el caso, no se corrige).
+
+1. La respuesta correcta no puede deducirse literalmente del texto.
+2. La pregunta deberá exigir integrar dos o más procesos cognitivos al mismo tiempo (por ejemplo: lectura crítica + juicio profesional, lectura crítica + análisis pedagógico, lectura crítica + interpretación normativa).
+3. Todos los distractores deberán representar decisiones o interpretaciones técnicamente plausibles.
+4. Ningún distractor podrá construirse únicamente invirtiendo el sentido del texto, exagerando una afirmación o contradiciendo explícitamente la información presentada.
+5. Al menos dos opciones deberán parecer razonables para un aspirante bien preparado, de manera que la selección de la mejor respuesta requiera comparar, ponderar y justificar mentalmente cada alternativa.
+6. La respuesta correcta deberá ser la mejor decisión posible, no simplemente la única que coincide con el texto.
+7. El caso deberá incorporar suficiente complejidad contextual para impedir que la respuesta se obtenga mediante una lectura superficial.
+8. Cada pregunta deberá parecer elaborada por un comité de expertos en evaluación educativa y medición por competencias, no por un generador automático de preguntas.
+
+Esta etapa es de naturaleza distinta a las etapas 1-10: no se mide con la rúbrica de 100 puntos del Capítulo 9 (esa rúbrica asume que el constructo ya es adecuadamente difícil y evalúa la ejecución técnica sobre ese constructo). La Validación Cognitiva es un filtro binario previo — apto / no apto — que determina si el ítem merece siquiera ser evaluado con la rúbrica.
+
 | # | Etapa | Qué revisa | Criterio de aprobación | Dimensión de rúbrica asociada (Cap. 9) |
 |---|---|---|---|---|
+| 0 | Validación Cognitiva del Ítem | Los 8 criterios de 11.0 | Cumplimiento total de los 8 criterios | (previa a la rúbrica) |
 | 1 | Revisión psicométrica | Constructo único, dificultad coherente, independencia | ≥12/15 en Dimensión 1 | 1 |
 | 2 | Revisión pedagógica | El caso exige la competencia declarada, no conocimiento adyacente | ≥12/15 en Dimensión 2 | 2 |
 | 3 | Revisión normativa | Cita correcta, vigente y en jerarquía correcta | ≥8/10 en Dimensión 4 | 4 |

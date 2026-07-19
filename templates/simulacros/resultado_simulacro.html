@@ -39,6 +39,37 @@
         </div>
     </section>
 
+    {% if diagnostico %}
+    <section class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+            <p class="section-kicker mb-1">Diagnóstico Inicial</p>
+            <h2 class="h5 mb-3">Tu ruta de estudio recomendada</h2>
+
+            {% if diagnostico.ruta_recomendada %}
+            <p class="text-muted">Con base en tus resultados por competencia, este es el orden sugerido para enfocar tu estudio, de la brecha más urgente a la menos urgente:</p>
+            <ol class="ruta-recomendada-list mb-3">
+                {% for paso in diagnostico.ruta_recomendada %}
+                <li class="mb-2">
+                    <strong>{{ paso.modulo.titulo }}</strong>
+                    <span class="text-muted"> — {{ paso.competencia }} ({{ paso.porcentaje }}% de aciertos)</span>
+                    <a href="{% url 'detalle_modulo' paso.modulo.id %}" class="btn btn-sm btn-outline-primary ms-2">Ver módulo</a>
+                </li>
+                {% endfor %}
+            </ol>
+            {% else %}
+            <div class="alert alert-success mb-3">No se detectaron brechas claras en este diagnóstico. Puedes continuar con la ruta general de módulos.</div>
+            {% endif %}
+
+            {% if diagnostico.fortalezas %}
+            <p class="mb-1"><strong>Fortalezas detectadas:</strong>
+                {% for f in diagnostico.fortalezas %}{{ f.competencia }} ({{ f.porcentaje }}%){% if not forloop.last %}, {% endif %}{% endfor %}
+            </p>
+            {% endif %}
+            <a href="{% url 'dashboard' %}" class="btn btn-primary mt-2"><i class="bi bi-signpost-split" aria-hidden="true"></i> Ir a la ruta de módulos</a>
+        </div>
+    </section>
+    {% endif %}
+
     <h2 class="h5">Desempeno por competencia</h2>
     <div class="table-responsive mb-4">
         <table class="table table-sm align-middle stack-table">

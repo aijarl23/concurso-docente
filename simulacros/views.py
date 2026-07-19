@@ -14,6 +14,7 @@ from django.utils import timezone
 from access_control.services import user_has_full_access, user_has_module_access
 from commerce.models import Product
 from contenidos.models import Modulo
+from seguimiento.analitica import analizar_intento
 from seguimiento.models import Intento, ProgresoModulo, RespuestaIntento
 from .models import Simulacro
 
@@ -281,10 +282,16 @@ def resultado_simulacro(request, intento_id):
         })
 
     email_console_mode = 'console' in getattr(settings, 'EMAIL_BACKEND', '').lower()
+
+    diagnostico = None
+    if intento.simulacro.tipo == 'diagnostico':
+        diagnostico = analizar_intento(intento)
+
     return render(request, 'simulacros/resultado_simulacro.html', {
         'intento': intento,
         'respuestas': respuestas,
         'revision_preguntas': revision,
         'resumen_competencias': dict(resumen),
         'email_console_mode': email_console_mode,
+        'diagnostico': diagnostico,
     })

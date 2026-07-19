@@ -41,7 +41,7 @@ def grant_module_access(user, module, access_type='combo', expires_at=None, note
             'access_type': 'combo',
             'status': 'active',
             'expires_at': expires_at,
-            'notes': notes or 'Acceso completo por pago unico',
+            'notes': notes or 'Acceso completo por pago único',
         },
     )
     user.estado_pago = 'activo'

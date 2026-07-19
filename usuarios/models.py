@@ -1,4 +1,4 @@
-﻿from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 
@@ -6,16 +6,16 @@ class Usuario(AbstractUser):
     """Usuario extendido con datos del concurso docente y acceso premium."""
 
     AREA_CHOICES = [
-        ('matematicas', 'Matematicas'),
+        ('matematicas', 'Matemáticas'),
         ('lenguaje', 'Lenguaje'),
         ('ciencias_naturales', 'Ciencias Naturales'),
         ('ciencias_sociales', 'Ciencias Sociales'),
-        ('ingles', 'Ingles'),
+        ('ingles', 'Inglés'),
         ('preescolar', 'Preescolar'),
         ('primaria', 'Primaria'),
         ('educacion_fisica', 'Educacion Fisica'),
         ('artistica', 'Educacion Artistica'),
-        ('tecnologia', 'Tecnologia e Informatica'),
+        ('tecnologia', 'Tecnología e Informática'),
         ('otro', 'Otro'),
     ]
 

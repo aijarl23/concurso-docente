@@ -10,17 +10,74 @@
         <p>{{ modulo.descripcion }}</p>
     </section>
 
-    <section class="topic-grid" aria-label="Ruta tematica">
-        {% for tema in modulo.temas.all %}
-        {% if tema.activo %}
-        <article class="topic-card">
-            <span class="topic-order">{{ tema.orden }}</span>
-            <h2>{{ tema.titulo }}</h2>
-            <p>{{ tema.descripcion }}</p>
-        </article>
+    {% if modulo.tipo == 'analisis_desempeno' %}
+        {% if analisis.por_competencia %}
+        <section class="card border-0 shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="h6 text-muted mb-3">Desempeño por competencia (todo tu historial)</h2>
+                <div class="table-responsive">
+                    <table class="table table-sm align-middle stack-table mb-0">
+                        <thead><tr><th>Competencia</th><th>Aciertos</th><th>Total</th><th>%</th></tr></thead>
+                        <tbody>
+                        {% for c in analisis.por_competencia %}
+                            <tr>
+                                <td data-label="Competencia">{{ c.competencia }}</td>
+                                <td data-label="Aciertos">{{ c.correctas }}</td>
+                                <td data-label="Total">{{ c.total }}</td>
+                                <td data-label="%"><span class="badge {% if c.porcentaje >= 75 %}text-bg-success{% elif c.porcentaje < 60 %}text-bg-danger{% else %}text-bg-warning{% endif %}">{{ c.porcentaje }}%</span></td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% if analisis.fortalezas %}
+                <p class="mt-3 mb-1"><strong>Fortalezas:</strong> {% for f in analisis.fortalezas %}{{ f.competencia }} ({{ f.porcentaje }}%){% if not forloop.last %}, {% endif %}{% endfor %}</p>
+                {% endif %}
+                {% if analisis.brechas %}
+                <p class="mb-0"><strong>Brechas:</strong> {% for b in analisis.brechas %}{{ b.competencia }} ({{ b.porcentaje }}%){% if not forloop.last %}, {% endif %}{% endfor %}</p>
+                {% endif %}
+            </div>
+        </section>
+        {% else %}
+        {% include 'partials/_empty_state.html' with message="Todavía no tienes suficientes intentos completados para calcular tu análisis de desempeño. Presenta al menos un simulacro." icon="bar-chart-line" %}
         {% endif %}
-        {% endfor %}
-    </section>
+
+    {% elif modulo.tipo == 'plan_fortalecimiento' %}
+        {% if analisis.ruta_recomendada %}
+        <section class="card border-0 shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="h6 text-muted mb-3">Tu plan de fortalecimiento</h2>
+                <p class="text-muted">Orden sugerido de estudio según tus brechas más recientes, de mayor a menor prioridad:</p>
+                <ol class="ruta-recomendada-list mb-0">
+                    {% for paso in analisis.ruta_recomendada %}
+                    <li class="mb-2">
+                        <strong>{{ paso.modulo.titulo }}</strong>
+                        <span class="text-muted"> — {{ paso.competencia }} ({{ paso.porcentaje }}% de aciertos)</span>
+                        <a href="{% url 'detalle_modulo' paso.modulo.id %}" class="btn btn-sm btn-outline-primary ms-2">Ver módulo</a>
+                    </li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </section>
+        {% elif analisis.por_competencia %}
+        {% include 'partials/_empty_state.html' with message="No se detectan brechas claras en tu historial actual. Sigue con la ruta general de módulos." icon="check-circle" variant="success" %}
+        {% else %}
+        {% include 'partials/_empty_state.html' with message="Todavía no tienes intentos completados para generar un plan. Presenta al menos un simulacro, idealmente el Diagnóstico Inicial." icon="signpost-split" %}
+        {% endif %}
+
+    {% else %}
+        <section class="topic-grid" aria-label="Ruta tematica">
+            {% for tema in modulo.temas.all %}
+            {% if tema.activo %}
+            <article class="topic-card">
+                <span class="topic-order">{{ tema.orden }}</span>
+                <h2>{{ tema.titulo }}</h2>
+                <p>{{ tema.descripcion }}</p>
+            </article>
+            {% endif %}
+            {% endfor %}
+        </section>
+    {% endif %}
 
     <section class="module-actions">
         <a href="{% url 'dashboard' %}" class="btn btn-outline-secondary"><i class="bi bi-arrow-left" aria-hidden="true"></i> Volver al panel</a>
