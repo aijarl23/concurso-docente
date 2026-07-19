@@ -100,6 +100,35 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument('--check-only', action='store_true', help='Solo reporta problemas sin modificar datos.')
 
+    def _reparar_tipo_modulo(self, tipo_corrupto, tipo_canonico):
+        corrupta = Modulo.objects.filter(tipo=tipo_corrupto).first()
+        if not corrupta:
+            return 0
+
+        canonica = Modulo.objects.filter(tipo=tipo_canonico).first()
+        if not canonica:
+            corrupta.tipo = tipo_canonico
+            corrupta.save(update_fields=['tipo'])
+            return 1
+
+        # Ya existen las dos filas (canonica creada por seed_modulos /
+        # apply_market_ready_upgrade en un deploy anterior a este fix): se
+        # conserva la canonica y se reasigna cualquier historial real que
+        # dependa de la duplicada antes de borrarla.
+        from contenidos.models import Tema
+        from seguimiento.models import ProgresoModulo
+
+        temas_movidos = Tema.objects.filter(modulo=corrupta).update(modulo=canonica)
+        progreso_movido = ProgresoModulo.objects.filter(modulo=corrupta).update(modulo=canonica)
+        if temas_movidos or progreso_movido:
+            self.stdout.write(
+                f'  Fusionando Modulo tipo="{tipo_corrupto}" (id={corrupta.id}) -> '
+                f'"{tipo_canonico}" (id={canonica.id}): {temas_movidos} tema(s), '
+                f'{progreso_movido} progreso(s) reasignados.'
+            )
+        corrupta.delete()
+        return 1
+
     def handle(self, *args, **options):
         check_only = options['check_only']
         scanned = 0
@@ -113,10 +142,16 @@ class Command(BaseCommand):
         # rompiendo silenciosamente cualquier comparacion `tipo == 'analisis_desempeno'`
         # en el codigo (vistas, TIPOS_CON_ANALISIS, etc.). Fix explicito y de una
         # sola vez para autocurar produccion en el proximo deploy.
+        #
+        # 'tipo' tiene unique=True: si el deploy anterior ya alcanzo a crear la
+        # fila canonica (seed_modulos/apply_market_ready_upgrade) mientras la
+        # fila con tilde seguia viva, un UPDATE directo choca contra el UNIQUE.
+        # En ese caso se fusiona - se reasigna el historial real (Tema,
+        # ProgresoModulo) de la fila con tilde hacia la canonica y se borra la
+        # duplicada - en vez de solo renombrar.
         if not check_only:
-            corregidas = 0
-            corregidas += Modulo.objects.filter(tipo='análisis_desempeno').update(tipo='analisis_desempeno')
-            corregidas += Modulo.objects.filter(tipo='gestión_escolar').update(tipo='gestion_escolar')
+            corregidas = self._reparar_tipo_modulo('análisis_desempeno', 'analisis_desempeno')
+            corregidas += self._reparar_tipo_modulo('gestión_escolar', 'gestion_escolar')
             if corregidas:
                 self.stdout.write(self.style.WARNING(f'Corregidas {corregidas} claves Modulo.tipo con tildes indebidas.'))
 
