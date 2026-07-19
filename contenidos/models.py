@@ -3,10 +3,10 @@ from django.db import models
 
 class Modulo(models.Model):
     TIPOS = [
-        ('lectura_tjs', 'Lectura Critica y TJS'),
-        ('perfil_docente', 'Perfil Docente'),
-        ('pedagogico', 'Componente Pedagogico'),
-        ('psicotecnico', 'Psicotecnico'),
+        ('lectura_tjs', 'Lectura Crítica'),
+        ('perfil_docente', 'Rol Docente'),
+        ('pedagogico', 'Competencias Pedagógicas'),
+        ('psicotecnico', 'Análisis de Casos'),
     ]
 
     titulo = models.CharField(max_length=200)

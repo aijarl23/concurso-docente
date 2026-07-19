@@ -39,9 +39,9 @@ class BancoPregunta(models.Model):
         ('ciencias_naturales', 'Ciencias Naturales'),
         ('ciencias_sociales', 'Ciencias Sociales'),
         ('lectura_critica', 'Lectura Crítica'),
-        ('perfil_docente', 'Perfil Docente'),
-        ('componente_pedagogico', 'Componente Pedagogico'),
-        ('psicotecnico', 'Psicotecnico'),
+        ('perfil_docente', 'Rol Docente'),
+        ('componente_pedagogico', 'Competencias Pedagógicas'),
+        ('psicotecnico', 'Análisis de Casos'),
     ]
 
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)

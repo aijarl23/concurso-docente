@@ -4,7 +4,7 @@ from contenidos.models import Modulo, Tema
 
 MODULOS_DATA = [
     {
-        'titulo': 'Evaluación Diagnóstica de Entrada',
+        'titulo': 'Diagnóstico Inicial',
         'tipo': 'diagnostico_inicial',
         'descripcion': 'Línea base para identificar brechas reales antes de iniciar la preparación.',
         'temas': [
@@ -15,7 +15,7 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Componente de Lectura Crítica',
+        'titulo': 'Lectura Crítica',
         'tipo': 'lectura_critica_aplicada',
         'descripcion': 'Inferencia, tesis, intención comunicativa y evaluación de argumentos en textos complejos.',
         'temas': [
@@ -26,20 +26,42 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Prueba Pedagógica - Enseñanza, Formación y Valoración',
+        'titulo': 'Normatividad Educativa',
+        'tipo': 'normativa_contexto',
+        'descripcion': 'Aplicación contextual de la Ley 115, el Decreto 1278, el Decreto 1290 y la Ley 1620 a casos reales.',
+        'temas': [
+            ('Estatuto docente', 'Uso aplicado del marco de profesionalizacion docente.'),
+            ('Ley General de Educacion', 'Fines, responsabilidades y sentido pedagogico.'),
+            ('Convivencia escolar', 'Prevencion, corresponsabilidad y rutas de actuacion.'),
+            ('Decreto 1290 y SIEE', 'Evaluacion institucional y debido proceso.'),
+        ],
+    },
+    {
+        'titulo': 'Inclusión Educativa',
+        'tipo': 'inclusion_educativa',
+        'descripcion': 'Barreras de aprendizaje, ajustes razonables, PIAR y Diseño Universal para el Aprendizaje.',
+        'temas': [
+            ('DUA aplicado', 'Multiples formas de representacion, accion y motivacion.'),
+            ('PIAR y ajustes razonables', 'Planeacion individual con apoyos verificables.'),
+            ('Barreras de participacion', 'Identificacion y remocion de barreras reales.'),
+            ('Decreto 1421', 'Marco de educacion inclusiva aplicado a casos.'),
+        ],
+    },
+    {
+        'titulo': 'Competencias Pedagógicas',
         'tipo': 'competencias_pedagogicas',
-        'descripcion': 'Casos de planeación, evaluación formativa, inclusión, didáctica y gestión del aula.',
+        'descripcion': 'Casos de planeación curricular, evaluación formativa y didáctica situada en el aula.',
         'temas': [
             ('Planeacion curricular', 'Coherencia entre objetivos, desempenos, actividades y evaluacion.'),
             ('Evaluacion formativa', 'Uso de evidencias y retroalimentacion para mejorar aprendizajes.'),
-            ('Inclusion y DUA', 'Barreras, ajustes razonables y participacion efectiva.'),
             ('Didactica situada', 'Estrategias pertinentes segun contexto y necesidad.'),
+            ('Gestion del aula', 'Clima, participacion y manejo de conflictos en clase.'),
         ],
     },
     {
         'titulo': 'Análisis de Casos',
         'tipo': 'competencias_tjs',
-        'descripcion': 'Análisis de casos y competencias comportamentales: convivencia, liderazgo, comunicación y trabajo colaborativo.',
+        'descripcion': 'Dilemas auténticos del ejercicio docente: convivencia, liderazgo, comunicación y trabajo colaborativo.',
         'temas': [
             ('Comunicacion asertiva', 'Respuesta profesional ante tension y desacuerdo.'),
             ('Liderazgo', 'Actuacion orientada a acuerdos, cuidado y mejora institucional.'),
@@ -48,18 +70,18 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Marco Normativo del Ejercicio Docente',
-        'tipo': 'normativa_contexto',
-        'descripcion': 'Aplicación contextual de normativa educativa, inclusión, convivencia y funciones docentes.',
+        'titulo': 'Gestión Escolar',
+        'tipo': 'gestion_escolar',
+        'descripcion': 'Gobierno escolar, Proyecto Educativo Institucional y gestiones institucionales del MEN.',
         'temas': [
-            ('Estatuto docente', 'Uso aplicado del marco de profesionalizacion docente.'),
-            ('Ley General de Educacion', 'Fines, responsabilidades y sentido pedagogico.'),
-            ('Convivencia escolar', 'Prevencion, corresponsabilidad y rutas de actuacion.'),
-            ('Inclusion y ajustes razonables', 'Garantia del derecho a aprender con trazabilidad.'),
+            ('Gobierno escolar', 'Consejo academico, consejo directivo y personero.'),
+            ('PEI y SIEE institucional', 'Coherencia entre horizonte institucional y evaluacion.'),
+            ('Gestion academica y directiva', 'Decisiones de aula articuladas con la institucion.'),
+            ('Gestion comunitaria', 'Relacion con familias y contexto local.'),
         ],
     },
     {
-        'titulo': 'Componente Disciplinar por Área de Conocimiento',
+        'titulo': 'Competencias Disciplinares',
         'tipo': 'simulacros_area',
         'descripcion': 'Entrenamiento por disciplina con lectura crítica, datos y situaciones contextualizadas.',
         'temas': [
@@ -70,25 +92,36 @@ MODULOS_DATA = [
         ],
     },
     {
-        'titulo': 'Simulacro Integral del Concurso',
+        'titulo': 'Simulacro Integral',
         'tipo': 'simulacro_final',
-        'descripcion': 'Prueba integral con lectura crítica, pedagogía, normativa, PJS y razonamiento disciplinar aplicado.',
+        'descripcion': 'Prueba integral con lectura crítica, pedagogía, normativa, análisis de casos y razonamiento disciplinar.',
         'temas': [
             ('Gestion del tiempo', 'Estrategia para responder bajo limite real.'),
-            ('Integracion de competencias', 'Cruce de lectura, criterio pedagogico y juicio situacional.'),
+            ('Integracion de competencias', 'Cruce de lectura, criterio pedagogico y analisis de casos.'),
             ('Analisis de resultados', 'Lectura tecnica de aciertos, errores y tendencias.'),
             ('Estrategia de cierre', 'Plan final de preparacion antes de la prueba.'),
         ],
     },
     {
-        'titulo': 'Informe de Desempeño y Plan de Fortalecimiento',
-        'tipo': 'reporte_mejora',
-        'descripcion': 'Conversión de resultados en una ruta concreta de refuerzo, seguimiento y mejora.',
+        'titulo': 'Análisis del Desempeño',
+        'tipo': 'analisis_desempeno',
+        'descripcion': 'Lectura técnica de resultados por competencia e identificación de patrones de error.',
         'temas': [
             ('Lectura de resultados', 'Interpretacion de desempeno por competencia.'),
+            ('Patrones de error', 'Identificacion de errores recurrentes y su causa.'),
             ('Priorizacion de brechas', 'Seleccion de focos segun impacto y urgencia.'),
+            ('Comparacion con diagnostico inicial', 'Medicion real del avance logrado.'),
+        ],
+    },
+    {
+        'titulo': 'Plan de Fortalecimiento',
+        'tipo': 'plan_fortalecimiento',
+        'descripcion': 'Traduce el análisis de desempeño en un plan de estudio semanal con seguimiento verificable.',
+        'temas': [
             ('Plan semanal', 'Organizacion de sesiones de estudio por evidencia.'),
-            ('Seguimiento de mejora', 'Revision de avances y ajuste de estrategia.'),
+            ('Practica deliberada', 'Ejercicios enfocados en la brecha identificada.'),
+            ('Seguimiento de avance', 'Revision periodica de progreso real.'),
+            ('Estrategia de cierre', 'Ajuste final antes de la prueba.'),
         ],
     },
 ]

@@ -16,17 +16,27 @@ class Command(BaseCommand):
         # otras seguian sin corregir - sin las dos variantes, el filtro por
         # nombre exacto no encuentra la fila y queda huerfana (paso con
         # "Diagnostico" y "Lectura critica" en el primer intento de este rename).
-        'Diagnostico inicial - Simulacro premium': 'Evaluación Diagnóstica de Entrada',
-        'Diagnóstico inicial - Simulacro premium': 'Evaluación Diagnóstica de Entrada',
-        'Lectura critica aplicada - Simulacro premium': 'Componente de Lectura Crítica',
-        'Lectura crítica aplicada - Simulacro premium': 'Componente de Lectura Crítica',
-        'Competencias pedagogicas - Simulacro premium': 'Prueba Pedagógica - Enseñanza, Formación y Valoración',
-        'Competencias pedagógicas - Simulacro premium': 'Prueba Pedagógica - Enseñanza, Formación y Valoración',
+        'Diagnostico inicial - Simulacro premium': 'Diagnóstico Inicial',
+        'Diagnóstico inicial - Simulacro premium': 'Diagnóstico Inicial',
+        'Lectura critica aplicada - Simulacro premium': 'Lectura Crítica',
+        'Lectura crítica aplicada - Simulacro premium': 'Lectura Crítica',
+        'Competencias pedagogicas - Simulacro premium': 'Competencias Pedagógicas',
+        'Competencias pedagógicas - Simulacro premium': 'Competencias Pedagógicas',
         'Competencias comportamentales / TJS - Simulacro premium': 'Análisis de Casos',
         'PJS - Prueba de Juicio Situacional': 'Análisis de Casos',
-        'Normativa y contexto docente - Simulacro premium': 'Marco Normativo del Ejercicio Docente',
-        'Simulacro final tipo concurso - Simulacro premium': 'Simulacro Integral del Concurso',
-        'Reporte de progreso y plan de mejora - Simulacro premium': 'Informe de Desempeño y Plan de Fortalecimiento',
+        'Normativa y contexto docente - Simulacro premium': 'Normatividad Educativa',
+        'Simulacro final tipo concurso - Simulacro premium': 'Simulacro Integral',
+        'Reporte de progreso y plan de mejora - Simulacro premium': 'Análisis del Desempeño',
+        # Segunda ronda: nombres institucionales largos (primera version del
+        # rename, ya aplicados en produccion) -> version definitiva de maximo
+        # 3 palabras, pedida explicitamente por el usuario.
+        'Evaluación Diagnóstica de Entrada': 'Diagnóstico Inicial',
+        'Componente de Lectura Crítica': 'Lectura Crítica',
+        'Prueba Pedagógica - Enseñanza, Formación y Valoración': 'Competencias Pedagógicas',
+        'Marco Normativo del Ejercicio Docente': 'Normatividad Educativa',
+        'Componente Disciplinar por Área de Conocimiento': 'Competencias Disciplinares',
+        'Simulacro Integral del Concurso': 'Simulacro Integral',
+        'Informe de Desempeño y Plan de Fortalecimiento': 'Análisis del Desempeño',
     }
 
     RENOMBRES_CATEGORIA = {}
