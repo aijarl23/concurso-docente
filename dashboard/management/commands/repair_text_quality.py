@@ -118,12 +118,37 @@ class Command(BaseCommand):
         from contenidos.models import Tema
         from seguimiento.models import ProgresoModulo
 
-        temas_movidos = Tema.objects.filter(modulo=corrupta).update(modulo=canonica)
+        # OJO: Tema.orden es la clave logica real que usa
+        # seed_modulos.update_or_create(modulo=modulo, orden=topic_order, ...).
+        # La canonica ya tiene sus propios Tema (orden 1..N) sembrados en un
+        # deploy anterior por seed_modulos, independientes de los de la
+        # corrupta. Un `update()` masivo de modulo=corrupta -> modulo=canonica
+        # sin revisar 'orden' deja dos filas con el mismo (modulo, orden) en
+        # la canonica - eso es exactamente lo que rompe seed_modulos en el
+        # SIGUIENTE deploy con MultipleObjectsReturned (causa raiz real del
+        # incidente de produccion de julio 2026). Por eso aqui se mueve tema
+        # por tema: si la canonica ya tiene ese 'orden', el de la corrupta es
+        # un duplicado logico (no historial nuevo) y se descarta; si no, se
+        # reasigna de verdad.
+        ordenes_en_canonica = set(Tema.objects.filter(modulo=canonica).values_list('orden', flat=True))
+        temas_movidos = 0
+        temas_descartados = 0
+        for tema in Tema.objects.filter(modulo=corrupta).order_by('orden', 'id'):
+            if tema.orden in ordenes_en_canonica:
+                tema.delete()
+                temas_descartados += 1
+            else:
+                tema.modulo = canonica
+                tema.save(update_fields=['modulo'])
+                ordenes_en_canonica.add(tema.orden)
+                temas_movidos += 1
+
         progreso_movido = ProgresoModulo.objects.filter(modulo=corrupta).update(modulo=canonica)
-        if temas_movidos or progreso_movido:
+        if temas_movidos or temas_descartados or progreso_movido:
             self.stdout.write(
                 f'  Fusionando Modulo tipo="{tipo_corrupto}" (id={corrupta.id}) -> '
-                f'"{tipo_canonico}" (id={canonica.id}): {temas_movidos} tema(s), '
+                f'"{tipo_canonico}" (id={canonica.id}): {temas_movidos} tema(s) reasignados, '
+                f'{temas_descartados} tema(s) duplicados descartados, '
                 f'{progreso_movido} progreso(s) reasignados.'
             )
         corrupta.delete()

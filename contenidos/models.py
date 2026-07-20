@@ -50,6 +50,9 @@ class Tema(models.Model):
 
     class Meta:
         ordering = ['orden']
+        constraints = [
+            models.UniqueConstraint(fields=['modulo', 'orden'], name='unique_tema_modulo_orden'),
+        ]
 
     def __str__(self):
         return self.titulo

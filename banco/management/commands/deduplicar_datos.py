@@ -4,16 +4,20 @@ from django.db.models import Count
 
 class Command(BaseCommand):
     help = (
-        'Deduplica Simulacro (por nombre) y Subcategoria (por categoria+nombre), '
-        'creados por corridas repetidas de apply_market_ready_upgrade/import scripts. '
-        'Antes de borrar cada duplicado, reasigna cualquier historial real que dependa '
-        'de el (Intento de usuarios -> Simulacro, BancoPregunta -> Subcategoria) al '
-        'registro que se conserva, para no perder progreso de nadie. '
-        'Corre automaticamente en cada deploy (build.sh) contra la BD real: incluye '
-        'una valvula de seguridad que aborta sin borrar nada si el volumen a eliminar '
-        'parece anormal, para que un bug futuro en la logica de agrupacion no pueda '
-        'arrasar datos de produccion sin que nadie lo note (usar --force para saltarla '
-        'de forma deliberada).'
+        'Deduplica Simulacro (por nombre), Subcategoria (por categoria+nombre) y Tema '
+        '(por modulo+orden, y por modulo+titulo), creados por corridas repetidas de '
+        'apply_market_ready_upgrade/import scripts o por fusiones de Modulo (ver '
+        'repair_text_quality._reparar_tipo_modulo). Antes de borrar cada duplicado, '
+        'reasigna cualquier historial real que dependa de el (Intento de usuarios -> '
+        'Simulacro, BancoPregunta -> Subcategoria) al registro que se conserva, para no '
+        'perder progreso de nadie. Corre automaticamente en cada deploy (build.sh), '
+        'ANTES de seed_modulos, para garantizar que Tema.objects.update_or_create('
+        'modulo=modulo, orden=topic_order, ...) nunca reciba una combinacion (modulo, '
+        'orden) duplicada y falle con MultipleObjectsReturned. Incluye una valvula de '
+        'seguridad que aborta sin borrar nada si el volumen a eliminar parece anormal, '
+        'para que un bug futuro en la logica de agrupacion no pueda arrasar datos de '
+        'produccion sin que nadie lo note (usar --force para saltarla de forma '
+        'deliberada).'
     )
 
     # Si el numero de filas a eliminar en una corrida supera este umbral (y tambien
@@ -32,6 +36,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         check_only = options['check_only']
         force = options['force']
+        self._dedupe_temas(check_only, force)
         self._dedupe_simulacros(check_only, force)
         self._dedupe_subcategorias(check_only, force)
 
@@ -50,6 +55,69 @@ class Command(BaseCommand):
             ))
             return False
         return True
+
+    def _dedupe_temas(self, check_only, force):
+        from contenidos.models import Tema
+
+        # Tema no tiene hoy ningun modelo que le apunte por FK (verificado:
+        # solo Tema.modulo -> Modulo existe en ese sentido). Si en el futuro
+        # se agrega una relacion hacia Tema, reasignarla aqui antes del
+        # delete, igual que se hace abajo con Intento/BancoPregunta.
+        def score(t):
+            return (bool((t.descripcion or '').strip()), t.activo, t.id)
+
+        def planear(queryset_dupes, obtener_grupo, etiqueta):
+            planes = []
+            vistos_para_eliminar = set()
+            for d in queryset_dupes:
+                grupo = [t for t in obtener_grupo(d) if t.id not in vistos_para_eliminar]
+                if len(grupo) < 2:
+                    continue
+                grupo.sort(key=score)
+                conservar = grupo[-1]
+                eliminar = grupo[:-1]
+                self.stdout.write(
+                    f'Tema [{etiqueta}] "{conservar.titulo}" (modulo_id={conservar.modulo_id}): '
+                    f'conservar id={conservar.id} (orden={conservar.orden}), '
+                    f'eliminar ids={[t.id for t in eliminar]}'
+                )
+                vistos_para_eliminar.update(t.id for t in eliminar)
+                planes.append((conservar, eliminar))
+            return planes
+
+        # Pasada 1: mismo (modulo, orden) - es la clave logica real que usa
+        # seed_modulos.update_or_create(modulo=modulo, orden=topic_order, ...).
+        # Un duplicado aqui es exactamente lo que revienta el deploy con
+        # MultipleObjectsReturned (incidente de produccion de julio 2026,
+        # originado en una fusion de Modulo que movia Tema sin revisar esto -
+        # ver repair_text_quality._reparar_tipo_modulo, ya corregido tambien).
+        dupes_orden = Tema.objects.values('modulo_id', 'orden').annotate(n=Count('id')).filter(n__gt=1)
+        planes = planear(
+            dupes_orden,
+            lambda d: list(Tema.objects.filter(modulo_id=d['modulo_id'], orden=d['orden']).order_by('id')),
+            'mismo modulo+orden',
+        )
+
+        # Pasada 2: mismo (modulo, titulo) con 'orden' distinto - duplicado
+        # logico aunque todavia no choque con la clave tecnica de arriba.
+        dupes_titulo = Tema.objects.values('modulo_id', 'titulo').annotate(n=Count('id')).filter(n__gt=1)
+        planes += planear(
+            dupes_titulo,
+            lambda d: list(Tema.objects.filter(modulo_id=d['modulo_id'], titulo=d['titulo']).order_by('id')),
+            'mismo modulo+titulo',
+        )
+
+        planned_total = sum(len(eliminar) for _, eliminar in planes)
+        universe_total = Tema.objects.count()
+        if check_only or not self._safety_check('Tema', planned_total, universe_total, force):
+            return
+
+        total = 0
+        for conservar, eliminar in planes:
+            for dup in eliminar:
+                dup.delete()
+                total += 1
+        self.stdout.write(self.style.SUCCESS(f'Temas duplicados eliminados: {total}'))
 
     def _dedupe_simulacros(self, check_only, force):
         from simulacros.models import Simulacro
