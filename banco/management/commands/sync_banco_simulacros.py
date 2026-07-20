@@ -46,10 +46,12 @@ class Command(BaseCommand):
         'Educativa, Gestion Escolar), actualiza Simulacro.preguntas (set — '
         'refleja exactamente el banco publicado actual, no acumula) y activa '
         'el Simulacro si termina con al menos --min-preguntas preguntas. '
-        'El Diagnostico Inicial no tiene banco propio: se puebla con una '
-        'muestra de items ya publicados de los demas modulos (Documento '
-        'Maestro Cap. 4, Modulo 1) — no genera contenido nuevo, solo '
-        'selecciona.\n\n'
+        'El Diagnostico Inicial tiene banco propio (competencia="Diagnostico '
+        'integral", temas: Analisis de errores, Comprension de consigna, '
+        'Gestion del tiempo, Plan de estudio - Documento Maestro Cap. 4, '
+        'Modulo 1, actualizado con el Banco Oficial de Preguntas) y ademas '
+        'se completa con una muestra de items ya publicados de los demas '
+        'modulos, para mantener variedad y cobertura general del examen.\n\n'
         'No borra preguntas del banco ni borra ningun Simulacro existente. '
         'Correr despues de activar_lote_oficial o de ingest_smpi; forma '
         'parte del pipeline automatico de build.sh para que un modulo '
@@ -74,14 +76,25 @@ class Command(BaseCommand):
 
         resumen = []
         muestras_para_diagnostico = []
+        preguntas_propias_diagnostico = []
 
         with transaction.atomic():
             self._desactivar_modulos_legacy(Module, resumen)
 
             for entry in MODULES:
                 slug = entry['slug']
-                if slug == DIAGNOSTICO_SLUG or slug in SLUGS_SIN_SIMULACRO_PROPIO:
-                    continue  # Diagnostico se procesa al final; los dos de solo-analisis no llevan Simulacro.
+                if slug == DIAGNOSTICO_SLUG:
+                    # El Diagnostico Inicial ahora tiene banco propio
+                    # (Banco Oficial de Preguntas, competencia="Diagnostico
+                    # integral"). Se captura aqui pero su Simulacro se arma
+                    # al final, combinado con la muestra de los demas modulos.
+                    competencia_norm = _normalizar(entry['competencia'])
+                    preguntas_propias_diagnostico = [
+                        p for p in publicadas if _normalizar(p.competencia) == competencia_norm
+                    ]
+                    continue
+                if slug in SLUGS_SIN_SIMULACRO_PROPIO:
+                    continue  # Los dos de solo-analisis no llevan Simulacro.
 
                 if slug == AREA_MODULE_SLUG:
                     for area in AREAS_DISCIPLINARES:
@@ -119,7 +132,7 @@ class Command(BaseCommand):
             if diagnostico:
                 vistos = set()
                 muestra_final = []
-                for p in muestras_para_diagnostico:
+                for p in preguntas_propias_diagnostico + muestras_para_diagnostico:
                     if p.id not in vistos:
                         vistos.add(p.id)
                         muestra_final.append(p)

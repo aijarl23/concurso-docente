@@ -1,0 +1,580 @@
+# Banco Oficial de Preguntas — Módulo 1: Diagnóstico Inicial
+## Tema: Análisis de errores (15 ítems)
+
+**Estado:** en revisión — pendiente de aprobación del comité editorial antes de continuar con el siguiente tema.
+**Fecha de elaboración:** 19 de julio de 2026
+
+---
+
+## MOD01-AE-001
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Evaluación formativa y retroalimentación pedagógica
+**Subcompetencia:** Diferenciación entre error conceptual/procedimental individual y de grupo
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En una institución educativa oficial rural, una docente de grado tercero aplica una evaluación de sustracción con reagrupación a sus 28 estudiantes. Al calificar, encuentra que 22 de ellos cometen exactamente el mismo tipo de error: en las operaciones donde el minuendo tiene un cero en la posición de las decenas (por ejemplo, 304 − 178), restan el dígito menor del mayor sin importar cuál está arriba, obteniendo 274 en lugar del resultado correcto, 126. Al revisar los cuadernos de trabajo de las semanas anteriores, la docente confirma que el algoritmo de reagrupación simple, sin cero intermedio, sí está bien aplicado por la gran mayoría del curso; el error aparece únicamente cuando se presenta ese caso particular. Según la planeación de área, la siguiente semana debía iniciar la unidad de multiplicación de dos dígitos, tema que no depende directamente de la sustracción con reagrupación compleja, pero sí retoma el manejo posicional de las cifras. La docente tiene el material listo para iniciar multiplicación y sabe que atrasarse afecta el cronograma institucional acordado en la comisión de evaluación y promoción. Sin embargo, también sabe que dejar sin resolver un vacío que afecta a más de las tres cuartas partes del curso puede convertirse en un obstáculo recurrente en operaciones futuras que dependan de la resta con reagrupación múltiple. Antes de dar inicio a la siguiente unidad, debe decidir cómo proceder con el resto de la semana de clase, considerando tanto la evidencia de evaluación que acaba de recoger como el tiempo disponible en el cronograma.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente en este momento?
+
+A) Continuar con el plan de estudio de multiplicación como estaba programado, y abordar la resta con cero intermedio como parte del refuerzo individual en el horario de tutoría, ya que la mayoría del curso domina el algoritmo básico de reagrupación.
+B) Detener por una sesión el avance hacia multiplicación y dedicar una clase a modelar explícitamente el caso de resta con cero intermedio como un subproceso distinto dentro del algoritmo de reagrupación, antes de continuar con la planeación.
+C) Repetir la evaluación completa de sustracción con números distintos la próxima semana, para confirmar si el error se mantiene antes de tomar cualquier decisión sobre el plan de estudio.
+D) Remitir a los 22 estudiantes afectados al programa de refuerzo escolar extracurricular de la institución, dado que el error compromete a la mayoría del curso y supera lo que puede resolverse en el tiempo regular de clase.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El patrón identificado —22 de 28 estudiantes, error específico y sistemático, no disperso— es evidencia contundente de un vacío de enseñanza compartido, no de dificultades individuales aisladas. La mejor decisión profesional es intervenir de inmediato con enseñanza explícita del subproceso faltante (el manejo del cero al reagrupar) antes de avanzar a un contenido nuevo que presupone dominio de la sustracción. Postergar la intervención mientras se avanza en el plan arriesga que el vacío se consolide como error persistente y que la multiplicación, que también exige manejo posicional preciso, se vea afectada indirectamente. Una sesión adicional bien dirigida tiene mayor costo-beneficio que dejar sin resolver un error que afecta a la mayoría del curso.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque respeta el cronograma y evita "perder tiempo de clase", y de hecho sería la decisión correcta si el error fuera minoritario o disperso entre pocos estudiantes; aquí, sin embargo, el volumen y la sistematicidad del error exigen intervención grupal inmediata, no diferida a tutorías individuales que no todos los estudiantes recibirán.
+- C) Es plausible porque la prudencia de "verificar antes de actuar" es en general una buena práctica evaluativa; pero la evidencia ya reunida es suficientemente clara y consistente (mismo error, mismo patrón, en las tres cuartas partes del curso) como para actuar sin necesidad de una segunda evaluación que solo retrasaría la intervención sin aportar información adicional relevante.
+- D) Es plausible porque cuando "la mayoría" del curso falla podría pensarse que el problema excede las posibilidades del aula regular; pero remitir a un programa externo un vacío de enseñanza no atendido primero en el aula regular traslada una responsabilidad docente inmediata a un recurso que debería reservarse para dificultades que persisten después de la intervención de aula, no antes de intentarla.
+
+**Fundamento normativo o pedagógico:** Decreto 1290 de 2009 (la evaluación como proceso permanente, formativo, que debe usarse para "reorientar los procesos educativos oportunamente"), y los Lineamientos Curriculares de Matemáticas del MEN sobre la enseñanza del algoritmo de sustracción por subprocesos diferenciados.
+
+**Proceso cognitivo evaluado:** Análisis situacional con toma de decisión pedagógica basada en evidencia de evaluación.
+
+**Error frecuente del aspirante:** Asumir que "la mayoría del grupo falla" equivale automáticamente a "el problema excede el aula regular y debe remitirse a refuerzo externo", sin considerar que la intervención inmediata de aula es la primera responsabilidad docente ante un vacío de enseñanza detectado a tiempo.
+
+**Estrategia mental recomendada:** Ante un patrón de error compartido por el grupo, preguntarse primero si se trata de un vacío de enseñanza (responsabilidad inmediata y directa del aula) o de una dificultad individual (que sí amerita apoyo diferenciado o remisión). El volumen, la sistematicidad y la especificidad del error son las pistas clave para distinguir uno de otro.
+
+---
+
+## MOD01-AE-002
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Retroalimentación pedagógica y desarrollo del pensamiento argumentativo
+**Subcompetencia:** Distinción entre error de forma y error de fondo en producción escrita
+**Nivel de dificultad:** Alta
+
+**Caso:**
+Un docente de Lengua Castellana de grado décimo revisa los ensayos argumentativos que sus 32 estudiantes entregaron sobre un tema de actualidad social. Al leer los textos, identifica dos tipos de dificultades recurrentes que aparecen mezcladas en la mayoría de los trabajos: por un lado, errores de puntuación y conectores mal usados que dificultan la lectura fluida; por otro, una debilidad más profunda que se repite en 24 de los 32 ensayos: los estudiantes plantean una tesis clara al inicio, pero luego presentan párrafos con datos o ejemplos que no se conectan explícitamente con esa tesis, de modo que el lector debe inferir por sí mismo la relación entre el argumento y la evidencia presentada. El docente había planeado dedicar la siguiente clase a un taller de puntuación y conectores, previsto desde el inicio del periodo como parte de la ruta de mejora en escritura. Sin embargo, al comparar ambos tipos de error, nota que la debilidad argumentativa (evidencia sin conexión explícita con la tesis) compromete de manera más directa la competencia que se pretende desarrollar en el curso —pensamiento crítico y argumentación—, mientras que los errores de forma, aunque visibles, no impiden que el lector identifique la postura del estudiante. El docente cuenta con una sola sesión disponible antes de la fecha límite para la reescritura de los ensayos, establecida en el cronograma de área, y debe decidir en qué debilidad concentrar la retroalimentación y el taller de esa sesión para maximizar el impacto en la calidad argumentativa final de los textos.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica del docente para la sesión disponible antes de la reescritura?
+
+A) Mantener el taller de puntuación y conectores como estaba planeado, porque fue programado con anticipación y mejorar la forma facilita que la argumentación, ya presente en los textos, se lea con mayor claridad.
+B) Redirigir la sesión hacia un taller de conexión explícita entre tesis y evidencia, mostrando ejemplos de cómo enlazar los datos presentados con el argumento central, y dejar la puntuación como retroalimentación escrita individual en cada ensayo.
+C) Dividir la sesión en dos partes iguales, una para puntuación y conectores y otra para la conexión entre tesis y evidencia, de modo que ambas debilidades reciban atención en el tiempo disponible.
+D) Suspender la reescritura para esta entrega y aplazarla hasta que los estudiantes reciban primero un curso completo de argumentación en el área de Ciencias Sociales, dado que la debilidad detectada excede el alcance de Lengua Castellana.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La debilidad argumentativa —evidencia presentada sin conexión explícita con la tesis— compromete directamente la competencia central que el ensayo pretende evaluar y desarrollar: la capacidad de argumentar con coherencia. Es además el error más extendido (24 de 32) y el que tiene mayor costo si no se corrige antes de la reescritura, porque un texto bien puntuado pero mal argumentado sigue siendo un texto débil en su propósito comunicativo, mientras que un texto con argumentación sólida pero puntuación imperfecta cumple su función central y puede pulirse en la forma con retroalimentación individual escrita, que no requiere tiempo de clase compartido. Con una sola sesión disponible, la decisión de mayor impacto es concentrar el tiempo grupal en la debilidad de fondo.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque respeta la planeación previa y parte de una idea válida —que la forma facilita la lectura del fondo—; sin embargo, prioriza una debilidad superficial sobre una que compromete directamente la competencia argumentativa que el curso busca desarrollar, y con una sola sesión disponible, esa prioridad invertida reduce el impacto de la retroalimentación en la calidad final de los ensayos.
+- C) Es plausible porque "atender ambas debilidades" parece una solución equilibrada y prudente; pero dividir el tiempo limitado entre dos temas de peso muy distinto diluye la profundidad del abordaje de la debilidad más crítica, dejando insuficiente el taller de argumentación para lograr un cambio real antes de la reescritura.
+- D) Es plausible porque reconoce, correctamente, que la argumentación es una habilidad transversal; pero suspender la reescritura y trasladar la responsabilidad a otra área desatiende la función formativa inmediata del proceso de escritura en curso, y no es una decisión que corresponda tomar unilateralmente ni que resuelva la necesidad pedagógica presente de los estudiantes antes de su entrega.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias del Lenguaje del MEN (producción textual con coherencia y cohesión argumentativa) y el principio de evaluación formativa del Decreto 1290 de 2009, que orienta la retroalimentación hacia los aprendizajes esenciales antes que hacia aspectos secundarios de la producción.
+
+**Proceso cognitivo evaluado:** Jerarquización de debilidades pedagógicas según su impacto en la competencia central evaluada.
+
+**Error frecuente del aspirante:** Tratar todos los errores detectados en un texto como si tuvieran el mismo peso pedagógico, sin distinguir entre errores que afectan la forma y errores que comprometen la competencia de fondo que se evalúa.
+
+**Estrategia mental recomendada:** Ante múltiples debilidades detectadas en una producción escrita, preguntarse cuál de ellas compromete directamente la competencia central que el ejercicio pretende evaluar, y priorizar el tiempo de retroalimentación grupal hacia esa debilidad, dejando los aspectos de forma para retroalimentación individual o escrita.
+
+---
+
+## MOD01-AE-003
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Inclusión educativa y diseño de ajustes razonables
+**Subcompetencia:** Diferenciación entre dificultad de aprendizaje transitoria y posible necesidad educativa especial
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En grado segundo de una institución educativa oficial urbana, una docente aplica una evaluación de lectura en voz alta a sus 26 estudiantes como parte del seguimiento periódico de fluidez lectora. Un estudiante, que hasta el bimestre anterior leía con un ritmo similar al del resto del curso, presenta ahora errores frecuentes de inversión de letras (confunde "b" con "d", "p" con "q") y omite sílabas al leer palabras de tres o más sílabas, lo que reduce notablemente su comprensión del texto. La docente revisa el cuaderno del estudiante y encuentra que en escritura comete errores similares de inversión, mientras que en matemáticas su desempeño se mantiene dentro del promedio del curso. Al conversar con la familia, se entera de que en casa no han notado dificultades adicionales y que el estudiante no ha tenido cambios recientes en su entorno familiar o de salud que expliquen un retroceso repentino. La docente sabe que la institución cuenta con un proceso de remisión a orientación escolar y, eventualmente, a valoración por parte de un profesional de apoyo pedagógico, pero también sabe que ese proceso puede tardar varias semanas en concretarse y que, mientras tanto, el estudiante sigue asistiendo a clase y requiere alguna forma de acompañamiento. La docente debe decidir cuál es el paso más adecuado a seguir de manera inmediata, sin esperar a que se complete el proceso de remisión, considerando tanto el bienestar del estudiante como el marco normativo de atención a la diversidad que rige su actuación profesional.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica inmediata de la docente ante este caso?
+
+A) Esperar a que el proceso formal de remisión a orientación escolar concluya con un diagnóstico profesional antes de introducir cualquier ajuste en el trabajo de aula, para evitar etiquetar al estudiante sin una evaluación especializada.
+B) Iniciar de manera simultánea el proceso de remisión a orientación escolar y, mientras este avanza, introducir en el aula regular ajustes razonables de apoyo a la lectura (por ejemplo, mayor tiempo, apoyo visual, lectura acompañada), documentando la respuesta del estudiante a dichos ajustes.
+C) Trasladar al estudiante de manera inmediata a un aula de apoyo pedagógico especializado fuera del salón regular, dado que el patrón de errores en lectura y escritura es compatible con una dificultad específica de aprendizaje.
+D) Aplicar al estudiante una evaluación individual adicional de lectura con un texto más sencillo que el usado con el resto del curso, y ajustar sus calificaciones de manera diferenciada mientras se resuelve la situación.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El marco de educación inclusiva vigente en Colombia establece que la atención a la diversidad debe iniciar en el aula regular, con ajustes razonables aplicados de manera oportuna, sin necesidad de esperar un diagnóstico profesional formal para actuar. Iniciar la remisión y, en paralelo, introducir apoyos pedagógicos inmediatos permite atender la necesidad real del estudiante sin demora, además de generar evidencia útil (cómo responde a los ajustes) que enriquece el proceso de valoración posterior. Esta es la decisión que mejor equilibra la urgencia del acompañamiento con el respeto al proceso formal de valoración especializada.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque parte de una preocupación válida —no etiquetar sin evaluación profesional—; sin embargo, confunde "no diagnosticar" con "no actuar": los ajustes razonables en el aula no requieren un diagnóstico previo y omitir apoyo mientras se espera el proceso formal deja al estudiante sin acompañamiento durante varias semanas, en contra del principio de atención oportuna.
+- C) Es plausible porque el patrón de errores sí es compatible con una posible dificultad específica de aprendizaje; pero trasladar al estudiante fuera del aula regular sin un diagnóstico ni un proceso formal previo contradice el principio de educación inclusiva, que prioriza la permanencia en el aula regular con apoyos, no la segregación anticipada.
+- D) Es plausible porque busca adaptar la evaluación a la situación del estudiante; pero aplicar un texto distinto y ajustar calificaciones sin un proceso formal de ajuste razonable documentado puede constituir una decisión evaluativa arbitraria, además de que no atiende la causa de fondo del error ni genera un acompañamiento pedagógico real.
+
+**Fundamento normativo o pedagógico:** Decreto 1421 de 2017 (Decreto Único Reglamentario de Educación Inclusiva), que establece los ajustes razonables como una obligación inmediata del aula regular, independiente del tiempo que tome el proceso de valoración pedagógica o clínica especializada.
+
+**Proceso cognitivo evaluado:** Evaluación de juicio profesional ante ambigüedad diagnóstica, con toma de decisión oportuna dentro de un marco normativo de inclusión.
+
+**Error frecuente del aspirante:** Creer que actuar pedagógicamente ante una posible necesidad educativa especial requiere esperar un diagnóstico formal, cuando la normativa exige justamente lo contrario: actuar con ajustes razonables desde el primer momento en que se detecta la dificultad.
+
+**Estrategia mental recomendada:** Ante un posible indicio de necesidad educativa especial, separar mentalmente dos procesos que deben avanzar en paralelo y no en secuencia: el proceso formal de valoración especializada, y la respuesta pedagógica inmediata en el aula regular mediante ajustes razonables.
+
+---
+
+## MOD01-AE-004
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Evaluación formativa y diagnóstico conceptual en ciencias naturales
+**Subcompetencia:** Diferenciación entre error de cálculo y error conceptual (misconception)
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En una clase de Ciencias Naturales de grado octavo, un docente aplica un taller sobre densidad de sustancias, donde los estudiantes deben calcular la densidad de distintos objetos a partir de su masa y volumen, y luego predecir si flotarán o se hundirán en agua. Al revisar los talleres, el docente encuentra dos tipos de error distintos entre los estudiantes que fallaron en la predicción final. Un grupo de 6 estudiantes calculó correctamente la densidad (por ejemplo, obtuvo 0.8 g/cm³ para un objeto), pero predijo que el objeto se hundiría, argumentando por escrito que "como el objeto es más pesado que el agua que hay en el vaso, se va al fondo", sin comparar la densidad calculada con la del agua. Otro grupo de 5 estudiantes obtuvo un valor numérico incorrecto de densidad debido a errores en la división de las cifras decimales, aunque en sus explicaciones escritas sí mostraron comprender que un objeto flota cuando su densidad es menor que la del agua. El docente tiene programada la siguiente clase para avanzar hacia el tema de presión, pero antes de continuar, debe decidir cómo retroalimentar a ambos grupos de estudiantes de manera que se resuelva la causa real de cada error, considerando que agruparlos y tratarlos de la misma manera podría no resolver la dificultad de ninguno de los dos grupos con la profundidad que cada caso requiere.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica del docente para retroalimentar a ambos grupos de estudiantes?
+
+A) Programar un refuerzo conjunto para los 11 estudiantes centrado en repasar el procedimiento matemático de cálculo de densidad, ya que en ambos grupos el resultado final de la predicción fue incorrecto.
+B) Diseñar dos intervenciones distintas: para el grupo de 6, un trabajo conceptual centrado en comparar densidades relativas antes de predecir flotación; para el grupo de 5, un repaso puntual del procedimiento de división con decimales.
+C) Aplicar a los 11 estudiantes una segunda evaluación idéntica a la primera, para verificar si el error se repite antes de decidir qué tipo de retroalimentación ofrecer a cada grupo.
+D) Avanzar hacia el tema de presión como estaba previsto, e incluir en ese nuevo tema ejemplos que retomen de manera indirecta el concepto de densidad, de forma que ambos grupos refuercen la comprensión sin detener el cronograma.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+Aunque ambos grupos fallaron en la misma predicción final, las causas de sus errores son distintas: uno tiene un vacío conceptual sobre el principio de flotación (comparación de densidades), y el otro tiene un error procedimental en una operación matemática, con el concepto ya comprendido. Tratar ambos casos con la misma intervención (A) desperdicia tiempo valioso para el grupo que ya domina el procedimiento pero no el concepto, y no resuelve con suficiente profundidad el vacío conceptual, que es el error más relevante para el aprendizaje científico que se pretende evaluar. Diseñar dos intervenciones diferenciadas, ajustadas a la causa real de cada error, es la decisión que mejor responde a la evidencia recogida.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque ambos grupos fallaron en el mismo resultado final (la predicción), lo que puede llevar a pensar que comparten la misma causa; sin embargo, esto ignora que el análisis de las respuestas escritas revela causas distintas, y agrupar la retroalimentación desatiende el vacío conceptual más profundo del primer grupo.
+- C) Es plausible porque repetir la evaluación parece una manera prudente de confirmar el error antes de actuar; pero la evidencia recogida en los talleres ya es suficientemente clara para identificar la causa de cada error, y repetir la prueba sin intervenir antes solo retrasa la corrección de un vacío conceptual que puede persistir o agravarse.
+- D) Es plausible porque busca no detener el cronograma y aprovechar el nuevo tema para reforzar el anterior; pero abordar de manera indirecta un vacío conceptual identificado con claridad, sin una intervención explícita y dirigida, es una estrategia insuficiente frente a la evidencia de que 6 estudiantes no comprenden el principio central de flotación por densidad relativa.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias en Ciencias Naturales del MEN (comprensión de conceptos científicos más allá del cálculo mecánico) y el principio de evaluación diagnóstica formativa del Decreto 1290 de 2009, orientado a identificar causas específicas de error para ajustar la enseñanza.
+
+**Proceso cognitivo evaluado:** Análisis diferenciado de causas de error a partir de evidencia cualitativa (explicaciones escritas) y cuantitativa (resultados numéricos).
+
+**Error frecuente del aspirante:** Igualar dos errores por su resultado final idéntico, sin analizar las explicaciones o el razonamiento que llevó a cada estudiante a ese resultado, perdiendo información clave sobre la causa real del error.
+
+**Estrategia mental recomendada:** Ante estudiantes que llegan al mismo resultado incorrecto, revisar siempre el razonamiento o procedimiento que los llevó allí antes de diseñar la retroalimentación, porque errores con el mismo resultado final pueden tener causas pedagógicas completamente distintas.
+
+---
+
+## MOD01-AE-005
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Reflexión sobre la práctica pedagógica propia (autoevaluación docente)
+**Subcompetencia:** Identificación de causas instruccionales del error en el diseño de la propia enseñanza
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+Una docente de grado cuarto enseña el concepto de valor posicional en números de cuatro cifras. Durante tres semanas seguidas, trabaja el tema con material concreto (bloques base diez) y ejercicios en el tablero, y al finalizar aplica una evaluación escrita donde pide a los estudiantes representar y comparar números como 3,458 y 3,845. El resultado es que 19 de 24 estudiantes cometen errores al comparar los números, indicando frecuentemente que 3,458 es mayor que 3,845 porque "el 8 es más grande que el 4" al comparar las cifras de derecha a izquierda en lugar de izquierda a derecha. Al revisar sus propias notas de planeación, la docente identifica que, durante las tres semanas de trabajo, prácticamente todos los ejercicios de comparación que utilizó partían de números donde la primera cifra distinta ya aparecía en la posición de las unidades o las decenas, y nunca trabajó explícitamente un ejemplo donde la comparación debiera resolverse mirando primero las cifras de mayor valor posicional. La docente reconoce que el patrón de error de sus estudiantes coincide de forma llamativa con un vacío en su propio diseño de ejercicios durante las semanas anteriores. Debe decidir cómo proceder antes de continuar con el siguiente tema del plan de estudio, teniendo en cuenta tanto la evidencia del error de los estudiantes como su propio análisis sobre el posible origen instruccional de dicho error.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente ante este hallazgo?
+
+A) Calificar la evaluación tal como fue aplicada, registrar el bajo desempeño del grupo en comparación de números, y continuar con el siguiente tema, dado que el contenido ya fue enseñado con material concreto durante tres semanas completas.
+B) Reconocer el posible origen instruccional del error, diseñar e implementar una nueva secuencia de ejercicios que incluya explícitamente casos donde la comparación se resuelve por las cifras de mayor valor posicional, y volver a evaluar la comparación de números antes de avanzar.
+C) Remitir a los 19 estudiantes con error a la coordinación académica para valorar si requieren un plan de apoyo individual, dado que representan la mayoría del curso y el tema ya fue enseñado con suficiente tiempo y recursos.
+D) Repetir exactamente la misma secuencia de ejercicios usada en las tres semanas anteriores, asumiendo que los estudiantes necesitan más tiempo de práctica con el mismo tipo de material para consolidar el concepto.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El análisis honesto de la propia práctica revela que el patrón de error de los estudiantes coincide con un vacío específico en el diseño de los ejercicios utilizados, no con una falta de comprensión general del valor posicional ni con una dificultad de aprendizaje individual. La responsabilidad profesional en este caso es reconocer esa causa instruccional y corregirla explícitamente, diseñando una intervención dirigida al vacío identificado, antes de asumir que el problema está en los estudiantes o de avanzar sin resolverlo. Esta es la decisión que mejor usa el análisis de errores como herramienta de mejora de la propia enseñanza, no solo de diagnóstico del estudiante.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque "ya se enseñó con suficiente tiempo y recursos" parece una razón válida para avanzar; pero ignora la evidencia de que el error tiene un origen instruccional identificable y corregible, y avanzar sin resolverlo consolida un vacío conceptual que afectará temas futuros que dependen del valor posicional.
+- C) Es plausible porque el volumen del error (19 de 24) podría sugerir que excede el aula regular; pero remitir a apoyo individual un error cuya causa es un vacío en el diseño de la enseñanza traslada incorrectamente la responsabilidad de la dificultad a los estudiantes, cuando la evidencia apunta a una causa instruccional identificada por la propia docente.
+- D) Es plausible porque insistir con más práctica parece razonable ante un bajo desempeño; pero repetir exactamente la misma secuencia de ejercicios, que ya se identificó como incompleta por no incluir el caso específico que genera el error, no resuelve la causa real de la dificultad y probablemente producirá el mismo resultado.
+
+**Fundamento normativo o pedagógico:** Decreto 1290 de 2009 (la evaluación como insumo para "reorientar los procesos pedagógicos") y el principio de reflexión sobre la práctica docente presente en los Lineamientos de Calidad para el Sistema de Formación de Educadores del MEN.
+
+**Proceso cognitivo evaluado:** Autoevaluación crítica de la práctica docente a partir del análisis de errores de los estudiantes como evidencia indirecta del diseño instruccional.
+
+**Error frecuente del aspirante:** Atribuir el error exclusivamente al estudiante o a la falta de tiempo de práctica, sin considerar la posibilidad de que el patrón de error refleje un vacío específico en el diseño de la propia secuencia de enseñanza.
+
+**Estrategia mental recomendada:** Cuando un error se repite de manera muy sistemática en la mayoría del curso, revisar primero los propios materiales y ejercicios usados durante la enseñanza del tema, antes de asumir que la causa está únicamente en los estudiantes.
+
+---
+
+## MOD01-AE-006
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Normatividad de evaluación institucional y debido proceso evaluativo
+**Subcompetencia:** Diferenciación entre error de comprensión de la consigna y error de dominio del contenido
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado once, un docente de Ciencias Sociales aplica una prueba tipo ensayo sobre las causas del conflicto armado colombiano, en la que pide explícitamente a los estudiantes "comparar dos periodos históricos distintos usando al menos tres criterios de análisis". Al calificar, encuentra que 14 de 30 estudiantes obtienen una nota baja porque, aunque demuestran conocimiento amplio y correcto de los hechos históricos de ambos periodos, no realizan una comparación explícita entre ellos: describen cada periodo por separado, sin establecer semejanzas o diferencias organizadas por criterios, tal como pedía la consigna. Al revisar los enunciados de la prueba, el docente nota que la instrucción de "comparar usando criterios" aparecía en un solo párrafo introductorio, sin ejemplos ni una estructura sugerida, y que era la primera vez en el año que solicitaba explícitamente ese tipo de estructura comparativa en una evaluación escrita. Los 14 estudiantes con nota baja han tenido, en evaluaciones anteriores sobre otros temas, desempeños altos en preguntas de conocimiento histórico. El docente debe decidir cómo calificar y qué retroalimentación dar a estos 14 estudiantes, considerando que la baja nota podría reflejar más una dificultad para interpretar el formato específico de la consigna que un vacío real en el conocimiento del contenido histórico evaluado.
+
+**Pregunta:** ¿Cuál es la mejor decisión del docente frente a este hallazgo?
+
+A) Mantener la calificación obtenida por los 14 estudiantes, ya que la consigna fue clara y estaba escrita en el enunciado de la prueba, y ajustarla equivaldría a bajar el nivel de exigencia esperado en grado once.
+B) Revisar con la comisión de evaluación y promoción si corresponde ofrecer a estos 14 estudiantes una actividad de complementación centrada específicamente en demostrar la habilidad de comparación con criterios, antes de consolidar la nota final del periodo, dado el indicio de que el error puede deberse a la consigna y no al contenido.
+C) Anular la prueba completa para todo el curso y aplicar una nueva evaluación con una consigna reformulada de manera más sencilla, para evitar que el formato de la pregunta afecte a ningún estudiante en el futuro.
+D) Asignar a los 14 estudiantes una nota basada únicamente en el conocimiento histórico correcto que demostraron en sus respuestas, ignorando el criterio de comparación explícita, ya que ese conocimiento es lo más importante del área.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El patrón identificado —conocimiento correcto del contenido, pero ausencia de la estructura comparativa específica solicitada por primera vez— junto con el antecedente de buen desempeño de esos mismos estudiantes en evaluaciones previas, constituye evidencia razonable de que el error puede originarse en la novedad y falta de modelamiento previo de ese formato de consigna, no en un vacío de conocimiento. El marco normativo de evaluación exige que el debido proceso evaluativo incluya oportunidades de verificar si un bajo desempeño refleja realmente lo que se pretende medir. Llevar el caso a la instancia institucional correspondiente para ofrecer una actividad de complementación es la decisión que respeta tanto el rigor académico como la garantía de que la nota refleje el aprendizaje real y no una dificultad de interpretación del formato.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque la consigna sí estaba escrita en el enunciado y "mantener la exigencia" parece defendible; pero desconoce el patrón de evidencia que sugiere una posible causa distinta al conocimiento del contenido, y el debido proceso evaluativo exige explorar esa posibilidad antes de consolidar una nota que podría no reflejar el aprendizaje real de los estudiantes.
+- C) Es plausible porque busca ser justo con todo el curso reformulando la prueba; pero anular la evaluación completa es una medida desproporcionada frente a un patrón que afecta específicamente a 14 estudiantes con un perfil identificable, y no distingue entre quienes sí comprendieron la consigna correctamente y quienes no.
+- D) Es plausible porque prioriza el conocimiento de contenido sobre la habilidad de comparación; pero ignorar por completo un criterio explícito de la consigna sin un proceso formal que lo respalde constituye una modificación arbitraria de los criterios de evaluación ya comunicados, lo cual también vulnera el debido proceso hacia el resto del curso que sí cumplió con ese criterio.
+
+**Fundamento normativo o pedagógico:** Decreto 1290 de 2009, artículo sobre criterios de evaluación institucional y el derecho de los estudiantes a conocer y comprender los criterios de evaluación, así como a procesos de evaluación complementaria cuando existan dudas razonables sobre el desempeño evaluado; Sistema Institucional de Evaluación de Estudiantes (SIEE).
+
+**Proceso cognitivo evaluado:** Evaluación de juicio profesional sobre la validez de un instrumento de evaluación frente a evidencia de un posible sesgo de formato.
+
+**Error frecuente del aspirante:** Asumir que una consigna escrita en el enunciado es automáticamente clara y comprendida por todos los estudiantes, sin considerar que la falta de modelamiento previo de un formato nuevo puede generar errores de interpretación independientes del dominio del contenido.
+
+**Estrategia mental recomendada:** Cuando un grupo específico de estudiantes con buen desempeño previo falla de manera atípica en una evaluación, revisar primero si la consigna introdujo un formato o exigencia nueva sin suficiente modelamiento previo, antes de concluir que la causa es un vacío de conocimiento.
+
+---
+
+## MOD01-AE-007
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Convivencia escolar y articulación con orientación escolar
+**Subcompetencia:** Diferenciación entre error académico ordinario y señal de alerta de bienestar del estudiante
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+Un docente de grado séptimo nota que uno de sus estudiantes, quien históricamente ha tenido un desempeño académico alto y consistente en todas las áreas, comienza a cometer errores inusuales durante las últimas dos semanas: entrega talleres incompletos, comete errores de cálculo básicos que antes no cometía, y en una evaluación reciente dejó sin responder tres de diez preguntas que, según su historial, debería poder resolver sin dificultad. Además, el docente observa que el estudiante se muestra más callado de lo habitual en clase y ha llegado tarde en dos ocasiones esta semana, algo que no era frecuente en él. Al revisar el patrón de errores con más detalle, el docente descubre que no siguen ningún tipo de dificultad conceptual identificable: son errores dispersos, inconsistentes con el nivel de dominio que el estudiante ha demostrado durante todo el año, y que no se concentran en un tema o habilidad específica, como sí ocurriría con un vacío de aprendizaje real. El docente tiene una reunión de área programada para el día siguiente, en la que normalmente reportaría patrones de error académico para definir planes de refuerzo por asignatura. Debe decidir qué hacer con esta información antes de esa reunión, considerando que el tipo de error observado no encaja con el patrón habitual de una dificultad de aprendizaje relacionada con el contenido académico.
+
+**Pregunta:** ¿Cuál es la mejor decisión del docente ante este caso?
+
+A) Reportar el caso en la reunión de área como un estudiante que requiere refuerzo académico general, ya que su desempeño bajó de manera notoria en las últimas semanas y esto amerita atención curricular inmediata.
+B) Buscar un espacio de conversación individual y respetuosa con el estudiante para indagar cómo se encuentra, y de manera paralela remitir el caso a orientación escolar, dado que el patrón disperso e inconsistente de errores, junto con los cambios de comportamiento observados, no corresponde a un patrón académico ordinario.
+C) Esperar dos o tres semanas más para confirmar si la baja en el desempeño se mantiene de manera sostenida en el tiempo, antes de tomar cualquier acción, ya que un cambio de dos semanas podría ser algo pasajero sin mayor relevancia.
+D) Citar directamente a los padres de familia para informarles sobre la baja académica del estudiante y solicitarles que refuercen el acompañamiento de tareas en casa, sin involucrar a otras instancias de la institución.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El patrón de errores descrito —disperso, inconsistente con el historial académico del estudiante, y acompañado de cambios de comportamiento (aislamiento, impuntualidad)— no corresponde al perfil típico de una dificultad de aprendizaje relacionada con contenido, sino a un posible indicador de una situación personal o emocional que está afectando el desempeño del estudiante. La responsabilidad profesional del docente en este caso combina dos acciones: aproximarse con cuidado al estudiante para abrir un canal de comunicación, y activar de manera oportuna la ruta de atención integral a través de orientación escolar, sin esperar ni actuar únicamente desde la perspectiva académica.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque la caída en el desempeño es real y medible, lo que podría llevar a tratarlo como un caso académico ordinario; pero ignora que el patrón de error no es consistente con una dificultad de contenido (es disperso, no concentrado en un tema) y desestima las señales de comportamiento que apuntan a una causa distinta, que un plan de refuerzo curricular no atendería.
+- C) Es plausible porque la prudencia de "esperar para confirmar" parece razonable ante cambios recientes; pero frente a señales combinadas de comportamiento y desempeño que sugieren una posible situación de bienestar del estudiante, la demora no es una postura neutral: puede dejar sin atención oportuna una situación que requiere acompañamiento inmediato.
+- D) Es plausible porque involucrar a la familia es parte de una buena práctica de comunicación escuela-hogar; pero hacerlo de forma aislada, sin activar la ruta institucional de orientación escolar ni sin antes acercarse al propio estudiante, puede pasar por alto la causa real de la situación y no garantiza el acompañamiento integral que el caso amerita.
+
+**Fundamento normativo o pedagógico:** Ley 1620 de 2013 (Sistema Nacional de Convivencia Escolar) sobre la identificación temprana de situaciones que afectan el bienestar de los estudiantes y la activación de rutas de atención integral, articulada con el rol de orientación escolar en las instituciones educativas.
+
+**Proceso cognitivo evaluado:** Discriminación entre patrones de error académico y señales de alerta no académicas, con activación oportuna de rutas institucionales.
+
+**Error frecuente del aspirante:** Analizar un cambio repentino en el desempeño exclusivamente desde el marco académico (contenido, refuerzo curricular), sin considerar que un patrón de error disperso e inconsistente, junto con cambios de comportamiento, puede ser indicio de una situación que requiere atención desde bienestar y convivencia escolar.
+
+**Estrategia mental recomendada:** Ante un cambio repentino e inconsistente en el desempeño de un estudiante con buen historial académico, revisar si el patrón de error se concentra en un contenido específico (lo que sugiere causa académica) o es disperso y coincide con cambios de comportamiento (lo que sugiere activar la ruta de convivencia y bienestar).
+
+---
+
+## MOD01-AE-008
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Estrategias didácticas diferenciadas para la corrección de errores sistemáticos
+**Subcompetencia:** Selección de estrategia correctiva según la naturaleza del error lingüístico
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En una clase de inglés de grado noveno, la docente revisa una serie de producciones escritas breves en las que los estudiantes debían narrar eventos pasados. Encuentra que 17 de 26 estudiantes cometen de manera sistemática el mismo error: usan la forma base del verbo en lugar del pasado simple en oraciones afirmativas regulares (por ejemplo, escriben "Yesterday I go to the park" en lugar de "Yesterday I went to the park"), a pesar de que el tema del pasado simple fue enseñado explícitamente hace tres semanas y de que, en ejercicios orales de repetición y en pruebas de opción múltiple sobre el mismo tema, la mayoría de estos estudiantes identificó correctamente la forma correcta del verbo cuando se les presentaban las opciones. La docente interpreta que el error no se debe a un desconocimiento de la regla gramatical, sino a que, al momento de producir un texto de manera libre y espontánea, los estudiantes no logran aplicar automáticamente la regla que sí reconocen cuando se les presenta de forma guiada. La docente tiene programada la siguiente clase para introducir el tema de comparativos y superlativos, pero debe decidir cómo abordar este error sistemático de aplicación antes de continuar, considerando que un ejercicio de repetición similar al ya usado no ha demostrado ser suficiente para lograr que los estudiantes transfieran la regla a su producción libre.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente frente a este error sistemático?
+
+A) Aplicar nuevamente una prueba de opción múltiple sobre el pasado simple, ya que en ese formato la mayoría de los estudiantes demuestra dominio de la regla, lo cual permitiría confirmar con una nota más alta que el tema sí fue aprendido.
+B) Diseñar actividades de producción libre guiada y repetida en contextos comunicativos variados (por ejemplo, contar lo que hicieron el fin de semana, corregir oraciones propias en parejas), que exijan aplicar la regla en uso espontáneo, antes de avanzar hacia comparativos y superlativos.
+C) Avanzar hacia comparativos y superlativos como estaba previsto, ya que el pasado simple fue enseñado y evaluado, y los estudiantes con errores recibirán una nota más baja que reflejará su nivel real de dominio del tema.
+D) Explicar nuevamente, de manera frontal y con ejemplos adicionales en el tablero, la regla de formación del pasado simple regular, asumiendo que los estudiantes no retuvieron la explicación inicial dada hace tres semanas.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La evidencia recogida muestra una brecha específica entre el conocimiento declarativo de la regla (que los estudiantes demuestran en ejercicios guiados y de reconocimiento) y su aplicación en producción libre y espontánea, que es precisamente la habilidad comunicativa que se pretende desarrollar en el aprendizaje de una lengua. La mejor decisión es diseñar actividades que exijan practicar la transferencia de la regla a contextos de uso real, que es la brecha identificada, en lugar de repetir estrategias que ya demostraron ser insuficientes (reconocimiento guiado) o avanzar sin resolver el vacío de aplicación.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque en ese formato los estudiantes sí demuestran dominio y obtendrían mejor nota; pero usar un instrumento que no mide la habilidad real que falla (producción libre) para justificar que el tema "sí fue aprendido" no corrige el error identificado, solo lo oculta con una evaluación que no exige la habilidad que realmente está débil.
+- C) Es plausible porque respeta el cronograma y "deja que la nota refleje el nivel real"; pero avanzar sin intervenir consolida un error de aplicación que, al no corregirse a tiempo, tiende a fosilizarse en el aprendizaje de una lengua extranjera, dificultando su corrección en etapas posteriores.
+- D) Es plausible porque parece razonable "repasar la regla" ante un error persistente; pero la evidencia muestra que los estudiantes sí conocen la regla (la identifican correctamente en ejercicios guiados), por lo que repetir la explicación frontal no resuelve la causa real del error, que está en la etapa de aplicación espontánea, no de comprensión de la regla.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias en Lenguas Extranjeras (Inglés) del MEN, que enfatizan el desarrollo de la competencia comunicativa por encima del conocimiento declarativo aislado de reglas gramaticales.
+
+**Proceso cognitivo evaluado:** Distinción entre conocimiento declarativo y conocimiento procedimental/aplicado como causas diferenciadas de un mismo tipo de error.
+
+**Error frecuente del aspirante:** Asumir que un error persistente en producción libre significa que la regla gramatical no fue comprendida, sin considerar que el estudiante puede reconocerla correctamente en formatos guiados y fallar únicamente en su aplicación espontánea.
+
+**Estrategia mental recomendada:** Ante un error que persiste en producción libre pero no aparece en ejercicios de reconocimiento guiado, dirigir la intervención hacia actividades de práctica en contextos de uso real, en lugar de repetir explicaciones teóricas o evaluaciones de reconocimiento que ya demostraron dominio.
+
+---
+
+## MOD01-AE-009
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Diagnóstico conceptual y seguimiento del aprendizaje en ciencias naturales
+**Subcompetencia:** Identificación de concepciones alternativas (misconceptions) persistentes
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado quinto, una docente de Ciencias Naturales realiza una evaluación oral individual breve sobre el proceso de fotosíntesis, después de haber trabajado el tema durante dos semanas con experimentos sencillos, videos y explicaciones en clase. Al preguntar a cada estudiante de dónde obtiene la planta "su alimento", la docente encuentra que 15 de 24 estudiantes responden que la planta se alimenta "de la tierra, absorbiendo los nutrientes con las raíces", sin mencionar el papel de la luz solar, el dióxido de carbono o la producción de su propio alimento a través de la fotosíntesis, a pesar de que este concepto fue explicado y ejemplificado en varias ocasiones durante las dos semanas de trabajo. Al revisar los talleres escritos previos de estos mismos estudiantes, la docente encuentra que la mayoría sí logró responder correctamente preguntas de opción múltiple sobre las partes de la fotosíntesis (como identificar que las hojas producen el alimento de la planta), pero al preguntarles de manera abierta y oral, vuelven a expresar la idea de que la planta "se alimenta de la tierra". La docente reconoce que esta idea de que las plantas se nutren directamente del suelo, como si "comieran tierra", es una concepción alternativa común documentada en la enseñanza de las ciencias naturales en la niñez, que suele ser resistente a la instrucción tradicional. Debe decidir cómo proceder antes de continuar con el siguiente tema del plan de estudio.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente frente a este hallazgo?
+
+A) Considerar el tema como suficientemente enseñado, dado que los estudiantes lograron responder correctamente las preguntas de opción múltiple sobre las partes de la fotosíntesis en los talleres escritos anteriores.
+B) Diseñar una intervención específica que confronte directamente la concepción alternativa identificada (por ejemplo, mediante un experimento que muestre que una planta puede crecer en agua sin tierra, si recibe luz), en lugar de repetir la explicación ya dada de la misma manera.
+C) Explicar nuevamente el proceso de fotosíntesis usando el mismo video y la misma explicación verbal utilizados durante las dos semanas anteriores, ya que los estudiantes probablemente necesitan escuchar la información una vez más para recordarla.
+D) Registrar el resultado como una dificultad individual de los 15 estudiantes con menor capacidad de expresión oral, dado que en los talleres escritos previos demostraron mejor desempeño que en la evaluación oral.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La evidencia muestra que el error no se debe a falta de exposición al contenido ni a dificultades de expresión oral, sino a una concepción alternativa arraigada (la idea de que las plantas "comen tierra"), que coexiste con el conocimiento correcto que los estudiantes pueden reproducir en un formato de reconocimiento (opción múltiple), pero que reaparece cuando deben explicar el concepto con sus propias palabras. Las concepciones alternativas de este tipo, ampliamente documentadas en la didáctica de las ciencias, requieren estrategias de confrontación activa (como experiencias que generen conflicto cognitivo) para ser modificadas, no solo repetición de la explicación original, que ya demostró ser insuficiente.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque el desempeño en los talleres escritos de opción múltiple fue adecuado; pero ese formato no exige que el estudiante explique el concepto con sus propias palabras, y por tanto no detecta la persistencia de la concepción alternativa que sí se evidencia en la evaluación oral abierta, dejando sin resolver un vacío conceptual real.
+- C) Es plausible porque "repetir la explicación" parece razonable ante un concepto no consolidado; pero la evidencia de la didáctica de las ciencias muestra que las concepciones alternativas resistentes no se modifican simplemente con más exposición al mismo tipo de explicación que ya fue dada, sino que requieren estrategias que generen conflicto cognitivo explícito.
+- D) Es plausible porque hay una diferencia real de desempeño entre el formato escrito y el oral; pero atribuirla a "capacidad de expresión oral" ignora que el contenido de la respuesta (la idea de que la planta come tierra) es un error conceptual específico y documentado, no un problema de fluidez verbal.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias en Ciencias Naturales del MEN y los aportes de la didáctica de las ciencias sobre el cambio conceptual, que documentan la necesidad de estrategias de confrontación activa frente a concepciones alternativas persistentes en la niñez.
+
+**Proceso cognitivo evaluado:** Identificación de concepciones alternativas mediante contraste entre distintos formatos de evaluación (reconocimiento guiado frente a explicación abierta).
+
+**Error frecuente del aspirante:** Confiar únicamente en el desempeño de pruebas de reconocimiento (opción múltiple) como evidencia suficiente de comprensión conceptual, sin contrastar con formatos de evaluación abierta que puedan revelar concepciones alternativas persistentes.
+
+**Estrategia mental recomendada:** Cuando el desempeño de un estudiante varía notablemente entre un formato de reconocimiento y uno de explicación abierta, sospechar la presencia de una concepción alternativa no resuelta, y diseñar una intervención que la confronte directamente en lugar de repetir la instrucción original.
+
+---
+
+## MOD01-AE-010
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Análisis de resultados de evaluaciones estandarizadas y uso de evidencia agregada
+**Subcompetencia:** Interpretación de patrones de error por competencia en informes de resultados
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+Un docente de matemáticas de grado noveno recibe el informe de resultados de un simulacro tipo Saber aplicado a sus tres grupos del grado, correspondiente a la competencia de "razonamiento y argumentación". El informe desagregado por componente muestra que el desempeño del grado en preguntas de "cálculo numérico directo" es alto (78% de respuestas correctas en promedio), mientras que en preguntas que requieren "justificar por qué un procedimiento matemático es válido o inválido en una situación dada" el desempeño es notablemente más bajo (34% de respuestas correctas en promedio), a pesar de que ambos tipos de pregunta abordan contenidos matemáticos que ya fueron enseñados en el año. El docente nota además que este patrón se repite de manera consistente en los tres grupos del grado, con diferencias menores a cinco puntos porcentuales entre ellos, lo que sugiere que no se trata de una particularidad de un solo grupo o de una sola metodología de un docente específico. El coordinador académico le pide al docente presentar, en la próxima reunión de área, una propuesta concreta de ajuste pedagógico para el resto del año basada en este informe de resultados, antes de que se apliquen las pruebas internas de fin de periodo. El docente debe decidir qué tipo de ajuste priorizar en su propuesta, considerando que el tiempo restante del año no permite reforzar todos los componentes evaluados por igual.
+
+**Pregunta:** ¿Cuál es la mejor decisión del docente al preparar su propuesta de ajuste pedagógico?
+
+A) Proponer un refuerzo general de contenidos matemáticos del año, ya que ambos tipos de pregunta (cálculo y justificación) provienen de los mismos temas enseñados, y reforzar el contenido de base mejorará el desempeño en ambos componentes por igual.
+B) Proponer priorizar, en las semanas restantes, actividades que exijan explícitamente justificar y argumentar la validez de procedimientos matemáticos (no solo ejecutarlos), dado que el patrón consistente entre los tres grupos apunta a un vacío específico en esa competencia, distinto del cálculo, que ya está bien desarrollado.
+C) Solicitar que se aplique nuevamente el simulacro completo antes de tomar cualquier decisión, para confirmar si el patrón se mantiene, dado que un solo informe de resultados no es suficiente evidencia para ajustar la planeación de un área completa.
+D) Recomendar que la coordinación académica remita a los estudiantes con menor desempeño en argumentación a un programa de refuerzo extracurricular, dado que el bajo resultado se repite en los tres grupos del grado y excede lo que un solo docente puede resolver en el aula.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El informe desagregado por componente ofrece evidencia clara y consistente (repetida en los tres grupos, con una diferencia amplia entre componentes de más de 40 puntos porcentuales) de que el vacío no está en el contenido matemático de base —que se domina bien en el componente de cálculo—, sino específicamente en la competencia de argumentación y justificación matemática. La mejor decisión profesional es usar esta evidencia agregada para dirigir el tiempo pedagógico restante hacia el componente débil identificado, en lugar de diluir el esfuerzo en un refuerzo general que no está dirigido a la causa real de la brecha detectada.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque ambos tipos de pregunta provienen del mismo contenido matemático, lo que podría sugerir que reforzar la base ayuda a ambos; pero el informe muestra que el desempeño en cálculo ya es alto, por lo que un refuerzo general no dirigido a la competencia de argumentación desaprovecha el tiempo limitado disponible y no resuelve la brecha específica identificada.
+- C) Es plausible porque la prudencia de "confirmar antes de actuar" parece razonable frente a decisiones que afectan a toda un área; pero el patrón ya es consistente entre los tres grupos, lo que constituye evidencia suficientemente robusta, y aplicar un nuevo simulacro completo antes de intervenir retrasa innecesariamente el ajuste pedagógico en un momento en que el tiempo restante del año es limitado.
+- D) Es plausible porque la magnitud del resultado (bajo en los tres grupos) podría sugerir que excede el aula regular; pero un patrón consistente de un componente específico de competencia, presente en la mayoría de los estudiantes de los tres grupos, es evidencia de un vacío de enseñanza de área que corresponde resolver primero con ajuste curricular en el aula, no con remisión individual a refuerzo externo.
+
+**Fundamento normativo o pedagógico:** Lineamientos del ICFES sobre el uso pedagógico de resultados de pruebas estandarizadas para la toma de decisiones curriculares, y el principio de evaluación formativa institucional del Decreto 1290 de 2009.
+
+**Proceso cognitivo evaluado:** Interpretación de evidencia agregada (resultados desagregados por competencia) para la toma de decisiones curriculares con tiempo limitado.
+
+**Error frecuente del aspirante:** Interpretar un resultado bajo en una prueba estandarizada como un problema general de "contenido no aprendido", sin aprovechar la desagregación por componente que permite identificar con precisión en qué habilidad específica está la brecha real.
+
+**Estrategia mental recomendada:** Ante un informe de resultados desagregado por componente, identificar primero en qué componente específico está la brecha (no en el resultado global) y dirigir el tiempo pedagógico disponible hacia ese componente, priorizando patrones consistentes entre varios grupos como evidencia más robusta que un resultado aislado.
+
+---
+
+## MOD01-AE-011
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Retroalimentación pedagógica y priorización de aspectos evaluados en producción escrita
+**Subcompetencia:** Jerarquización entre errores ortográficos y errores de contenido en la etapa de composición
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado tercero, una docente aplica una actividad de escritura libre en la que los estudiantes deben redactar un texto narrativo corto sobre una experiencia personal, como parte del proceso de desarrollo de la escritura creativa. Al revisar los textos, la docente encuentra que la mayoría de los estudiantes comete numerosos errores ortográficos (omisión de tildes, confusión entre "b" y "v", falta de mayúsculas al iniciar oración), pero que, en términos de contenido, la mayoría logra estructurar una narración con inicio, desarrollo y final reconocibles, incluyendo detalles y emociones propias de la experiencia relatada. La docente sabe que, según la planeación institucional, esta actividad corresponde a una etapa temprana del proceso de escritura, previa a las sesiones formales dedicadas específicamente a normas ortográficas, que están programadas para las semanas siguientes. Al momento de devolver los textos a los estudiantes con observaciones escritas, la docente debe decidir en qué aspecto concentrar principalmente su retroalimentación en esta etapa del proceso, considerando el objetivo pedagógico de la actividad y el momento del año en que ocurre, sin dejar de reconocer que los errores ortográficos observados también deberán abordarse en algún momento del proceso de enseñanza de la escritura.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente para la retroalimentación de esta actividad?
+
+A) Marcar y corregir de manera exhaustiva todos los errores ortográficos encontrados en cada texto, ya que la corrección temprana de la ortografía evita que los estudiantes consoliden malos hábitos de escritura.
+B) Concentrar la retroalimentación principal en reconocer y fortalecer los logros de contenido narrativo (estructura, detalles, emociones), sin ignorar los errores ortográficos, pero registrándolos como observación general para trabajarlos explícitamente en las sesiones ya programadas sobre normas ortográficas.
+C) Devolver los textos sin ninguna corrección visible, limitándose a una felicitación general por haber completado la actividad, para no desmotivar a los estudiantes en una etapa temprana del proceso de escritura.
+D) Solicitar a los estudiantes que reescriban el texto completo corrigiendo primero todos los errores ortográficos señalados, antes de continuar con cualquier otra actividad de escritura del área.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El propósito pedagógico de esta actividad, según la planeación institucional, es el desarrollo de la escritura creativa y la estructura narrativa, no la corrección ortográfica, que tiene su espacio específico programado más adelante. Priorizar la retroalimentación hacia el logro central de la actividad (el contenido narrativo) respeta la etapa del proceso de escritura en la que se encuentran los estudiantes, sin desatender los errores ortográficos, que quedan registrados para ser trabajados explícitamente en el momento pedagógico adecuado. Esta decisión evita tanto la sobrecarga de correcciones que no corresponden al objetivo actual de la actividad, como el descuido total de un aspecto que sí requiere atención futura.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque la corrección temprana de la ortografía parece prevenir malos hábitos; pero corregir de manera exhaustiva en una etapa centrada en la escritura creativa desvía el foco pedagógico de la actividad, puede desmotivar a los estudiantes en un momento del proceso donde se busca fortalecer la fluidez narrativa, y se adelanta a un contenido que tiene su propio espacio programado.
+- C) Es plausible porque "no desmotivar" es un objetivo válido en la enseñanza temprana de la escritura; pero omitir por completo cualquier observación, incluso general, sobre los errores ortográficos desaprovecha la oportunidad de generar conciencia progresiva sobre ellos, y no es coherente con un proceso de retroalimentación formativa continua.
+- D) Es plausible porque "corregir antes de continuar" parece una forma de asegurar calidad; pero exigir una reescritura centrada en ortografía antes de continuar con el proceso de escritura creativa invierte la secuencia pedagógica planeada institucionalmente y antepone un objetivo (ortografía) que aún no correspondía trabajar de manera central en esta actividad.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias del Lenguaje del MEN, que reconocen la producción textual como un proceso por etapas (planeación, textualización, revisión), donde la corrección de aspectos formales como la ortografía se enfatiza progresivamente y no debe anteponerse al desarrollo de la fluidez y estructura narrativa en las primeras etapas de escritura.
+
+**Proceso cognitivo evaluado:** Jerarquización de objetivos pedagógicos según la etapa del proceso de enseñanza en la que se encuentra una actividad específica.
+
+**Error frecuente del aspirante:** Tratar todo error visible en un texto escrito (ortográfico o de contenido) como si tuviera la misma prioridad de corrección, sin considerar el objetivo pedagógico específico de la actividad ni la etapa del proceso de escritura en la que se encuentra el grupo.
+
+**Estrategia mental recomendada:** Antes de retroalimentar una producción escrita, identificar cuál era el objetivo pedagógico específico de la actividad (¿contenido, estructura, ortografía?) y concentrar la retroalimentación principal en ese objetivo, registrando otros errores para el momento del proceso en que corresponda trabajarlos.
+
+---
+
+## MOD01-AE-012
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Evaluación justa y equitativa en trabajo colaborativo
+**Subcompetencia:** Identificación de la contribución individual dentro de un error o acierto grupal
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En grado octavo, un docente de tecnología e informática organiza a los estudiantes en grupos de cuatro para desarrollar un proyecto colaborativo de diseño de una infografía digital sobre el reciclaje. Al revisar el producto final de uno de los grupos, encuentra errores conceptuales importantes en la clasificación de los materiales reciclables, que se repiten de manera similar en trabajos anteriores de uno de los cuatro integrantes del grupo, mientras que los otros tres integrantes han demostrado en actividades individuales previas un dominio correcto del tema. Al conversar por separado con los integrantes del grupo, el docente se entera de que uno de los estudiantes, quien tiene mayor facilidad de liderazgo y manejo de las herramientas digitales, tomó la mayor parte de las decisiones de contenido del trabajo final sin validarlas suficientemente con el resto del grupo, y que dos de los otros integrantes intentaron señalar que algunas clasificaciones no les parecían correctas, pero no fueron escuchados dentro de la dinámica del equipo. El docente debe asignar una calificación al producto final del proyecto y decidir cómo abordar la situación, considerando que el trabajo colaborativo busca desarrollar tanto el dominio del contenido como las habilidades de trabajo en equipo, y que una calificación grupal única podría no reflejar de manera justa la comprensión individual real de cada integrante.
+
+**Pregunta:** ¿Cuál es la mejor decisión del docente frente a esta situación?
+
+A) Asignar la misma calificación grupal a los cuatro integrantes, dado que el producto final fue entregado como un trabajo de equipo y todos son corresponsables del resultado presentado, independientemente de la dinámica interna del grupo.
+B) Mantener una valoración del producto final como evidencia parcial del proceso, pero complementarla con una actividad breve de verificación individual del dominio conceptual, y aprovechar el caso para trabajar explícitamente con el grupo habilidades de escucha y toma de decisiones colaborativas.
+C) Asignar la calificación más baja únicamente al estudiante cuyos errores conceptuales se identificaron como el origen del problema, ya que fue quien tomó la mayoría de las decisiones de contenido sin validarlas con el resto del equipo.
+D) Anular la calificación del proyecto para todo el grupo y solicitar que lo repitan completo de manera individual cada uno, dado que la dinámica de trabajo en equipo no permitió una evaluación justa del contenido.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La situación revela dos dimensiones distintas que deben abordarse por separado: la comprensión conceptual individual de cada estudiante (que no puede inferirse de manera confiable únicamente del producto grupal, dado que la dinámica interna impidió que el conocimiento correcto de dos integrantes se reflejara en el resultado final) y el desarrollo de habilidades de trabajo colaborativo (que sí requiere intervención pedagógica explícita, dado que se evidenció una dinámica donde no todas las voces fueron escuchadas). La mejor decisión combina una verificación individual del dominio conceptual, que permite una evaluación más justa, con una intervención formativa sobre la dinámica de equipo, que atiende la causa relacional del problema sin evadir la evaluación del contenido.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque el trabajo se presentó como un producto único de equipo, y la corresponsabilidad grupal es un principio válido del trabajo colaborativo; pero aplicarlo de manera rígida en este caso desconoce la evidencia de que la dinámica interna impidió que el conocimiento correcto de algunos integrantes se reflejara en el resultado, lo cual sería injusto para quienes sí dominaban el contenido pero no fueron escuchados.
+- C) Es plausible porque parece "hacer responsable a quien cometió el error de contenido"; pero calificar de manera punitiva a un solo integrante, sin atender la dinámica de equipo que impidió la corrección oportuna del error por parte de los demás, ni verificar el aprendizaje real de todos, no resuelve la situación de fondo ni es pedagógicamente formativo para el grupo.
+- D) Es plausible porque busca una evaluación más "pura" del conocimiento individual; pero anular por completo el trabajo colaborativo y exigir su repetición individual desestima el valor formativo del trabajo en equipo como habilidad a desarrollar, y no aprovecha la situación como una oportunidad de aprendizaje sobre dinámicas de colaboración, que es parte del objetivo pedagógico original de la actividad.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias del MEN sobre competencias ciudadanas y de trabajo colaborativo, y el principio de evaluación por procesos y de manera integral del Decreto 1290 de 2009, que contempla tanto el producto como el proceso de aprendizaje.
+
+**Proceso cognitivo evaluado:** Diferenciación entre la evaluación de un producto grupal y la evaluación del aprendizaje individual dentro de una dinámica colaborativa compleja.
+
+**Error frecuente del aspirante:** Asumir que la calificación de un trabajo en equipo debe ser necesariamente idéntica para todos los integrantes, o en el extremo opuesto, atribuir la responsabilidad completa a un solo estudiante, sin considerar mecanismos que permitan verificar de manera justa la comprensión individual dentro de una dinámica de grupo compleja.
+
+**Estrategia mental recomendada:** Ante un error identificado en un producto de trabajo colaborativo, separar mentalmente la evaluación del contenido (que puede requerir verificación individual complementaria) de la evaluación del proceso de trabajo en equipo (que puede requerir intervención formativa sobre la dinámica relacional del grupo).
+
+---
+
+## MOD01-AE-013
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Desarrollo evolutivo infantil y diagnóstico pedagógico en primera infancia
+**Subcompetencia:** Diferenciación entre error propio del desarrollo evolutivo y posible dificultad de aprendizaje temprana
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En un grado de transición, una docente trabaja actividades de clasificación y seriación con material concreto, donde los niños deben organizar objetos según un criterio (color, tamaño, forma) y ordenarlos de menor a mayor. Durante varias sesiones, observa que uno de los niños del grupo, de cinco años recién cumplidos, logra clasificar objetos por un solo criterio a la vez sin dificultad, pero se confunde de manera consistente cuando se le pide clasificar simultáneamente por dos criterios (por ejemplo, agrupar objetos que sean "grandes y rojos"), mezclando objetos que cumplen solo uno de los dos criterios. La docente observa que este mismo patrón de dificultad con la clasificación de doble criterio se presenta, en menor o mayor medida, en la mayoría de los niños del grupo que tienen una edad similar, mientras que los niños de mayor edad dentro del mismo grado (que ya cumplieron seis años) logran resolver la actividad con mayor facilidad. La docente conoce, por su formación en desarrollo infantil, que la capacidad de clasificar simultáneamente por más de un criterio suele consolidarse de manera progresiva durante esta etapa evolutiva, y que no todos los niños de la misma edad cronológica alcanzan ese logro exactamente al mismo tiempo. Debe decidir cómo interpretar y responder pedagógicamente a la dificultad observada en este niño en particular, considerando tanto el patrón grupal como las particularidades de su desarrollo individual.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente frente a este caso?
+
+A) Remitir de inmediato al niño a valoración por un profesional externo especializado en dificultades de aprendizaje, dado que no logra resolver una actividad que otros niños del grupo sí consiguen realizar.
+B) Interpretar la dificultad como parte de un proceso evolutivo esperado en esta etapa, dado que se observa de manera similar en la mayoría de los niños de edad comparable dentro del grupo, y continuar ofreciendo actividades progresivas de clasificación con doble criterio, documentando el avance del niño en el tiempo antes de considerar cualquier remisión.
+C) Excluir temporalmente al niño de las actividades de clasificación con doble criterio, asignándole únicamente actividades de un solo criterio, hasta que alcance la edad de los niños que ya logran resolver la actividad con doble criterio.
+D) Informar a la familia que el niño presenta una posible dificultad de aprendizaje relacionada con el pensamiento lógico-matemático, y sugerir iniciar de inmediato un proceso de evaluación psicopedagógica externa a la institución.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El hecho de que la dificultad se presente de manera similar en la mayoría de los niños de edad comparable dentro del mismo grupo, y que los niños de mayor edad cronológica sí logren resolver la actividad, es evidencia consistente con un patrón esperado del desarrollo evolutivo del pensamiento lógico en la primera infancia, no con una dificultad individual atípica. La decisión pedagógicamente adecuada es continuar ofreciendo el estímulo progresivo necesario para ese logro evolutivo, documentando el proceso individual del niño en el tiempo, y reservar cualquier remisión o alarma para el caso en que la dificultad persista de manera significativamente distinta al patrón esperado del grupo y de la etapa evolutiva.
+
+**Explicación de cada distractor:**
+- A) y D) son plausibles porque ambas parten de una preocupación legítima ante una dificultad observada; pero remitir o alertar a la familia sobre una posible dificultad de aprendizaje sin considerar que el patrón es compartido por la mayoría de los niños de edad comparable dentro del grupo constituye una interpretación apresurada que confunde un hito evolutivo en proceso de consolidación con una señal de alerta individual, lo cual puede generar preocupación innecesaria y una intervención no ajustada a la situación real.
+- C) Es plausible porque busca "proteger" al niño de una actividad que aún no logra resolver; pero excluirlo de la práctica con doble criterio le priva precisamente del estímulo progresivo que necesita para consolidar ese logro evolutivo, en lugar de ofrecerle oportunidades repetidas y acompañadas de practicar la habilidad en desarrollo.
+
+**Fundamento normativo o pedagógico:** Lineamiento Pedagógico y Curricular para la Educación Inicial del MEN, que reconoce el desarrollo del pensamiento lógico-matemático (clasificación, seriación) como un proceso progresivo y no homogéneo entre niños de la misma edad cronológica dentro de la primera infancia.
+
+**Proceso cognitivo evaluado:** Diferenciación entre un patrón de error propio del desarrollo evolutivo esperado y una posible señal de alerta de dificultad de aprendizaje, usando el desempeño del grupo como referencia comparativa.
+
+**Error frecuente del aspirante:** Interpretar cualquier dificultad individual observada en un niño de primera infancia como una posible señal de alerta que amerita remisión, sin comparar el patrón de desempeño con el del resto del grupo de edad similar ni considerar el carácter progresivo y no homogéneo del desarrollo evolutivo esperado en esta etapa.
+
+**Estrategia mental recomendada:** Ante una dificultad observada en un niño de primera infancia, comparar siempre el patrón individual con el del grupo de edad comparable antes de interpretar la dificultad como atípica; si el patrón es compartido por la mayoría, es más probable que corresponda a un proceso evolutivo en consolidación que a una señal de alerta individual.
+
+---
+
+## MOD01-AE-014
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Diagnóstico conceptual en ciencias exactas y diferenciación entre memorización y comprensión
+**Subcompetencia:** Identificación de aplicación mecánica de fórmulas sin comprensión conceptual subyacente
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado once, un docente de física aplica un taller sobre cinemática en el que los estudiantes deben resolver problemas de movimiento rectilíneo uniformemente acelerado. Al revisar las soluciones, encuentra que la mayoría de los estudiantes aplica correctamente las fórmulas correspondientes cuando el problema presenta la estructura habitual con la que se practicó en clase (datos iniciales claros de velocidad, aceleración y tiempo, pidiendo la distancia recorrida). Sin embargo, al incluir en el taller un problema planteado de forma distinta, donde se da la distancia recorrida y el tiempo, y se pide encontrar la aceleración despejando la fórmula de una manera no practicada explícitamente en clase, 20 de 27 estudiantes aplican una fórmula incorrecta o memorizada de manera rígida, sin lograr adaptar el despeje algebraico a la nueva estructura del problema, a pesar de que matemáticamente el despeje requerido no es más complejo que operaciones algebraicas ya dominadas en años anteriores. El docente observa que estos mismos estudiantes, al ser consultados oralmente sobre qué representa físicamente cada variable de la fórmula (qué es la aceleración, qué relación tiene con la velocidad y el tiempo), no logran explicarlo con claridad, lo que sugiere que la aplicación correcta en los problemas habituales podría deberse más a la memorización de un procedimiento que a una comprensión real del significado físico de las variables involucradas.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica del docente frente a este hallazgo?
+
+A) Concluir que el error se debe a una debilidad en operaciones algebraicas de despeje de fórmulas, y coordinar con el área de matemáticas un refuerzo específico en manejo algebraico antes de continuar con nuevos temas de física.
+B) Diseñar una secuencia de actividades centradas en la comprensión del significado físico de las variables de cinemática (qué representa cada una y cómo se relacionan conceptualmente), antes de continuar practicando problemas con estructuras distintas a las ya trabajadas, en lugar de asumir que el tema fue comprendido por el buen desempeño en problemas de estructura habitual.
+C) Mantener la planeación prevista y considerar que el 74% de aciertos en problemas de estructura habitual demuestra un dominio adecuado del tema de cinemática, suficiente para continuar con el siguiente contenido del curso.
+D) Aumentar la cantidad de problemas de práctica con la misma estructura habitual usada en clase, para que los estudiantes consoliden aún más el procedimiento que ya dominan antes de introducir variaciones en el planteamiento de los problemas.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La combinación de dos evidencias —la dificultad para adaptar el despeje a una estructura de problema distinta, y la incapacidad de explicar oralmente el significado físico de las variables— apunta claramente a que el buen desempeño inicial se debía a la aplicación mecánica y memorizada de un procedimiento, no a una comprensión conceptual real del fenómeno físico. La decisión pedagógicamente correcta es intervenir directamente sobre esa comprensión conceptual antes de continuar, ya que sin ella los estudiantes seguirán fallando ante cualquier problema que se aparte de la estructura exacta con la que practicaron, lo cual limita seriamente su capacidad de resolver situaciones nuevas, competencia central que se espera desarrollar en física.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque el error se manifiesta al momento de despejar una fórmula, lo que podría sugerir una causa algebraica; pero la evidencia adicional (incapacidad de explicar el significado físico de las variables) muestra que la causa real es conceptual, no puramente algebraica, por lo que un refuerzo exclusivamente matemático no resolvería el vacío de comprensión física identificado.
+- C) Es plausible porque el porcentaje de aciertos en problemas de estructura habitual parece indicar dominio suficiente; pero ese resultado es engañoso si se debe a memorización de un procedimiento, como sugiere la evidencia adicional, y avanzar sin resolver esa comprensión conceptual compromete el aprendizaje de temas futuros que dependen de ella.
+- D) Es plausible porque "más práctica" parece razonable ante un desempeño que se considera insuficiente; pero aumentar la práctica con la misma estructura habitual solo refuerza aún más el procedimiento memorizado sin exigir comprensión conceptual, y no prepara a los estudiantes para resolver problemas planteados de manera distinta, que es justamente donde se evidenció la debilidad real.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias en Ciencias Naturales del MEN, que priorizan la comprensión conceptual y la capacidad de aplicar el conocimiento científico a situaciones nuevas, por encima de la aplicación mecánica y memorizada de fórmulas o procedimientos.
+
+**Proceso cognitivo evaluado:** Distinción entre desempeño basado en memorización procedimental y desempeño basado en comprensión conceptual transferible a situaciones nuevas.
+
+**Error frecuente del aspirante:** Confiar en el buen desempeño de los estudiantes en problemas de estructura habitual como evidencia suficiente de comprensión conceptual, sin verificar si esa habilidad se transfiere a problemas planteados de manera distinta ni si los estudiantes pueden explicar el significado conceptual de lo que están aplicando.
+
+**Estrategia mental recomendada:** Para distinguir memorización procedimental de comprensión conceptual real, verificar siempre el desempeño de los estudiantes ante variaciones no practicadas del mismo tipo de problema, y contrastarlo con su capacidad de explicar oralmente o por escrito el significado del concepto involucrado, no solo el procedimiento para resolverlo.
+
+---
+
+## MOD01-AE-015
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Análisis de errores
+**Competencia:** Inclusión educativa y seguimiento de Planes Individuales de Ajustes Razonables (PIAR)
+**Subcompetencia:** Análisis de error de un estudiante con PIAR en relación con las metas específicas de su plan individual
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En grado cuarto, un estudiante con diagnóstico de discapacidad intelectual leve cuenta con un Plan Individual de Ajustes Razonables (PIAR) elaborado conjuntamente por la docente de aula, la docente de apoyo pedagógico y la familia, en el cual una de las metas del periodo actual es que el estudiante logre resolver, con apoyo de material concreto, operaciones de suma con números de hasta dos cifras sin reagrupación. En una actividad reciente de seguimiento, la docente de aula encuentra que el estudiante comete errores frecuentes al resolver este tipo de operaciones incluso contando con el material concreto acordado en el PIAR como ajuste razonable, mostrando dificultad para relacionar la cantidad de fichas manipuladas con el registro numérico final de la suma. Al revisar el PIAR, la docente confirma que la meta trabajada durante las últimas semanas correspondía efectivamente a este tipo de operación y que el ajuste razonable de material concreto sí se ha implementado de manera consistente en las sesiones de trabajo. Antes de la próxima reunión de seguimiento con la familia y la docente de apoyo pedagógico, programada para la semana siguiente según el cronograma institucional de revisión periódica de PIAR, la docente de aula debe decidir qué hacer con esta información sobre el desempeño reciente del estudiante frente a la meta establecida.
+
+**Pregunta:** ¿Cuál es la mejor decisión de la docente de aula frente a este hallazgo, antes de la reunión de seguimiento programada?
+
+A) Registrar de manera detallada la evidencia del desempeño reciente del estudiante frente a la meta específica del PIAR, incluyendo el tipo de error observado a pesar del ajuste razonable ya implementado, para llevarla como insumo a la reunión de seguimiento con la docente de apoyo y la familia, y así decidir conjuntamente si es necesario ajustar la meta o la estrategia.
+B) Modificar por cuenta propia la meta del PIAR antes de la reunión, estableciendo una meta más sencilla que el estudiante pueda lograr de inmediato, dado que la meta actual claramente no se está cumpliendo con el ajuste razonable implementado.
+C) Suspender el trabajo de la meta actual del PIAR y esperar hasta la reunión de seguimiento programada sin registrar evidencia específica del desempeño reciente, dado que el ajuste de la meta corresponde a una decisión conjunta y no de la docente de aula de manera individual.
+D) Intensificar la frecuencia de práctica de la misma actividad con el mismo material concreto ya utilizado, varias veces al día, hasta la reunión de seguimiento, para intentar que el estudiante logre la meta antes de que esta se revise formalmente.
+
+**Respuesta correcta:** A
+
+**Justificación completa:**
+El PIAR es un instrumento de construcción y seguimiento conjunto entre la docente de aula, la docente de apoyo pedagógico y la familia, por lo cual ni modificarlo unilateralmente ni suspender el trabajo sin generar evidencia corresponden al procedimiento adecuado. La responsabilidad específica de la docente de aula en este momento es documentar con precisión la evidencia del desempeño del estudiante frente a la meta vigente, incluyendo que el ajuste razonable acordado sí se implementó de manera consistente, de modo que esa evidencia sea el insumo central que permita al equipo, en la reunión ya programada, decidir de manera informada y conjunta si la meta, el ajuste o la estrategia requieren modificarse.
+
+**Explicación de cada distractor:**
+- B) Es plausible porque busca una respuesta más rápida ante una meta que no se está logrando; pero modificar el PIAR de manera unilateral, sin la participación de la docente de apoyo pedagógico y la familia, contradice el carácter colaborativo y corresponsable que exige la construcción y ajuste de este instrumento.
+- C) Es plausible porque respeta que la decisión de ajustar el PIAR es conjunta; pero interpretar erróneamente que "esperar a la reunión" significa no generar evidencia específica del desempeño reciente priva al equipo de la información más actualizada y relevante para tomar una decisión informada en dicha reunión.
+- D) Es plausible porque intensificar la práctica parece una respuesta proactiva ante la dificultad observada; pero repetir la misma estrategia con mayor frecuencia, sin haber determinado primero si la causa del error está en la meta, en el ajuste razonable o en otro factor, no es una decisión pedagógica fundamentada y podría generar frustración adicional en el estudiante sin resolver la causa real de la dificultad.
+
+**Fundamento normativo o pedagógico:** Decreto 1421 de 2017, que establece el PIAR como un instrumento de construcción y seguimiento colaborativo entre docente de aula, docente de apoyo pedagógico y familia, con revisión periódica basada en evidencia del desempeño del estudiante frente a las metas establecidas.
+
+**Proceso cognitivo evaluado:** Aplicación del rol profesional específico dentro de un proceso colaborativo de seguimiento a un plan individual de ajustes razonables, diferenciando entre decisiones que corresponden al equipo y acciones que corresponden a la docente de aula de manera inmediata.
+
+**Error frecuente del aspirante:** Asumir que, ante una meta del PIAR que no se está logrando, la respuesta inmediata debe ser modificar la meta o el ajuste por cuenta propia, sin reconocer que estas decisiones corresponden a un proceso colaborativo formalmente establecido, en el cual el rol inmediato de la docente de aula es generar y aportar evidencia de calidad.
+
+**Estrategia mental recomendada:** Ante una dificultad observada en el seguimiento de un PIAR, distinguir siempre entre lo que corresponde decidir de manera colaborativa en el proceso formal establecido (ajustar metas o estrategias) y lo que corresponde hacer de manera inmediata dentro del propio rol (documentar evidencia de calidad para nutrir esa decisión conjunta).
+
+---
+
+**Fin del bloque de 15 preguntas — Tema: Análisis de errores.**
+
+Pendiente de tu aprobación antes de continuar con el siguiente tema del Módulo 1: **Comprensión de consigna**.

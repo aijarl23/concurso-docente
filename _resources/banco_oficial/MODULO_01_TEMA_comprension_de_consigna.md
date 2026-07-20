@@ -1,0 +1,581 @@
+# Banco Oficial de Preguntas — Módulo 1: Diagnóstico Inicial
+## Tema: Comprensión de consigna (15 ítems)
+
+**Estado:** en revisión — pendiente de aprobación del comité editorial antes de continuar con el siguiente tema.
+**Fecha de elaboración:** 19 de julio de 2026
+
+---
+
+## MOD01-CC-001
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Diseño de instrucciones pedagógicas claras
+**Subcompetencia:** Diferenciación entre error de comprensión de consigna y error de contenido en problemas de aplicación
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado quinto, una docente plantea un problema de aplicación en matemáticas: "Un agricultor vendió 3/4 de su cosecha de papa el lunes y, del resto, vendió la mitad el martes. Si al final le quedaron 50 kilos, ¿cuántos kilos tenía inicialmente?". Al revisar las 24 soluciones entregadas, encuentra que 16 estudiantes calculan de manera incorrecta el resultado, pero al analizar el procedimiento escrito de cada uno, identifica que la mayoría de ellos sí domina las operaciones con fracciones de manera aislada (lo confirma revisando ejercicios anteriores centrados solo en operar fracciones), pero no logra identificar qué representa "el resto" después de la primera venta, ni logra establecer la secuencia correcta de las dos operaciones sucesivas descritas en el problema. Al conversar individualmente con tres de los estudiantes que fallaron, la docente confirma que todos comprenden perfectamente cómo sumar, restar o multiplicar fracciones cuando se les presenta la operación de forma directa, pero no logran traducir el enunciado en lenguaje natural a la secuencia de operaciones que este exige. La docente debe decidir, antes de calificar formalmente esta actividad como evaluación de "operaciones con fracciones", cómo interpretar este resultado y qué tipo de intervención priorizar en las próximas clases, considerando que el objetivo curricular del periodo incluye tanto el dominio operativo de fracciones como la resolución de problemas de aplicación.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente frente a este hallazgo?
+
+A) Calificar la actividad como evidencia de que los 16 estudiantes no dominan las operaciones con fracciones, y programar un refuerzo intensivo centrado en el cálculo operativo de sumas, restas y multiplicaciones de fracciones.
+B) Interpretar el resultado como evidencia de una dificultad específica para traducir el lenguaje natural del problema en una secuencia de operaciones, y diseñar una intervención centrada en la comprensión de la estructura del problema (identificar datos, incógnita y secuencia), independiente del refuerzo operativo con fracciones.
+C) Repetir la misma evaluación con un problema idéntico en su estructura pero con números distintos, para confirmar si el error se mantiene antes de decidir cualquier tipo de intervención.
+D) Simplificar los futuros problemas de aplicación del periodo, evitando enunciados con más de una operación secuencial, para ajustarse al nivel de comprensión demostrado por el grupo en esta actividad.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La evidencia recogida —dominio operativo confirmado en ejercicios aislados, pero incapacidad de traducir el enunciado en una secuencia correcta de operaciones— señala con claridad que la dificultad no está en el cálculo con fracciones, sino en la comprensión de la estructura del problema planteado en lenguaje natural, que es una habilidad distinta y necesaria para la resolución de problemas de aplicación. Diseñar una intervención específica sobre esa habilidad (identificar datos, incógnita, y secuencia de operaciones) es la decisión que responde con precisión a la causa real del error, evitando invertir tiempo en un refuerzo operativo que los estudiantes ya dominan.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque el resultado final de la operación fue incorrecto, lo que podría sugerir un vacío operativo; pero la evidencia adicional (dominio confirmado en ejercicios aislados de operaciones) muestra que el refuerzo operativo no resolvería la causa real del error, que está en la interpretación del enunciado, no en el cálculo.
+- C) Es plausible porque la prudencia de "verificar antes de actuar" parece razonable; pero la evidencia ya recogida —el análisis de procedimientos escritos y las conversaciones individuales— es suficientemente clara y consistente para actuar, y repetir la evaluación sin intervenir antes solo retrasa la corrección de una dificultad ya bien identificada.
+- D) Es plausible porque "simplificar" parece ajustarse al nivel demostrado por el grupo; pero evitar problemas con secuencias de operaciones no desarrolla la habilidad que los estudiantes necesitan fortalecer, y reduce permanentemente la exigencia curricular en lugar de enseñar explícitamente la habilidad de interpretación que está fallando.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias en Matemáticas del MEN, que distinguen explícitamente entre el pensamiento numérico-operativo y la competencia de resolución de problemas, la cual exige traducir situaciones en lenguaje natural a estructuras matemáticas.
+
+**Proceso cognitivo evaluado:** Diferenciación entre dominio operativo y comprensión de la estructura semántica de un enunciado de problema.
+
+**Error frecuente del aspirante:** Interpretar el resultado incorrecto de un problema de aplicación como evidencia de un vacío en la operación matemática involucrada, sin analizar el procedimiento escrito para verificar si el error ocurre en el cálculo o en la interpretación del enunciado.
+
+**Estrategia mental recomendada:** Ante un error en un problema de aplicación, revisar siempre el procedimiento completo del estudiante (no solo el resultado final) para identificar en qué etapa específica ocurrió el error: en la interpretación de la consigna o en la ejecución de la operación matemática.
+
+---
+
+## MOD01-CC-002
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Retroalimentación pedagógica y verificación de comprensión de instrucciones complejas
+**Subcompetencia:** Diagnóstico de consignas con múltiples partes no atendidas en su totalidad
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado décimo, un docente de Ciencias Sociales plantea la siguiente consigna para un ensayo: "Explique dos causas del fenómeno del desplazamiento forzado en Colombia, analice sus consecuencias sociales en las comunidades receptoras, y proponga una medida institucional que podría mitigar dichas consecuencias". Al revisar los 28 ensayos entregados, encuentra que 19 estudiantes desarrollan de manera completa y correcta las dos primeras partes de la consigna (causas y consecuencias), pero no incluyen ninguna propuesta de medida institucional en sus textos, a pesar de que el tema fue trabajado en clase con suficiente profundidad como para que los estudiantes pudieran formular una propuesta razonable. Al revisar el enunciado original de la consigna tal como fue entregado por escrito, el docente nota que las tres partes solicitadas estaban redactadas en un único párrafo largo, sin numeración ni separación visual entre ellas, y que la tercera parte (la propuesta) aparecía al final de una oración larga, después de dos conectores subordinados. El docente debe decidir cómo proceder frente a esta situación antes de asignar la calificación final de los 19 ensayos incompletos, considerando tanto la evidencia sobre el formato de la consigna original como el objetivo de que los estudiantes desarrollen la habilidad de proponer soluciones fundamentadas.
+
+**Pregunta:** ¿Cuál es la mejor decisión del docente frente a esta situación?
+
+A) Calificar los 19 ensayos con la nota correspondiente a lo entregado, asumiendo que la ausencia de la tercera parte refleja que los estudiantes no lograron desarrollar la habilidad de proponer soluciones fundamentadas sobre el tema trabajado.
+B) Reconocer que el formato de la consigna, al no separar visualmente las tres partes solicitadas, pudo haber dificultado su identificación completa por parte de los estudiantes, y ofrecer a los 19 estudiantes la oportunidad de complementar su ensayo con la parte faltante, antes de asignar la calificación final.
+C) Anular la actividad completa para todo el curso y aplicar una nueva consigna sobre un tema distinto, para evitar cualquier sesgo relacionado con el formato de la consigna original.
+D) Asignar a los 19 ensayos la calificación máxima posible en las dos partes desarrolladas, sin exigir la tercera parte de la consigna, ya que la mayoría del curso no la incluyó y esto sugiere que su exigencia no era razonable para el grupo.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El patrón encontrado —la mayoría del curso omite exactamente la misma parte de la consigna, precisamente la que aparecía menos visible en el formato del enunciado— constituye evidencia razonable de que la omisión no se debe a una incapacidad de los estudiantes para proponer soluciones fundamentadas, sino a una dificultad de identificación de una consigna con múltiples partes mal segmentadas visualmente. La decisión más justa y pedagógicamente adecuada es ofrecer la oportunidad de complementar el trabajo antes de calificar, lo cual respeta tanto el rigor de la exigencia académica como el reconocimiento de una posible causa externa al estudiante.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque evalúa lo entregado tal como fue presentado, lo cual parece coherente con un criterio de exigencia; pero ignora la evidencia de que el formato de la consigna pudo haber sido la causa real de la omisión, penalizando a los estudiantes por una dificultad que no corresponde exclusivamente a su nivel de comprensión del tema.
+- C) Es plausible porque busca eliminar cualquier sesgo relacionado con el formato de la consigna original; pero anular la actividad completa desestima el trabajo válido ya realizado en las dos primeras partes por la mayoría del curso, y es una medida desproporcionada frente a un ajuste más simple y justo, como ofrecer la oportunidad de complementar.
+- D) Es plausible porque parece adaptarse al desempeño mostrado por la mayoría del grupo; pero renunciar por completo a la exigencia de la tercera parte de la consigna, sin ofrecer la oportunidad de que los estudiantes la desarrollen, reduce permanentemente el nivel de exigencia académica sin necesidad, cuando el problema identificado tiene una solución más proporcional.
+
+**Fundamento normativo o pedagógico:** Decreto 1290 de 2009, sobre el derecho de los estudiantes a conocer con claridad los criterios de evaluación y a procesos de evaluación complementaria cuando existan dudas razonables sobre las condiciones en que se aplicó una evaluación.
+
+**Proceso cognitivo evaluado:** Análisis de la calidad del instrumento de evaluación (consigna) como posible factor explicativo de un patrón de desempeño grupal.
+
+**Error frecuente del aspirante:** Atribuir automáticamente la omisión de una parte de la consigna a una limitación de los estudiantes, sin revisar si el formato o la redacción de la consigna original pudo haber dificultado su identificación completa.
+
+**Estrategia mental recomendada:** Cuando la mayoría de un grupo omite consistentemente la misma parte de una consigna con múltiples componentes, revisar primero el formato y la claridad visual de la consigna original antes de atribuir la omisión a una limitación de comprensión o de habilidad de los estudiantes.
+
+---
+
+## MOD01-CC-003
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Inclusión educativa y ajustes razonables en la formulación de instrucciones
+**Subcompetencia:** Adaptación de consignas para estudiantes con procesamiento literal del lenguaje
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En grado tercero, un estudiante diagnosticado con trastorno del espectro autista, que cuenta con un PIAR vigente, participa en una actividad grupal de escritura donde la docente da la siguiente instrucción oral al curso: "Cuando terminen el primer párrafo, tómense un respiro y sigan con el segundo". La mayoría de los estudiantes interpreta la expresión "tómense un respiro" como una pausa breve e informal antes de continuar escribiendo. El estudiante con autismo, sin embargo, deja de escribir por completo después del primer párrafo, se levanta de su puesto y se dirige a la ventana del salón, permaneciendo allí varios minutos sin retomar la actividad, aparentemente tomando la instrucción de manera literal como una indicación de detenerse a respirar físicamente lejos de su lugar de trabajo. Cuando la docente se acerca y le pregunta por qué no continuó, el estudiante responde que hizo exactamente lo que se le indicó: "tomar un respiro". La docente reconoce que este tipo de interpretación literal del lenguaje figurado o coloquial es una característica frecuente en estudiantes con autismo, documentada además en el PIAR del estudiante como una consideración a tener en cuenta al formular instrucciones. La docente debe decidir cómo ajustar su forma de dar instrucciones en esta y futuras actividades para este estudiante, sin dejar de dar instrucciones naturales y ágiles al resto del curso.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente frente a esta situación?
+
+A) Explicar al estudiante, después de cada actividad, que las expresiones coloquiales como "tómense un respiro" no deben tomarse literalmente, esperando que con el tiempo aprenda a identificar cuándo el lenguaje es figurado.
+B) Mantener las instrucciones grupales en su forma habitual para todo el curso, y de manera adicional dirigirse directamente al estudiante con una instrucción explícita y literal (por ejemplo, "ahora vas a escribir el segundo párrafo"), como ajuste razonable acorde con lo registrado en su PIAR.
+C) Evitar en adelante cualquier expresión coloquial o figurada al dar instrucciones a todo el curso, reemplazándolas siempre por instrucciones literales y explícitas, para que el ajuste beneficie a todos los estudiantes por igual.
+D) Solicitar a la docente de apoyo pedagógico que retire al estudiante del aula regular durante las actividades de escritura grupal, dado que su interpretación literal del lenguaje genera interrupciones frecuentes en la dinámica de la clase.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El ajuste razonable adecuado ante una característica de procesamiento literal del lenguaje, ya documentada en el PIAR del estudiante, es complementar la instrucción grupal —que puede mantenerse en su forma natural para el resto del curso— con una indicación explícita y directa dirigida específicamente al estudiante, sin necesidad de modificar la dinámica general de la clase ni de excluirlo de la actividad. Esta decisión respeta tanto la individualización del ajuste razonable como la participación plena del estudiante en el aula regular junto con sus compañeros.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque busca desarrollar en el estudiante la habilidad de identificar lenguaje figurado a largo plazo, lo cual puede ser un objetivo formativo válido en otro contexto; pero como respuesta inmediata a la situación, no resuelve la necesidad de comprensión clara en el momento presente de la actividad, y coloca sobre el estudiante la responsabilidad de adaptarse, en lugar de que el ajuste razonable provenga del entorno educativo.
+- C) Es plausible porque busca un ajuste que "beneficie a todos por igual"; pero eliminar por completo el lenguaje coloquial para todo el curso no es un ajuste razonable proporcional a la necesidad de un solo estudiante, y homogeneiza de manera innecesaria la forma de comunicación con el resto del grupo, que no requiere ese ajuste.
+- D) Es plausible porque busca evitar interrupciones en la dinámica de la clase; pero retirar al estudiante del aula regular ante una situación que tiene una solución sencilla dentro del aula (una instrucción complementaria y explícita) contradice el principio de educación inclusiva, que prioriza la permanencia y participación plena en el aula regular.
+
+**Fundamento normativo o pedagógico:** Decreto 1421 de 2017, sobre la implementación de ajustes razonables individualizados dentro del aula regular, formulados a partir de las características específicas de cada estudiante registradas en su PIAR.
+
+**Proceso cognitivo evaluado:** Aplicación de un ajuste razonable individualizado y proporcional ante una característica de comprensión del lenguaje documentada previamente.
+
+**Error frecuente del aspirante:** Responder a una dificultad de comprensión de consigna de un estudiante con necesidades educativas especiales modificando la dinámica general de toda la clase, o en el extremo opuesto, excluyendo al estudiante de la actividad, en lugar de aplicar un ajuste razonable individualizado y proporcional.
+
+**Estrategia mental recomendada:** Ante una dificultad de comprensión de consigna relacionada con una característica documentada en el PIAR de un estudiante, buscar siempre el ajuste más individualizado y menos disruptivo posible para el resto del grupo, que permita al estudiante comprender la instrucción sin necesidad de modificar la dinámica general de la clase.
+
+---
+
+## MOD01-CC-004
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Educación para grupos étnicos y diversidad lingüística
+**Subcompetencia:** Diferenciación entre barrera lingüística y dificultad de contenido en la comprensión de instrucciones
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En una institución educativa oficial ubicada en un municipio con población indígena, una docente recibe este año a un estudiante de grado segundo cuya lengua materna es el wayuunaiki, y que se encuentra en un proceso progresivo de fortalecimiento del español como segunda lengua, según lo registrado por la institución al momento de su matrícula. Durante una actividad de matemáticas, la docente da la instrucción oral: "Encierren en un círculo los objetos que sean iguales entre sí, y tachen los que sean diferentes". La mayoría del curso realiza la actividad sin dificultad. El estudiante, sin embargo, permanece con la hoja en blanco varios minutos, mirando a sus compañeros de manera atenta pero sin iniciar la tarea. Al acercarse, la docente le repite la instrucción con gestos adicionales (dibujando un círculo en el aire y señalando dos objetos iguales en su hoja), y el estudiante comprende de inmediato y realiza correctamente toda la actividad en menos de un minuto, demostrando dominio claro del concepto matemático de "igual" y "diferente" al aplicarlo sin dificultad una vez que comprendió la instrucción. La docente reconoce que este tipo de pausa inicial ante instrucciones orales nuevas, seguida de un desempeño correcto una vez aclarada la instrucción por otros medios, se ha presentado en varias ocasiones con este estudiante durante las últimas semanas. Debe decidir cómo ajustar su forma de dar instrucciones a este estudiante de manera sostenida, sin subestimar su capacidad de comprensión conceptual, que ya ha demostrado ser adecuada.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente frente a esta situación?
+
+A) Remitir al estudiante a valoración por dificultades de aprendizaje, dado que necesita instrucciones repetidas y con apoyo gestual adicional para iniciar las actividades, a diferencia del resto del curso.
+B) Incorporar de manera sostenida apoyos visuales y gestuales al dar instrucciones nuevas a este estudiante, reconociendo que su pausa inicial corresponde a un proceso de comprensión lingüística del español como segunda lengua, y no a una dificultad de comprensión conceptual, que ya ha demostrado dominar.
+C) Reducir la exigencia de las actividades asignadas a este estudiante en comparación con el resto del curso, dado que necesita más tiempo que sus compañeros para comenzar cada actividad nueva.
+D) Solicitar a la familia que refuerce el español en casa de manera intensiva, como condición para que el estudiante pueda seguir el ritmo regular de instrucciones orales del aula sin apoyos adicionales.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La evidencia es clara: una vez que la instrucción se complementa con apoyo visual y gestual, el estudiante comprende de inmediato y ejecuta la tarea correctamente y con dominio conceptual pleno, lo que descarta una dificultad de aprendizaje matemático y confirma que la pausa inicial corresponde a un proceso normal de comprensión de instrucciones orales en una segunda lengua en desarrollo. La decisión pedagógicamente adecuada es incorporar de manera sostenida el apoyo que ya demostró ser efectivo, respetando el proceso de fortalecimiento progresivo del español sin subestimar la capacidad conceptual del estudiante.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque la necesidad de apoyo adicional podría interpretarse como una señal de alerta; pero la evidencia muestra justamente lo contrario: una vez comprendida la instrucción, el desempeño conceptual del estudiante es correcto y rápido, lo que descarta una dificultad de aprendizaje y señala en cambio un proceso de comprensión lingüística en curso.
+- C) Es plausible porque busca adaptarse a las necesidades del estudiante; pero reducir la exigencia académica no corresponde a la naturaleza real de la dificultad observada, que es de comprensión de instrucciones orales, no de capacidad para resolver las actividades una vez comprendidas; reducir la exigencia sería una respuesta desproporcionada e injustificada.
+- D) Es plausible porque el fortalecimiento del español en casa puede ser un apoyo complementario válido; pero plantearlo como una condición para que el estudiante pueda participar sin apoyos en el aula traslada de manera indebida a la familia una responsabilidad que corresponde, en primer lugar, a los ajustes pedagógicos que la docente puede implementar dentro del aula mientras el proceso de fortalecimiento lingüístico avanza de manera natural.
+
+**Fundamento normativo o pedagógico:** Decreto 804 de 1995 y los principios de etnoeducación del MEN sobre el reconocimiento y respeto de los procesos de fortalecimiento de una segunda lengua en estudiantes de comunidades étnicas, garantizando que la comprensión de instrucciones en español no se confunda con una dificultad de aprendizaje conceptual.
+
+**Proceso cognitivo evaluado:** Diferenciación entre barrera lingüística en el procesamiento de instrucciones orales y dificultad de comprensión conceptual del contenido evaluado.
+
+**Error frecuente del aspirante:** Interpretar la necesidad de apoyos adicionales para comprender una instrucción oral como evidencia de una dificultad de aprendizaje, sin verificar si, una vez comprendida la instrucción por otros medios, el estudiante demuestra dominio conceptual pleno del contenido evaluado.
+
+**Estrategia mental recomendada:** Ante un estudiante que requiere apoyo adicional para comprender instrucciones orales pero que, una vez comprendidas, resuelve la actividad correctamente, distinguir siempre entre una barrera de comprensión lingüística (que requiere ajustes de comunicación) y una dificultad de comprensión conceptual (que requeriría una intervención pedagógica distinta sobre el contenido mismo).
+
+---
+
+## MOD01-CC-005
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Diseño de instrucciones accesibles y verificación de comprensión auditiva
+**Subcompetencia:** Ajuste de instrucciones orales para estudiantes con dificultades de procesamiento auditivo
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado sexto, un docente de Educación Física da instrucciones orales rápidas para organizar una actividad con estaciones de trabajo: "Formen grupos de cuatro, cada grupo va a la estación que le corresponde según el número que tiene en la lista, y rotan cada cinco minutos cuando yo indique con el silbato". La instrucción se da una sola vez, de manera fluida, mientras los estudiantes ya están en movimiento hacia el patio. Uno de los estudiantes del curso, quien en el registro de seguimiento escolar tiene anotada una recomendación de audiología sobre dificultades leves de procesamiento auditivo en ambientes con ruido de fondo, no logra ubicarse en la estación correcta y se queda de pie sin saber qué hacer, mientras el resto del curso ya está distribuido y trabajando. El docente, al notarlo, se acerca y repite la instrucción completa nuevamente en voz alta desde cierta distancia, en medio del ruido general del patio, obteniendo el mismo resultado: el estudiante sigue sin ubicarse correctamente. El docente recuerda entonces la recomendación registrada sobre dificultades de procesamiento auditivo en ambientes ruidosos y reconoce que repetir la misma instrucción de la misma manera no está resolviendo la dificultad real del estudiante en este contexto específico.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica del docente frente a esta situación?
+
+A) Repetir la instrucción una tercera vez, elevando el volumen de la voz por encima del ruido ambiente del patio, para asegurarse de que el estudiante la escuche con claridad en esta ocasión.
+B) Acercarse directamente al estudiante, en un espacio con menor ruido de fondo si es posible, y darle la instrucción de manera individual, clara y con apoyo visual (por ejemplo, señalando la estación correspondiente), en lugar de repetir la instrucción grupal en el mismo ambiente ruidoso.
+C) Asignar al estudiante a observar la actividad desde un costado durante esta sesión, sin participar en las estaciones, hasta que la institución pueda brindarle un apoyo especializado para el manejo de instrucciones en ambientes ruidosos.
+D) Solicitar a otro estudiante del curso que se encargue de repetirle la instrucción completa al estudiante con dificultad auditiva, delegando en un compañero la responsabilidad de asegurar su comprensión de la consigna.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+Dado que la dificultad identificada está específicamente relacionada con el procesamiento auditivo en ambientes con ruido de fondo, repetir la misma instrucción de la misma manera (en el mismo ambiente ruidoso) no ataca la causa real del problema, como ya lo demostró el intento fallido del docente. La decisión adecuada es modificar las condiciones de la comunicación —acercarse, reducir el ruido de fondo cuando sea posible, y añadir apoyo visual— para asegurar la comprensión del estudiante, manteniendo su participación plena en la actividad grupal.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque "hablar más fuerte" parece una respuesta intuitiva ante una dificultad para escuchar; pero elevar el volumen de la voz no resuelve una dificultad de procesamiento auditivo en ambientes ruidosos, que no depende únicamente de la intensidad del sonido, sino de la capacidad de distinguir la voz relevante entre el ruido de fondo.
+- C) Es plausible porque busca "proteger" al estudiante de una situación en la que no logra ubicarse; pero excluirlo de la actividad en lugar de aplicar un ajuste sencillo y disponible de inmediato (acercarse y dar apoyo visual) contradice el principio de participación plena en el aula regular, y no es proporcional a la magnitud del ajuste que realmente se necesita.
+- D) Es plausible porque delegar en un compañero parece una solución rápida y colaborativa; pero trasladar a otro estudiante la responsabilidad de asegurar la comprensión de una instrucción pedagógica no garantiza que el ajuste se realice de manera adecuada, y desplaza una responsabilidad docente que puede resolverse de manera directa y sencilla.
+
+**Fundamento normativo o pedagógico:** Decreto 1421 de 2017, sobre la implementación de ajustes razonables en la comunicación pedagógica, adaptados a las características específicas de procesamiento sensorial de cada estudiante, dentro del principio de participación plena en el aula regular.
+
+**Proceso cognitivo evaluado:** Aplicación de un ajuste comunicativo específico ante una dificultad de procesamiento auditivo identificada, evaluando la efectividad de una estrategia previa antes de repetirla.
+
+**Error frecuente del aspirante:** Asumir que repetir una instrucción de la misma manera, con mayor insistencia o volumen, resuelve cualquier dificultad de comprensión, sin analizar si la causa específica de la dificultad requiere un ajuste distinto en la forma de comunicar la instrucción.
+
+**Estrategia mental recomendada:** Cuando una estrategia de comunicación de una instrucción ya demostró no ser efectiva para un estudiante en particular, evitar repetir exactamente la misma estrategia y, en su lugar, analizar la causa específica de la dificultad para diseñar un ajuste distinto y pertinente.
+
+---
+
+## MOD01-CC-006
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Alfabetización académica y vocabulario disciplinar
+**Subcompetencia:** Diferenciación entre desconocimiento de vocabulario técnico de la consigna y desconocimiento del contenido evaluado
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado noveno, una docente de Ciencias Naturales aplica una evaluación escrita sobre el sistema circulatorio, en la que una de las preguntas indica: "Sintetice, en un párrafo, la relación entre la estructura del corazón y su función de bombeo sanguíneo". Al revisar las respuestas, encuentra que 13 de 29 estudiantes dejan la pregunta sin responder o responden de manera muy breve e incompleta ("el corazón bombea sangre"), mientras que en una pregunta posterior de la misma evaluación, redactada como "Explique con sus palabras cómo la forma del corazón le permite bombear sangre", esos mismos 13 estudiantes responden con mayor desarrollo y evidencian conocimiento adecuado del tema. Al conversar con algunos de ellos, la docente descubre que varios no tenían claro qué significaba exactamente la palabra "sintetice" en el contexto de una consigna académica, y que algunos la asociaron erróneamente con el proceso biológico de "síntesis" que habían estudiado en otro tema, generando confusión sobre qué se les estaba pidiendo responder. La docente debe decidir cómo interpretar esta diferencia de desempeño entre ambas preguntas y qué hacer antes de calificar la evaluación de manera definitiva.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente frente a este hallazgo?
+
+A) Mantener la calificación de ambas preguntas tal como fueron respondidas, ya que la palabra "sintetice" es un término académico estándar que los estudiantes de grado noveno deben conocer y comprender sin necesidad de aclaración adicional.
+B) Reconocer que la diferencia de desempeño entre ambas preguntas, junto con la evidencia de confusión sobre el significado de "sintetice" en este contexto, sugiere una dificultad de vocabulario académico y no de contenido, y considerar la respuesta a la pregunta reformulada como evidencia más válida del aprendizaje de estos 13 estudiantes, incorporando además la enseñanza explícita de vocabulario de consignas académicas en las próximas evaluaciones.
+C) Anular por completo la pregunta que usaba la palabra "sintetice" para todo el curso, y recalcular la calificación final de la evaluación basándose únicamente en las demás preguntas, sin distinguir entre los estudiantes que sí comprendieron el término y los que no.
+D) Programar una sesión de repaso general sobre el sistema circulatorio para los 13 estudiantes, asumiendo que su bajo desempeño en la primera pregunta refleja un vacío de contenido que debe reforzarse antes de continuar con el siguiente tema del área.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La evidencia comparativa entre ambas preguntas —mismo contenido evaluado, distinto desempeño según la formulación de la consigna, junto con la confirmación directa de confusión sobre el término "sintetice"— indica con claridad que la causa del bajo desempeño en la primera pregunta es de vocabulario académico de la consigna, no de conocimiento del contenido científico. Reconocer esta causa, valorar la respuesta más representativa del aprendizaje real, e incorporar la enseñanza explícita del vocabulario propio de las consignas académicas es la decisión que mejor responde a la evidencia y que previene que esta misma dificultad afecte futuras evaluaciones.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque cierto nivel de vocabulario académico sí se espera en grado noveno; pero ignora la evidencia directa de confusión conceptual sobre el término (asociarlo con el proceso biológico de síntesis) y la diferencia clara de desempeño entre ambas preguntas, lo cual demuestra que, en este caso particular, la palabra generó una barrera real de comprensión que no debe pasarse por alto.
+- C) Es plausible porque busca eliminar el efecto de una consigna problemática para todo el curso; pero anular la pregunta sin distinguir entre quienes sí comprendieron el término y quienes no trata de manera idéntica a estudiantes con desempeños distintos, y desperdicia información valiosa sobre quiénes sí manejan el vocabulario académico esperado.
+- D) Es plausible porque el bajo desempeño en la primera pregunta podría interpretarse como vacío de contenido; pero esto contradice la evidencia recogida por la propia docente, que muestra que estos mismos estudiantes sí dominan el contenido cuando la consigna se formula con un vocabulario más accesible, por lo que un repaso general de contenido no sería la intervención pertinente.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias en Ciencias Naturales y Lenguaje del MEN, que reconocen la alfabetización académica (comprensión del vocabulario propio de las consignas y textos disciplinares) como una competencia que debe enseñarse explícitamente y no asumirse como adquirida.
+
+**Proceso cognitivo evaluado:** Diferenciación entre barrera de vocabulario académico de la consigna y vacío de conocimiento del contenido evaluado, mediante evidencia comparativa entre formulaciones distintas de una misma pregunta.
+
+**Error frecuente del aspirante:** Asumir que el vocabulario usado en una consigna de evaluación es igualmente accesible para todos los estudiantes por corresponder al nivel de grado esperado, sin verificar si términos específicos pueden generar confusión o interpretaciones erróneas que afecten el desempeño sin reflejar el conocimiento real del contenido.
+
+**Estrategia mental recomendada:** Cuando el desempeño de un estudiante varía notablemente entre dos formulaciones distintas de una pregunta sobre el mismo contenido, sospechar una barrera de vocabulario o de comprensión de la consigna, y verificar directamente con los estudiantes si un término específico generó confusión antes de atribuir el resultado a un vacío de contenido.
+
+---
+
+## MOD01-CC-007
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Liderazgo pedagógico en trabajo colaborativo
+**Subcompetencia:** Verificación de comprensión distribuida de una consigna en dinámicas de trabajo grupal
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En grado séptimo, un docente organiza a los estudiantes en grupos de cinco para desarrollar una maqueta sobre los pisos térmicos de Colombia, con una consigna escrita que incluye tres requisitos específicos: representar al menos tres pisos térmicos distintos, incluir la altitud aproximada de cada uno, y señalar un cultivo característico representativo de cada piso. El docente entrega la consigna por escrito a un solo integrante de cada grupo, designado como "relator", con la instrucción de que la comparta y explique al resto de sus compañeros de equipo. Al revisar las maquetas entregadas por los seis grupos del curso, encuentra que uno de los grupos no incluyó la altitud aproximada de los pisos térmicos representados, a pesar de que este requisito estaba claramente escrito en la consigna original. Al indagar con los integrantes de ese grupo, el docente descubre que el estudiante relator sí leyó la consigna completa, pero al transmitirla oralmente a sus compañeros, omitió mencionar el requisito de la altitud, posiblemente por un olvido involuntario durante la explicación verbal apresurada que dio al grupo. Los demás integrantes del grupo confirman que nunca escucharon ese requisito de parte de su compañero relator y que, de haberlo conocido, habrían podido incluirlo sin dificultad, ya que el contenido fue trabajado en clase.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica del docente frente a esta situación?
+
+A) Calificar el trabajo del grupo con la nota correspondiente al requisito faltante, ya que la consigna fue entregada por escrito y de manera completa, y la responsabilidad de comunicarla correctamente dentro del equipo recaía en la dinámica interna del grupo.
+B) Ofrecer al grupo la oportunidad de complementar la maqueta incluyendo la altitud faltante antes de asignar la calificación final, y aprovechar la situación para reforzar con todo el curso una estrategia de verificación de comprensión de consignas en trabajo grupal, como confirmar por escrito los requisitos entendidos por todos los integrantes.
+C) Calificar únicamente al estudiante relator con una nota más baja por la omisión, manteniendo la calificación completa para el resto de los integrantes del grupo, ya que fueron ellos quienes no recibieron la información completa.
+D) Suspender el uso de la estrategia de "relator" en futuras actividades grupales, y entregar siempre la consigna por escrito de manera individual a cada integrante del grupo, para evitar cualquier riesgo de pérdida de información en la comunicación interna del equipo.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La evidencia recogida muestra que el vacío en el trabajo final no se debe a un desconocimiento del contenido por parte del grupo (confirman que podían haberlo incluido si lo hubieran conocido), sino a una falla puntual en la comunicación interna de la consigna, que es un riesgo inherente y previsible de la estrategia de "relator" cuando no se acompaña de mecanismos de verificación. La decisión más justa es ofrecer la oportunidad de completar el trabajo, dado que la causa no fue una limitación de aprendizaje del grupo, y aprovechar el caso para fortalecer, con todo el curso, una estrategia de verificación de comprensión distribuida en el trabajo colaborativo, que previene que esta situación se repita en el futuro.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque la consigna sí fue entregada completa y por escrito, lo que podría sugerir que la responsabilidad recae en el grupo; pero desconoce que la causa identificada fue un olvido involuntario en la comunicación interna, no una falta de comprensión o de trabajo del equipo, y penalizar el resultado final sin ofrecer oportunidad de ajuste es desproporcionado frente a la causa real identificada.
+- C) Es plausible porque busca "hacer responsable a quien cometió el olvido"; pero calificar de manera diferenciada y punitiva a un solo integrante por un olvido involuntario en una dinámica de comunicación grupal no resuelve la situación de fondo, no es formativo, y desatiende que el objetivo pedagógico del trabajo era del equipo completo, no de un solo estudiante.
+- D) Es plausible porque busca prevenir que la situación se repita eliminando la estrategia que generó el riesgo; pero suspender por completo una estrategia de trabajo colaborativo válida, en lugar de fortalecerla con un mecanismo de verificación, renuncia a una oportunidad legítima de desarrollo de habilidades de comunicación y liderazgo dentro del trabajo en equipo.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias Ciudadanas del MEN, sobre el desarrollo de habilidades de comunicación y trabajo colaborativo, y el principio de evaluación formativa por procesos del Decreto 1290 de 2009.
+
+**Proceso cognitivo evaluado:** Análisis de la causa de un vacío en un producto grupal, diferenciando entre falta de comprensión del contenido y falla en la comunicación interna de una consigna dentro de una dinámica de trabajo colaborativo.
+
+**Error frecuente del aspirante:** Asumir que, una vez entregada una consigna completa y por escrito, la responsabilidad de su comprensión y ejecución correcta recae completamente en los estudiantes, sin considerar que las dinámicas de comunicación interna en el trabajo grupal pueden introducir fallas ajenas al nivel real de comprensión o aprendizaje del equipo.
+
+**Estrategia mental recomendada:** Al diseñar actividades de trabajo colaborativo donde la consigna se comunica a través de un integrante del grupo, incorporar siempre un mecanismo de verificación de comprensión distribuida (por ejemplo, confirmación escrita de todos los integrantes) que permita detectar y corregir fallas de comunicación interna antes de que afecten el resultado final del trabajo.
+
+---
+
+## MOD01-CC-008
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Alfabetización evaluativa y familiarización con formatos de prueba estandarizada
+**Subcompetencia:** Enseñanza explícita de la estructura de preguntas tipo prueba Saber
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado once, un docente de matemáticas aplica un simulacro con preguntas en formato tipo Saber, que incluyen la estructura de "afirmación y razón", en la que se presenta una afirmación matemática seguida de una razón, y el estudiante debe determinar si ambas son verdaderas y si la razón explica correctamente la afirmación, si ambas son verdaderas pero la razón no explica la afirmación, o si alguna de las dos es falsa. Al revisar los resultados, el docente encuentra que 21 de 30 estudiantes obtienen resultados bajos específicamente en las preguntas con esta estructura, mientras que su desempeño en preguntas de opción múltiple tradicional sobre los mismos contenidos matemáticos es notablemente más alto. Al conversar con varios estudiantes sobre cómo abordaron las preguntas de afirmación y razón, el docente confirma que la mayoría domina el contenido matemático evaluado en cada afirmación por separado, pero no comprende con claridad la lógica de la estructura de la pregunta: no distinguen bien entre que "ambas partes sean verdaderas" y que "la razón explique correctamente la afirmación", tratando la pregunta como si fuera simplemente una pregunta de verdadero o falso sobre cada parte por separado. El docente reconoce que este formato de pregunta no había sido trabajado explícitamente con el curso antes de este simulacro, aunque sí se había explicado su estructura de manera general al inicio de la aplicación.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica del docente frente a este hallazgo?
+
+A) Concluir que los 21 estudiantes presentan un vacío de contenido matemático en los temas evaluados mediante esta estructura de pregunta, y programar un refuerzo de contenido matemático centrado en dichos temas antes del próximo simulacro.
+B) Diseñar una secuencia breve de enseñanza explícita sobre la lógica y estructura de las preguntas de afirmación y razón, con ejemplos guiados que permitan a los estudiantes practicar la distinción entre la verdad de cada parte y la relación explicativa entre ellas, antes de aplicar un nuevo simulacro con este formato.
+C) Excluir las preguntas con estructura de afirmación y razón de los próximos simulacros aplicados al curso, dado que no corresponden al formato de evaluación habitual usado durante el año en las evaluaciones internas de la institución.
+D) Aplicar nuevamente el mismo simulacro sin ninguna intervención previa, para verificar si el desempeño mejora simplemente con una segunda exposición al mismo tipo de preguntas.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La evidencia —desempeño alto en preguntas tradicionales sobre el mismo contenido, contrastado con desempeño bajo específicamente en la estructura de afirmación y razón, más la confirmación directa de que los estudiantes no distinguen bien la lógica particular de este formato— indica con claridad que la causa del bajo desempeño es la falta de familiarización con la estructura del formato de pregunta, no un vacío de contenido matemático. La decisión pedagógicamente adecuada es enseñar explícitamente la lógica de este formato de pregunta, que es una habilidad de alfabetización evaluativa distinta del contenido matemático en sí, y que resulta indispensable dado que este tipo de preguntas es frecuente en pruebas estandarizadas oficiales.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque el resultado bajo apareció en preguntas relacionadas con temas matemáticos específicos; pero la evidencia comparativa con el desempeño en preguntas tradicionales sobre los mismos temas descarta un vacío de contenido, y un refuerzo de contenido no resolvería la dificultad real, que está en la comprensión de la estructura lógica del formato de pregunta.
+- C) Es plausible porque busca evitar el formato que generó el bajo resultado; pero eliminar la exposición a un formato de pregunta que es frecuente en pruebas estandarizadas oficiales, en lugar de enseñar explícitamente a manejarlo, deja a los estudiantes en desventaja para evaluaciones futuras donde ese formato sí aparecerá.
+- D) Es plausible porque una segunda exposición al mismo formato podría, en teoría, generar algo de familiarización; pero repetir la evaluación sin ninguna enseñanza explícita previa sobre la lógica del formato no ataca la causa identificada del error, y es poco probable que produzca una mejora significativa sin una intervención pedagógica directa.
+
+**Fundamento normativo o pedagógico:** Lineamientos del ICFES sobre la estructura de las pruebas Saber y la importancia de la familiarización pedagógica con los formatos de pregunta como parte de la preparación integral de los estudiantes, sin sustituir el desarrollo del contenido curricular.
+
+**Proceso cognitivo evaluado:** Diferenciación entre dominio de contenido disciplinar y familiarización con la lógica estructural de un formato específico de evaluación estandarizada.
+
+**Error frecuente del aspirante:** Interpretar el bajo desempeño en un formato de pregunta poco familiar como evidencia de un vacío de contenido, sin comparar el desempeño del mismo contenido en formatos de pregunta ya conocidos por los estudiantes, lo cual permitiría aislar la verdadera causa del error.
+
+**Estrategia mental recomendada:** Ante un bajo desempeño concentrado en un formato específico de pregunta, comparar siempre el desempeño en el mismo contenido evaluado con formatos ya familiares para los estudiantes; si la diferencia es marcada, la causa probable está en la familiarización con el formato, no en el dominio del contenido.
+
+---
+
+## MOD01-CC-009
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Diseño de instrucciones pedagógicas y manejo de carga cognitiva en la niñez
+**Subcompetencia:** Fragmentación de consignas con múltiples pasos simultáneos para estudiantes de primaria
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado primero, una docente da la siguiente instrucción oral a sus estudiantes, de una sola vez y sin pausas: "Guarden el cuaderno de matemáticas, saquen el de español, abran en la página quince, copien el título que está en el tablero, y cuando terminen levanten la mano para que yo revise". Al observar al curso después de dar esta instrucción, la docente nota que la mayoría de los estudiantes queda visiblemente confundida: algunos guardan el cuaderno de matemáticas pero no sacan el de español, otros sacan el cuaderno correcto pero no lo abren en la página indicada, y solo un pequeño grupo de estudiantes logra completar los cinco pasos de la instrucción en el orden correcto sin necesidad de que la docente la repita. La docente reconoce que esta misma dificultad para seguir instrucciones con varios pasos simultáneos se ha presentado en ocasiones anteriores durante el año escolar, especialmente cuando las instrucciones se dan de manera oral, rápida y sin ningún tipo de apoyo visual o secuencial. Debe decidir cómo ajustar su forma de dar este tipo de instrucciones cotidianas de manera sostenida durante el año, considerando las características propias del desarrollo de la atención y la memoria de trabajo en niños de esta edad.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente frente a esta situación recurrente?
+
+A) Repetir la misma instrucción completa una segunda vez inmediatamente después de la primera, asumiendo que los estudiantes necesitan escuchar la secuencia de pasos en dos ocasiones para poder retenerla y ejecutarla correctamente.
+B) Fragmentar las instrucciones con varios pasos en indicaciones más breves y secuenciales, dando un paso a la vez y verificando que la mayoría del curso lo haya completado antes de dar el siguiente, incorporando además apoyo visual (como una secuencia de imágenes en el tablero) cuando sea posible.
+C) Reducir la cantidad de materiales y pasos que se solicitan a los estudiantes durante toda la jornada escolar, evitando en lo posible cualquier instrucción que implique más de un paso, para ajustarse a la capacidad de atención observada en el grupo.
+D) Solicitar a los estudiantes que tienen mayor facilidad para seguir instrucciones completas que ayuden a sus compañeros con dificultad, delegando en ellos la repetición de la secuencia de pasos indicada.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La dificultad observada es consistente con las características esperadas del desarrollo de la atención y la memoria de trabajo en niños de grado primero, para quienes retener y ejecutar en orden una secuencia larga de instrucciones simultáneas representa una exigencia cognitiva alta. La estrategia pedagógicamente adecuada es fragmentar la instrucción en pasos secuenciales, verificando el cumplimiento de cada uno antes de avanzar al siguiente, y apoyarse en recursos visuales que reduzcan la carga sobre la memoria auditiva, en lugar de mantener instrucciones extensas o delegar su comprensión en otros estudiantes.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque repetir una instrucción parece una forma sencilla de reforzar su comprensión; pero repetir la misma secuencia larga de pasos, sin fragmentarla, no reduce la carga cognitiva que genera la dificultad real, que está en la cantidad de información simultánea a retener, no en la falta de repetición.
+- C) Es plausible porque busca ajustarse a la capacidad de atención del grupo; pero reducir de manera permanente la cantidad de pasos e instrucciones limita innecesariamente el desarrollo progresivo de la capacidad de seguir instrucciones más complejas, cuando existe una estrategia más efectiva (la fragmentación) que permite mantener la exigencia mientras se ajusta la forma de comunicarla.
+- D) Es plausible porque el apoyo entre pares puede ser una estrategia colaborativa válida en otros contextos; pero delegar en otros estudiantes la responsabilidad de asegurar la comprensión de instrucciones cotidianas de organización de la clase no es una estrategia pedagógica sostenible ni resuelve la causa de fondo, que requiere un ajuste directo en la forma en que la docente comunica las instrucciones.
+
+**Fundamento normativo o pedagógico:** Lineamiento Pedagógico y Curricular para la Educación Inicial y de primer ciclo del MEN, que reconoce las características del desarrollo de la atención y la memoria de trabajo en la niñez temprana como un factor determinante en el diseño de instrucciones pedagógicas efectivas.
+
+**Proceso cognitivo evaluado:** Ajuste del diseño de instrucciones pedagógicas considerando las características evolutivas de la carga cognitiva y la memoria de trabajo en la niñez.
+
+**Error frecuente del aspirante:** Atribuir la dificultad para seguir instrucciones con varios pasos simultáneos a una falta de atención o disciplina de los estudiantes, sin considerar que la extensión y complejidad simultánea de la instrucción puede exceder la capacidad esperada de memoria de trabajo para la edad del grupo.
+
+**Estrategia mental recomendada:** Al dar instrucciones con varios pasos a estudiantes de primeros grados, fragmentar siempre la instrucción en pasos secuenciales verificables, en lugar de comunicar la secuencia completa de una sola vez, especialmente cuando se trata de instrucciones orales sin apoyo visual.
+
+---
+
+## MOD01-CC-010
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Comunicación pedagógica con las familias y trabajo con tareas escolares
+**Subcompetencia:** Diagnóstico de la causa de una tarea mal ejecutada por fallas de comunicación de la consigna
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado cuarto, una docente asigna una tarea para la casa que consiste en investigar y escribir un párrafo sobre un animal en peligro de extinción en Colombia, incluyendo su nombre, hábitat y una causa de su amenaza. La instrucción se dictó verbalmente al final de una clase agitada, mientras varios estudiantes ya guardaban sus materiales, y no quedó registrada por escrito en el cuaderno de tareas de la mayoría de los estudiantes, según la docente confirma al revisar los cuadernos al día siguiente. Al recibir las tareas, encuentra que 11 de 25 estudiantes entregan trabajos que no corresponden exactamente a lo solicitado: algunos escriben sobre animales que no están en peligro de extinción, otros omiten el hábitat o la causa de la amenaza, y dos estudiantes entienden que debían dibujar el animal en lugar de escribir el párrafo solicitado. Al conversar con algunos de estos estudiantes y sus familias, la docente confirma que la instrucción no llegó con claridad a los hogares, y que varios estudiantes intentaron recordarla de memoria o preguntaron a compañeros, generando versiones distintas e incompletas de la tarea original. La docente debe decidir cómo manejar la situación al día siguiente de la entrega, considerando tanto la responsabilidad formativa de la actividad como la causa identificada del problema.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente frente a esta situación?
+
+A) Calificar las tareas tal como fueron entregadas, asignando una nota baja a los 11 estudiantes cuyo trabajo no corresponde a lo solicitado, dado que la tarea fue asignada y comunicada verbalmente en clase, y su cumplimiento correcto es responsabilidad del estudiante y su familia.
+B) Reconocer que la instrucción no fue comunicada de manera suficientemente clara ni quedó registrada por escrito, ofrecer a los 11 estudiantes la oportunidad de ajustar su trabajo con la consigna correctamente explicada, y adoptar de manera sostenida la práctica de registrar por escrito las tareas asignadas para la casa.
+C) Suspender la asignación de tareas para la casa durante el resto del periodo académico, dado que esta situación demuestra que la comunicación oral de instrucciones fuera del horario de clase no es confiable.
+D) Solicitar a los padres de familia de los 11 estudiantes una reunión formal para explicarles que deben asegurarse de registrar por escrito las instrucciones dictadas verbalmente por la docente al final de cada clase.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La evidencia recogida —instrucción dictada verbalmente en un momento de dispersión de la clase, sin registro escrito, y confirmación directa de que la información no llegó con claridad a las familias— señala que la causa principal del trabajo incompleto no fue una falta de comprensión o de esfuerzo por parte de los estudiantes, sino una comunicación insuficiente de la consigna. La decisión más justa es ofrecer la oportunidad de ajustar el trabajo, y de manera más importante, corregir hacia adelante la práctica de comunicación de tareas, adoptando el registro escrito como estrategia sostenida que prevenga que esta situación se repita.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque la tarea sí fue asignada verbalmente en clase; pero calificar de manera punitiva un resultado cuya causa identificada es una falla de comunicación de la consigna, no una falta de esfuerzo o comprensión del estudiante, es una decisión injusta que no atiende la evidencia recogida por la propia docente.
+- C) Es plausible porque busca evitar que la situación se repita eliminando el riesgo; pero suspender por completo las tareas para la casa es una medida desproporcionada frente a un problema que tiene una solución más simple y directa: mejorar la forma en que se comunican las instrucciones, sin renunciar al valor formativo del trabajo autónomo en casa.
+- D) Es plausible porque involucrar a las familias en la solución parece razonable; pero trasladar la responsabilidad de registrar correctamente instrucciones dictadas verbalmente y de manera apresurada a las familias, en lugar de que la propia docente adopte la práctica de comunicar las tareas por escrito, no resuelve la causa raíz identificada, que está del lado de la comunicación docente, no de la responsabilidad familiar.
+
+**Fundamento normativo o pedagógico:** Decreto 1290 de 2009, sobre la comunicación clara y oportuna a los estudiantes y las familias de las actividades y criterios que serán objeto de evaluación, como condición para un proceso evaluativo justo.
+
+**Proceso cognitivo evaluado:** Análisis de la causa de un desempeño deficiente generalizado, diferenciando entre responsabilidad del estudiante y responsabilidad de la calidad de la comunicación pedagógica de la consigna.
+
+**Error frecuente del aspirante:** Atribuir automáticamente el incumplimiento incorrecto de una tarea para la casa a una falta de responsabilidad o esfuerzo del estudiante y su familia, sin evaluar primero si la instrucción fue comunicada con la claridad y el respaldo (como el registro escrito) necesarios para garantizar su comprensión fuera del aula.
+
+**Estrategia mental recomendada:** Ante un patrón de tareas mal ejecutadas que afecta a un número considerable de estudiantes, revisar primero cómo fue comunicada la instrucción (verbal, escrita, en qué momento de la clase) antes de atribuir el resultado a una falta de responsabilidad de los estudiantes o sus familias.
+
+---
+
+## MOD01-CC-011
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Evaluación formativa y diagnóstico metacognitivo del estudiante
+**Subcompetencia:** Diferenciación entre falta de atención a la consigna y falta de comprensión real de la misma
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En grado octavo, un docente de matemáticas aplica una evaluación individual en la que una de las preguntas indica claramente en negrilla al inicio del enunciado: "Resuelva el siguiente problema usando el método de sustitución (no use el método gráfico)". Al revisar las respuestas, encuentra que 8 de 26 estudiantes resuelven el problema correctamente en cuanto al resultado numérico final, pero utilizan el método gráfico en lugar del método de sustitución solicitado explícitamente en la consigna. Al conversar con estos estudiantes después de la evaluación, el docente identifica dos situaciones distintas entre ellos: cinco de los ocho reconocen de inmediato que no leyeron con atención la indicación en negrilla y que, de haberla notado, habrían podido resolver el problema con el método solicitado sin dificultad, ya que lo dominan. Los otros tres estudiantes, sin embargo, afirman haber leído la indicación, pero no tenían claro en qué consistía exactamente el "método de sustitución" como procedimiento distinto del método gráfico, por lo que optaron por resolver el problema con el método que sí dominaban con seguridad. El docente debe decidir cómo calificar y retroalimentar a cada uno de estos dos grupos de estudiantes, reconociendo que, aunque ambos incumplieron la misma indicación de la consigna, las causas de fondo son distintas.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica del docente frente a estos dos grupos de estudiantes?
+
+A) Asignar la misma calificación y el mismo tipo de retroalimentación a los ocho estudiantes, ya que todos incumplieron la misma indicación explícita de la consigna, independientemente de la razón específica por la que lo hicieron.
+B) Diferenciar la retroalimentación: para los cinco estudiantes que no atendieron la indicación por falta de lectura cuidadosa, reforzar estrategias de lectura atenta de la consigna antes de resolver; para los tres estudiantes que no dominan el método de sustitución, programar una intervención específica sobre ese procedimiento matemático, dado que se trata de una causa distinta.
+C) Otorgar la calificación máxima a los ocho estudiantes en esta pregunta, dado que todos llegaron al resultado numérico correcto, que es finalmente el objetivo principal de un problema matemático de este tipo.
+D) Aplicar la misma sanción a los ocho estudiantes, pero reducir aún más la calificación de los tres estudiantes que afirman haber leído la consigna, dado que su incumplimiento parece menos justificable que el de quienes reconocen no haberla leído con atención.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+Aunque el resultado observable (no usar el método solicitado) fue el mismo en los ocho casos, las causas son claramente distintas: en cinco estudiantes se trata de una falta de atención a la lectura de la consigna, mientras que en los otros tres se trata de un vacío real de dominio del método de sustitución como procedimiento matemático. Cada causa requiere una intervención pedagógica distinta: estrategias de lectura atenta de instrucciones para el primer grupo, y enseñanza específica del procedimiento matemático para el segundo. Tratar a ambos grupos de la misma manera desaprovecha información valiosa recogida directamente de los propios estudiantes sobre la causa real de su error.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque, desde el resultado observable, los ocho estudiantes cometieron el mismo incumplimiento; pero ignorar la causa distinta detrás de cada caso, ya identificada mediante el diálogo directo con los estudiantes, desperdicia una oportunidad de retroalimentación más precisa y efectiva para cada grupo.
+- C) Es plausible porque el resultado numérico final fue correcto en los ocho casos; pero la consigna evaluaba explícitamente el dominio de un método específico (sustitución), no solo la obtención del resultado correcto, por lo que ignorar el incumplimiento de esa exigencia particular desatiende el objetivo real de la pregunta planteada.
+- D) Es plausible porque podría parecer que "afirmar haber leído la consigna sin cumplirla" amerita mayor responsabilidad; pero esta interpretación desconoce que, en el caso de los tres estudiantes, la causa real no fue negligencia sino un vacío genuino de conocimiento del método solicitado, lo cual no debe sancionarse de manera adicional respecto a los demás, sino atenderse con una intervención pedagógica específica.
+
+**Fundamento normativo o pedagógico:** Decreto 1290 de 2009, sobre la evaluación como proceso formativo que debe identificar causas específicas del desempeño de cada estudiante para orientar intervenciones pedagógicas pertinentes y diferenciadas.
+
+**Proceso cognitivo evaluado:** Diferenciación entre causas de incumplimiento de una consigna explícita (falta de atención frente a vacío de conocimiento procedimental), mediante indagación directa con los estudiantes.
+
+**Error frecuente del aspirante:** Asumir que todo incumplimiento de una misma indicación explícita de la consigna tiene la misma causa y, por tanto, amerita el mismo tipo de retroalimentación o sanción, sin indagar si distintos estudiantes incumplieron la misma indicación por razones pedagógicamente distintas.
+
+**Estrategia mental recomendada:** Ante un grupo de estudiantes que incumple la misma indicación explícita de una consigna, indagar directamente con ellos la razón específica del incumplimiento antes de diseñar la retroalimentación, ya que un mismo resultado observable puede tener causas pedagógicas distintas que requieren intervenciones diferenciadas.
+
+---
+
+## MOD01-CC-012
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Diseño de instrumentos de evaluación y claridad lógica de las preguntas
+**Subcompetencia:** Identificación de ambigüedad lógica en consignas con doble negación
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En grado décimo, un docente de biología aplica una evaluación de opción múltiple que incluye la siguiente pregunta: "¿Cuál de las siguientes estructuras NO participa en el proceso de la fotosíntesis?", con cuatro opciones que incluyen tres estructuras que sí participan (cloroplasto, estoma, mitocondria como distractor plausible ya que interviene en la respiración, no en la fotosíntesis) y una estructura que efectivamente no participa. Al revisar los resultados, el docente encuentra que 15 de 27 estudiantes seleccionan una de las estructuras que sí participa en la fotosíntesis como respuesta, un patrón de error inusualmente alto considerando que, en preguntas anteriores del mismo examen sobre las funciones específicas de cada estructura (formuladas de manera afirmativa, sin negación), estos mismos estudiantes responden correctamente. Al revisar con algunos estudiantes su proceso de razonamiento durante la prueba, el docente identifica que varios de ellos, al leer rápido la pregunta bajo presión de tiempo, pasan por alto la palabra "NO" en mayúscula sostenida y responden como si la pregunta fuera afirmativa, seleccionando una estructura que sí participa activamente en el proceso, pensando erróneamente que estaban identificando la respuesta correcta a una pregunta afirmativa.
+
+**Pregunta:** ¿Cuál es la mejor interpretación y decisión pedagógica del docente frente a este hallazgo?
+
+A) Concluir que los 15 estudiantes no dominan con precisión las funciones específicas de cada estructura involucrada en la fotosíntesis, y programar un refuerzo de contenido centrado en las funciones de cada estructura celular relacionada con este proceso.
+B) Reconocer que el patrón de error, contrastado con el buen desempeño en preguntas afirmativas sobre el mismo contenido, sugiere una dificultad para procesar la negación lógica de la consigna bajo presión de tiempo, más que un vacío de contenido, e incorporar en futuras evaluaciones y en la enseñanza estrategias explícitas de lectura atenta de consignas con negaciones.
+C) Eliminar de manera permanente las preguntas con negaciones lógicas ("NO", "EXCEPTO") de todas las evaluaciones futuras, para evitar que el formato de la pregunta interfiera con la evaluación del contenido.
+D) Calificar la pregunta como válida sin ningún ajuste adicional, ya que la palabra "NO" estaba escrita en mayúscula sostenida y suficientemente visible como para que cualquier estudiante que leyera con atención pudiera identificarla correctamente.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El contraste entre el buen desempeño en preguntas afirmativas sobre el mismo contenido y el desempeño notablemente más bajo específicamente en la pregunta con negación, sumado a la confirmación directa de que varios estudiantes pasaron por alto la negación bajo presión de tiempo, constituye evidencia clara de que la causa del error es una dificultad de procesamiento lógico de la consigna, no un vacío de conocimiento sobre las funciones celulares. La decisión pedagógicamente adecuada es reconocer esta causa y enseñar explícitamente estrategias de lectura atenta para este tipo de estructura de pregunta, que es frecuente en evaluaciones estandarizadas y, por tanto, una habilidad que vale la pena desarrollar en lugar de evitar.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque la pregunta específica evaluaba conocimiento sobre estructuras celulares, lo que podría sugerir un vacío de contenido; pero el buen desempeño de estos mismos estudiantes en preguntas afirmativas sobre las mismas estructuras descarta esa interpretación y apunta claramente a una dificultad de procesamiento de la negación lógica de la consigna.
+- C) Es plausible porque eliminar el formato problemático parece una solución sencilla; pero las preguntas con negación lógica son un formato legítimo y frecuente en evaluaciones estandarizadas oficiales, y evitarlas por completo priva a los estudiantes de la oportunidad de desarrollar una habilidad de lectura atenta que necesitarán en evaluaciones futuras.
+- D) Es plausible porque la palabra "NO" sí estaba visualmente destacada en mayúscula sostenida; pero la evidencia muestra que, bajo presión de tiempo, esa señal visual no fue suficiente para evitar el error en un número considerable de estudiantes, lo que indica que el problema no se resuelve simplemente con el énfasis tipográfico, sino que requiere enseñanza explícita de la estrategia de lectura.
+
+**Fundamento normativo o pedagógico:** Lineamientos del ICFES sobre el diseño y la alfabetización evaluativa frente a formatos de pregunta con negaciones lógicas, frecuentes en pruebas estandarizadas, y el principio de evaluación formativa del Decreto 1290 de 2009 orientado a identificar causas específicas del error.
+
+**Proceso cognitivo evaluado:** Identificación de dificultades de procesamiento lógico de consignas con negación, diferenciándolas de vacíos de contenido disciplinar, mediante evidencia comparativa de desempeño.
+
+**Error frecuente del aspirante:** Asumir que un énfasis tipográfico (mayúscula sostenida, negrilla) en una palabra clave de la consigna es suficiente para garantizar su comprensión bajo presión de tiempo, sin considerar la necesidad de enseñar explícitamente estrategias de lectura atenta para este tipo de estructura lógica de pregunta.
+
+**Estrategia mental recomendada:** Ante un patrón de error concentrado específicamente en preguntas con negación lógica, comparar el desempeño con preguntas afirmativas sobre el mismo contenido; si el contraste es marcado, la causa probable es de procesamiento lógico de la consigna, no de conocimiento del contenido evaluado.
+
+---
+
+## MOD01-CC-013
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Inclusión educativa y accesibilidad de instrumentos de evaluación
+**Subcompetencia:** Ajuste de formato de consignas para estudiantes con discapacidad visual
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En grado sexto, un estudiante con baja visión, que cuenta con un PIAR vigente en el cual se establece como ajuste razonable la entrega de materiales impresos en formato de letra ampliada (macrotipo) con un tamaño mínimo especificado, presenta una evaluación de Ciencias Sociales en la que debía observar un mapa impreso para responder tres preguntas relacionadas con la ubicación de regiones geográficas de Colombia. Al momento de aplicar la evaluación, la docente encargada de imprimir los materiales entrega, por error del proceso administrativo de fotocopiado, la misma versión del mapa en tamaño estándar utilizada para el resto del curso, sin el ajuste de macrotipo acordado en el PIAR. El estudiante intenta resolver las preguntas apoyándose en lo que logra distinguir del mapa, pero responde de manera incorrecta las tres preguntas, relacionadas con la ubicación exacta de regiones que no logró identificar con claridad visual en el formato entregado. Al revisar los resultados generales del curso, la docente titular nota que este estudiante, quien en evaluaciones anteriores con el ajuste correctamente aplicado ha mostrado un desempeño adecuado en el área, obtiene en esta ocasión un resultado considerablemente más bajo que su patrón habitual, y verifica que efectivamente el material entregado no correspondía al ajuste razonable establecido en su PIAR.
+
+**Pregunta:** ¿Cuál es la mejor decisión de la docente titular al identificar esta situación?
+
+A) Mantener la calificación obtenida por el estudiante en esta evaluación, ya que el error se debió a un problema administrativo de fotocopiado ajeno a la responsabilidad pedagógica directa de la docente, y registrar el incidente como una situación aislada para evitar que se repita en el futuro.
+B) Anular la calificación obtenida en esta evaluación, aplicar nuevamente la prueba al estudiante con el material correctamente ajustado en macrotipo según lo establecido en su PIAR, y revisar con el equipo institucional el proceso administrativo de producción de materiales para prevenir que la falla se repita.
+C) Otorgar al estudiante una calificación basada en un promedio de sus resultados en evaluaciones anteriores del área, sin necesidad de aplicar nuevamente la prueba, dado que ya existe evidencia suficiente de su desempeño habitual en la asignatura.
+D) Solicitar a la familia del estudiante que refuerce en casa los contenidos de ubicación geográfica evaluados, considerando que el resultado bajo, independientemente de su causa, refleja una oportunidad de mejora que debe atenderse con apoyo adicional fuera del aula.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El ajuste razonable de macrotipo, ya acordado formalmente en el PIAR del estudiante, es una condición indispensable para que la evaluación mida realmente su conocimiento del contenido y no una limitación de acceso visual al material. Dado que este ajuste no se aplicó por un error administrativo, la calificación obtenida no refleja de manera válida el aprendizaje del estudiante, por lo que corresponde anular ese resultado, aplicar nuevamente la evaluación con el ajuste correctamente implementado, y atender la causa administrativa de fondo para prevenir que la falla se repita en futuras evaluaciones.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque el error se originó en un proceso administrativo y no directamente en una decisión pedagógica de la docente; pero independientemente del origen del error, la evaluación no midió de manera válida el aprendizaje del estudiante al no contar con el ajuste razonable acordado, por lo que mantener esa calificación perpetúa una evaluación inválida y vulnera el derecho del estudiante a ser evaluado en condiciones de accesibilidad garantizadas.
+- C) Es plausible porque busca una solución que no exija repetir la prueba; pero sustituir el resultado por un promedio de evaluaciones anteriores no permite verificar el aprendizaje específico del contenido evaluado en esta prueba particular, y no es equivalente a ofrecer al estudiante la oportunidad real de demostrar su conocimiento en condiciones adecuadas.
+- D) Es plausible porque un resultado bajo podría interpretarse, en un caso ordinario, como una oportunidad de refuerzo; pero en este caso la causa del resultado ya fue identificada con claridad como un fallo en la implementación del ajuste razonable, no como una dificultad real de aprendizaje del estudiante, por lo que solicitar refuerzo adicional en casa no corresponde a la causa real del problema.
+
+**Fundamento normativo o pedagógico:** Decreto 1421 de 2017, sobre la obligatoriedad de implementar los ajustes razonables establecidos en el PIAR en todos los procesos evaluativos, incluyendo el formato accesible de los instrumentos de evaluación, como condición de validez de la evaluación misma.
+
+**Proceso cognitivo evaluado:** Identificación de una falla en la implementación de un ajuste razonable como causa de un resultado evaluativo no válido, y aplicación del procedimiento correctivo correspondiente.
+
+**Error frecuente del aspirante:** Considerar válida una calificación obtenida en una evaluación donde no se implementó correctamente un ajuste razonable acordado, especialmente cuando el origen del error parece ajeno a la responsabilidad pedagógica directa, sin reconocer que la validez de la evaluación depende de las condiciones de accesibilidad garantizadas al estudiante.
+
+**Estrategia mental recomendada:** Ante cualquier resultado evaluativo inusualmente bajo en un estudiante con PIAR, verificar primero si los ajustes razonables establecidos fueron efectivamente implementados en esa evaluación específica, antes de interpretar el resultado como reflejo del aprendizaje real del estudiante.
+
+---
+
+## MOD01-CC-014
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Debido proceso evaluativo y comunicación de criterios de evaluación
+**Subcompetencia:** Comunicación anticipada de rúbricas y criterios de evaluación de un proyecto de aula
+**Nivel de dificultad:** Alta
+
+**Caso:**
+En grado noveno, un docente de tecnología e informática asigna un proyecto de aula de cuatro semanas de duración, en el cual los estudiantes deben diseñar una propuesta de solución tecnológica para un problema de su comunidad. Al momento de asignar el proyecto, el docente explica oralmente el tema y los pasos generales a seguir, pero no entrega ni socializa con los estudiantes una rúbrica o lista de criterios específicos de evaluación, indicando que la calificación se definirá "según la calidad general del trabajo entregado". Al finalizar las cuatro semanas y calificar los proyectos, el docente utiliza internamente una rúbrica con cinco criterios específicos (pertinencia del problema, viabilidad de la solución, uso de conceptos tecnológicos vistos en clase, calidad de la presentación, y trabajo en equipo), que nunca fue comunicada a los estudiantes durante el desarrollo del proyecto. Al recibir las calificaciones, varios estudiantes expresan sorpresa porque, aunque dedicaron tiempo considerable a pulir la presentación visual de su proyecto, obtuvieron una calificación baja debido a que su propuesta no incorporaba explícitamente los conceptos tecnológicos vistos en clase, criterio que desconocían que tendría un peso importante en la evaluación final. El docente debe decidir cómo manejar esta situación antes de consolidar las calificaciones definitivas del proyecto.
+
+**Pregunta:** ¿Cuál es la mejor decisión del docente frente a esta situación?
+
+A) Mantener las calificaciones asignadas de acuerdo con la rúbrica interna utilizada, ya que esta refleja de manera rigurosa y objetiva los criterios técnicos que un proyecto de tecnología de este nivel debería cumplir, independientemente de si fue socializada previamente con los estudiantes.
+B) Reconocer que los criterios de evaluación no fueron comunicados con anticipación a los estudiantes, socializar ahora la rúbrica utilizada, y ofrecer una oportunidad de ajuste o complementación del proyecto centrada específicamente en el criterio que no fue conocido con antelación (uso de conceptos tecnológicos), antes de consolidar la calificación definitiva.
+C) Calificar los proyectos únicamente con base en la calidad de la presentación visual, ya que fue el aspecto que los estudiantes priorizaron al no conocer los demás criterios, ajustando así la evaluación a lo que efectivamente pudieron anticipar.
+D) Anular por completo la actividad y no asignar ninguna calificación al proyecto, dado que la falta de comunicación de los criterios de evaluación invalida el ejercicio evaluativo en su totalidad.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El derecho de los estudiantes a conocer con anticipación los criterios con los que serán evaluados es un principio central del debido proceso evaluativo, y su ausencia en este caso explica de manera razonable por qué los estudiantes priorizaron aspectos distintos a los que finalmente tuvieron mayor peso en la calificación. La decisión más adecuada es transparentar la situación, socializar la rúbrica ahora, y ofrecer una oportunidad real de ajuste centrada en el criterio que no fue comunicado, lo cual corrige la falla sin invalidar por completo el trabajo ya realizado ni imponer una evaluación basada en criterios desconocidos de antemano por los estudiantes.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque la rúbrica interna sí refleja criterios técnicos válidos para un proyecto de este tipo; pero aplicarla sin haberla comunicado previamente a los estudiantes vulnera su derecho a conocer con anticipación los criterios de evaluación, y penaliza un desconocimiento que no es responsabilidad de los estudiantes sino de una falla en la comunicación docente.
+- C) Es plausible porque parece ajustar la evaluación a lo que los estudiantes sí pudieron anticipar; pero limitar la calificación únicamente al aspecto de presentación visual desatiende de manera desproporcionada los demás criterios pedagógicamente relevantes del proyecto (como el uso de conceptos tecnológicos), que sí correspondía evaluar aunque no se hubieran comunicado con suficiente anticipación.
+- D) Es plausible porque reconoce la gravedad de la falla de comunicación; pero anular por completo la actividad desestima el trabajo y el aprendizaje real desarrollado por los estudiantes durante las cuatro semanas del proyecto, siendo una medida desproporcionada frente a una solución más equilibrada, como ofrecer la oportunidad de ajuste sobre el criterio no comunicado.
+
+**Fundamento normativo o pedagógico:** Decreto 1290 de 2009, sobre el derecho de los estudiantes a conocer los criterios de evaluación con anticipación como parte del debido proceso evaluativo, y su vinculación con el Sistema Institucional de Evaluación de Estudiantes (SIEE).
+
+**Proceso cognitivo evaluado:** Reconocimiento de una falla en la comunicación de criterios de evaluación como causa de un desempeño no alineado con las expectativas docentes, y aplicación de un procedimiento correctivo que respeta el debido proceso.
+
+**Error frecuente del aspirante:** Aplicar criterios de evaluación técnicamente rigurosos pero no comunicados con anticipación a los estudiantes, asumiendo que la calidad técnica del criterio justifica su aplicación retroactiva, sin considerar que el debido proceso evaluativo exige su socialización previa.
+
+**Estrategia mental recomendada:** Antes de calificar cualquier proyecto o actividad de mayor complejidad, verificar si los criterios específicos de evaluación fueron comunicados con claridad y anticipación suficiente a los estudiantes; si no lo fueron, priorizar la transparencia y la oportunidad de ajuste sobre la aplicación retroactiva y unilateral de dichos criterios.
+
+---
+
+## MOD01-CC-015
+
+**Módulo:** 1 – Diagnóstico Inicial
+**Tema:** Comprensión de consigna
+**Competencia:** Diseño de estrategias de coevaluación entre pares
+**Subcompetencia:** Modelamiento explícito de consignas de coevaluación para asegurar su comprensión por parte de los estudiantes evaluadores
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En grado octavo, una docente de artística implementa por primera vez una estrategia de coevaluación entre pares, en la que cada estudiante debe revisar el trabajo de un compañero utilizando una guía escrita con tres preguntas orientadoras: "¿La composición utiliza al menos tres de los elementos trabajados en clase (línea, color, textura)? ¿La propuesta refleja un proceso de planificación previa visible en el trabajo? ¿Qué sugerencia concreta harías para mejorar la propuesta?". La docente entrega la guía por escrito a cada estudiante y explica verbalmente, de manera breve, que deben "revisar el trabajo del compañero con la guía". Al recoger las coevaluaciones, encuentra que la mayoría de los estudiantes responde las tres preguntas de manera muy superficial, con respuestas como "sí" o "está bien", sin desarrollar argumentos ni ejemplos específicos del trabajo revisado que respalden sus respuestas, a pesar de que la guía escrita no solicitaba explícitamente respuestas breves de sí o no. Al conversar con algunos estudiantes evaluadores, la docente identifica que, aunque leyeron las preguntas de la guía, ninguno de ellos había participado antes en un ejercicio de coevaluación, y no tenían un modelo claro de lo que implicaba "revisar con la guía" en términos del nivel de detalle y argumentación esperado en sus respuestas.
+
+**Pregunta:** ¿Cuál es la mejor decisión pedagógica de la docente frente a este hallazgo, antes de continuar utilizando la estrategia de coevaluación en futuras actividades?
+
+A) Concluir que los estudiantes de este grado no cuentan con la madurez suficiente para realizar ejercicios de coevaluación entre pares, y descartar el uso de esta estrategia en el resto del año escolar.
+B) Modelar explícitamente, con un ejemplo concreto frente a todo el curso (usando un trabajo de muestra), cómo se espera que se respondan las preguntas de la guía de coevaluación, incluyendo el nivel de detalle y argumentación esperado, antes de aplicar nuevamente la estrategia con retroalimentación entre pares.
+C) Mantener la guía y el procedimiento exactamente igual en la próxima actividad de coevaluación, asumiendo que los estudiantes necesitan más práctica repetida con el mismo formato para mejorar progresivamente la calidad de sus respuestas sin intervención adicional.
+D) Eliminar las preguntas abiertas de la guía de coevaluación y reemplazarlas por una escala de calificación numérica simple (por ejemplo, de 1 a 5) para cada criterio, evitando así que los estudiantes deban redactar argumentos que, según lo observado, no lograron desarrollar adecuadamente.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La causa identificada del problema no es una limitación de los estudiantes para argumentar, sino la falta de un modelo claro sobre lo que implica "revisar con la guía" en un ejercicio de coevaluación en el que ninguno había participado antes. La decisión pedagógicamente adecuada es modelar explícitamente, con un ejemplo concreto, el nivel de detalle y argumentación esperado antes de que los estudiantes repitan la actividad, lo cual enseña directamente la habilidad de coevaluación en lugar de asumir que se desarrollará espontáneamente con la sola entrega de la guía escrita.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque el resultado superficial observado podría interpretarse como una falta de madurez para el ejercicio; pero la causa identificada —falta de un modelo claro de lo esperado en una estrategia nueva para ellos— es corregible con una intervención pedagógica sencilla, y descartar la estrategia renuncia a una herramienta formativa valiosa sin haber intentado primero resolver la causa real del problema.
+- C) Es plausible porque la práctica repetida puede, en general, mejorar el desempeño con el tiempo; pero repetir exactamente el mismo procedimiento sin ofrecer el modelo explícito que falta probablemente producirá resultados igualmente superficiales, ya que la causa identificada no es falta de práctica, sino falta de un referente claro de lo que se espera.
+- D) Es plausible porque simplificar el formato a una escala numérica evita la dificultad de argumentar observada; pero esto elimina el componente formativo más valioso de la coevaluación, que es justamente el desarrollo de la capacidad de dar retroalimentación argumentada y específica a un compañero, en lugar de enseñar explícitamente esa habilidad que aún no ha sido modelada.
+
+**Fundamento normativo o pedagógico:** Decreto 1290 de 2009, que reconoce la coevaluación como una estrategia válida dentro de los procesos de evaluación institucional, y los principios de modelamiento explícito de estrategias pedagógicas nuevas presentes en los Lineamientos de Calidad del MEN.
+
+**Proceso cognitivo evaluado:** Identificación de la falta de modelamiento explícito como causa de un desempeño superficial en una estrategia pedagógica nueva para los estudiantes.
+
+**Error frecuente del aspirante:** Asumir que entregar una guía escrita con preguntas claras es suficiente para que los estudiantes comprendan el nivel de profundidad y argumentación esperado en una estrategia pedagógica que nunca han practicado antes, sin considerar la necesidad de modelar explícitamente esa expectativa.
+
+**Estrategia mental recomendada:** Al introducir por primera vez una estrategia pedagógica nueva para los estudiantes (como la coevaluación), modelar siempre de manera explícita, con un ejemplo concreto, el nivel de calidad y profundidad esperado en las respuestas, en lugar de asumir que una guía escrita por sí sola garantiza la comprensión de esa expectativa.
+
+---
+
+**Fin del bloque de 15 preguntas — Tema: Comprensión de consigna.**
+
+Pendiente de tu aprobación antes de continuar con el siguiente tema del Módulo 1: **Gestión del tiempo**.
