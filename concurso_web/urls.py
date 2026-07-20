@@ -14,6 +14,34 @@ urlpatterns = [
     path('tienda/', include('commerce.urls')),
     path('cuentas/login/', auth_views.LoginView.as_view(template_name='registration/login.html'), name='login'),
     path('cuentas/logout/', auth_views.LogoutView.as_view(), name='logout'),
+    path(
+        'cuentas/recuperar/',
+        auth_views.PasswordResetView.as_view(
+            template_name='registration/password_reset_form.html',
+            email_template_name='registration/password_reset_email.html',
+            subject_template_name='registration/password_reset_subject.txt',
+            success_url='/cuentas/recuperar/enviado/',
+        ),
+        name='password_reset',
+    ),
+    path(
+        'cuentas/recuperar/enviado/',
+        auth_views.PasswordResetDoneView.as_view(template_name='registration/password_reset_done.html'),
+        name='password_reset_done',
+    ),
+    path(
+        'cuentas/recuperar/confirmar/<uidb64>/<token>/',
+        auth_views.PasswordResetConfirmView.as_view(
+            template_name='registration/password_reset_confirm.html',
+            success_url='/cuentas/recuperar/completo/',
+        ),
+        name='password_reset_confirm',
+    ),
+    path(
+        'cuentas/recuperar/completo/',
+        auth_views.PasswordResetCompleteView.as_view(template_name='registration/password_reset_complete.html'),
+        name='password_reset_complete',
+    ),
 ]
 
 if settings.DEBUG:
