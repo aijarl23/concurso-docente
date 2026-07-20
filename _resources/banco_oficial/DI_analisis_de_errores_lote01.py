@@ -698,7 +698,8 @@ ITEMS = [{'codigo': 'MOD01-AE-001',
               'concepción alternativa común documentada en la enseñanza de las ciencias naturales '
               'en la niñez, que suele ser resistente a la instrucción tradicional. Debe decidir '
               'cómo proceder antes de continuar con el siguiente tema del plan de estudio.',
-  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a este hallazgo?',
+  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a la persistencia de '
+               'esta concepción alternativa sobre la fotosíntesis?',
   'opcion_a': 'Considerar el tema como suficientemente enseñado, dado que los estudiantes lograron '
               'responder correctamente las preguntas de opción múltiple sobre las partes de la '
               'fotosíntesis en los talleres escritos anteriores.',
@@ -947,7 +948,8 @@ ITEMS = [{'codigo': 'MOD01-AE-001',
               'tanto el dominio del contenido como las habilidades de trabajo en equipo, y que una '
               'calificación grupal única podría no reflejar de manera justa la comprensión '
               'individual real de cada integrante.',
-  'enunciado': '¿Cuál es la mejor decisión del docente frente a esta situación?',
+  'enunciado': '¿Cuál es la mejor decisión del docente frente a esta dinámica de trabajo en '
+               'equipo desequilibrada?',
   'opcion_a': 'Asignar la misma calificación grupal a los cuatro integrantes, dado que el producto '
               'final fue entregado como un trabajo de equipo y todos son corresponsables del '
               'resultado presentado, independientemente de la dinámica interna del grupo.',
@@ -1113,7 +1115,8 @@ ITEMS = [{'codigo': 'MOD01-AE-001',
               'no logran explicarlo con claridad, lo que sugiere que la aplicación correcta en los '
               'problemas habituales podría deberse más a la memorización de un procedimiento que a '
               'una comprensión real del significado físico de las variables involucradas.',
-  'enunciado': '¿Cuál es la mejor decisión pedagógica del docente frente a este hallazgo?',
+  'enunciado': '¿Cuál es la mejor decisión pedagógica del docente frente a esta aplicación '
+               'memorística de las fórmulas de cinemática?',
   'opcion_a': 'Concluir que el error se debe a una debilidad en operaciones algebraicas de despeje '
               'de fórmulas, y coordinar con el área de matemáticas un refuerzo específico en '
               'manejo algebraico antes de continuar con nuevos temas de física.',

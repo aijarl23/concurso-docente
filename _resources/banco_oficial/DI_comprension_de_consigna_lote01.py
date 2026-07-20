@@ -34,7 +34,8 @@ ITEMS = [{'codigo': 'MOD01-CC-001',
               'en las próximas clases, considerando que el objetivo curricular del periodo incluye '
               'tanto el dominio operativo de fracciones como la resolución de problemas de '
               'aplicación.',
-  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a este hallazgo?',
+  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a esta dificultad '
+               'para traducir el problema de fracciones en una secuencia de operaciones?',
   'opcion_a': 'Calificar la actividad como evidencia de que los 16 estudiantes no dominan las '
               'operaciones con fracciones, y programar un refuerzo intensivo centrado en el '
               'cálculo operativo de sumas, restas y multiplicaciones de fracciones.',
@@ -112,7 +113,8 @@ ITEMS = [{'codigo': 'MOD01-CC-001',
               'de asignar la calificación final de los 19 ensayos incompletos, considerando tanto '
               'la evidencia sobre el formato de la consigna original como el objetivo de que los '
               'estudiantes desarrollen la habilidad de proponer soluciones fundamentadas.',
-  'enunciado': '¿Cuál es la mejor decisión del docente frente a esta situación?',
+  'enunciado': '¿Cuál es la mejor decisión del docente frente a esta omisión sistemática de la '
+               'tercera parte de la consigna?',
   'opcion_a': 'Calificar los 19 ensayos con la nota correspondiente a lo entregado, asumiendo que '
               'la ausencia de la tercera parte refleja que los estudiantes no lograron desarrollar '
               'la habilidad de proponer soluciones fundamentadas sobre el tema trabajado.',
@@ -192,7 +194,8 @@ ITEMS = [{'codigo': 'MOD01-CC-001',
               'La docente debe decidir cómo ajustar su forma de dar instrucciones en esta y '
               'futuras actividades para este estudiante, sin dejar de dar instrucciones naturales '
               'y ágiles al resto del curso.',
-  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a esta situación?',
+  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a esta interpretación '
+               'literal de la instrucción?',
   'opcion_a': 'Explicar al estudiante, después de cada actividad, que las expresiones coloquiales '
               'como "tómense un respiro" no deben tomarse literalmente, esperando que con el '
               'tiempo aprenda a identificar cuándo el lenguaje es figurado.',
@@ -275,7 +278,8 @@ ITEMS = [{'codigo': 'MOD01-CC-001',
               'semanas. Debe decidir cómo ajustar su forma de dar instrucciones a este estudiante '
               'de manera sostenida, sin subestimar su capacidad de comprensión conceptual, que ya '
               'ha demostrado ser adecuada.',
-  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a esta situación?',
+  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a esta pausa inicial '
+               'del estudiante ante instrucciones en su segunda lengua?',
   'opcion_a': 'Remitir al estudiante a valoración por dificultades de aprendizaje, dado que '
               'necesita instrucciones repetidas y con apoyo gestual adicional para iniciar las '
               'actividades, a diferencia del resto del curso.',
@@ -358,7 +362,8 @@ ITEMS = [{'codigo': 'MOD01-CC-001',
               'en ambientes ruidosos y reconoce que repetir la misma instrucción de la misma '
               'manera no está resolviendo la dificultad real del estudiante en este contexto '
               'específico.',
-  'enunciado': '¿Cuál es la mejor decisión pedagógica del docente frente a esta situación?',
+  'enunciado': '¿Cuál es la mejor decisión pedagógica del docente frente a esta dificultad de '
+               'procesamiento auditivo en un ambiente ruidoso?',
   'opcion_a': 'Repetir la instrucción una tercera vez, elevando el volumen de la voz por encima '
               'del ruido ambiente del patio, para asegurarse de que el estudiante la escuche con '
               'claridad en esta ocasión.',
@@ -434,7 +439,8 @@ ITEMS = [{'codigo': 'MOD01-CC-001',
               'tema, generando confusión sobre qué se les estaba pidiendo responder. La docente '
               'debe decidir cómo interpretar esta diferencia de desempeño entre ambas preguntas y '
               'qué hacer antes de calificar la evaluación de manera definitiva.',
-  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a este hallazgo?',
+  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a esta confusión '
+               'terminológica con la palabra "sintetice"?',
   'opcion_a': 'Mantener la calificación de ambas preguntas tal como fueron respondidas, ya que la '
               'palabra "sintetice" es un término académico estándar que los estudiantes de grado '
               'noveno deben conocer y comprender sin necesidad de aclaración adicional.',
@@ -521,7 +527,8 @@ ITEMS = [{'codigo': 'MOD01-CC-001',
               'integrantes del grupo confirman que nunca escucharon ese requisito de parte de su '
               'compañero relator y que, de haberlo conocido, habrían podido incluirlo sin '
               'dificultad, ya que el contenido fue trabajado en clase.',
-  'enunciado': '¿Cuál es la mejor decisión pedagógica del docente frente a esta situación?',
+  'enunciado': '¿Cuál es la mejor decisión pedagógica del docente frente a esta omisión del '
+               'relator al transmitir la consigna al grupo?',
   'opcion_a': 'Calificar el trabajo del grupo con la nota correspondiente al requisito faltante, '
               'ya que la consigna fue entregada por escrito y de manera completa, y la '
               'responsabilidad de comunicarla correctamente dentro del equipo recaía en la '
@@ -607,7 +614,8 @@ ITEMS = [{'codigo': 'MOD01-CC-001',
               'parte por separado. El docente reconoce que este formato de pregunta no había sido '
               'trabajado explícitamente con el curso antes de este simulacro, aunque sí se había '
               'explicado su estructura de manera general al inicio de la aplicación.',
-  'enunciado': '¿Cuál es la mejor decisión pedagógica del docente frente a este hallazgo?',
+  'enunciado': '¿Cuál es la mejor decisión pedagógica del docente frente a esta dificultad con '
+               'la lógica de las preguntas de afirmación y razón?',
   'opcion_a': 'Concluir que los 21 estudiantes presentan un vacío de contenido matemático en los '
               'temas evaluados mediante esta estructura de pregunta, y programar un refuerzo de '
               'contenido matemático centrado en dichos temas antes del próximo simulacro.',
@@ -770,7 +778,8 @@ ITEMS = [{'codigo': 'MOD01-CC-001',
               'la tarea original. La docente debe decidir cómo manejar la situación al día '
               'siguiente de la entrega, considerando tanto la responsabilidad formativa de la '
               'actividad como la causa identificada del problema.',
-  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a esta situación?',
+  'enunciado': '¿Cuál es la mejor decisión pedagógica de la docente frente a esta tarea afectada '
+               'por una instrucción no registrada por escrito?',
   'opcion_a': 'Calificar las tareas tal como fueron entregadas, asignando una nota baja a los 11 '
               'estudiantes cuyo trabajo no corresponde a lo solicitado, dado que la tarea fue '
               'asignada y comunicada verbalmente en clase, y su cumplimiento correcto es '
@@ -1106,7 +1115,8 @@ ITEMS = [{'codigo': 'MOD01-CC-001',
               'que tendría un peso importante en la evaluación final. El docente debe decidir cómo '
               'manejar esta situación antes de consolidar las calificaciones definitivas del '
               'proyecto.',
-  'enunciado': '¿Cuál es la mejor decisión del docente frente a esta situación?',
+  'enunciado': '¿Cuál es la mejor decisión del docente frente a esta rúbrica de evaluación que '
+               'nunca fue socializada con los estudiantes?',
   'opcion_a': 'Mantener las calificaciones asignadas de acuerdo con la rúbrica interna utilizada, '
               'ya que esta refleja de manera rigurosa y objetiva los criterios técnicos que un '
               'proyecto de tecnología de este nivel debería cumplir, independientemente de si fue '
