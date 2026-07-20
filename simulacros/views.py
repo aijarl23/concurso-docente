@@ -12,13 +12,10 @@ from django.urls import reverse
 from django.utils import timezone
 
 from access_control.services import user_has_full_access, user_has_module_access
-from commerce.models import Product
 from contenidos.models import Modulo
 from seguimiento.analitica import analizar_intento
 from seguimiento.models import Intento, ProgresoModulo, RespuestaIntento
 from .models import Simulacro
-
-ELITE_SLUG = 'elite-cnsc-2026'
 
 AREAS_DISCIPLINARES = [
     ('ingles', 'Inglés'),
@@ -41,9 +38,15 @@ MODULE_SLUG_TO_CONTENT_TYPE = {
 
 
 def _checkout_for_simulacro(simulacro):
-    product = Product.objects.filter(module__slug=ELITE_SLUG, active=True).first()
-    if product:
-        return reverse('payments:buy_module', args=[product.id])
+    # payments:buy_module solo acepta POST (@require_POST, agregado en la
+    # auditoria tecnica del 2026-07-19 para no crear una Order en un GET).
+    # Este helper se usa desde un redirect() de vista (iniciar_simulacro) y
+    # desde un <a href> en lista_simulacros.html - ambos son navegaciones GET,
+    # asi que enlazar directo a buy_module siempre respondia 405 Method Not
+    # Allowed, dejando el flujo de pago inaccesible desde cualquier simulacro
+    # premium. commerce:product_list es la pagina real de matricula: renderiza
+    # el mismo producto dentro de un <form method="post"> con csrf_token, asi
+    # que sigue siendo GET-seguro y termina en el mismo botón de pago.
     return reverse('commerce:product_list')
 
 
