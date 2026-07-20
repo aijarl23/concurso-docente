@@ -74,7 +74,7 @@ class BancoPregunta(models.Model):
     idoneidad_c = models.PositiveSmallIntegerField(null=True, blank=True)
     idoneidad_d = models.PositiveSmallIntegerField(null=True, blank=True)
     justificacion = models.TextField()
-    fuente_normativa = models.CharField(max_length=300, blank=True)
+    fuente_normativa = models.TextField(blank=True)
     dificultad = models.CharField(
         max_length=20,
         choices=DIFICULTAD_CHOICES,
