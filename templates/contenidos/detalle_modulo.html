@@ -83,7 +83,15 @@
         <a href="{% url 'dashboard' %}" class="btn btn-outline-secondary"><i class="bi bi-arrow-left" aria-hidden="true"></i> Volver al panel</a>
         <div class="d-flex flex-wrap gap-2">
             <a href="{% url 'simulacros:seleccionar_area' %}" class="btn btn-outline-primary"><i class="bi bi-grid" aria-hidden="true"></i> Simulacro por área</a>
-            <a href="{% url 'simulacros:lista_simulacros' %}" class="btn btn-primary"><i class="bi bi-play-circle" aria-hidden="true"></i> Presentar simulacro</a>
+            {% if simulacro_propio %}
+            <a href="{% url 'simulacros:iniciar_simulacro' simulacro_propio.id %}" class="btn btn-primary"><i class="bi bi-play-circle" aria-hidden="true"></i> Presentar simulacro</a>
+            {% elif simulacros_multiples %}
+            <a href="{% url 'simulacros:seleccionar_area' %}" class="btn btn-primary"><i class="bi bi-play-circle" aria-hidden="true"></i> Presentar simulacro</a>
+            {% else %}
+            <span class="btn btn-primary disabled" aria-disabled="true" title="Este módulo todavía no tiene simulacro publicado">
+                <i class="bi bi-hourglass-split" aria-hidden="true"></i> Simulacro próximamente
+            </span>
+            {% endif %}
         </div>
     </section>
 </div>
