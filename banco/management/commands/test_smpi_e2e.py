@@ -40,6 +40,11 @@ class Command(BaseCommand):
                 'activo': False,
             }
         )
+        if not created and diagnostico.activo:
+            # Defensivo: si el fixture quedo activo=True por una corrida
+            # anterior a este arreglo, lo desactivamos ahora tambien.
+            diagnostico.activo = False
+            diagnostico.save(update_fields=['activo'])
         self.stdout.write(f'\n2. Simulacro diagnóstico: {diagnostico.nombre} ({"creado" if created else "existente"})')
 
         # Agregar preguntas SMPI al simulacro

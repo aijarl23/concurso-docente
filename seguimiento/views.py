@@ -1,26 +1,23 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
 from .analitica import analizar_historial
 from .models import Intento, ProgresoModulo
 
 
+@login_required
 def mi_progreso(request):
-    progresos = []
-    intentos = []
-    analisis = None
+    progresos = ProgresoModulo.objects.filter(
+        usuario=request.user
+    ).select_related('modulo').order_by('modulo__orden')
 
-    if request.user.is_authenticated:
-        progresos = ProgresoModulo.objects.filter(
-            usuario=request.user
-        ).select_related('modulo').order_by('modulo__orden')
+    intentos = list(
+        Intento.objects.filter(usuario=request.user, estado='completado')
+        .select_related('simulacro')
+        .order_by('-fecha_finalizacion')[:50]
+    )
 
-        intentos = list(
-            Intento.objects.filter(usuario=request.user, estado='completado')
-            .select_related('simulacro')
-            .order_by('-fecha_finalizacion')[:50]
-        )
-
-        analisis = analizar_historial(request.user)
+    analisis = analizar_historial(request.user)
 
     chart_data = {
         'labels': [p.modulo.titulo for p in progresos],
