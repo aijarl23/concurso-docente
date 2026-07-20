@@ -1,0 +1,638 @@
+# Banco Oficial de Preguntas — Módulo 2: Lectura Crítica
+## Tema: Tesis y argumento (15 ítems)
+
+**Estado:** en revisión — pendiente de aprobación del comité editorial.
+**Fecha de elaboración:** 19 de julio de 2026
+**Nota:** dificultad únicamente Muy Alta, según regla vigente para este módulo. No se repiten escenarios de los lotes ya publicados de Inferencia textual ni de Tesis y argumento previos.
+
+---
+
+## MOD02-TA-001
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Distinción entre la tesis central de un texto argumentativo y los argumentos que la sustentan
+**Subcompetencia:** Identificación precisa de la afirmación principal frente a las razones ofrecidas para defenderla
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+Un docente de ciencias sociales de una institución educativa oficial presentó al consejo académico un documento escrito solicitando la eliminación del examen final estandarizado de fin de periodo en el área, para reemplazarlo por una evaluación basada en proyectos de investigación grupal. En el documento, el docente argumentó que durante los últimos tres periodos había observado que varios estudiantes con buen desempeño en trabajos de clase y participación oral obtenían resultados notablemente más bajos en el examen final, lo que a su juicio reflejaba una brecha entre lo que el examen mide y lo que los estudiantes efectivamente habían aprendido. Señaló también que la evaluación por proyectos permitiría valorar habilidades como el trabajo colaborativo, la búsqueda de fuentes y la argumentación escrita, competencias que el examen estandarizado, centrado en preguntas de selección múltiple, no alcanza a capturar según su experiencia como docente del área. Adicionalmente, citó que en una reunión informal con otros dos docentes de ciencias sociales de instituciones vecinas, ambos manifestaron haber adoptado evaluaciones por proyectos con resultados que consideraban positivos, aunque el docente aclaró en su documento que no contaba con datos comparativos formales de esas instituciones, solo con el comentario verbal de sus colegas. El documento incluía además un anexo en el que el docente comparaba, periodo por periodo, el promedio de participación oral de doce estudiantes seleccionados con la calificación individual que cada uno obtuvo en el examen final correspondiente, mostrando que ocho de esos doce estudiantes presentaban una diferencia de más de un punto entre ambas medidas, siempre a favor de la participación registrada en clase. El consejo académico debía decidir si aprobaba la propuesta, y varios de sus miembros la discutieron señalando distintos elementos del documento como si cada uno fuera, por separado, la idea central que el docente buscaba defender. Un miembro del consejo entendió que la propuesta giraba principalmente en torno a que el examen estandarizado era una herramienta inválida en términos generales; otro entendió que el punto principal era que los docentes de otras instituciones ya habían adoptado el cambio; y un tercero entendió que el texto buscaba, ante todo, cuestionar la brecha entre desempeño en clase y desempeño en el examen. El coordinador académico, encargado de sistematizar la discusión antes de someterla a votación, debía identificar con precisión cuál de las afirmaciones del documento constituía la tesis central que el docente defendía, y cuáles eran únicamente los argumentos ofrecidos en su apoyo, antes de redactar el resumen que se presentaría al resto del consejo.
+
+**Pregunta:** ¿Cuál de las siguientes opciones expresa correctamente la tesis central del documento, distinguiéndola de los argumentos que la sustentan?
+
+A) El examen final estandarizado debería eliminarse y reemplazarse por una evaluación basada en proyectos, porque no captura competencias como el trabajo colaborativo y la argumentación escrita que sí reflejan el aprendizaje real de los estudiantes.
+
+B) Existe una brecha entre el desempeño de los estudiantes en clase y su desempeño en el examen final estandarizado, brecha que el docente documentó a lo largo de tres periodos consecutivos de manera sistemática.
+
+C) Otras instituciones educativas vecinas ya adoptaron la evaluación por proyectos en el área de ciencias sociales con resultados que sus docentes consideran positivos para el aprendizaje.
+
+D) El examen final estandarizado es una herramienta completamente inválida para evaluar cualquier tipo de aprendizaje en ciencias sociales, sin importar el diseño específico de las preguntas que lo componen.
+
+**Respuesta correcta:** A
+
+**Justificación completa:**
+La tesis central es la propuesta que el docente busca que el consejo académico apruebe: eliminar el examen estandarizado y reemplazarlo por evaluación de proyectos. La brecha de desempeño observada y la limitación del examen para capturar ciertas competencias son los argumentos que sustentan esa propuesta, no la propuesta misma. El testimonio de los colegas de otras instituciones es un argumento adicional y explícitamente débil, señalado como tal por el propio docente. Confundir un argumento de apoyo con la tesis lleva a resúmenes imprecisos de la posición defendida.
+
+**Explicación de cada distractor:**
+- B) Es plausible porque la brecha de desempeño es el argumento más desarrollado en el texto; pero es una observación que sustenta la propuesta de cambio de evaluación, no la propuesta en sí misma, que es lo que el docente efectivamente solicita al consejo académico.
+- C) Es plausible porque el docente sí menciona el caso de otras instituciones; pero él mismo aclara que ese dato es solo un comentario verbal sin respaldo formal, por lo que no puede tratarse como la idea central de un documento que además pide una acción concreta al consejo.
+- D) Es plausible porque exagera una idea presente en el texto; pero el docente no afirma que el examen sea inválido en términos absolutos, sino que no captura ciertas competencias específicas, una afirmación mucho más acotada que la que presenta esta opción.
+
+**Fundamento normativo o pedagógico:** Decreto 1290 de 2009, artículo 3, sobre los propósitos de la evaluación institucional del aprendizaje, y el principio de lectura crítica que distingue la tesis de un texto argumentativo de las razones ofrecidas para sustentarla.
+
+**Proceso cognitivo evaluado:** Identificación precisa de la estructura argumentativa de un texto, diferenciando la afirmación principal de los argumentos subordinados que la apoyan.
+
+**Error frecuente del aspirante:** Confundir el argumento más extenso o más repetido del texto con la tesis central, cuando en realidad ese argumento solo cumple una función de apoyo a una propuesta distinta y más específica.
+
+**Estrategia mental recomendada:** Preguntarse qué acción concreta o afirmación busca que el lector acepte el autor del texto, y verificar que cada otra idea presente funcione como razón para aceptar esa afirmación, y no como la afirmación misma.
+
+---
+
+## MOD02-TA-002
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Identificación de supuestos implícitos no declarados que sostienen un argumento
+**Subcompetencia:** Reconocimiento de premisas no enunciadas necesarias para que un argumento sea válido
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En una sesión del consejo directivo de una institución educativa oficial, la rectora presentó una propuesta para ampliar la jornada escolar de seis a siete horas diarias a partir del siguiente año lectivo, financiada con recursos adicionales de la secretaría de educación municipal recientemente aprobados para ese fin. En su exposición, la rectora argumentó que la institución había obtenido resultados por debajo del promedio municipal en las pruebas Saber de los últimos dos años, y que ampliar la jornada escolar permitiría a los docentes cubrir con mayor profundidad los contenidos curriculares que actualmente debían resumir por falta de tiempo, lo cual, según ella, se traduciría en una mejora de los resultados en las próximas aplicaciones de la prueba. Citó además que la secretaría de educación había anunciado la ampliación de jornada como una de sus líneas prioritarias de inversión para instituciones con resultados bajos, y que otras dos instituciones del municipio que ya habían ampliado su jornada dos años atrás mostraron una mejora de cuatro puntos porcentuales en el índice sintético de calidad educativa durante ese periodo. La rectora agregó que, según cálculos preliminares de la secretaría de planeación institucional, la hora adicional permitiría a cada docente de básica secundaria pasar de dictar en promedio dieciocho a veintidós clases efectivas por semana en su asignatura, cifra que presentó como un indicador directo de mayor cobertura curricular, sin especificar de qué manera esa cobertura adicional se traduciría en un mejor desempeño de los estudiantes en las pruebas. Un miembro del consejo directivo, representante de los padres de familia, pidió la palabra y señaló que la propuesta de la rectora dependía de una idea que ella nunca planteó de manera explícita durante toda su exposición: que el tiempo adicional de clase efectivamente se traduciría en más aprendizaje, y no simplemente en más horas de permanencia de los estudiantes en las mismas condiciones pedagógicas que ya tenían antes de la ampliación. El representante señaló que, sin esa premisa no declarada, ninguno de los datos presentados por la rectora, ni los resultados bajos en las pruebas Saber, ni el ejemplo de las otras dos instituciones, permitía sostener por sí solo que ampliar la jornada mejoraría los resultados académicos de manera directa. La rectora reconoció el punto y solicitó tiempo para complementar su propuesta antes de someterla a votación en la siguiente sesión del consejo directivo.
+
+**Pregunta:** ¿Cuál es el supuesto implícito, no declarado explícitamente por la rectora, del que depende la validez de su argumento a favor de ampliar la jornada escolar?
+
+A) Que las dos instituciones del municipio que ampliaron su jornada dos años atrás tenían, antes del cambio, condiciones socioeconómicas y pedagógicas idénticas a las de la institución de la rectora.
+
+B) Que el tiempo adicional de clase se traducirá en un aprendizaje efectivamente mayor, y no únicamente en más horas de permanencia bajo las mismas condiciones pedagógicas actuales.
+
+C) Que la secretaría de educación municipal cuenta con recursos suficientes para financiar la ampliación de jornada en todas las instituciones oficiales que lo soliciten durante el siguiente año lectivo.
+
+D) Que los resultados de las pruebas Saber de los últimos dos años reflejan de manera exacta y sin margen de error el nivel real de aprendizaje de los estudiantes de la institución.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El argumento de la rectora conecta más tiempo de clase con mejores resultados, pero esa conexión solo es válida si el tiempo adicional efectivamente se traduce en aprendizaje y no simplemente en más horas bajo las mismas condiciones pedagógicas. Ese es exactamente el supuesto que el representante de padres identifica como ausente en la exposición: sin declararlo y sustentarlo, ninguno de los datos citados (resultados bajos, prioridad de la secretaría, ejemplo de otras instituciones) permite concluir que la ampliación mejorará el aprendizaje, porque todos esos datos son compatibles con un escenario en que el tiempo adicional no se traduzca en mejora alguna.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque señala una limitación real del ejemplo comparativo con otras instituciones; pero es un supuesto adicional sobre la validez de la comparación, distinto del supuesto central que el representante de padres identifica como el punto no declarado de toda la propuesta.
+- C) Es plausible porque los recursos de financiación aparecen mencionados en el caso; pero la rectora sí declara explícitamente ese dato como ya aprobado para su institución, por lo que no es un supuesto implícito sino una premisa explícita del argumento.
+- D) Es plausible porque cuestiona la validez de las pruebas Saber como medida; pero ese cuestionamiento no es el supuesto que sostiene el argumento de la rectora, sino un supuesto distinto sobre la fiabilidad de la métrica que nadie en el caso pone en discusión.
+
+**Fundamento normativo o pedagógico:** Ley 115 de 1994, artículo 85, sobre la jornada escolar, y el principio de lectura crítica que exige identificar las premisas implícitas necesarias para que un argumento sea lógicamente completo.
+
+**Proceso cognitivo evaluado:** Reconocimiento de supuestos no declarados de los que depende la validez de un argumento presentado como si estuviera completamente sustentado.
+
+**Error frecuente del aspirante:** Aceptar un argumento como completo porque presenta varios datos concretos, sin verificar si esos datos dependen de una premisa adicional que el autor nunca formuló ni sustentó de manera explícita.
+
+**Estrategia mental recomendada:** Ante un argumento que conecta una acción con un resultado esperado, preguntarse qué debería ser cierto, aunque el texto no lo diga, para que esa conexión sea válida, y verificar si esa condición fue sustentada o simplemente asumida.
+
+---
+
+## MOD02-TA-003
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Evaluación de la correspondencia entre la evidencia citada y la tesis que pretende sustentar
+**Subcompetencia:** Identificación de evidencia insuficiente o desconectada de la afirmación que acompaña
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+El coordinador de convivencia de una institución educativa oficial presentó ante el consejo directivo un informe en el que sostenía que el nuevo programa de tutorías entre pares, implementado desde el inicio del año escolar, había fortalecido de manera significativa el sentido de pertenencia de los estudiantes de grado noveno hacia la institución. Como evidencia principal, el coordinador presentó los registros de asistencia al programa de tutorías, que mostraban que el 85% de los estudiantes de grado noveno había asistido a al menos ocho de las diez sesiones programadas durante el semestre, una cifra que el coordinador consideraba alta en comparación con la asistencia a otras actividades extracurriculares ofrecidas por la institución en años anteriores. El coordinador también mencionó que, según su percepción personal derivada de conversaciones informales con algunos estudiantes durante los descansos, varios de ellos le habían comentado que disfrutaban las sesiones de tutoría y que sentían que tenían más amigos dentro de la institución desde que el programa comenzó. El coordinador añadió en su informe que el número de estudiantes de grado noveno que solicitaron cambio de jornada o de institución había bajado de seis a dos casos entre el año anterior y el actual, dato que interpretó como una señal adicional del fortalecimiento del sentido de pertenencia generado por el programa. Un miembro del consejo directivo, docente de orientación escolar, señaló que la institución contaba con un instrumento estandarizado de clima escolar que se aplicaba a todos los estudiantes cada semestre, y que ese instrumento incluía preguntas específicas sobre sentido de pertenencia, pero que el coordinador no había incluido esos resultados en su informe, ni había comparado los puntajes de pertenencia de grado noveno antes y después de la implementación del programa. El docente de orientación señaló que la asistencia a las sesiones de tutoría era, en el mejor de los casos, evidencia de que los estudiantes cumplían con una actividad programada dentro de su horario, pero no constituía por sí misma una medida directa del sentido de pertenencia que el coordinador afirmaba haber fortalecido, y que los comentarios informales de algunos estudiantes, aunque valiosos, no representaban una muestra representativa de todo el grado noveno. El consejo directivo decidió solicitar al coordinador que complementara su informe con los resultados del instrumento estandarizado antes de decidir si el programa se extendería a los demás grados de la institución el siguiente año.
+
+**Pregunta:** ¿Cuál es el principal problema que el docente de orientación identifica en el argumento presentado por el coordinador de convivencia?
+
+A) El coordinador de convivencia no tiene la autoridad institucional necesaria para presentar informes sobre el sentido de pertenencia de los estudiantes ante el consejo directivo de la institución educativa.
+
+B) El programa de tutorías entre pares debería eliminarse de inmediato porque no existe ninguna evidencia, ni siquiera indirecta, de que haya tenido algún efecto positivo sobre los estudiantes de grado noveno.
+
+C) La evidencia citada, la asistencia al programa y algunos comentarios informales aislados, no mide directamente el sentido de pertenencia que la tesis del informe afirma haber fortalecido, y la institución cuenta con un instrumento más adecuado que no fue utilizado.
+
+D) El porcentaje de asistencia del 85% reportado por el coordinador es demasiado bajo para sostener cualquier conclusión sobre el impacto del programa de tutorías entre pares en los estudiantes de grado noveno.
+
+**Respuesta correcta:** C
+
+**Justificación completa:**
+El docente de orientación no cuestiona que el programa pueda tener efectos positivos, sino que la evidencia presentada, asistencia a sesiones y comentarios informales no representativos, no mide directamente el sentido de pertenencia, que es la afirmación concreta del informe, mientras que existía un instrumento estandarizado diseñado específicamente para medir esa variable y que no fue utilizado. Esa desconexión entre lo que se afirma y lo que efectivamente se midió es el problema central señalado, no la existencia o ausencia total de evidencia.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque introduce una objeción sobre legitimidad institucional; pero el caso no presenta ningún cuestionamiento a la autoridad del coordinador para elaborar el informe, y esa no es la objeción que formula el docente de orientación.
+- B) Es plausible porque lleva la objeción a un extremo lógico; pero el docente de orientación no concluye que no exista evidencia alguna de efecto positivo, sino que la evidencia disponible es insuficiente para sostener la conclusión específica que el informe plantea sobre el sentido de pertenencia.
+- D) Es plausible porque cuestiona un dato numérico del informe; pero el problema señalado no es que el porcentaje de asistencia sea bajo, sino que la asistencia, sea alta o baja, no mide el sentido de pertenencia que la tesis del informe afirma haber fortalecido.
+
+**Fundamento normativo o pedagógico:** Ley 1620 de 2013, artículo 22, sobre el sistema de información unificado de convivencia escolar, y el principio de lectura crítica que exige verificar la correspondencia directa entre la evidencia citada y la afirmación que pretende sustentar.
+
+**Proceso cognitivo evaluado:** Evaluación crítica de la pertinencia y suficiencia de la evidencia presentada en relación con la tesis específica que un texto argumentativo defiende.
+
+**Error frecuente del aspirante:** Aceptar cualquier evidencia relacionada temáticamente con la tesis como si la sustentara de manera directa, sin verificar si esa evidencia realmente mide lo que la tesis afirma.
+
+**Estrategia mental recomendada:** Ante una tesis específica, identificar con precisión qué variable afirma medir o modificar, y verificar si la evidencia presentada mide efectivamente esa variable o solo un indicador relacionado, pero distinto.
+
+---
+
+## MOD02-TA-004
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Identificación del eslabón más débil dentro de una cadena de razonamiento argumentativo
+**Subcompetencia:** Evaluación de la solidez individual de cada premisa dentro de un argumento de varios pasos
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+Un docente de matemáticas de grado octavo presentó ante el área de matemáticas de su institución educativa oficial un análisis escrito sobre las causas del bajo desempeño de sus estudiantes en la unidad de álgebra, con el propósito de justificar un cambio en la metodología de enseñanza para el siguiente periodo. El razonamiento del docente seguía una secuencia de varios pasos encadenados: primero, afirmó que los estudiantes de grado octavo llegaban a la unidad de álgebra sin haber consolidado completamente las operaciones básicas con números enteros, apoyándose en los resultados de una prueba diagnóstica aplicada al inicio del periodo, en la que el 40% de los estudiantes cometió errores en operaciones con enteros negativos, mientras que el porcentaje de errores en operaciones con enteros positivos fue de apenas el 12%, diferencia que el docente destacó como evidencia de una dificultad específica y no de un problema general de cálculo, comparación que incluyó en una gráfica de barras anexa al documento presentado al área, gráfica que también mostraba el desglose de errores por tipo de operación durante cada una de las cuatro semanas previas a la aplicación de la prueba diagnóstica. En segundo lugar, sostuvo que esa falta de consolidación en operaciones básicas necesariamente les impedía comprender los conceptos algebraicos posteriores, ya que el álgebra, según su experiencia docente, requiere un dominio previo completo de las operaciones con enteros antes de poder avanzar hacia la manipulación de expresiones simbólicas. En tercer lugar, concluyó que la solución más efectiva era dedicar las primeras tres semanas del siguiente periodo exclusivamente al repaso de operaciones con enteros antes de retomar cualquier contenido nuevo de álgebra, sin evaluación diagnóstica adicional durante ese repaso. Al presentar el análisis, otro docente del área señaló que, aunque coincidía con el primer paso del razonamiento, dado que la prueba diagnóstica efectivamente mostraba las dificultades reportadas, cuestionaba fuertemente el segundo paso, porque la literatura y experiencia compartida en reuniones anteriores del área indicaban que muchos estudiantes lograban comprender conceptos algebraicos básicos de manera simultánea al fortalecimiento de las operaciones con enteros, sin que un dominio previo completo fuera estrictamente necesario para iniciar el trabajo algebraico, siempre que ambos procesos se trabajaran de manera articulada. El área de matemáticas decidió revisar ese segundo paso del razonamiento antes de aprobar la propuesta de dedicar tres semanas completas exclusivamente al repaso, sin avanzar en ningún contenido nuevo durante ese tiempo.
+
+**Pregunta:** ¿Cuál de los tres pasos del razonamiento del docente resulta ser el eslabón más débil, según la objeción planteada por su colega del área?
+
+A) El primer paso, que reporta que el 40% de los estudiantes cometió errores en operaciones con enteros negativos en la prueba diagnóstica aplicada al inicio del periodo escolar.
+
+B) El tercer paso, que propone dedicar las primeras tres semanas del siguiente periodo exclusivamente al repaso de operaciones con enteros antes de retomar cualquier contenido nuevo de álgebra.
+
+C) Ninguno de los tres pasos presenta una debilidad real, ya que el razonamiento completo del docente se apoya de manera consistente en su experiencia directa como docente del área de matemáticas.
+
+D) El segundo paso, que afirma que la falta de consolidación en operaciones con enteros impide necesariamente comprender los conceptos algebraicos posteriores, presentado como una relación obligatoria sin sustento suficiente.
+
+**Respuesta correcta:** D
+
+**Justificación completa:**
+El colega del área acepta explícitamente el primer paso, respaldado por datos concretos de la prueba diagnóstica, y su objeción se concentra en el segundo paso: la afirmación de que el dominio previo completo de operaciones con enteros es una condición necesaria para comprender el álgebra. Esa relación se presenta como obligatoria sin evidencia adicional que la sustente, y la experiencia compartida en el área sugiere que ambos procesos pueden desarrollarse de manera articulada, lo que debilita directamente ese eslabón específico de la cadena de razonamiento, del cual depende además la conclusión del tercer paso.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque menciona uno de los pasos del razonamiento; pero el colega del área acepta explícitamente este primer paso como respaldado por la prueba diagnóstica, por lo que no es el eslabón cuestionado en el caso.
+- B) Es plausible porque señala la conclusión final del razonamiento; pero esa conclusión es débil como consecuencia directa de la debilidad del segundo paso, del cual depende, y no constituye en sí misma el eslabón donde se origina el problema señalado.
+- C) Es plausible porque apela a la experiencia docente como respaldo general; pero el caso muestra explícitamente que otro docente, con experiencia similar en el área, cuestiona de manera puntual el segundo paso del razonamiento, por lo que sí existe una debilidad identificada.
+
+**Fundamento normativo o pedagógico:** Lineamientos curriculares de matemáticas del MEN sobre el pensamiento variacional y los sistemas algebraicos, y el principio de lectura crítica que exige evaluar la solidez de cada premisa individual dentro de una cadena de razonamiento antes de aceptar su conclusión final.
+
+**Proceso cognitivo evaluado:** Evaluación analítica de la solidez individual de cada paso dentro de un argumento encadenado de varios pasos, identificando el punto específico donde el razonamiento pierde sustento suficiente.
+
+**Error frecuente del aspirante:** Evaluar la solidez de un argumento encadenado únicamente por su conclusión final, sin examinar de manera independiente cada paso intermedio del que esa conclusión depende.
+
+**Estrategia mental recomendada:** Descomponer un razonamiento de varios pasos en sus premisas individuales y evaluar cada una por separado, identificando cuál de ellas carece de sustento suficiente, incluso si las demás premisas están bien respaldadas.
+
+---
+
+## MOD02-TA-005
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Identificación de falsas dicotomías dentro de un texto argumentativo institucional
+**Subcompetencia:** Reconocimiento de opciones intermedias omitidas en un planteamiento presentado como excluyente
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+Durante una reunión del consejo académico de una institución educativa oficial, convocada para decidir el uso de un rubro adicional de recursos propios aprobado por la secretaría de educación municipal, el jefe del área de tecnología e informática presentó un documento en el que planteaba la decisión como una elección entre dos opciones únicas: invertir la totalidad del rubro en la renovación completa de los cuarenta computadores de la sala de informática, que tenían en promedio ocho años de uso y presentaban fallas frecuentes, o bien invertir la totalidad del rubro en la contratación de un docente adicional de apoyo para el área de lectura crítica, dado que la institución había mostrado resultados bajos en esa competencia en las últimas pruebas Saber, con un puntaje promedio ocho puntos por debajo de la media municipal durante las dos últimas aplicaciones consecutivas de la prueba, brecha que el propio documento señalaba como una de las principales preocupaciones del plan de mejoramiento institucional vigente. El documento argumentaba que, dado que el rubro no alcanzaba para financiar ambas necesidades de manera completa, el consejo académico debía elegir entre una de las dos opciones presentadas, y recomendaba la renovación de los computadores por considerarla la inversión con mayor impacto inmediato sobre el mayor número de estudiantes. Al discutir el documento, la coordinadora académica señaló que el planteamiento del jefe de área omitía otras alternativas intermedias que el consejo no había discutido todavía: dividir el rubro entre la renovación parcial de una parte de los computadores, priorizando los que presentaban fallas más graves, y la contratación de un docente de apoyo por medio tiempo en lugar de tiempo completo; o bien gestionar ante la secretaría de educación un rubro adicional específico para tecnología, dado que existía una convocatoria vigente para ese fin que el jefe de área no había mencionado en su documento, convocatoria que la propia secretaría había anunciado en una circular enviada a todas las instituciones oficiales del municipio apenas tres semanas atrás, circular que la coordinadora había recibido por correo institucional y guardado para revisarla con más calma antes de presentar su propuesta formal al consejo académico de la institución. La coordinadora señaló que presentar la decisión como una elección entre únicamente dos opciones extremas, sin considerar estas alternativas intermedias ni la posibilidad de gestionar recursos adicionales, limitaba de manera artificial las opciones reales disponibles para el consejo académico antes de tomar una decisión final sobre el uso del rubro.
+
+**Pregunta:** ¿Cuál es el problema argumentativo que la coordinadora académica identifica en el documento del jefe de área de tecnología?
+
+A) El documento presenta la decisión como una elección excluyente entre solo dos opciones extremas, sin considerar alternativas intermedias como la división parcial del rubro o la gestión de recursos adicionales disponibles.
+
+B) El documento no incluye suficientes datos numéricos sobre el estado técnico de los cuarenta computadores de la sala de informática para justificar la necesidad real de su renovación completa.
+
+C) El jefe de área de tecnología no tiene la competencia técnica necesaria para evaluar si los resultados bajos en lectura crítica de la institución justifican la contratación de un docente de apoyo adicional.
+
+D) La secretaría de educación municipal debería asignar automáticamente recursos separados para tecnología y para lectura crítica, en lugar de dejar que cada institución educativa decida cómo distribuir un rubro único.
+
+**Respuesta correcta:** A
+
+**Justificación completa:**
+La coordinadora no cuestiona la validez de ninguna de las dos necesidades planteadas, sino la forma en que el documento reduce la decisión a solo dos opciones excluyentes, cuando existían alternativas intermedias reales, como la división parcial del rubro o la gestión de un rubro adicional vigente, que el documento no consideró. Esa reducción artificial de las opciones disponibles es precisamente la estructura de una falsa dicotomía, que limita la discusión del consejo académico antes de que se consideren todas las alternativas reales.
+
+**Explicación de cada distractor:**
+- B) Es plausible porque cuestiona la solidez de los datos presentados; pero la objeción de la coordinadora no se dirige a la falta de datos numéricos sobre los computadores, sino a la estructura de la decisión presentada como excluyente entre solo dos opciones.
+- C) Es plausible porque introduce una duda sobre la competencia del jefe de área; pero el caso no presenta ningún cuestionamiento de ese tipo, y la objeción de la coordinadora se centra exclusivamente en la estructura argumentativa del planteamiento, no en la autoridad de quien lo presenta.
+- D) Es plausible porque propone una solución institucional distinta; pero esa propuesta no es la objeción que formula la coordinadora en el caso, que se limita a señalar la existencia de alternativas intermedias dentro del mismo rubro disponible, sin proponer una reforma del esquema de asignación de recursos.
+
+**Fundamento normativo o pedagógico:** Decreto 4791 de 2008, sobre el manejo de los recursos propios de las instituciones educativas oficiales, y el principio de lectura crítica que exige identificar falsas dicotomías cuando un argumento presenta solo dos opciones excluyentes sin considerar alternativas intermedias reales.
+
+**Proceso cognitivo evaluado:** Identificación de estructuras argumentativas que reducen de manera artificial las opciones disponibles ante una decisión institucional compleja.
+
+**Error frecuente del aspirante:** Aceptar el marco de opciones presentado por el autor de un texto como si fuera el único conjunto de alternativas posibles, sin cuestionar si existen opciones intermedias omitidas.
+
+**Estrategia mental recomendada:** Ante un texto que presenta una decisión como una elección entre solo dos opciones, preguntarse de manera explícita si existen alternativas intermedias o combinadas que el autor no haya mencionado antes de aceptar el marco de la decisión tal como se presenta.
+
+---
+
+## MOD02-TA-006
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Evaluación del alcance de una tesis frente al alcance real de la evidencia disponible
+**Subcompetencia:** Identificación de sobregeneralización de una conclusión más allá del ámbito estudiado
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+El jefe del área de ciencias naturales de una institución educativa oficial presentó ante el consejo académico un informe basado en la experiencia de implementar, durante el año escolar en curso, un laboratorio práctico semanal en los dos grupos de grado décimo a su cargo, en reemplazo de una hora adicional de clase teórica que antes se dictaba en ese mismo espacio de tiempo. En el informe, el jefe de área documentó que el promedio de calificaciones en la asignatura de química subió de 3.6 a 4.1 en los dos grupos de décimo entre el primer y el tercer periodo del año, y que la participación de los estudiantes durante las clases, medida a través de un formato de observación que él mismo diligenciaba semanalmente, también aumentó de manera notoria según su propio registro, pasando de un promedio de participación de dos intervenciones por clase a casi cinco intervenciones por clase durante el mismo periodo de comparación, dato que el jefe de área destacó especialmente en la sección de conclusiones de su informe como el hallazgo más contundente de toda la experiencia. Con base en estos resultados, el informe concluía que la estrategia de reemplazar una hora teórica por un laboratorio práctico semanal debía adoptarse de inmediato en todas las asignaturas y todos los grados de la institución, desde preescolar hasta grado once, como política general de mejoramiento académico institucional para el siguiente año escolar. Al discutir el informe, un docente de lengua castellana señaló que los resultados documentados correspondían únicamente a dos grupos de grado décimo en una sola asignatura, la química, con un componente experimental que se presta de manera natural al trabajo práctico de laboratorio, y que extender esa conclusión a todas las asignaturas y todos los grados de la institución, incluyendo áreas como lengua castellana o matemáticas en los primeros grados de primaria, donde el concepto de laboratorio práctico no aplica de la misma manera, excedía ampliamente lo que la evidencia presentada permitía sostener, sobre todo considerando que grados como preescolar y primero de primaria contaban con una carga horaria semanal muy distinta a la de los grados de bachillerato donde se realizó la experiencia original. El docente propuso que el consejo académico considerara la estrategia como una buena práctica válida para asignaturas con componente experimental similar al de ciencias naturales, en lugar de aprobarla como política general para toda la institución sin evidencia adicional específica de otras áreas y grados.
+
+**Pregunta:** ¿Cuál es el problema que el docente de lengua castellana identifica en la conclusión del informe del jefe de área de ciencias naturales?
+
+A) La estrategia de reemplazar horas teóricas por laboratorios prácticos semanales no debería aplicarse en ninguna asignatura de la institución, ni siquiera en ciencias naturales, dado que los resultados documentados no son confiables.
+
+B) El informe generaliza una conclusión válida únicamente para dos grupos de grado décimo en la asignatura de química hacia todas las asignaturas y todos los grados de la institución, un alcance que la evidencia presentada no permite sostener.
+
+C) El aumento de calificaciones de 3.6 a 4.1 reportado en el informe es una cifra demasiado pequeña para considerarse una mejora significativa en el desempeño académico de los estudiantes de grado décimo.
+
+D) El formato de observación que el jefe de área utilizó para medir la participación de los estudiantes durante las clases de laboratorio no es un instrumento válido para ninguna asignatura de la institución educativa.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El docente de lengua castellana no cuestiona los resultados obtenidos en los dos grupos de química, sino el salto que el informe da hacia una política general para toda la institución, todas las asignaturas y todos los grados, cuando la evidencia proviene de un contexto específico con características particulares que no necesariamente se replican en otras áreas. Esa sobregeneralización, extender una conclusión más allá del ámbito real que la evidencia cubre, es precisamente el problema argumentativo señalado, sin negar el valor de la estrategia dentro de su contexto original.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque lleva la objeción a un extremo opuesto; pero el docente no propone eliminar la estrategia de ciencias naturales, sino limitar su generalización a asignaturas con un componente experimental similar, reconociendo el valor de la estrategia dentro de su contexto original.
+- C) Es plausible porque cuestiona la magnitud del resultado numérico; pero el docente de lengua castellana no discute si el aumento de calificaciones es significativo o no, sino el alcance excesivo de la conclusión que el informe extrae a partir de ese resultado.
+- D) Es plausible porque introduce una duda sobre el instrumento de medición; pero esa objeción no aparece en el caso, y el docente de lengua castellana no cuestiona la validez del formato de observación utilizado por el jefe de área.
+
+**Fundamento normativo o pedagógico:** Estándares Básicos de Competencias en Ciencias Naturales del MEN, y el principio de lectura crítica que exige verificar que el alcance de una conclusión corresponda al alcance real de la evidencia presentada, sin extenderla a contextos no evaluados.
+
+**Proceso cognitivo evaluado:** Evaluación del alcance apropiado de una tesis en relación con el ámbito específico cubierto por la evidencia que la sustenta.
+
+**Error frecuente del aspirante:** Aceptar una conclusión general como válida simplemente porque la evidencia específica que la origina es sólida, sin verificar si esa evidencia cubre el mismo alcance que la conclusión pretende abarcar.
+
+**Estrategia mental recomendada:** Comparar de manera explícita el alcance de la evidencia presentada, a qué grupo, asignatura o contexto corresponde, con el alcance de la conclusión que el texto plantea, para identificar si existe una extensión no justificada.
+
+---
+
+## MOD02-TA-007
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Identificación de apelaciones a la autoridad que reemplazan un argumento sustantivo
+**Subcompetencia:** Distinción entre el respaldo de una figura de autoridad y la evidencia real que sustenta una afirmación
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En una reunión de docentes del área de ciencias sociales de una institución educativa oficial, convocada para decidir si se adoptaba un nuevo enfoque de enseñanza basado en el estudio de casos locales en reemplazo del enfoque cronológico tradicional que la institución había usado durante años, uno de los docentes presentó su posición a favor del cambio apoyándose principalmente en el hecho de que el nuevo rector de la institución, quien había llegado apenas dos meses atrás procedente de otra institución educativa reconocida por sus buenos resultados, había mencionado en una reunión general que consideraba el enfoque de estudio de casos como una estrategia "moderna y efectiva" para la enseñanza de las ciencias sociales, comentario que hizo de manera breve, sin detallar en qué se basaba esa valoración ni si se refería a algún resultado específico observado en su institución anterior, ni tampoco si esa institución anterior contaba con las mismas condiciones de recursos y número de estudiantes por aula que la institución actual, detalle que ninguno de los presentes en la reunión general se atrevió a preguntar directamente al rector en ese momento. El docente argumentó ante sus colegas que, dado que el rector tenía experiencia previa en una institución con mejores resultados académicos y había respaldado públicamente ese enfoque, el área debía adoptarlo sin necesidad de una discusión pedagógica adicional sobre sus ventajas y desventajas específicas para el contexto particular de los estudiantes de la institución. Otra docente del área, con mayor antigüedad, señaló que el comentario del rector, aunque valioso como opinión informada, no constituía por sí mismo una evidencia pedagógica sobre la efectividad del enfoque de estudio de casos para los estudiantes concretos de esa institución, y que el hecho de que el rector viniera de una institución con buenos resultados no implicaba que esos resultados se debieran específicamente a ese enfoque de enseñanza, ni que el mismo enfoque funcionara igual de bien en un contexto estudiantil distinto. La docente propuso que, en lugar de adoptar el cambio basándose en la opinión del rector, el área revisara la evidencia pedagógica disponible sobre el enfoque de estudio de casos y considerara aplicarlo primero de manera experimental en un solo grado antes de extenderlo a toda el área, para poder evaluar sus resultados específicos en el contexto real de la institución antes de tomar una decisión definitiva.
+
+**Pregunta:** ¿Cuál es el problema argumentativo que la docente con mayor antigüedad identifica en la posición de su colega?
+
+A) El enfoque de estudio de casos locales es, en términos absolutos, una estrategia pedagógica menos efectiva que el enfoque cronológico tradicional para la enseñanza de las ciencias sociales en cualquier institución educativa.
+
+B) Los docentes del área de ciencias sociales no deberían considerar la opinión del rector sobre ningún asunto pedagógico, ya que esa clase de decisiones corresponde exclusivamente al criterio técnico del área.
+
+C) El argumento se apoya principalmente en el respaldo verbal del rector como figura de autoridad, sin presentar evidencia pedagógica específica sobre la efectividad del enfoque para el contexto particular de los estudiantes de la institución.
+
+D) El nuevo rector de la institución no lleva suficiente tiempo en el cargo como para tener una opinión válida sobre ningún aspecto pedagógico relacionado con la enseñanza de las ciencias sociales.
+
+**Respuesta correcta:** C
+
+**Justificación completa:**
+La objeción de la docente no cuestiona el valor general de la opinión del rector, sino que su colega usa esa opinión como si fuera, por sí sola, evidencia suficiente sobre la efectividad pedagógica del enfoque, sin considerar si los buenos resultados de la institución anterior del rector se debían realmente a ese enfoque, ni si funcionaría igual en un contexto estudiantil distinto. Reemplazar la evidencia pedagógica específica por el respaldo de una figura de autoridad es precisamente la debilidad argumentativa que la docente identifica y busca corregir proponiendo una evaluación experimental.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque toma partido sobre el enfoque en discusión; pero la docente no afirma que el enfoque de estudio de casos sea inferior al enfoque tradicional, sino que propone evaluarlo de manera experimental antes de decidir, sin descartarlo de antemano.
+- B) Es plausible porque lleva la objeción a un extremo institucional; pero la docente no rechaza que la opinión del rector sea considerada en la discusión, sino que esa opinión reemplace por completo la evidencia pedagógica que el área debería revisar antes de decidir.
+- D) Es plausible porque menciona la corta antigüedad del rector en el cargo; pero la objeción de la docente no se basa en cuestionar la legitimidad de su opinión por el tiempo que lleva en la institución, sino en el uso que su colega hace de esa opinión como sustituto de evidencia pedagógica.
+
+**Fundamento normativo o pedagógico:** Decreto 1075 de 2015, artículo 2.3.3.1.5.4, sobre la autonomía pedagógica de las áreas académicas, y el principio de lectura crítica que exige distinguir entre el respaldo de una figura de autoridad y la evidencia sustantiva que efectivamente sostiene una afirmación pedagógica.
+
+**Proceso cognitivo evaluado:** Identificación de argumentos que sustituyen evidencia sustantiva por el respaldo de una figura de autoridad, sin verificar la validez del contenido de esa opinión.
+
+**Error frecuente del aspirante:** Aceptar una afirmación como válida porque proviene de una persona con jerarquía institucional o experiencia reconocida, sin verificar si esa persona ofrece evidencia sustantiva o solo una opinión general.
+
+**Estrategia mental recomendada:** Ante un argumento que se apoya en la opinión de una figura de autoridad, preguntarse si esa opinión viene acompañada de evidencia específica y pertinente al contexto en discusión, o si funciona únicamente como respaldo de jerarquía sin sustento adicional.
+
+---
+
+## MOD02-TA-008
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Identificación de razonamiento circular dentro de una justificación institucional
+**Subcompetencia:** Reconocimiento de argumentos cuya premisa presupone la conclusión que pretenden demostrar
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+El comité de convivencia escolar de una institución educativa oficial debía decidir si mantenía o modificaba un protocolo interno según el cual los estudiantes de grado once quedaban exentos de portar el uniforme de educación física los días en que no tenían clase de esa asignatura, protocolo que llevaba dos años implementado. Al presentar la justificación para mantener el protocolo sin cambios, el coordinador de convivencia argumentó, en un documento escrito, que la exención debía continuar porque "los estudiantes de grado once son quienes históricamente han demostrado mayor responsabilidad y madurez para gestionar su propio uso del uniforme, tal como lo demuestra el hecho de que la institución les otorgó esta exención desde hace dos años en reconocimiento a esa responsabilidad y madurez". El documento agregaba, como único dato adicional, que ningún estudiante de grado once había recibido un llamado de atención por el uso inadecuado del uniforme desde que la exención entró en vigencia, sin aclarar si ese registro se comparaba con el comportamiento de otros grados que sí debían portar el uniforme completo, ni si esa ausencia de llamados de atención podía explicarse simplemente porque, al no existir la obligación de portar el uniforme, tampoco existía una norma concreta que los estudiantes de grado once pudieran incumplir en ese aspecto. Al leer el documento, un miembro del comité, representante de los estudiantes, señaló que la justificación presentada por el coordinador no ofrecía en realidad ninguna razón nueva para mantener la exención, sino que se limitaba a repetir, con otras palabras, la conclusión que pretendía demostrar: que la exención debía mantenerse porque a los estudiantes ya se les había otorgado la exención en el pasado como reconocimiento a una responsabilidad que, según el propio documento, se demostraba precisamente por el hecho de tener la exención. El representante de los estudiantes señaló que esta forma de razonar no permitía evaluar si los estudiantes de grado once efectivamente mostraban mayor responsabilidad que otros grados por razones independientes de la existencia misma del protocolo, como por ejemplo registros de cumplimiento de otras normas institucionales, o si la exención simplemente se había mantenido por costumbre sin una evaluación real de esa supuesta madurez diferencial. El comité de convivencia decidió solicitar al coordinador que presentara evidencia independiente sobre el comportamiento de los estudiantes de grado once, distinta de la existencia misma del protocolo, antes de decidir si lo mantenía para el siguiente año escolar.
+
+**Pregunta:** ¿Cuál es el problema argumentativo que el representante de los estudiantes identifica en la justificación del coordinador de convivencia?
+
+A) El coordinador de convivencia no cuenta con la autoridad institucional necesaria para decidir sobre el uso del uniforme de educación física de los estudiantes de grado once de la institución.
+
+B) La exención del uniforme de educación física para los estudiantes de grado once debería eliminarse de inmediato, dado que no existe ninguna razón institucional válida para mantenerla vigente.
+
+C) El comité de convivencia escolar debería estar conformado únicamente por docentes y coordinadores, sin la participación de representantes estudiantiles en las decisiones sobre normas de uniforme.
+
+D) La justificación presenta un razonamiento circular, en el que la conclusión (los estudiantes de grado once merecen la exención) se apoya en una premisa que presupone esa misma conclusión (la exención ya otorgada como prueba de su responsabilidad).
+
+**Respuesta correcta:** D
+
+**Justificación completa:**
+La justificación del coordinador afirma que los estudiantes merecen la exención por su responsabilidad, y como prueba de esa responsabilidad cita el hecho de que ya se les otorgó la exención, lo cual convierte la conclusión en su propia premisa de sustento. Ese es exactamente el patrón de un razonamiento circular: no se ofrece ninguna evidencia independiente de la existencia misma del protocolo que se busca justificar, por lo que la responsabilidad y madurez atribuidas a los estudiantes quedan sin verificar de manera objetiva.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque cuestiona la legitimidad del coordinador; pero el caso no presenta ninguna objeción sobre su autoridad para decidir este tipo de protocolos, y la objeción del representante estudiantil se centra exclusivamente en la estructura del razonamiento presentado.
+- B) Es plausible porque propone eliminar la exención directamente; pero el representante de los estudiantes no concluye que la exención deba eliminarse, sino que se requiere evidencia independiente antes de decidir si se mantiene o se modifica.
+- C) Es plausible porque cuestiona la composición del comité; pero esa objeción no aparece en ningún punto del caso, y el problema identificado es exclusivamente argumentativo, relacionado con la estructura circular de la justificación presentada.
+
+**Fundamento normativo o pedagógico:** Ley 1620 de 2013, artículo 21, sobre las funciones del comité escolar de convivencia, y el principio de lectura crítica que exige identificar razonamientos circulares en los que la premisa presupone la conclusión que pretende demostrar.
+
+**Proceso cognitivo evaluado:** Identificación de estructuras de razonamiento circular en las que una afirmación se utiliza simultáneamente como premisa y como conclusión de un mismo argumento.
+
+**Error frecuente del aspirante:** Aceptar una justificación como válida porque suena coherente o porque repite con distintas palabras la misma idea, sin verificar si realmente aporta una razón independiente de la conclusión que defiende.
+
+**Estrategia mental recomendada:** Ante una justificación institucional, separar con claridad la conclusión que se defiende de la premisa que se ofrece como sustento, y verificar si esa premisa aporta información nueva o simplemente repite la conclusión de otra forma.
+
+---
+
+## MOD02-TA-009
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Identificación del tipo de evidencia adicional que fortalecería de manera más directa una tesis planteada
+**Subcompetencia:** Evaluación de la pertinencia de distintas fuentes de evidencia frente a una afirmación específica
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+La coordinadora de básica primaria de una institución educativa oficial presentó ante el consejo académico una propuesta para implementar un programa de lectura en voz alta de quince minutos diarios al inicio de la jornada escolar en todos los grupos de primaria, con la tesis de que esta práctica mejoraría la comprensión lectora de los estudiantes a lo largo del año escolar. Como sustento inicial, la coordinadora citó estudios generales sobre los beneficios de la lectura en voz alta para el desarrollo del vocabulario y la comprensión, disponibles en la literatura pedagógica sobre alfabetización inicial, y señaló que varios docentes de la institución ya aplicaban la práctica de manera informal en sus propios grupos, con buenos comentarios de los estudiantes según reportes verbales de esos docentes. La coordinadora agregó que, en su experiencia previa como docente de aula durante diez años, siempre había notado que los estudiantes con mayor hábito de escucha de lectura en voz alta mostraban mayor fluidez al leer sus propios textos, aunque reconoció que esa observación provenía de su práctica personal y no de un registro sistemático, y que nunca había llevado un control comparativo formal entre estudiantes expuestos y no expuestos a esa práctica dentro de un mismo grupo durante los años en que ejerció como docente titular de un mismo curso, aclaración que hizo de manera espontánea antes de que ningún miembro del consejo académico se lo preguntara directamente durante la sesión. Al discutir la propuesta, un miembro del consejo académico, docente del área de lengua castellana, señaló que la evidencia presentada hasta ese momento era de carácter general y no específica del contexto de la institución, y preguntó qué tipo de información adicional permitiría evaluar con mayor rigor si la propuesta concreta, quince minutos diarios en todos los grupos de primaria de esa institución particular, efectivamente produciría una mejora medible en la comprensión lectora de sus propios estudiantes, y no solo en el rendimiento reportado por estudios realizados en otros contextos educativos. El consejo académico discutió varias posibles fuentes de evidencia adicional antes de decidir si aprobaba la propuesta de manera experimental en un grupo piloto durante un periodo, con la intención de recopilar datos específicos del contexto institucional antes de extenderla a todos los grupos de primaria para el resto del año escolar.
+
+**Pregunta:** ¿Cuál de las siguientes opciones representa la evidencia adicional que fortalecería de manera más directa la tesis de la coordinadora sobre el impacto del programa en la institución específica?
+
+A) Los resultados de una prueba de comprensión lectora aplicada a un grupo piloto de primaria antes y después de un periodo de implementación del programa de lectura en voz alta, comparados con un grupo similar que no participó en el programa.
+
+B) Una recopilación más extensa de estudios generales sobre los beneficios de la lectura en voz alta para el desarrollo del vocabulario, publicados en revistas especializadas de distintos países con sistemas educativos diferentes al colombiano.
+
+C) El testimonio adicional de más docentes de la institución que ya aplican la práctica de manera informal en sus grupos, describiendo de manera detallada su experiencia personal y sus impresiones subjetivas sobre el interés de los estudiantes.
+
+D) Una carta de la secretaría de educación municipal en la que se recomiende de manera general a todas las instituciones oficiales del municipio implementar prácticas de lectura en voz alta como estrategia de fortalecimiento de la comprensión lectora.
+
+**Respuesta correcta:** A
+
+**Justificación completa:**
+La objeción del docente de lengua castellana es que la evidencia disponible es general y no específica del contexto institucional, por lo que la evidencia que fortalecería de manera más directa la tesis es aquella que mida el efecto concreto del programa en los estudiantes reales de la institución, comparando resultados antes y después de la implementación, e idealmente frente a un grupo que no participó en el programa. Ese diseño permite atribuir con mayor confianza cualquier mejora observada al programa específico, en lugar de depender de estudios realizados en contextos distintos o de testimonios subjetivos no sistematizados.
+
+**Explicación de cada distractor:**
+- B) Es plausible porque amplía la evidencia general disponible; pero sigue sin ser específica del contexto de la institución, que es precisamente la limitación que el docente de lengua castellana señala sobre la evidencia inicial presentada por la coordinadora.
+- C) Es plausible porque proviene de docentes de la propia institución; pero se trata de testimonios subjetivos e informales, no de una medición sistemática de la comprensión lectora, por lo que no permite evaluar con rigor el impacto real del programa.
+- D) Es plausible porque proviene de una autoridad educativa relevante; pero una recomendación general de la secretaría de educación no constituye evidencia sobre el efecto específico del programa en los estudiantes de esta institución en particular.
+
+**Fundamento normativo o pedagógico:** Derechos Básicos de Aprendizaje de lenguaje para básica primaria del MEN, y el principio de lectura crítica que exige evaluar qué tipo de evidencia resulta más pertinente y directa para sustentar una tesis específica sobre un contexto particular.
+
+**Proceso cognitivo evaluado:** Evaluación comparativa de distintas fuentes de evidencia para identificar cuál fortalece de manera más directa y rigurosa una tesis específica.
+
+**Error frecuente del aspirante:** Considerar que cualquier evidencia relacionada temáticamente con la tesis la fortalece por igual, sin distinguir entre evidencia general aplicable a cualquier contexto y evidencia específica capaz de medir el efecto real en el contexto particular en discusión.
+
+**Estrategia mental recomendada:** Ante una tesis sobre el efecto de una intervención en un contexto específico, identificar qué diseño de evidencia permitiría medir ese efecto de manera directa en ese mismo contexto, priorizándolo sobre evidencia general o testimonios no sistematizados.
+
+---
+
+## MOD02-TA-010
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Distinción entre una tesis diagnóstica y la recomendación de acción que se deriva de ella
+**Subcompetencia:** Identificación precisa de la afirmación central sobre un problema frente a la propuesta de solución que la acompaña
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+El orientador escolar de una institución educativa oficial presentó ante el consejo directivo un documento sobre el ausentismo escolar en grado séptimo, que había aumentado de manera notoria durante el segundo periodo del año. En el documento, el orientador explicó que, tras revisar los registros de asistencia y entrevistar a un grupo de estudiantes con inasistencias frecuentes, había identificado que la causa principal del aumento del ausentismo en ese grado específico era el cambio en el horario de la ruta escolar municipal, que desde el inicio del segundo periodo dejaba a los estudiantes de esa zona en la institución con casi cuarenta minutos de retraso respecto al inicio de la primera clase, situación que llevaba a varios estudiantes y sus familias a decidir que no valía la pena asistir ese día si iban a perderse una parte importante de la primera hora de clase. El orientador precisó además que el aumento del ausentismo se concentraba específicamente en los tres primeros días de la semana, cuando la ruta municipal presentaba mayores retrasos por congestión vehicular, mientras que jueves y viernes la asistencia de ese mismo grupo de estudiantes se mantenía en niveles similares a los del primer periodo del año, patrón que confirmó al cruzar los registros diarios de asistencia con el horario real de llegada de la ruta durante las últimas cinco semanas, cruce que realizó personalmente en una hoja de cálculo que anexó como soporte de su documento. Con base en ese diagnóstico, el orientador recomendó al consejo directivo gestionar ante la secretaría de tránsito y transporte municipal un ajuste en el horario de la ruta escolar, y mientras se lograba ese ajuste, proponía que la institución permitiera a los estudiantes de esa ruta ingresar directamente a la segunda hora de clase sin necesidad de justificar tardanza durante ese periodo de transición. Al discutir el documento, un miembro del consejo directivo pidió al orientador que aclarara cuál de las dos afirmaciones, el diagnóstico sobre la causa del ausentismo o la recomendación sobre el ingreso a segunda hora, constituía la conclusión central que el documento buscaba sustentar con la evidencia de los registros de asistencia y las entrevistas realizadas, y cuál era, en cambio, una propuesta de acción derivada de esa conclusión pero que el consejo directivo podía decidir implementar de otras maneras distintas a la sugerida.
+
+**Pregunta:** ¿Cuál de las siguientes opciones identifica correctamente la tesis diagnóstica central del documento, distinguiéndola de la recomendación de acción que se deriva de ella?
+
+A) Los estudiantes de grado séptimo y sus familias han decidido, de manera generalizada en toda la institución, que no vale la pena asistir a clase cuando se pierden una parte importante de la primera hora del día escolar.
+
+B) El cambio en el horario de la ruta escolar municipal es la causa principal del aumento del ausentismo en grado séptimo durante el segundo periodo, según lo que revelan los registros de asistencia y las entrevistas realizadas por el orientador.
+
+C) La institución educativa debería permitir a los estudiantes de la ruta afectada ingresar directamente a la segunda hora de clase sin necesidad de justificar tardanza mientras se logra un ajuste en el horario de la ruta escolar municipal.
+
+D) El consejo directivo debe gestionar ante la secretaría de tránsito y transporte municipal un ajuste inmediato en el horario de la ruta escolar que atiende a los estudiantes de la zona afectada por el aumento del ausentismo.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+El documento del orientador se construye sobre una investigación (registros de asistencia y entrevistas) orientada a identificar la causa del aumento del ausentismo, y esa identificación de causa es la tesis diagnóstica central que la evidencia sustenta directamente. Las propuestas sobre gestionar el ajuste de horario o permitir el ingreso a segunda hora son recomendaciones de acción derivadas de ese diagnóstico, pero no son la afirmación que la evidencia presentada busca demostrar, y el consejo directivo podría optar por otras acciones distintas sin que eso afecte la validez del diagnóstico mismo.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque retoma una idea mencionada en el caso sobre la decisión de las familias; pero generaliza esa decisión a toda la institución, cuando el documento la circunscribe específicamente a los estudiantes afectados por el cambio de ruta en grado séptimo.
+- C) Es plausible porque es una de las propuestas concretas mencionadas en el documento; pero es una recomendación de acción derivada del diagnóstico, no la afirmación central que la evidencia de registros y entrevistas busca sustentar directamente.
+- D) Es plausible porque también es una acción propuesta en el documento; pero, igual que la opción anterior, es una recomendación derivada del diagnóstico y no la tesis diagnóstica en sí misma que constituye el núcleo argumentativo del documento.
+
+**Fundamento normativo o pedagógico:** Decreto 1965 de 2013 sobre las funciones de orientación escolar en la prevención del ausentismo, y el principio de lectura crítica que exige distinguir la tesis diagnóstica de un texto de las recomendaciones de acción que se derivan de ella.
+
+**Proceso cognitivo evaluado:** Distinción entre una afirmación diagnóstica sustentada directamente por evidencia y las propuestas de acción que constituyen una consecuencia práctica de ese diagnóstico.
+
+**Error frecuente del aspirante:** Confundir la recomendación de acción más concreta o más citada en el texto con la tesis central que la evidencia presentada realmente sustenta.
+
+**Estrategia mental recomendada:** Identificar qué afirmación específica está siendo sustentada directamente por la evidencia presentada (datos, entrevistas, registros), y separarla de cualquier propuesta de acción que se plantee como consecuencia de esa afirmación, pero que dependa de decisiones adicionales.
+
+---
+
+## MOD02-TA-011
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Identificación de afirmaciones que contradicen los propios datos presentados en un texto argumentativo
+**Subcompetencia:** Verificación de la coherencia interna entre las conclusiones de un informe y la evidencia que el mismo informe reporta
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+El comité de calidad educativa de una institución educativa oficial presentó ante el consejo directivo un informe anual sobre el desempeño de los estudiantes de grado once en las pruebas Saber 11, con el propósito de evaluar la efectividad de un programa de refuerzo académico en matemáticas y lenguaje implementado durante los sábados a lo largo del año. El informe presentó una tabla comparativa con los puntajes promedio de la institución en matemáticas y lenguaje durante los tres años anteriores, en la que se observaba que el puntaje de matemáticas había subido de manera sostenida cada año, mientras que el puntaje de lenguaje había subido durante el primer año de implementación del programa, se había mantenido estable durante el segundo año, y había bajado ligeramente durante el tercer año, el más reciente, quedando apenas por debajo del puntaje del primer año antes de la implementación del programa. La misma tabla incluía una nota al pie, elaborada por la secretaria académica encargada de sistematizar los datos, que señalaba que durante el tercer año la institución había tenido dos cambios de docente titular de lenguaje por motivos de salud, información que el comité no retomó en ningún punto de su análisis narrativo pese a estar disponible en el mismo documento que ellos mismos habían elaborado, y pese a que dos miembros del comité habían firmado personalmente el acta de recepción de esa nota al pie antes de la reunión final de redacción. Pese a estos datos, la conclusión final del informe, redactada por el comité de calidad, afirmaba que "el programa de refuerzo académico de los sábados ha demostrado ser efectivo de manera consistente en ambas áreas, matemáticas y lenguaje, a lo largo de los tres años de implementación", y recomendaba mantener el programa sin ningún ajuste para el siguiente año escolar. Al revisar el informe antes de la sesión del consejo directivo, la rectora señaló a los miembros del comité que la conclusión presentada no correspondía exactamente con los datos de la propia tabla incluida en el informe, ya que el comportamiento del puntaje de lenguaje durante el tercer año, con una caída que lo dejaba por debajo del nivel inicial, contradecía directamente la afirmación de efectividad consistente en ambas áreas planteada en la conclusión del comité. La rectora solicitó al comité de calidad que revisara y ajustara la redacción de la conclusión antes de presentar el informe de manera oficial al consejo directivo.
+
+**Pregunta:** ¿Cuál es el problema que la rectora identifica en la conclusión del informe del comité de calidad educativa?
+
+A) El comité de calidad educativa de la institución no cuenta con la competencia técnica necesaria para evaluar de manera confiable los resultados de las pruebas Saber 11 de los estudiantes de grado once.
+
+B) El programa de refuerzo académico de los sábados debería eliminarse por completo, dado que sus resultados en la asignatura de lenguaje han sido negativos durante los tres años completos de su implementación.
+
+C) La conclusión afirma una efectividad consistente en ambas áreas, matemáticas y lenguaje, cuando los propios datos de la tabla incluida en el informe muestran que el puntaje de lenguaje bajó durante el tercer año hasta quedar por debajo del nivel inicial.
+
+D) El informe no incluye suficiente información sobre la metodología específica utilizada en el programa de refuerzo académico de los sábados durante los tres años de implementación evaluados.
+
+**Respuesta correcta:** C
+
+**Justificación completa:**
+La rectora identifica una contradicción interna directa: la conclusión afirma efectividad consistente en ambas áreas durante los tres años, pero la propia tabla del informe muestra que el puntaje de lenguaje no se comportó de manera consistente, sino que bajó en el tercer año hasta ubicarse por debajo del punto de partida. La conclusión ignora ese dato específico que el mismo informe reporta, lo que constituye una incoherencia interna entre la evidencia presentada y la afirmación final, independientemente de si el programa fue o no efectivo en términos generales.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque cuestiona la competencia del comité; pero el caso no presenta ningún cuestionamiento de ese tipo, y la objeción de la rectora es puntual sobre la coherencia interna del informe, no sobre la capacidad técnica de quienes lo elaboraron.
+- B) Es plausible porque toma los datos de lenguaje como base; pero llega a una conclusión extrema, eliminar el programa por completo, que tampoco corresponde exactamente con los datos, dado que el puntaje de matemáticas sí subió de manera sostenida durante los tres años.
+- D) Es plausible porque señala una posible carencia de información metodológica; pero esa no es la objeción que formula la rectora, que se centra específicamente en la contradicción entre los datos de la tabla y la conclusión redactada por el comité.
+
+**Fundamento normativo o pedagógico:** Guía para el mejoramiento institucional del MEN sobre el uso de resultados de pruebas externas en los procesos de autoevaluación institucional, y el principio de lectura crítica que exige verificar la coherencia interna entre las conclusiones de un texto y los datos que el propio texto reporta.
+
+**Proceso cognitivo evaluado:** Verificación de la coherencia interna de un texto argumentativo, contrastando la conclusión final con los datos concretos presentados en el mismo documento.
+
+**Error frecuente del aspirante:** Aceptar la conclusión de un informe como válida por el solo hecho de estar acompañada de una tabla de datos, sin verificar de manera puntual si esos datos efectivamente respaldan la afirmación final tal como está redactada.
+
+**Estrategia mental recomendada:** Comparar de manera explícita, dato por dato, la conclusión final de un texto argumentativo con la evidencia específica que el mismo texto presenta, buscando posibles contradicciones internas antes de aceptar la conclusión como válida.
+
+---
+
+## MOD02-TA-012
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Evaluación de la validez deductiva de la estructura de un argumento institucional
+**Subcompetencia:** Verificación de si la conclusión de un argumento se sigue necesariamente de las premisas planteadas, con independencia de si estas son ciertas
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En una reunión del consejo académico de una institución educativa oficial, el jefe del área de tecnología e informática presentó un argumento para justificar por qué, en su opinión, todos los estudiantes de media técnica en preprensa digital debían aprobar de manera obligatoria el curso de diseño vectorial antes de acceder al curso de diseño editorial del siguiente semestre. El argumento se estructuró de la siguiente manera: primero, afirmó que todo estudiante que domina el diseño vectorial tiene las herramientas conceptuales necesarias para comprender el diseño editorial; segundo, afirmó que todos los estudiantes que aprueban el curso de diseño vectorial de la institución demuestran, según los criterios de evaluación vigentes, un dominio adecuado de esa herramienta; por lo tanto, concluyó que todos los estudiantes que aprueban el curso de diseño vectorial de la institución tienen las herramientas conceptuales necesarias para comprender el diseño editorial, y que en consecuencia debía exigirse la aprobación de diseño vectorial como requisito obligatorio previo. Al discutir la propuesta, una docente del área de humanidades, sin conocimientos técnicos específicos en diseño, señaló que, aceptando como ciertas las dos premisas planteadas por el jefe de área, la conclusión sí se seguía de manera necesaria y correcta desde el punto de vista lógico, por lo que la estructura del argumento era válida, aunque aclaró que su formación no le permitía evaluar si esas premisas correspondían realmente a la práctica pedagógica de ambos cursos. Sin embargo, otro docente del área de tecnología, con más experiencia en la enseñanza de ambos cursos, cuestionó no la estructura lógica del argumento, que reconoció como correcta, sino la verdad de la primera premisa, señalando que, según su experiencia enseñando ambos cursos durante varios años, algunos estudiantes lograban comprender adecuadamente los principios del diseño editorial sin haber dominado completamente el diseño vectorial, dado que ambos cursos compartían solo una parte de sus fundamentos conceptuales y no la totalidad de ellos, como suponía la primera premisa del jefe de área. Como ejemplo concreto, mencionó el caso de dos estudiantes del semestre anterior que habían obtenido calificación insuficiente en diseño vectorial, pero que en diseño editorial alcanzaron un desempeño sobresaliente, apoyándose principalmente en su manejo de composición tipográfica y jerarquía visual, competencias que, según su experiencia, se desarrollaban de manera relativamente independiente del manejo técnico de las herramientas vectoriales.
+
+**Pregunta:** ¿Qué distinción establece el segundo docente respecto a la evaluación del argumento del jefe de área de tecnología?
+
+A) La estructura lógica del argumento es válida porque la conclusión se sigue correctamente de las premisas planteadas, pero cuestiona si la primera premisa, sobre la relación necesaria entre dominar el diseño vectorial y comprender el diseño editorial, es realmente cierta en la práctica.
+
+B) La estructura lógica del argumento es inválida porque la conclusión no se sigue de las premisas planteadas por el jefe de área, independientemente de si esas premisas son ciertas o falsas en el contexto real de la institución.
+
+C) El jefe del área de tecnología e informática no tiene la autoridad pedagógica suficiente para establecer requisitos obligatorios entre los cursos de la media técnica en preprensa digital de la institución.
+
+D) Todos los estudiantes de media técnica en preprensa digital deberían poder acceder directamente al curso de diseño editorial sin ningún requisito previo relacionado con el dominio del diseño vectorial.
+
+**Respuesta correcta:** A
+
+**Justificación completa:**
+El segundo docente distingue explícitamente entre la validez formal del argumento, que reconoce como correcta porque la conclusión efectivamente se sigue de las premisas si estas son ciertas, y la verdad material de la primera premisa, que cuestiona con base en su experiencia docente concreta. Esta es precisamente la distinción entre validez lógica y verdad de las premisas: un argumento puede tener una estructura deductivamente válida y, aun así, no ser sólido si alguna de sus premisas resulta falsa o cuestionable en la práctica real.
+
+**Explicación de cada distractor:**
+- B) Es plausible porque cuestiona la estructura del argumento; pero el caso indica explícitamente que ambos docentes reconocen que la conclusión sí se sigue correctamente de las premisas, por lo que la estructura lógica no es lo que el segundo docente cuestiona.
+- C) Es plausible porque introduce una objeción de autoridad; pero esa objeción no aparece en el caso, y la discusión del segundo docente se centra exclusivamente en el contenido de la primera premisa, no en la legitimidad del jefe de área para proponer el requisito.
+- D) Es plausible porque plantea una postura opuesta a la propuesta original; pero el segundo docente no concluye que no deba existir ningún requisito, sino que cuestiona específicamente la premisa que sostiene la necesidad de ese requisito particular tal como fue planteado.
+
+**Fundamento normativo o pedagógico:** Decreto 1075 de 2015, sobre la organización curricular de la media técnica, y el principio de lectura crítica que exige distinguir entre la validez formal de un argumento, si la conclusión se sigue de las premisas, y la verdad material de esas premisas en el contexto real.
+
+**Proceso cognitivo evaluado:** Evaluación de la validez deductiva de un argumento con independencia de la verdad de sus premisas, y distinción de esa validez formal frente al cuestionamiento del contenido específico de una premisa.
+
+**Error frecuente del aspirante:** Confundir la validez lógica de un argumento con la verdad de sus premisas, aceptando o rechazando la conclusión únicamente en función de si las premisas parecen ciertas, sin evaluar si la estructura del razonamiento es correcta.
+
+**Estrategia mental recomendada:** Separar dos preguntas distintas ante un argumento: si la conclusión se sigue necesariamente de las premisas planteadas, y si esas premisas son efectivamente ciertas en el contexto real, dado que un argumento puede ser válido en su estructura y aun así cuestionable en su contenido.
+
+---
+
+## MOD02-TA-013
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Distinción precisa entre dos afirmaciones similares que un texto podría estar defendiendo
+**Subcompetencia:** Identificación del matiz exacto de la tesis frente a formulaciones parecidas pero no equivalentes
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+La psicóloga orientadora de una institución educativa oficial presentó ante el consejo directivo un documento sobre el uso de dispositivos electrónicos personales por parte de los estudiantes durante los descansos, luego de que varios docentes manifestaran preocupación por el tiempo que los estudiantes de bachillerato pasaban con sus celulares durante ese espacio, en lugar de socializar directamente con sus compañeros. En el documento, la orientadora explicó que, tras revisar literatura especializada y realizar observaciones directas durante dos semanas en los descansos de bachillerato, había concluido que el uso de celulares durante el descanso, específicamente cuando ese uso reemplazaba de manera sistemática la interacción social directa entre estudiantes, estaba asociado con menores niveles de habilidades sociales reportadas por los propios docentes en sus observaciones de aula, mientras que el uso de celulares en otros momentos del día, como el trayecto hacia la institución o los espacios de trabajo individual asignados por los docentes, no mostraba esa misma asociación según sus observaciones. En su registro de observación, la orientadora anotó que, de los seis grupos de bachillerato observados, los dos grupos donde más estudiantes usaban el celular durante todo el descanso eran también los que mostraban menor número de conversaciones espontáneas entre compañeros distintos a su grupo cercano habitual, patrón que no se repetía en los grupos donde el celular se usaba principalmente durante el trayecto de entrada, observación que registró día por día en una bitácora que anexó como soporte metodológico de su documento, bitácora que incluía además la hora exacta de inicio y fin de cada descanso observado durante las dos semanas de recolección de información. Al presentar el documento al consejo directivo, un miembro del consejo resumió la conclusión de la orientadora afirmando que "el uso de celulares por parte de los estudiantes es perjudicial para el desarrollo de sus habilidades sociales", una formulación que la orientadora corrigió de inmediato, señalando que su documento no sostenía esa afirmación general sobre el uso de celulares en cualquier momento, sino específicamente sobre su uso durante el descanso cuando reemplazaba la interacción social directa entre compañeros, una diferencia que ella consideraba central para cualquier decisión que el consejo directivo tomara sobre el tema, ya que una prohibición general del uso de celulares en toda la institución no correspondería con lo que su observación específica había encontrado.
+
+**Pregunta:** ¿Cuál es la diferencia que la orientadora señala entre su tesis real y la formulación resumida por el miembro del consejo directivo?
+
+A) Su tesis se refiere a que los docentes deberían prohibir de manera individual el uso de celulares durante sus propias clases, sin que exista una política institucional general aplicable a todos los espacios de la jornada escolar.
+
+B) Su tesis se refiere específicamente al uso de celulares durante el descanso cuando reemplaza la interacción social directa, no al uso de celulares en cualquier momento del día, como sugiere la formulación general del miembro del consejo.
+
+C) Su tesis se refiere a que ningún estudiante de bachillerato debería tener acceso a dispositivos electrónicos personales dentro de las instalaciones de la institución educativa, en ningún momento de la jornada escolar.
+
+D) Su tesis se refiere únicamente a los estudiantes que ya presentan dificultades previas en sus habilidades sociales, y no aplica de ninguna manera a los estudiantes que no presentan esas dificultades previas.
+
+**Respuesta correcta:** B
+
+**Justificación completa:**
+La orientadora corrige explícitamente al miembro del consejo señalando que su conclusión se limita al uso de celulares durante el descanso, y específicamente cuando ese uso reemplaza la interacción social directa, mientras que el uso en otros momentos, como el trayecto o el trabajo individual, no mostró la misma asociación en sus observaciones. La formulación general del consejo directivo, que atribuye el efecto negativo al uso de celulares "en general", excede el matiz preciso de la tesis real de la orientadora, que es mucho más específica en cuanto al momento y tipo de uso evaluado.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque propone una solución alternativa a nivel de aula; pero esa no es la corrección que la orientadora hace sobre su propia tesis, que se limita a precisar el momento y tipo de uso evaluado en su observación.
+- C) Es plausible porque plantea una restricción total, en la línea de lo que el consejo directivo podría considerar; pero el documento de la orientadora no defiende una prohibición general de dispositivos en toda la jornada, sino una observación específica sobre el descanso.
+- D) Es plausible porque introduce un matiz sobre estudiantes con dificultades previas; pero ese matiz no aparece en el caso, que se centra en la diferencia entre momentos de uso del celular, no en diferencias entre distintos perfiles de estudiantes.
+
+**Fundamento normativo o pedagógico:** Ley 1620 de 2013, sobre la promoción de la convivencia escolar, y el principio de lectura crítica que exige distinguir el matiz exacto de una tesis frente a formulaciones parecidas pero más amplias o más restrictivas que no corresponden con lo que el texto original defiende.
+
+**Proceso cognitivo evaluado:** Identificación precisa del alcance y matiz específico de una tesis, distinguiéndola de formulaciones similares pero no equivalentes que amplían o modifican su sentido original.
+
+**Error frecuente del aspirante:** Aceptar una versión resumida o generalizada de una tesis como equivalente a la formulación original, sin verificar si el resumen conserva las condiciones y matices específicos que el autor planteó.
+
+**Estrategia mental recomendada:** Comparar cualquier resumen o paráfrasis de una tesis con la formulación original del texto, verificando si conserva las condiciones específicas (cuándo, cómo, en qué casos) que el autor incluyó, o si las omite ampliando el alcance de la afirmación.
+
+---
+
+## MOD02-TA-014
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Evaluación de la pertinencia real de un contraargumento frente a la tesis que pretende refutar
+**Subcompetencia:** Identificación de contraargumentos que abordan un aspecto distinto al núcleo de la tesis original
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+En una reunión del área de matemáticas de una institución educativa oficial, un docente propuso que, a partir del siguiente periodo, las evaluaciones escritas de la asignatura permitieran a los estudiantes utilizar una hoja de fórmulas elaborada por ellos mismos durante las dos semanas previas al examen, con el argumento central de que esta estrategia permitiría enfocar la evaluación en la capacidad de los estudiantes para aplicar procedimientos y resolver problemas, en lugar de en la memorización de fórmulas, que consideraba una habilidad menos relevante para el desarrollo del pensamiento matemático que la propia área buscaba fortalecer según el plan de estudios vigente. Otro docente del área respondió a la propuesta señalando que, en su experiencia de los últimos cinco años, los estudiantes que memorizaban mejor las fórmulas también solían obtener mejores resultados generales en el área, por lo que consideraba que eliminar la exigencia de memorización podría afectar negativamente el desempeño general de los estudiantes en la asignatura. Como sustento adicional, mencionó que en las tres últimas evaluaciones bimestrales del área, los diez estudiantes con mejor promedio general habían sido consistentemente los mismos que memorizaban con mayor rapidez las fórmulas trabajadas en clase, según su propio registro informal de observación durante los repasos previos a cada examen, registro que llevaba en un cuaderno personal sin socializar previamente con el resto del área, cuaderno que mostró brevemente durante la reunión como respaldo de su afirmación, aunque sin compartir los datos completos por escrito con sus colegas. Al escuchar esta respuesta, el docente que había hecho la propuesta original señaló que el contraargumento de su colega no abordaba directamente el núcleo de su propuesta, que era la relación entre memorización de fórmulas y capacidad real de razonamiento matemático, sino que se limitaba a señalar una correlación general entre memorización y buenos resultados, sin considerar que esa correlación podría explicarse por otros factores, como que los estudiantes con mejor desempeño general en matemáticas también tendieran a memorizar mejor por su nivel general de dedicación al área, y no porque la memorización en sí misma fuera la causa de su buen desempeño. El área de matemáticas decidió aplazar la decisión hasta la siguiente reunión, solicitando a ambos docentes que revisaran con mayor profundidad la relación entre memorización de fórmulas y desarrollo del pensamiento matemático antes de tomar una decisión definitiva sobre la propuesta.
+
+**Pregunta:** ¿Cuál es la objeción que el docente original plantea sobre la pertinencia del contraargumento de su colega?
+
+A) El colega que presenta el contraargumento no tiene la experiencia docente suficiente en el área de matemáticas como para opinar de manera válida sobre la relación entre memorización y desempeño académico.
+
+B) El área de matemáticas debería eliminar de inmediato la memorización de fórmulas como criterio de evaluación en todas las asignaturas de la institución, sin necesidad de una discusión adicional sobre el tema.
+
+C) El contraargumento señala una correlación general entre memorización y buenos resultados, sin abordar directamente si la memorización de fórmulas es o no relevante para el desarrollo del pensamiento matemático, que es el núcleo real de la propuesta original.
+
+D) El contraargumento del colega es completamente falso, ya que no existe ninguna relación, ni siquiera de correlación general, entre la memorización de fórmulas y el desempeño de los estudiantes en la asignatura de matemáticas.
+
+**Respuesta correcta:** C
+
+**Justificación completa:**
+El docente original no niega que exista la correlación observada por su colega, sino que señala que esa correlación no aborda directamente la pregunta central de su propuesta: si la memorización de fórmulas es en sí misma relevante para el pensamiento matemático, o si la correlación observada se explica por un factor distinto, como el nivel general de dedicación de los estudiantes. Un contraargumento que se limita a señalar una correlación, sin descartar explicaciones alternativas relacionadas con el núcleo real de la discusión, no refuta directamente la tesis que pretende cuestionar.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque introduce una objeción sobre experiencia docente; pero esa objeción no aparece en el caso, y el docente original no cuestiona la experiencia de su colega, sino la pertinencia específica del argumento que presenta frente a su propuesta.
+- B) Es plausible porque plantea una conclusión definitiva sobre el tema; pero el área decide aplazar la decisión para revisar con mayor profundidad la relación entre memorización y pensamiento matemático, sin que el docente original haya concluido de manera definitiva que la memorización deba eliminarse por completo.
+- D) Es plausible porque rechaza el contraargumento de manera directa; pero el docente original no niega la existencia de la correlación general observada por su colega, sino que cuestiona si esa correlación aborda el punto central de su propuesta original.
+
+**Fundamento normativo o pedagógico:** Lineamientos curriculares de matemáticas del MEN sobre los procesos generales del pensamiento matemático, y el principio de lectura crítica que exige evaluar si un contraargumento aborda directamente el núcleo de la tesis que pretende refutar, o si se limita a un aspecto relacionado pero distinto.
+
+**Proceso cognitivo evaluado:** Evaluación de la pertinencia directa de un contraargumento frente al núcleo específico de la tesis que pretende cuestionar, distinguiendo relación temática de refutación efectiva.
+
+**Error frecuente del aspirante:** Aceptar cualquier contraargumento relacionado temáticamente con una propuesta como si la refutara de manera directa, sin verificar si efectivamente aborda el punto central de la tesis original o solo un aspecto periférico.
+
+**Estrategia mental recomendada:** Ante un contraargumento, identificar con precisión cuál es el núcleo específico de la tesis que se pretende refutar, y verificar si el contraargumento aborda ese núcleo de manera directa o si se limita a un dato relacionado que no descarta explicaciones alternativas.
+
+---
+
+## MOD02-TA-015
+
+**Módulo:** 2 – Lectura Crítica
+**Tema:** Tesis y argumento
+**Competencia:** Distinción entre la fuerza persuasiva retórica de un argumento y su rigor lógico real
+**Subcompetencia:** Identificación de recursos de persuasión emocional que no aportan sustento lógico a una tesis
+
+**Nivel de dificultad:** Muy alta
+
+**Caso:**
+Durante la asamblea general de padres de familia de una institución educativa oficial, convocada para discutir una propuesta de aumento en la cuota de servicios complementarios destinada a financiar el mantenimiento de la biblioteca escolar y la renovación de su colección de libros, dos padres de familia intervinieron con posiciones opuestas ante la propuesta presentada por el consejo directivo. El primer padre argumentó a favor del aumento señalando, con evidente emoción en su discurso, que "cada niño de esta institución merece crecer rodeado de libros que despierten su amor por la lectura, y ningún padre presente en esta sala quisiera ser recordado como quien le negó esa oportunidad a su propio hijo por no aportar unos pocos miles de pesos adicionales al mes", intervención que generó aplausos entre varios de los asistentes a la asamblea. El segundo padre, presidente del consejo de padres, intervino después señalando datos concretos: el catálogo actual de la biblioteca no había sido renovado en los últimos seis años, según el registro de adquisiciones que él mismo había revisado con la bibliotecaria antes de la asamblea; el 60% de los libros disponibles presentaba un estado de deterioro que dificultaba su préstamo según el informe técnico de la bibliotecaria; y el monto específico solicitado, calculado por el consejo directivo, cubría exactamente el costo de renovar un tercio de la colección durante el siguiente año, con proyección de completar la renovación en tres años si la cuota se mantenía en ese nivel. El presidente del consejo de padres agregó además que había solicitado a la bibliotecaria una lista de los diez títulos más pedidos por los estudiantes durante el último año que la institución no tenía disponibles en más de un ejemplar, lista que distribuyó impresa entre los asistentes como parte de su intervención, junto con el costo estimado de reposición de cada uno de esos diez títulos según la cotización más reciente de la librería proveedora habitual de la institución. Al comparar ambas intervenciones, la rectora, quien moderaba la asamblea, señaló a los asistentes que, aunque ambas defendían la misma conclusión final, aumentar la cuota para renovar la biblioteca, la segunda intervención aportaba un sustento verificable y específico para evaluar la propuesta, mientras que la primera, pese a generar una reacción emocional más inmediata en la sala, no ofrecía ningún dato concreto que permitiera a los asistentes evaluar la necesidad real ni la suficiencia del monto propuesto.
+
+**Pregunta:** ¿Cuál es la distinción que la rectora señala entre las dos intervenciones presentadas en la asamblea?
+
+A) La primera intervención es completamente inválida y no debería considerarse en la discusión de la asamblea, mientras que la segunda intervención es la única que los padres de familia deberían tener en cuenta antes de votar sobre la propuesta.
+
+B) El presidente del consejo de padres no debería tener permitido intervenir en la asamblea general con datos técnicos, dado que esa información corresponde exclusivamente a la bibliotecaria y al consejo directivo de la institución.
+
+C) Ambas intervenciones son igualmente válidas y aportan el mismo nivel de sustento a la propuesta, dado que las dos defienden la misma conclusión final sobre la necesidad de aumentar la cuota de servicios complementarios.
+
+D) La primera intervención genera una reacción emocional más inmediata mediante un llamado afectivo, pero no aporta datos verificables sobre la propuesta, mientras que la segunda ofrece evidencia específica y verificable que permite evaluar la necesidad real y la suficiencia del monto solicitado.
+
+**Respuesta correcta:** D
+
+**Justificación completa:**
+La rectora no descalifica la primera intervención por generar una reacción emocional, sino que señala con precisión su limitación: apela a un compromiso afectivo sin ofrecer ningún dato verificable sobre el estado real de la biblioteca ni sobre la suficiencia del monto propuesto. La segunda intervención, en cambio, aporta datos específicos y verificables (años sin renovación, porcentaje de deterioro, cálculo del monto) que permiten a los asistentes evaluar la propuesta de manera informada, independientemente de que ambas defiendan la misma conclusión final.
+
+**Explicación de cada distractor:**
+- A) Es plausible porque distingue el valor de ambas intervenciones; pero descalifica por completo la primera intervención como inválida, cuando la rectora no la invalida, sino que señala su limitación específica frente a la segunda en términos de sustento verificable.
+- B) Es plausible porque introduce una objeción sobre quién puede presentar cierta información; pero esa objeción no aparece en el caso, y la distinción que traza la rectora es exclusivamente sobre el tipo de sustento que cada intervención aporta a la discusión.
+- C) Es plausible porque señala que ambas defienden la misma conclusión; pero precisamente por compartir la conclusión, la distinción relevante que señala la rectora es la diferencia en el sustento que cada una aporta, no la equivalencia entre ambas.
+
+**Fundamento normativo o pedagógico:** Decreto 1075 de 2015, sobre la participación de los padres de familia en las decisiones institucionales a través del consejo de padres, y el principio de lectura crítica que exige distinguir la fuerza persuasiva emocional de un argumento de su rigor lógico y su sustento verificable.
+
+**Proceso cognitivo evaluado:** Distinción entre argumentos que persuaden mediante apelación emocional y argumentos que aportan sustento verificable y específico a una misma conclusión.
+
+**Error frecuente del aspirante:** Evaluar la solidez de un argumento en función de la reacción emocional que genera en una audiencia, en lugar de evaluar si aporta datos verificables y específicos que permitan sustentar la conclusión de manera informada.
+
+**Estrategia mental recomendada:** Ante dos argumentos que defienden la misma conclusión, evaluar de manera independiente qué tipo de sustento aporta cada uno, distinguiendo los datos verificables y específicos de los recursos persuasivos que apelan únicamente a la emoción de la audiencia.
+
+---
