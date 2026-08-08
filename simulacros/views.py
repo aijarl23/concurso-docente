@@ -193,7 +193,7 @@ def realizar_simulacro(request, intento_id):
     if intento.estado == 'completado':
         return redirect('simulacros:resultado_simulacro', intento_id=intento.id)
 
-    preguntas = list(intento.simulacro.preguntas.filter(activa=True).order_by('id'))
+    preguntas = list(intento.simulacro.preguntas.filter(activa=True).select_related('subcategoria').order_by('id'))
     random.Random(intento.id).shuffle(preguntas)
     seconds_per_question = int(request.session.get(f'simulacro_seconds_per_question_{intento.id}', intento.simulacro.tiempo_por_pregunta_segundos or 180))
     seconds_per_question = min(max(seconds_per_question, 60), 600)

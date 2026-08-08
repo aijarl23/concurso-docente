@@ -25,7 +25,7 @@
             <div class="card-body">
                 <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
                     <h2 class="h5 mb-0">Pregunta {{ forloop.counter }}</h2>
-                    <span class="badge text-bg-light border">{{ pregunta.competencia }}</span>
+                    <span class="badge text-bg-light border">{{ pregunta.subcategoria.nombre|default:pregunta.competencia }}</span>
                 </div>
                 {% if pregunta.contexto %}<div class="question-context lh-lg">{{ pregunta.contexto|linebreaksbr }}</div>{% endif %}
                 <p class="fw-semibold mt-3">{{ pregunta.enunciado }}</p>
