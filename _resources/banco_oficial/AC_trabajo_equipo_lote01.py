@@ -1,17 +1,22 @@
 # -*- coding: utf-8 -*-
-"""Banco Oficial de Preguntas - Modulo: Analisis de Casos | Tema: Trabajo en
-equipo (Lote 1). Tercer tema del Modulo 6, bajo la regla permanente desde
-Modulo 5: 10 preguntas por tema. Formato TJS con idoneidad graduada 0-4,
-igual a los lotes de Comunicacion asertiva y Liderazgo ya aprobados.
-Contenido enteramente nuevo. Dificultad unicamente Alta y Muy Alta. Proceso
-cognitivo nivel 3-4. Mezcla de tipo_item mas_adecuada/menos_adecuada (6/4).
-Contexto de 150-300 palabras por item. Distribucion final de
-respuesta_correcta A2/B3/C2/D3 (spread <=1), verificada con script tras
-ajustes de letra objetivo.
+"""Banco Oficial de Preguntas - Modulo 6: Analisis de Casos
+TEMA 3 de 4: Trabajo colaborativo (Lote 1) - 10 preguntas.
+Nombre alineado exactamente con el catalogo oficial de la plataforma
+(dashboard/question_generator.py, MODULES['analisis-de-casos']['topics']).
+Los 4 temas del Modulo 6, cada uno con 10 preguntas (40 en total):
+1. Comunicacion asertiva (AC_comunicacion_asertiva_lote01.py)
+2. Liderazgo pedagogico (AC_liderazgo_lote01.py)
+3. Trabajo colaborativo (este archivo)
+4. Orientacion al logro (AC_orientacion_logro_lote01.py)
+Formato TJS con idoneidad graduada 0-4. Contenido enteramente nuevo.
+Dificultad unicamente Alta y Muy Alta. Proceso cognitivo nivel 3-4. Mezcla
+de tipo_item mas_adecuada/menos_adecuada (6/4). Contexto de 150-300 palabras
+por item. Distribucion final de respuesta_correcta A2/B3/C2/D3 (spread <=1),
+verificada con script tras ajustes de letra objetivo.
 """
 
 CATEGORIA = "Análisis de Casos"
-SUBCATEGORIA = "Análisis de Casos - Trabajo en equipo"
+SUBCATEGORIA = "Análisis de Casos - Trabajo colaborativo"
 COMPETENCIA = "Análisis de casos y competencias comportamentales"
 AREA = "psicotecnico"
 

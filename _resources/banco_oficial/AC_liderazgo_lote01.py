@@ -1,18 +1,22 @@
 # -*- coding: utf-8 -*-
-"""Banco Oficial de Preguntas - Modulo: Analisis de Casos | Tema: Liderazgo
-(Lote 1). Segundo tema del Modulo 6, bajo la regla permanente desde Modulo 5:
-10 preguntas por tema. Formato TJS con idoneidad graduada 0-4, igual al lote
-de Comunicacion asertiva ya aprobado. Contenido enteramente nuevo: ningun
+"""Banco Oficial de Preguntas - Modulo 6: Analisis de Casos
+TEMA 2 de 4: Liderazgo pedagogico (Lote 1) - 10 preguntas.
+Nombre alineado exactamente con el catalogo oficial de la plataforma
+(dashboard/question_generator.py, MODULES['analisis-de-casos']['topics']).
+Los 4 temas del Modulo 6, cada uno con 10 preguntas (40 en total):
+1. Comunicacion asertiva (AC_comunicacion_asertiva_lote01.py)
+2. Liderazgo pedagogico (este archivo)
+3. Trabajo colaborativo (AC_trabajo_equipo_lote01.py)
+4. Orientacion al logro (AC_orientacion_logro_lote01.py)
+Formato TJS con idoneidad graduada 0-4. Contenido enteramente nuevo: ningun
 caso de este lote reutiliza ciudades, nombres ni situaciones de otros lotes
 del Banco Oficial. Dificultad unicamente Alta y Muy Alta. Proceso cognitivo
 nivel 3-4. Mezcla balanceada de tipo_item mas_adecuada/menos_adecuada (5/5).
-Contexto de 150-300 palabras por item. Letra objetivo planificada por
-adelantado (A2/B2/C3/D3) y escrita directamente en la posicion
-correspondiente desde el primer borrador.
+Contexto de 150-300 palabras por item.
 """
 
 CATEGORIA = "Análisis de Casos"
-SUBCATEGORIA = "Análisis de Casos - Liderazgo"
+SUBCATEGORIA = "Análisis de Casos - Liderazgo pedagógico"
 COMPETENCIA = "Análisis de casos y competencias comportamentales"
 AREA = "psicotecnico"
 

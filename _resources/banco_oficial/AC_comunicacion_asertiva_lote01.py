@@ -1,7 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Banco Oficial de Preguntas - Modulo: Analisis de Casos | Tema: Comunicacion
-asertiva (Lote 1). Bajo la regla permanente desde Modulo 5: 10 preguntas por
-tema (aplica tambien a Modulo 6). Primer lote del modulo con calificacion por
+"""Banco Oficial de Preguntas - Modulo 6: Analisis de Casos
+TEMA 1 de 4: Comunicacion asertiva (Lote 1) - 10 preguntas.
+Nombre alineado exactamente con el catalogo oficial de la plataforma
+(dashboard/question_generator.py, MODULES['analisis-de-casos']['topics']).
+Los 4 temas del Modulo 6, cada uno con 10 preguntas (40 en total):
+1. Comunicacion asertiva (este archivo)
+2. Liderazgo pedagogico (AC_liderazgo_lote01.py)
+3. Trabajo colaborativo (AC_trabajo_equipo_lote01.py)
+4. Orientacion al logro (AC_orientacion_logro_lote01.py)
+Bajo la regla permanente desde Modulo 5: 10 preguntas por tema (aplica
+tambien a Modulo 6). Primer lote del modulo con calificacion por
 IDONEIDAD GRADUADA (0-4), formato TJS ("MAS/MENOS adecuada"), segun el
 esquema documentado en banco/models.py (tipo_item, idoneidad_a..d) y el
 Modelo Oro (_resources/banco_oficial/MODELO_ORO_v2.md, Item 5). Contenido

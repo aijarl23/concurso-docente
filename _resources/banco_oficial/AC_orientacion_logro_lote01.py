@@ -1,7 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Banco Oficial de Preguntas - Modulo: Analisis de Casos | Tema: Orientacion
-al logro (Lote 1). Cuarto y ultimo tema del Modulo 6, bajo la regla
-permanente desde Modulo 5: 10 preguntas por tema. Formato TJS con idoneidad
+"""Banco Oficial de Preguntas - Modulo 6: Analisis de Casos
+TEMA 4 de 4: Orientacion al logro (Lote 1) - 10 preguntas.
+Nombre alineado exactamente con el catalogo oficial de la plataforma
+(dashboard/question_generator.py, MODULES['analisis-de-casos']['topics']).
+Los 4 temas del Modulo 6, cada uno con 10 preguntas (40 en total):
+1. Comunicacion asertiva (AC_comunicacion_asertiva_lote01.py)
+2. Liderazgo pedagogico (AC_liderazgo_lote01.py)
+3. Trabajo colaborativo (AC_trabajo_equipo_lote01.py)
+4. Orientacion al logro (este archivo)
+Ultimo tema del Modulo 6, bajo la regla permanente desde Modulo 5: 10
+preguntas por tema. Formato TJS con idoneidad
 graduada 0-4, igual a los lotes de Comunicacion asertiva, Liderazgo y
 Trabajo en equipo ya aprobados. Contenido enteramente nuevo. Dificultad
 unicamente Alta y Muy Alta. Proceso cognitivo nivel 3-4. Mezcla balanceada
