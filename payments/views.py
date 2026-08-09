@@ -16,6 +16,7 @@ from django.views.decorators.http import require_POST
 
 from access_control.services import grant_full_access
 from commerce.models import Order, OrderItem, Product
+from commerce.views import ELITE_SLUG
 from payments.models import Payment
 from payments.services import WompiService, send_purchase_confirmation
 
@@ -107,7 +108,21 @@ def _build_order_from_products(user, products):
 @login_required
 @require_POST
 def buy_module(request, product_id):
-    product = get_object_or_404(Product.objects.select_related('module'), id=product_id, active=True)
+    # Restriccion explicita al producto Elite (unico que el catalogo publico
+    # ofrece hoy - ver commerce/views.py:product_list), ademas del filtro
+    # active=True que ya existia. Sin esto, si un producto individual por
+    # modulo quedara activo por error (ej. un cambio manual en el admin entre
+    # deploys, ya que apply_market_ready_upgrade los desactiva en cada
+    # deploy pero no impide una reactivacion manual intermedia), esta vista
+    # lo habria aceptado igual por ir directo a un product_id, sin pasar por
+    # el filtro de catalogo de product_list. No cambia el precio, el catalogo
+    # ni el flujo de acceso: solo cierra esa vía de compra directa.
+    product = get_object_or_404(
+        Product.objects.select_related('module'),
+        id=product_id,
+        active=True,
+        module__slug=ELITE_SLUG,
+    )
     order = _build_order_from_products(request.user, [product])
     return redirect('payments:checkout_order', order_id=order.id)
 
