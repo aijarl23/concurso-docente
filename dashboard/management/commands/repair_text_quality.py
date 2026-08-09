@@ -97,10 +97,43 @@ def repair_encoding(value):
 class Command(BaseCommand):
     help = 'Corrige textos visibles, codificación y acentos en datos activos sin tocar lógica funcional.'
 
+    # Misma valvula de seguridad que deduplicar_datos.py (mismo umbral, mismo
+    # criterio), aplicada aqui a las fusiones de Modulo que hace
+    # _reparar_tipo_modulo: si el volumen a eliminar/fusionar en una corrida
+    # luce anormal, se aborta esa fusion puntual sin tocar la BD.
+    SAFETY_CAP = 15
+
     def add_arguments(self, parser):
         parser.add_argument('--check-only', action='store_true', help='Solo reporta problemas sin modificar datos.')
+        parser.add_argument(
+            '--force', action='store_true',
+            help='Ignora la valvula de seguridad de las fusiones de Modulo (_reparar_tipo_modulo) '
+                 'y fusiona aunque el volumen parezca anormal.'
+        )
 
-    def _reparar_tipo_modulo(self, tipo_corrupto, tipo_canonico):
+    def _safety_check(self, label, planned_total, universe_total, force):
+        """Aborta esta fusion (sin tocar la BD) si el volumen planeado luce anormal.
+        Mismo criterio que deduplicar_datos._safety_check: no aborta por un
+        numero de filas pequeno en terminos absolutos, solo cuando ademas
+        representa una porcion desproporcionada del universo real de esta
+        fusion (evita bloquear fusiones legitimas y detiene una fusion mal
+        calculada antes de perder datos en produccion).
+        """
+        if planned_total == 0:
+            return True
+        looks_abnormal = planned_total > self.SAFETY_CAP and planned_total > universe_total * 0.5
+        if looks_abnormal and not force:
+            self.stderr.write(self.style.ERROR(
+                f'[repair_text_quality] ABORTADA la fusion ({label}): se planeaban eliminar/fusionar '
+                f'{planned_total} de {universe_total} filas — supera la valvula de seguridad '
+                f'({self.SAFETY_CAP} filas y >50% del total). No se modifico nada en esta fusion. '
+                'Revisa manualmente (python manage.py repair_text_quality --check-only) o vuelve a '
+                'correr con --force si el volumen es legitimo.'
+            ))
+            return False
+        return True
+
+    def _reparar_tipo_modulo(self, tipo_corrupto, tipo_canonico, force):
         corrupta = Modulo.objects.filter(tipo=tipo_corrupto).first()
         if not corrupta:
             return 0
@@ -131,9 +164,21 @@ class Command(BaseCommand):
         # un duplicado logico (no historial nuevo) y se descarta; si no, se
         # reasigna de verdad.
         ordenes_en_canonica = set(Tema.objects.filter(modulo=canonica).values_list('orden', flat=True))
+        temas_corrupta = list(Tema.objects.filter(modulo=corrupta).order_by('orden', 'id'))
+
+        # Planeacion (sin tocar la BD todavia): cuanto se eliminaria/fusionaria
+        # en esta corrida (el Modulo corrupto + sus Tema descartados por ser
+        # duplicados logicos de la canonica), frente al universo real de esta
+        # fusion puntual (el Modulo corrupto y sus propios Tema).
+        planned_descartes = sum(1 for tema in temas_corrupta if tema.orden in ordenes_en_canonica)
+        planned_total = 1 + planned_descartes
+        universe_total = 1 + len(temas_corrupta)
+        if not self._safety_check(f'Modulo.tipo="{tipo_corrupto}"', planned_total, universe_total, force):
+            return 0
+
         temas_movidos = 0
         temas_descartados = 0
-        for tema in Tema.objects.filter(modulo=corrupta).order_by('orden', 'id'):
+        for tema in temas_corrupta:
             if tema.orden in ordenes_en_canonica:
                 tema.delete()
                 temas_descartados += 1
@@ -156,6 +201,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         check_only = options['check_only']
+        force = options['force']
         scanned = 0
         changed = 0
         suspicious = []
@@ -175,8 +221,8 @@ class Command(BaseCommand):
         # ProgresoModulo) de la fila con tilde hacia la canonica y se borra la
         # duplicada - en vez de solo renombrar.
         if not check_only:
-            corregidas = self._reparar_tipo_modulo('análisis_desempeno', 'analisis_desempeno')
-            corregidas += self._reparar_tipo_modulo('gestión_escolar', 'gestion_escolar')
+            corregidas = self._reparar_tipo_modulo('análisis_desempeno', 'analisis_desempeno', force)
+            corregidas += self._reparar_tipo_modulo('gestión_escolar', 'gestion_escolar', force)
             if corregidas:
                 self.stdout.write(self.style.WARNING(f'Corregidas {corregidas} claves Modulo.tipo con tildes indebidas.'))
 
