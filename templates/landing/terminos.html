@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %}Términos y Condiciones{% endblock %}
+
+{% block content %}
+<div class="legal-page">
+    <p class="section-kicker mb-1">Documento legal</p>
+    <h1 class="h3 mb-1">Términos y Condiciones de Uso</h1>
+    <p class="text-muted">Última actualización: {{ fecha_actualizacion }}</p>
+
+    <p>Estos Términos y Condiciones regulan el acceso y uso de la plataforma ConcursoDocente
+    (en adelante, "la Plataforma"), un servicio de preparación para el Concurso Docente de la
+    Comisión Nacional del Servicio Civil (CNSC) en Colombia, mediante simulacros, banco de
+    preguntas y contenido de estudio. Al crear una cuenta o realizar una compra en la
+    Plataforma, aceptas estos Términos en su totalidad.</p>
+
+    <h2 class="h5 mt-4">1. Naturaleza del servicio</h2>
+    <p>La Plataforma es una herramienta independiente de preparación y entrenamiento por
+    competencias para aspirantes al concurso docente. No está afiliada, patrocinada ni
+    respaldada por la Comisión Nacional del Servicio Civil (CNSC), el Ministerio de Educación
+    Nacional (MEN), ni ninguna entidad territorial. Los simulacros, preguntas y análisis de
+    desempeño son material de preparación elaborado por la Plataforma y no constituyen ni
+    reemplazan la prueba oficial del concurso.</p>
+
+    <h2 class="h5 mt-4">2. Cuenta de usuario</h2>
+    <p>Para usar la Plataforma debes registrarte con un correo electrónico válido y una
+    contraseña, o iniciar sesión mediante tu cuenta de Google. Eres responsable de mantener la
+    confidencialidad de tus credenciales de acceso y de toda la actividad que ocurra bajo tu
+    cuenta. La cuenta es personal e intransferible: no está permitido compartir tus credenciales
+    ni el acceso adquirido con terceros.</p>
+
+    <h2 class="h5 mt-4">3. Matrícula y acceso premium</h2>
+    <p>La Plataforma ofrece un acceso de pago único ("matrícula") que habilita, mientras tu
+    cuenta permanezca activa y vigente, el ingreso a los módulos, simulacros y funciones
+    premium disponibles en el catálogo al momento de la compra. El precio, los medios de pago
+    disponibles y las condiciones de la matrícula se muestran antes de confirmar la compra. El
+    pago se procesa a través de la pasarela de pagos Wompi; la Plataforma no almacena datos de
+    tarjetas de crédito o débito, esos datos son manejados directamente por la pasarela de pagos.</p>
+    <p>Las condiciones de reembolso de la matrícula se rigen por la
+    <a href="{% url 'landing:reembolsos' %}">Política de Reembolsos</a>, que forma parte
+    integral de estos Términos.</p>
+
+    <h2 class="h5 mt-4">4. Uso aceptable</h2>
+    <p>Te comprometes a usar la Plataforma únicamente con fines personales de preparación para
+    el concurso docente. No está permitido: copiar, redistribuir, revender o publicar el banco
+    de preguntas, los simulacros o cualquier contenido de la Plataforma; usar herramientas
+    automatizadas para extraer contenido; ni intentar vulnerar la seguridad de la Plataforma o
+    acceder a cuentas o contenido que no te pertenece.</p>
+
+    <h2 class="h5 mt-4">5. Propiedad intelectual</h2>
+    <p>El banco de preguntas, los simulacros, los textos, la estructura del contenido y el
+    diseño de la Plataforma son propiedad de ConcursoDocente o de sus autores y están
+    protegidos por la normatividad colombiana de derechos de autor y propiedad intelectual. La
+    compra de la matrícula otorga un derecho de uso personal y no exclusivo del contenido,
+    no la transferencia de derechos de propiedad intelectual sobre el mismo.</p>
+
+    <h2 class="h5 mt-4">6. Disponibilidad del servicio</h2>
+    <p>La Plataforma se ofrece "tal cual" y "según disponibilidad". Aunque se procura mantener
+    el servicio disponible de forma continua, no se garantiza que el acceso sea ininterrumpido
+    o esté libre de errores. Se podrán realizar mantenimientos, actualizaciones o correcciones
+    que temporalmente limiten el acceso.</p>
+
+    <h2 class="h5 mt-4">7. Límite de responsabilidad</h2>
+    <p>La Plataforma es una herramienta de apoyo al estudio. No garantiza la aprobación del
+    concurso docente ni un puntaje específico en la prueba oficial, ya que el resultado depende
+    de factores fuera del control de la Plataforma. En la medida permitida por la ley, la
+    Plataforma no será responsable por perjuicios indirectos derivados del uso o la
+    imposibilidad de uso del servicio.</p>
+
+    <h2 class="h5 mt-4">8. Modificaciones a estos Términos</h2>
+    <p>Estos Términos pueden actualizarse para reflejar cambios en el servicio o en la
+    normatividad aplicable. Los cambios sustanciales se anunciarán dentro de la Plataforma. El
+    uso continuado del servicio después de una actualización implica la aceptación de los
+    nuevos Términos.</p>
+
+    <h2 class="h5 mt-4">9. Ley aplicable</h2>
+    <p>Estos Términos se rigen por las leyes de la República de Colombia.</p>
+
+    <h2 class="h5 mt-4">10. Contacto</h2>
+    <p>Para preguntas sobre estos Términos, escribe a
+    <a href="mailto:{{ correo_contacto }}">{{ correo_contacto }}</a>.</p>
+
+    <p class="text-muted small mt-4">Documento relacionado:
+    <a href="{% url 'landing:privacidad' %}">Política de Privacidad y Tratamiento de Datos Personales</a> ·
+    <a href="{% url 'landing:reembolsos' %}">Política de Reembolsos</a>.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}Política de Privacidad y Tratamiento de Datos{% endblock %}
+
+{% block content %}
+<div class="legal-page">
+    <p class="section-kicker mb-1">Documento legal</p>
+    <h1 class="h3 mb-1">Política de Privacidad y Tratamiento de Datos Personales (Habeas Data)</h1>
+    <p class="text-muted">Última actualización: {{ fecha_actualizacion }}</p>
+
+    <p>Esta política describe qué datos personales recolecta ConcursoDocente (en adelante, "la
+    Plataforma"), para qué se usan, con quién se comparten y cuáles son tus derechos, en
+    cumplimiento de la Ley 1581 de 2012, el Decreto 1377 de 2013 y demás normas colombianas
+    sobre protección de datos personales (régimen de Habeas Data).</p>
+
+    <h2 class="h5 mt-4">1. Responsable del tratamiento</h2>
+    <p><strong>{{ responsable_nombre }}</strong>, contacto: <a href="mailto:{{ correo_contacto }}">{{ correo_contacto }}</a>.</p>
+
+    <h2 class="h5 mt-4">2. Datos que recolectamos y para qué los usamos</h2>
+    <p>Solo recolectamos los datos que la Plataforma efectivamente necesita para funcionar. En
+    concreto:</p>
+
+    <h3 class="h6 mt-3">2.1 Datos de registro de cuenta</h3>
+    <p>Nombres, apellidos, nombre de usuario, correo electrónico y contraseña (almacenada de
+    forma cifrada, nunca en texto plano). Opcionalmente, el área de conocimiento a la que te
+    presentas en el concurso y tu entidad territorial. Estos datos se usan para crear y
+    administrar tu cuenta, identificarte al iniciar sesión y personalizar el contenido que ves.</p>
+
+    <h3 class="h6 mt-3">2.2 Datos de inicio de sesión con Google (solo si eliges esa opción)</h3>
+    <p>Si inicias sesión con tu cuenta de Google, recibimos de Google tu correo electrónico,
+    nombre, apellido, un identificador único de tu cuenta de Google y si tu correo está
+    verificado. No recibimos ni almacenamos tu contraseña de Google.</p>
+
+    <h3 class="h6 mt-3">2.3 Datos de uso académico</h3>
+    <p>Cuando presentas un simulacro registramos: las respuestas que seleccionas, si cada
+    respuesta es correcta, el tiempo usado y tu puntaje. Con esta información generamos tu
+    historial de intentos, tu progreso por módulo y el análisis de desempeño y recomendaciones
+    de estudio que se muestran en tu panel. Esta información solo es visible para ti y para el
+    personal administrativo de la Plataforma.</p>
+
+    <h3 class="h6 mt-3">2.4 Datos de compra y pago</h3>
+    <p>Cuando adquieres la matrícula registramos la referencia de la orden, los productos
+    incluidos, el monto, el estado del pago y el identificador de la transacción reportado por
+    la pasarela de pagos Wompi. <strong>La Plataforma no almacena números de tarjeta de crédito
+    o débito ni códigos de seguridad</strong>: esos datos los captura y procesa directamente
+    Wompi, una pasarela de pagos vigilada, y no llegan a nuestros servidores.</p>
+
+    <h3 class="h6 mt-3">2.5 Cookies</h3>
+    <p>La Plataforma usa únicamente cookies técnicas necesarias para su funcionamiento: una
+    cookie de sesión (para mantenerte identificado mientras navegas) y una cookie de seguridad
+    CSRF (para proteger los formularios contra ataques). Actualmente no usamos cookies de
+    publicidad ni herramientas de rastreo de terceros como Google Analytics o píxeles de redes
+    sociales.</p>
+
+    <h2 class="h5 mt-4">3. Con quién compartimos tus datos</h2>
+    <p>No vendemos tus datos personales. Los compartimos únicamente con los terceros
+    estrictamente necesarios para prestar el servicio:</p>
+    <p><strong>Wompi</strong> (pasarela de pagos), para procesar tu transacción cuando compras
+    la matrícula. <strong>Google</strong>, únicamente si eliges iniciar sesión con tu cuenta de
+    Google, para validar tu identidad. Nuestro <strong>proveedor de correo saliente</strong>,
+    para enviarte el correo de confirmación de compra y el correo de recuperación de
+    contraseña. Nuestro <strong>proveedor de alojamiento (hosting)</strong>, donde vive la base
+    de datos y la aplicación de forma segura. Cada uno de estos terceros trata tus datos según
+    sus propias políticas de privacidad.</p>
+
+    <h2 class="h5 mt-4">4. Tiempo de conservación</h2>
+    <p>Conservamos tus datos mientras tu cuenta permanezca activa. Si solicitas la eliminación
+    de tu cuenta, eliminamos o anonimizamos tus datos personales, salvo la información que
+    debamos conservar por obligación legal (por ejemplo, registros contables o tributarios
+    asociados a una compra).</p>
+
+    <h2 class="h5 mt-4">5. Tus derechos como titular de los datos</h2>
+    <p>De acuerdo con la Ley 1581 de 2012, tienes derecho a: conocer, actualizar y rectificar
+    tus datos personales; solicitar prueba de la autorización otorgada; ser informado sobre el
+    uso que se le ha dado a tus datos; presentar quejas ante la Superintendencia de Industria y
+    Comercio (SIC) por infracciones a la ley; revocar la autorización y/o solicitar la
+    supresión del dato cuando no exista un deber legal o contractual que impida eliminarlo; y
+    acceder de forma gratuita a tus datos personales.</p>
+    <p>Para ejercer cualquiera de estos derechos, escríbenos a
+    <a href="mailto:{{ correo_contacto }}">{{ correo_contacto }}</a>.</p>
+
+    <h2 class="h5 mt-4">6. Menores de edad</h2>
+    <p>La Plataforma está dirigida a personas mayores de edad que se preparan para un concurso
+    de carrera docente. No está dirigida a menores de 18 años y no recolectamos
+    intencionalmente datos de menores de edad.</p>
+
+    <h2 class="h5 mt-4">7. Seguridad</h2>
+    <p>Aplicamos medidas técnicas razonables para proteger tus datos, como el cifrado de
+    contraseñas, conexión cifrada (HTTPS) y protección contra ataques CSRF en los formularios.
+    Ningún sistema es completamente infalible, pero trabajamos para mantener tu información
+    protegida.</p>
+
+    <h2 class="h5 mt-4">8. Cambios a esta política</h2>
+    <p>Podemos actualizar esta política para reflejar cambios en el servicio o en la
+    normatividad aplicable. La fecha de "última actualización" al inicio de este documento
+    indica la versión vigente.</p>
+
+    <p class="text-muted small mt-4">Documento relacionado:
+    <a href="{% url 'landing:terminos' %}">Términos y Condiciones</a> ·
+    <a href="{% url 'landing:reembolsos' %}">Política de Reembolsos</a>.</p>
+</div>
+{% endblock %}

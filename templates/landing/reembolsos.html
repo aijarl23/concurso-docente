@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Política de Reembolsos{% endblock %}
+
+{% block content %}
+<div class="legal-page">
+    <p class="section-kicker mb-1">Documento legal</p>
+    <h1 class="h3 mb-1">Política de Reembolsos</h1>
+    <p class="text-muted">Última actualización: {{ fecha_actualizacion }}</p>
+
+    <p>Esta política explica en qué casos puedes solicitar el reembolso de la matrícula
+    comprada en ConcursoDocente y cómo hacerlo.</p>
+
+    <h2 class="h5 mt-4">1. Derecho de retracto</h2>
+    <p>Al tratarse de una compra realizada por un medio de comercio electrónico, la Ley 1480 de
+    2011 (Estatuto del Consumidor) reconoce, con carácter general, un derecho de retracto de
+    hasta cinco (5) días hábiles contados a partir de la entrega del producto o servicio, sin
+    necesidad de justificar el motivo.</p>
+    <p>Ten en cuenta que la matrícula otorga acceso inmediato a contenido digital (simulacros,
+    banco de preguntas y análisis de desempeño). Si ya presentaste al menos un simulacro con tu
+    acceso premium, se entiende que el contenido digital comenzó a ejecutarse con tu
+    consentimiento expreso, lo cual puede limitar la procedencia del retracto sobre esa compra
+    específica. Si no has usado el acceso (no has presentado ningún simulacro premium), puedes
+    solicitar el reembolso dentro de los cinco (5) días hábiles siguientes a la compra.</p>
+
+    <h2 class="h5 mt-4">2. Pago no confirmado o error de cobro</h2>
+    <p>Si Wompi reportó un cobro pero tu cuenta no recibió el acceso premium correspondiente, o
+    si detectas un cobro duplicado por la misma matrícula, contáctanos y verificaremos el caso
+    contra el registro de la transacción. Si se confirma el error, se procederá con el
+    reembolso o con la activación del acceso, según corresponda.</p>
+
+    <h2 class="h5 mt-4">3. Cómo solicitar un reembolso</h2>
+    <p>Escribe a <a href="mailto:{{ correo_contacto }}">{{ correo_contacto }}</a> indicando el
+    correo con el que te registraste y, si lo tienes, la referencia de la orden (te llega en el
+    correo de confirmación de compra). Revisaremos tu solicitud contra el estado real de la
+    orden y del pago, y te responderemos indicando si procede el reembolso.</p>
+
+    <h2 class="h5 mt-4">4. Medio y tiempo del reembolso</h2>
+    <p>Cuando un reembolso proceda, se realizará por el mismo medio de pago utilizado en la
+    compra original, a través de la pasarela de pagos Wompi. Los tiempos de acreditación
+    dependen de la entidad financiera y de la pasarela de pagos, y pueden tardar varios días
+    hábiles en reflejarse.</p>
+
+    <h2 class="h5 mt-4">5. Contacto</h2>
+    <p>Para cualquier duda sobre esta política, escribe a
+    <a href="mailto:{{ correo_contacto }}">{{ correo_contacto }}</a>.</p>
+
+    <p class="text-muted small mt-4">Documento relacionado:
+    <a href="{% url 'landing:terminos' %}">Términos y Condiciones</a> ·
+    <a href="{% url 'landing:privacidad' %}">Política de Privacidad y Tratamiento de Datos Personales</a>.</p>
+</div>
+{% endblock %}

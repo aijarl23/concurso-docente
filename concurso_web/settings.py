@@ -178,4 +178,11 @@ GOOGLE_OAUTH_CLIENT_ID = env('GOOGLE_OAUTH_CLIENT_ID', default='')
 GOOGLE_OAUTH_CLIENT_SECRET = env('GOOGLE_OAUTH_CLIENT_SECRET', default='')
 GOOGLE_OAUTH_REDIRECT_URI = env('GOOGLE_OAUTH_REDIRECT_URI', default='')
 
+# Datos mostrados en las paginas legales (Terminos, Privacidad, Reembolsos).
+# Configurables por variable de entorno para no dejar datos de contacto
+# hardcodeados en el codigo/templates; si no se definen, cae en un valor
+# generico que debe actualizarse antes del lanzamiento comercial real.
+LEGAL_CONTACT_EMAIL = env('LEGAL_CONTACT_EMAIL', default=DEFAULT_FROM_EMAIL)
+LEGAL_RESPONSABLE_NOMBRE = env('LEGAL_RESPONSABLE_NOMBRE', default='ConcursoDocente')
+
 

@@ -17,6 +17,12 @@
                 </ul>
                 <h4>Total: COP {{ order.total }}</h4>
                 <p class="text-muted">Al aprobarse el pago, tu usuario tendra acceso a todos los módulos, simulacros y retroalimentaciónes.</p>
+                <p class="text-muted small">
+                    Al continuar aceptas los
+                    <a href="{% url 'landing:terminos' %}" target="_blank" rel="noopener">Términos y Condiciones</a>
+                    y la
+                    <a href="{% url 'landing:reembolsos' %}" target="_blank" rel="noopener">Política de Reembolsos</a>.
+                </p>
 
                 {% if payment_config_errors %}
                 <div class="alert alert-warning mt-3">
